@@ -1,10 +1,18 @@
+
+import ContactForm from '@/components/ContactForm/ContactForm';
+import Advantages from '@/components/HomePage/Advantages/Advantages';
+import Graphics from '@/components/HomePage/Graphics/Graphics';
+import Hero from '@/components/HomePage/Hero/Hero';
+import Pages from '@/components/HomePage/Pages/Pages';
+
 export default function Home() {
   return (
-    <div style={{paddingTop: '10vh', height: '150vh'}}>
-      123
-      <h1>Nagłówek</h1>
-      <h2>h2</h2>
-      <h3>h3</h3>
-    </div>
+    <>
+      <Hero />
+      <Advantages />
+      <Pages />
+      <Graphics />
+      <ContactForm />
+    </>
   );
 }

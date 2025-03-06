@@ -1,0 +1,40 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  @include mixin.phone500px {
+    padding: 2rem;
+  }
+}
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 1000px;
+  text-align: center;
+  @include mixin.pc1450px {
+    width: 80%;
+  }
+  @include mixin.phone500px {
+    width: 100%;
+  }
+  h2 {
+    color: colors.$blue;
+  }
+  p {
+    width: fit-content;
+  }
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
