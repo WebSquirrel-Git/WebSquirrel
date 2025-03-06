@@ -1,0 +1,102 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 440px;
+  padding: 25px;
+  border: 3px solid colors.$squirrel;
+  border-radius: 10px;
+  justify-content: space-between;
+  @include mixin.phone500px {
+    width: 280px;
+    height: 390px;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-family: 'Poppins-500';
+    font-weight: 500;
+    @include mixin.phone500px {
+      font-size: 1rem;
+    }
+  }
+}
+.containerblue {
+  border: 3px solid colors.$blue !important;
+}
+.blue {
+  color: colors.$blue !important;
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.headerOrange {
+  color: colors.$squirrel;
+  font-family: 'Poppins-600';
+  font-weight: 600;
+}
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  @include mixin.phone500px {
+    gap: 0.5rem;
+  }
+}
+.priceLabel {
+  font-size: 1rem;
+  @include mixin.phone500px {
+    font-size: 0.7rem;
+  }
+}
+.price {
+  font-weight: 600px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: colors.$squirrel;
+  @include mixin.phone500px {
+    font-size: 1rem;
+  }
+}
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  @include mixin.phone500px {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  font-weight: 500;
+  color: colors.$squirrel;
+  font-size: 1rem;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid colors.$dark;
+  transition: all 0.5s;
+  @include mixin.phone500px {
+    font-size: 0.7rem;
+  }
+  &:hover {
+    border-bottom: 1px solid colors.$squirrel;
+  }
+  img {
+    width: 18px;
+    height: 18px;
+    fill: colors.$blue;
+  }
+}
+.linkblue {
+  color: colors.$blue !important;
+  &:hover {
+    border-bottom: 1px solid colors.$blue;
+  }
+}

@@ -1,22 +1,22 @@
 @use '../../../../styles/colors.scss' as colors;
 @use '../../../../styles/mixin.scss' as mixin;
-.link{
-font-size: 1.2rem;
-border: 3px solid colors.$squirrel;
-padding: 1rem 3rem;
-color: colors.$white;
-background-color: transparent;
-width: fit-content;
-transition: all .5s;
-@include mixin.pc1450px{
+.link {
+  font-size: 1.2rem;
+  border: 3px solid colors.$squirrel;
+  padding: 1rem 3rem;
+  color: colors.$white;
+  background-color: transparent;
+  width: fit-content;
+  transition: all 0.5s;
+  @include mixin.pc1450px {
     font-size: 1rem;
-}
-@include mixin.pc1000px{
-    padding: .7rem 2rem;
+  }
+  @include mixin.pc1000px {
+    padding: 0.7rem 2rem;
     border-width: 2px;
-}
-&:hover{
+  }
+  &:hover {
     background-color: colors.$squirrel;
     color: colors.$dark;
-}
+  }
 }

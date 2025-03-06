@@ -1,94 +1,67 @@
 @use '../../../styles/colors.scss' as colors;
 @use '../../../styles/mixin.scss' as mixin;
-.container{
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-padding: 10vh 9rem 1rem 9rem;
-background-color: colors.$dark;
-width: 100%;
-height: 100vh;
-gap: 5rem;
-@include mixin.pc1450px{
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10vh 9rem 1rem 9rem;
+  background-color: colors.$dark;
+  width: 100%;
+  height: 100vh;
+  gap: 5rem;
+  @include mixin.pc1450px {
     padding: 10vh 3rem 1rem 3rem;
     justify-content: center;
-}
-@include mixin.phone800px{
+  }
+  @include mixin.phone800px {
     flex-direction: column;
     padding: 15vh 2rem 2rem 2rem;
-}
-h1{
-    font-size: 6rem;
+  }
+  h1 {
     color: colors.$squirrel;
-    font-family: 'poppins-700';
-    margin: 0;
-    @include mixin.pc1450px{
-        font-size: 4rem;
-    }
-    @include mixin.phone500px{
-font-size: 2.5rem;
-    }
+  }
 }
+.logo {
+  width: 400px;
+  @include mixin.pc1000px {
+    width: 300px;
+  }
+  @include mixin.phone800px {
+    width: 200px;
+  }
+  @include mixin.phone500px {
+    width: 150px;
+  }
 }
-.logo{
-    width: 400px;
-    @include mixin.pc1000px{
-        width: 300px;
-    }
-    @include mixin.phone800px{
-        width: 200px;
-    }
-    @include mixin.phone500px{
-        width: 150px;
-            }
-}
-.textBox{
-    display: flex;
-    flex-direction: column;
-    width: min-content;
-gap: 1rem;
-@include mixin.pc1450px{
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  gap: 1rem;
+  @include mixin.pc1450px {
     width: 50%;
-}
-@include mixin.phone800px{
+  }
+  @include mixin.phone800px {
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
 }
-}
-.subHeader{
-    font-size: 2rem;
-font-weight: 600;
-@include mixin.pc1450px{
+.subHeader {
+  font-size: 2rem;
+  font-weight: 600;
+  @include mixin.pc1450px {
     font-size: 1.5rem;
-}
-@include mixin.phone500px{
+  }
+  @include mixin.phone500px {
     font-size: 1.3rem;
-        }
+  }
 }
 
-.text{
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: white;
-    @include mixin.pc1450px{
-        font-size: 1.2rem;
-    }
-    @include mixin.phone500px{
-        font-size: .7rem;
-            }
-}
-.textOrange{
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: colors.$squirrel;
-    @include mixin.pc1450px{
-        font-size: 1.2rem;
-    }
-    @include mixin.phone500px{
-        font-size: .7rem;
-            }
+.textOrange {
+  color: colors.$squirrel;
+  font-weight: 600;
 }
