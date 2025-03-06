@@ -1,8 +1,8 @@
-@use 'colors.scss' as colors;
-@import 'fonts.scss';
+@use './colors.scss' as colors;
+@use './fonts.scss';
 
 html {
-  font-family: 'RobotoFlex Inter-VariableFont_opsz', sans-serif;
+  font-family: 'RobotoFlex', sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

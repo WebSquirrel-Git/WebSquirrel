@@ -1,0 +1,9 @@
+@use '../../../../styles/colors.scss' as colors;
+.button{
+font-size: 1.3rem;
+border: 3px solid colors.$squirrel;
+padding: 1rem 3rem;
+color: colors.$white;
+background-color: transparent;
+width: fit-content;
+}
