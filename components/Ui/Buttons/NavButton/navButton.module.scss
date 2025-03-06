@@ -1,0 +1,26 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 60px;
+  background-color: colors.$squirrel;
+  border: none;
+  @include mixin.phone800px {
+    width: 55px;
+    height: 50px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.icon {
+  width: 41px;
+  height: 41px;
+  @include mixin.phone800px {
+    width: 31px;
+    height: 31px;
+  }
+}
