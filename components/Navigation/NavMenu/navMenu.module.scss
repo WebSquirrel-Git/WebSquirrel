@@ -1,0 +1,120 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+.active {
+  overflow: visible !important;
+  opacity: 1 !important;
+  transition: opacity 1s 0.5s;
+}
+.containerActive {
+  width: 100vw !important;
+  height: 100vh !important;
+  padding: 2rem 4rem 4rem 4rem !important;
+  overflow: visible !important;
+  @include mixin.phone800px {
+    padding: 2rem !important;
+  }
+  @include mixin.phone500px {
+    padding: 2rem 1rem !important;
+  }
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  width: 0px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: colors.$dark;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.7s;
+}
+.header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+}
+.logo {
+  height: 5vh;
+  @include mixin.phone800px {
+    height: 4vh;
+  }
+}
+.listBox {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 1rem;
+  width: 50%;
+  opacity: 0;
+  @include mixin.pc1250px {
+    width: 75%;
+  }
+  @include mixin.phone800px {
+    width: 90%;
+  }
+}
+.listItem {
+  font-family: 'RobotoFlex';
+  font-weight: 600;
+  color: colors.$white;
+  font-size: 2rem;
+  padding: 1rem 0.7rem;
+  border-bottom: 2px solid colors.$squirrel;
+  transition: all 0.5s;
+  @include mixin.phone800px {
+    font-size: 1.2rem;
+  }
+  &:hover {
+    cursor: pointer;
+    color: colors.$squirrel;
+  }
+}
+.contactBox {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  opacity: 0;
+  @include mixin.phone800px {
+    align-items: center;
+  }
+}
+.contactHeader {
+  font-family: 'Poppins-600';
+  color: colors.$squirrel;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  width: 250px;
+  @include mixin.phone800px {
+    font-size: 1rem;
+    width: auto;
+  }
+}
+.contactItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'RobotoFlex';
+  font-size: 1rem;
+  font-weight: 500;
+  width: 250px;
+  @include mixin.phone800px {
+    font-size: 0.7rem;
+    width: auto;
+  }
+}
