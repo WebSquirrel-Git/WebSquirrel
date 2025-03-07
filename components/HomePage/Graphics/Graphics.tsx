@@ -9,7 +9,7 @@ const GRAPHICS_OFFERT = [
     price: '100 - ∞ PLN',
     description:
       'Grafiki takie jak np. logo firmy nie muszą być sztywnym obrazkiem, który zawsze wygląda tak samo. Pomożemy Ci je ożywić wprowadzając kilka modyfikacji, które poprawią ich skalowanie i dadzą możliwość wprowadzania modyfikacji. Obrazy SVG nie tracą na jakości przy zmianie ich rozmiaru. ',
-    url: '/',
+    url: '/oferta/grafiki/svg',
   },
   {
     type: 'Animacje',
@@ -17,7 +17,7 @@ const GRAPHICS_OFFERT = [
     price: '100 - ∞ PLN',
     description:
       'Potrzebujesz nietypowej animacji na swoją stronę internetową? Tworzymy animacje dla elementów na stronie internetowej jak i odwzorowania GIF.',
-    url: '/',
+    url: '/oferta/grafiki/animacje',
   },
   {
     type: 'Projekty graficzne',
@@ -25,7 +25,7 @@ const GRAPHICS_OFFERT = [
     price: '100 - ∞ PLN',
     description:
       'Podoba Ci się nasz style i potrzebujesz projektu graficznego. Napisz, zadzwoń omówimy szczegóły i postaramy się pomóc.',
-    url: '/',
+    url: '/oferta/grafiki/projektygraficzne',
   },
   {
     type: 'Rolki promocyjne',
@@ -33,7 +33,7 @@ const GRAPHICS_OFFERT = [
     price: '100 - ∞ PLN',
     description:
       'Rolki wideo do 20 sekund tworzone na podstawie projektu graficznego klienta. Jest to dobra opcja żeby poinformować klientów o ważnych wydarzeniach na Waszych socjal mediach.',
-    url: '/',
+    url: '/oferta/grafiki/rolki',
   },
 ];
 
