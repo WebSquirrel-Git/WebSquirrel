@@ -34,7 +34,7 @@ const ADVANTAGES_DATA = [
 
 const Advantages = () => {
   return (
-    <div className={styles.container}>
+    <section id="advantages" className={styles.container}>
       <h2>Plusy strony internetowej</h2>
       <div className={styles.rowBox}>
         {ADVANTAGES_DATA.map((advantage, index) => (
@@ -47,7 +47,7 @@ const Advantages = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -39,7 +39,7 @@ const GRAPHICS_OFFERT = [
 
 const Graphics = () => {
   return (
-    <section id="offerWebsites" className={styles.container}>
+    <section id="offerGraphics" className={styles.container}>
       <div className={styles.headerBox}>
         <h2>Elementy graficzne i wideo</h2>
         <p>

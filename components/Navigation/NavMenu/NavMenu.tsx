@@ -21,16 +21,24 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
         <CloseButton onClick={hideMenuHandler} />
       </div>
       <div className={`${styles.listBox} ${showMenu && styles.active}`}>
-        <Link href="/" className={styles.listItem}>
+        <Link onClick={hideMenuHandler} href="/" className={styles.listItem}>
           STRONA GŁÓWNA
         </Link>
-        <Link href="/" className={styles.listItem}>
+        <Link
+          onClick={hideMenuHandler}
+          href="/#offerWebsites"
+          className={styles.listItem}
+        >
           STRONY I SKLEPY INTERNETOWE
         </Link>
-        <Link href="/" className={styles.listItem}>
+        <Link
+          onClick={hideMenuHandler}
+          href="/#offerGraphics"
+          className={styles.listItem}
+        >
           ELEMENTY GRAFICZNE I WIDEO
         </Link>
-        <Link href="/" className={styles.listItem}>
+        <Link onClick={hideMenuHandler} href="/" className={styles.listItem}>
           PORTFOLIO
         </Link>
       </div>
