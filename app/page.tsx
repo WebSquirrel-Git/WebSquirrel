@@ -1,4 +1,3 @@
-
 import ContactForm from '@/components/ContactForm/ContactForm';
 import Advantages from '@/components/HomePage/Advantages/Advantages';
 import Graphics from '@/components/HomePage/Graphics/Graphics';

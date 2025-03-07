@@ -6,7 +6,7 @@ import SendIcon from '@/public/assets/icons/send-icon.svg';
 
 const ContactForm = () => {
   return (
-    <div className={styles.container}>
+    <section id="contact" className={styles.container}>
       <div className={styles.formContainer}>
         <h3>Zapytaj się o projekt</h3>
         <p>
@@ -60,7 +60,7 @@ const ContactForm = () => {
         </form>
       </div>
       <img src={Logo.src} className={styles.logo} />
-    </div>
+    </section>
   );
 };
 

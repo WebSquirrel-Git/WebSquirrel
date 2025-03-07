@@ -1,0 +1,62 @@
+@use '../../styles/colors.scss' as colors;
+@use '../../styles/mixin.scss' as mixin;
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 8rem;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid colors.$squirrel;
+  gap: 1rem;
+  @include mixin.pc1450px {
+    padding: 3rem;
+  }
+  @include mixin.pc1100px {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  @include mixin.phone500px {
+    padding: 2rem;
+  }
+}
+.navBox {
+  flex-direction: row;
+  gap: 2rem;
+  display: flex;
+}
+.listColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 150px;
+  @include mixin.pc1100px {
+    width: 43%;
+    align-items: center;
+  }
+  @include mixin.phone800px {
+    width: 100%;
+  }
+}
+.listTitle {
+  font-size: 1.3rem;
+  color: colors.$squirrel;
+}
+.link {
+  color: white;
+  font-size: 1rem;
+  @include mixin.phone500px {
+    font-size: 0.9rem;
+  }
+}
+.logo {
+  height: 150px;
+}
+.logoName {
+  height: 50px;
+  @include mixin.pc1100px {
+    width: 100%;
+  }
+}
