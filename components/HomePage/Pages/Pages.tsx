@@ -9,7 +9,7 @@ const PAGES_OFFERT = [
     price: '1300 - ∞ PLN',
     description:
       'Strona wizytówka to dobry wybór dla małych firm, które dopiero zaczynają swoją działalność i chcą przedstawić klientom profil swojej firmy.',
-    url: '/',
+    url: '/oferta/strony/singlepage',
   },
   {
     type: 'Strona internetowa',
@@ -17,7 +17,7 @@ const PAGES_OFFERT = [
     price: '2000 - ∞ PLN',
     description:
       'Standardowa strona z kilkoma podstronami i podstawowymi funkcjonalnościami. Idealna dla firm, które świadczą więcej niż jedną usługę.',
-    url: '/',
+    url: '/oferta/strony/standard',
   },
   {
     type: 'Strona internetowa',
@@ -25,15 +25,15 @@ const PAGES_OFFERT = [
     price: '3000 - ∞ PLN',
     description:
       'Rozbudowana strona internetowa z kilkoma podstronami i niestandardowymi funkcjonalnościami. Wymyśliłeś coś nietypowego czego nie ma na innych stronach i chcesz to mieć u siebie? Nie ma problemu. Skontaktuj się z nami to ustalimy czy jesteśmy w stanie to zrobić.',
-    url: '/',
+    url: '/oferta/strony/premium',
   },
   {
-    type: 'Aplikacja internetowa',
+    type: 'Strona internetowa',
     title: 'Creative',
     price: '∞ PLN',
     description:
       'Jak to mówią sky is the limit. Ta oferta jest dla osób które chcą czegoś więcej niż standardowa strona i oczekują zastosowania złożonej logiki i mocno nietypowego designu. Nowe innowacyjne pomysły to jest to co lubimy najbardziej.',
-    url: '/',
+    url: '/oferta/strony/creative',
   },
   {
     type: 'Sklep internetowy ',
@@ -41,7 +41,7 @@ const PAGES_OFFERT = [
     price: '2000 - ∞ PLN',
     description:
       'Prosty sklep internetowy zbudowany na WooCommerce. Idealne rozwiązanie dla startujących firm oferujących sprzedaż produktów lub usług. Zakres usług związanych ze sklepem: płatności online, sposób dostawy, zarządzanie SKU, aktualizacja stanu zamówienia e-mail dla klienta.',
-    url: '/',
+    url: '/oferta/sklepy/woocommerce',
   },
 ];
 
