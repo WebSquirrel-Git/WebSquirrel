@@ -1,0 +1,48 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 3rem 3rem 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+  h1 {
+    color: colors.$squirrel;
+    padding-bottom: 2rem;
+  }
+  p {
+    text-align: center;
+    width: 30%;
+    font-weight: 600;
+    @include mixin.pc1450px {
+      width: 60%;
+    }
+    @include mixin.phone800px {
+      width: 80%;
+    }
+  }
+}
+.subHeader {
+  font-size: 2rem;
+  font-weight: 600;
+  @include mixin.pc1450px {
+    font-size: 1.5rem;
+  }
+  @include mixin.phone500px {
+    font-size: 1.3rem;
+  }
+}
+.orange {
+  color: colors.$squirrel;
+}
+.logoShield {
+  padding-top: 3rem;
+  width: 140px;
+  @include mixin.phone800px {
+    width: 100px;
+  }
+}
