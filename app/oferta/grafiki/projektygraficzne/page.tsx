@@ -1,5 +1,3 @@
 export default function GraphicProjectsPage() {
-    return (
-      <div>Strona GraphicProjectspage</div>
-    );
-  }
+  return <div>Strona GraphicProjectspage</div>;
+}

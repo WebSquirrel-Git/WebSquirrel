@@ -1,5 +1,3 @@
 export default function WoocommercePage() {
-    return (
-      <div>Strona Woocommercepage</div>
-    );
-  }
+  return <div>Strona Woocommercepage</div>;
+}
