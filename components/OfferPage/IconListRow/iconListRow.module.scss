@@ -16,6 +16,10 @@
 .icon {
   width: 200px;
   height: 200px;
+  @include mixin.phone500px {
+    height: 100px;
+    width: 100px;
+  }
 }
 .contentBox {
   display: flex;
@@ -37,5 +41,8 @@
     font-size: 1rem;
     padding: 0.5rem 0rem;
     border-bottom: 2px solid colors.$squirrel;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
   }
 }
