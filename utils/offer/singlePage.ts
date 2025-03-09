@@ -1,7 +1,6 @@
 import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
 import {IconListRowPropsType} from '@/components/OfferPage/IconListRow/IconListRow';
 import {title} from 'process';
-
 const hero = {
   subheader: 'Strona internetowa',
   title: 'Single Page',
