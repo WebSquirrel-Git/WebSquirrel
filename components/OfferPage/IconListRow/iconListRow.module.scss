@@ -30,7 +30,8 @@
     text-align: center;
     width: 100%;
   }
-  h3 {
+  h2 {
+    font-size: 2rem;
     color: colors.$squirrel;
     @include mixin.phone800px {
       font-size: 2rem;

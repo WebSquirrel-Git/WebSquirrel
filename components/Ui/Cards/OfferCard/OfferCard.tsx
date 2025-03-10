@@ -11,6 +11,7 @@ interface OfferCardPropsType {
   description: string;
   url: string;
   color: 'orange' | 'blue';
+  link: boolean;
 }
 
 const ICONS = {
@@ -25,6 +26,7 @@ const OfferCard = ({
   description,
   url,
   color,
+  link,
 }: OfferCardPropsType) => {
   const containerStyle =
     color === 'orange'
@@ -55,9 +57,11 @@ const OfferCard = ({
         </div>
         <span className={styles.description}>{description}</span>
       </div>
-      <Link className={linkStyle} href={url}>
-        DOWIEDZ SIĘ WIĘCEJ <img src={icon.src} />
-      </Link>
+      {link && (
+        <Link className={linkStyle} href={url}>
+          DOWIEDZ SIĘ WIĘCEJ <img src={icon.src} />
+        </Link>
+      )}
     </div>
   );
 };

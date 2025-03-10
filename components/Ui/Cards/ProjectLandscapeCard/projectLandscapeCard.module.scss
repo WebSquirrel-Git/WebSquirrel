@@ -1,0 +1,85 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
+.container {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 230px;
+  border-radius: 20px;
+  border: 2px solid colors.$squirrel;
+  background-color: transparent;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    .categoryBox {
+      overflow: hidden;
+      width: 0px;
+      padding: 0;
+    }
+    h3 {
+      overflow: hidden;
+      padding: 0;
+      opacity: 0;
+    }
+    .iconBox {
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      border: none;
+    }
+    .coverImage {
+      padding-top: 27px;
+      overflow: visible;
+      opacity: 1;
+      width: 396px;
+      height: 100px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  h3 {
+    color: colors.$squirrel;
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+.categoryBox {
+  display: flex;
+  flex-direction: column;
+  width: 346px;
+  text-align: left;
+  padding: 1rem;
+}
+.iconBox {
+  transition: all 0.3s;
+  position: absolute;
+  border-top-left-radius: 20px;
+  z-index: 1;
+  bottom: -2px;
+  right: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background-color: colors.$dark;
+  border-top: 2px solid colors.$squirrel;
+  border-left: 2px solid colors.$squirrel;
+}
+.coverImage {
+  transition: all 0.5s;
+  overflow: hidden;
+  opacity: 0;
+  // position: absolute;
+  // z-index: 2;
+  // top: -2px;
+  // left: -2px;
+  width: 0px;
+  height: 0px;
+}

@@ -11,7 +11,14 @@
     padding: 2rem;
   }
   h2 {
+    font-size: 2rem;
     color: colors.$squirrel;
+    padding-bottom: 5rem;
+    @include mixin.phone800px {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
   }
 }
 .rowBox {
