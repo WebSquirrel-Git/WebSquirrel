@@ -1,8 +1,9 @@
 'use client';
 import {useState} from 'react';
-import Filter, {FilterType, FilterTypes} from '../Filter/Filter';
+import Filter, {FilterPortfolioType, FilterTypes} from '../Filter/Filter';
 import styles from './hero.module.scss';
 import ProjectLandscapeCard from '@/components/Ui/Cards/ProjectLandscapeCard/ProjectLandscapeCard';
+import {PORTFOLIO_PROJECTS} from '@/utils/portfolio/projects';
 
 const FILTERS: FilterTypes[] = [
   {
@@ -44,7 +45,7 @@ const FILTERS: FilterTypes[] = [
 const Hero = () => {
   const [filters, setFilters] = useState(FILTERS);
 
-  const setActiveFilterHandler = (type: FilterType) => {
+  const setActiveFilterHandler = (type: FilterPortfolioType) => {
     setFilters((prevFilters) =>
       prevFilters.map((filter) =>
         filter.type === type
@@ -75,7 +76,9 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.projectsBox}>
-        <ProjectLandscapeCard />
+        {PORTFOLIO_PROJECTS.map((project, index) => (
+          <ProjectLandscapeCard {...project} key={index} />
+        ))}
       </div>
     </div>
   );

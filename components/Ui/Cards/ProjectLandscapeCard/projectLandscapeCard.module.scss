@@ -11,11 +11,16 @@
   border: 2px solid colors.$squirrel;
   background-color: transparent;
   justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0;
+  transition: all 0.5s;
   &:hover {
     cursor: pointer;
     align-items: center;
     justify-content: center;
     padding: 0;
+    background-size: cover;
     .categoryBox {
       overflow: hidden;
       width: 0px;
@@ -72,14 +77,7 @@
   border-top: 2px solid colors.$squirrel;
   border-left: 2px solid colors.$squirrel;
 }
-.coverImage {
-  transition: all 0.5s;
-  overflow: hidden;
-  opacity: 0;
-  // position: absolute;
-  // z-index: 2;
-  // top: -2px;
-  // left: -2px;
-  width: 0px;
-  height: 0px;
+.blue {
+  border-color: colors.$blue;
+  color: colors.$blue;
 }

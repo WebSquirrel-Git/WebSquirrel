@@ -1,17 +1,23 @@
 'use client';
 import styles from './filter.module.scss';
 
+export type PortfolioProjectStyleType = 'website' | 'graphic';
 export interface FilterTypes {
   title: string;
-  style: 'website' | 'graphic';
+  style: PortfolioProjectStyleType;
   active: boolean;
   index: number;
-  type: FilterType;
+  type: FilterPortfolioType;
 }
 interface FilterPropsType extends FilterTypes {
   onClick: () => void;
 }
-export type FilterType = 'website' | 'shop' | 'svg' | 'animation' | 'reel';
+export type FilterPortfolioType =
+  | 'website'
+  | 'shop'
+  | 'svg'
+  | 'animation'
+  | 'reel';
 const Filter = ({title, style, active, index, onClick}: FilterPropsType) => {
   if (style === 'website') {
     const filterStyle = active
