@@ -20,7 +20,7 @@ const Hero = () => {
         <p className={styles.textOrange}>
           PS nie zapomnij sprawdzić naszej oferty poniżej.
         </p>
-        <DefaultLink name="Sprawdź naszą ofertę" url="/" />
+        <DefaultLink name="Sprawdź naszą ofertę" url="/#offerWebsites" />
       </div>
       <img className={styles.logo} src={Logo.src} />
     </div>

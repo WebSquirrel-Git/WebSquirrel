@@ -38,7 +38,11 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
         >
           ELEMENTY GRAFICZNE I WIDEO
         </Link>
-        <Link onClick={hideMenuHandler} href="/" className={styles.listItem}>
+        <Link
+          onClick={hideMenuHandler}
+          href="/portfolio"
+          className={styles.listItem}
+        >
           PORTFOLIO
         </Link>
       </div>

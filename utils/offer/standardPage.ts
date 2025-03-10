@@ -2,20 +2,22 @@ import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
 import {IconListRowPropsType} from '@/components/OfferPage/IconListRow/IconListRow';
 const hero = {
   subheader: 'Strona internetowa',
-  title: 'Single Page',
-  price: '1300 - ∞ PLN',
+  title: 'Standard',
+  price: '2000 - ∞ PLN',
   description:
-    'Strona wizytówka to dobry wybór dla małych firm, które dopiero zaczynają swoją działalność i chcą przedstawić klientom profil swojej firmy.',
+    'Standardowa strona z kilkoma podstronami i podstawowymi funkcjonalnościami. Idealna dla firm, które świadczą więcej niż jedną usługę.',
 };
 
 const assumptions = [
-  'Wszystkie informacje o firmie umieszczone na jednej stronie.',
-  'Kategoryzacja informacji i umieszczenie ich w sekcjach. Każda sekcja powinna zawierać nagłówek. Poprawia to czytelności strony, SEO i powoduje zachowanie porządku i jasnego przekazu na stronie.',
-  'Grafiki - uważamy że to co wyróżnia dobrą stronę to jej autentyczność i historia więc zachęcamy do robienia zdjęć pokazujących waszą pracę, żeby jak najlepiej przedstawić Was klientowi. W przypadku braku własnych zdjęć stworzymy dostosowane ikony, które pomogą w zachowaniu estetyki na stronie. Jak zapewne wiecie czytanie ściany tekstu na stronie jest męczące dlatego wspominamy Wam o grafikach i ich alternatywach, które można użyć jako kreatywne przerywniki. ',
+  'Strona internetowa składająca się ze strony głównej oraz kilku podstron.',
+  'Strona główna podzielona na sekcję z krótkimi opisami podstron zachęcających do ich sprawdzenia. Główne zadanie to przedstawienie profilu firmy i tego co oferuje bez wdawania się w szczegółowe opisy - do tego użyjemy podstron.',
+  'Podstrony zawierają informację o poszczególnych usługach i opisach działalności firmy. W przypadku większej ilości informacji ich kategoryzacja, uporządkowanie oraz możliwość szybkiego dostępu jest kluczowym elementem. Podstrony pozwalają na ich bezpośrednie dodanie do wyszukiwarki google i tym samym zwiększają szanse na trafienie użytkownika na stronę firmy ze względu na bardziej szczegółowe słowa kluczowe dotyczące usługi.',
+  'Dobre SEO - opisy SEO muszą być krótkie i treściwe. Podstrony pozwalają na skupienie się wyłącznie na danym temacie i lepsze dopasowanie słów kluczowych do tematu. Kolejnym plusem jest możliwość bezpośredniego udostępniania linków dzięki czemu klient trafia bezpośrednio do informacji których potrzebuje. Budujemy także rzetelność zarówno podstrony jak i strony co podnosi pozycję na których wyświetla się nasza strona w wyszukiwarkach.',
 ];
 
 const priceIncludes = [
   'Konsultacje odnośnie projektu graficznego i zakodowanej strony w wersji developerskiej. Spotkania na google meets.',
+  'Stworzenie strony głównej oraz kilku podstron.',
   'Podstawowe ustawienie SEO pod wyszukiwarkę google. Dodanie domeny do Google Search Console i Google Analytics.',
   'Pomoc w wyborze i zakupie hostingu i domeny.',
   'Projekt graficzny',
@@ -33,7 +35,7 @@ const technologies = [
   'NextJs - Sass - TypeScript',
 ];
 
-interface SINGLE_PAGE_CONTENT_TYPE {
+interface STANDARD_PAGE_CONTENT_TYPE {
   hero: OffertHeroPropsType;
   assumptions: IconListRowPropsType;
   priceIncludes: IconListRowPropsType;
@@ -41,7 +43,7 @@ interface SINGLE_PAGE_CONTENT_TYPE {
   technologies: IconListRowPropsType;
 }
 
-export const SINGLE_PAGE_CONTENT: SINGLE_PAGE_CONTENT_TYPE = {
+export const STANDARD_PAGE_CONTENT: STANDARD_PAGE_CONTENT_TYPE = {
   hero: hero,
   assumptions: {
     title: 'Założenia',

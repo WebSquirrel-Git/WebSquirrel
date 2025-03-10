@@ -1,0 +1,81 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 300vh;
+  padding: 10vh 3rem 3rem 3rem;
+  position: relative;
+}
+.filtersContainer {
+  position: fixed;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-right: 3px solid colors.$squirrel;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 10vh 3rem 3rem 3rem;
+  justify-content: center;
+  gap: 3rem;
+  background-color: colors.$dark;
+  @include mixin.pc1000px {
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+    top: auto;
+    bottom: 0;
+    gap: 1rem;
+    border-right: 0px;
+    border-top: 2px solid colors.$squirrel;
+  }
+  @include mixin.phone800px {
+    padding: 1rem;
+  }
+}
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  @include mixin.pc1250px {
+    width: 100%;
+  }
+  @include mixin.pc1000px {
+    display: none;
+  }
+  h1 {
+    color: colors.$squirrel;
+    font-size: 4rem;
+    @include mixin.pc1250px {
+      font-size: 2.5rem;
+    }
+  }
+  p {
+    @include mixin.pc1250px {
+      font-size: 1rem;
+    }
+  }
+}
+.filtersBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include mixin.pc1000px {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+}
+.projectsBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  @include mixin.pc1000px {
+    width: 100%;
+  }
+}

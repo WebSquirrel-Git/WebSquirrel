@@ -3,12 +3,14 @@ import styles from './footer.module.scss';
 import CompanyName from '@/public/assets/logo/WebSquirrel-name.svg';
 import Logo from '@/public/assets/logo/WebSquirrel-logo-sm.svg';
 import Link from 'next/link';
+import {usePathname} from 'next/navigation';
 
 const Footer = () => {
+  const pathName = usePathname();
+  if (pathName.includes('portfolio')) return null;
   return (
     <div className={styles.container}>
       <img src={CompanyName.src} className={styles.logoName} />
-      {/* <div className={styles.navBox}> */}
       <div className={styles.listColumn}>
         <span className={styles.listTitle}>Mapa</span>
         <Link href="/" className={styles.link}>

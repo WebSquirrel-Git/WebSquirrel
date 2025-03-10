@@ -10,6 +10,7 @@ const PAGES_OFFERT = [
     description:
       'Strona wizytówka to dobry wybór dla małych firm, które dopiero zaczynają swoją działalność i chcą przedstawić klientom profil swojej firmy.',
     url: '/oferta/strony/singlepage',
+    link: true,
   },
   {
     type: 'Strona internetowa',
@@ -18,6 +19,7 @@ const PAGES_OFFERT = [
     description:
       'Standardowa strona z kilkoma podstronami i podstawowymi funkcjonalnościami. Idealna dla firm, które świadczą więcej niż jedną usługę.',
     url: '/oferta/strony/standard',
+    link: true,
   },
   {
     type: 'Strona internetowa',
@@ -26,6 +28,7 @@ const PAGES_OFFERT = [
     description:
       'Rozbudowana strona internetowa z kilkoma podstronami i niestandardowymi funkcjonalnościami. Wymyśliłeś coś nietypowego czego nie ma na innych stronach i chcesz to mieć u siebie? Nie ma problemu. Skontaktuj się z nami to ustalimy czy jesteśmy w stanie to zrobić.',
     url: '/oferta/strony/premium',
+    link: true,
   },
   {
     type: 'Strona internetowa',
@@ -34,6 +37,7 @@ const PAGES_OFFERT = [
     description:
       'Jak to mówią sky is the limit. Ta oferta jest dla osób które chcą czegoś więcej niż standardowa strona i oczekują zastosowania złożonej logiki i mocno nietypowego designu. Nowe innowacyjne pomysły to jest to co lubimy najbardziej.',
     url: '/oferta/strony/creative',
+    link: true,
   },
   {
     type: 'Sklep internetowy ',
@@ -42,6 +46,7 @@ const PAGES_OFFERT = [
     description:
       'Prosty sklep internetowy zbudowany na WooCommerce. Idealne rozwiązanie dla startujących firm oferujących sprzedaż produktów lub usług. Zakres usług związanych ze sklepem: płatności online, sposób dostawy, zarządzanie SKU, aktualizacja stanu zamówienia e-mail dla klienta.',
     url: '/oferta/sklepy/woocommerce',
+    link: true,
   },
 ];
 

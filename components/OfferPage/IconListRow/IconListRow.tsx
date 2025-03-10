@@ -24,7 +24,7 @@ const IconListRow = ({list, icon, title}: IconListRowPropsType) => {
     <div className={styles.container}>
       <img src={img.src} className={styles.icon} />
       <div className={styles.contentBox}>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         {list.map((item, index) => (
           <p key={index}>{item}</p>
         ))}

@@ -1,23 +1,27 @@
 import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
 import {IconListRowPropsType} from '@/components/OfferPage/IconListRow/IconListRow';
 const hero = {
-  subheader: 'Strona internetowa',
-  title: 'Single Page',
-  price: '1300 - ∞ PLN',
+  subheader: 'Sklep internetowy',
+  title: 'WooCommerce',
+  price: '2000 - ∞ PLN',
   description:
-    'Strona wizytówka to dobry wybór dla małych firm, które dopiero zaczynają swoją działalność i chcą przedstawić klientom profil swojej firmy.',
+    'Prosty sklep internetowy zbudowany na WooCommerce. Idealne rozwiązanie dla startujących firm oferujących sprzedaż produktów lub usług.',
 };
 
 const assumptions = [
-  'Wszystkie informacje o firmie umieszczone na jednej stronie.',
-  'Kategoryzacja informacji i umieszczenie ich w sekcjach. Każda sekcja powinna zawierać nagłówek. Poprawia to czytelności strony, SEO i powoduje zachowanie porządku i jasnego przekazu na stronie.',
-  'Grafiki - uważamy że to co wyróżnia dobrą stronę to jej autentyczność i historia więc zachęcamy do robienia zdjęć pokazujących waszą pracę, żeby jak najlepiej przedstawić Was klientowi. W przypadku braku własnych zdjęć stworzymy dostosowane ikony, które pomogą w zachowaniu estetyki na stronie. Jak zapewne wiecie czytanie ściany tekstu na stronie jest męczące dlatego wspominamy Wam o grafikach i ich alternatywach, które można użyć jako kreatywne przerywniki. ',
+  'Strona sklepu składająca się ze strony głównej, podstrony sklepu zawierającej informacje o produktach oraz podstronach produktów.',
+  'Strona główna podzielona na sekcję z opisami działalności firmy, oraz kategorii produktów zachęcających do sprawdzenia oferty.',
+  'Podstrona z produktami zawiera listę produktów z możliwością ich filtrowania.',
+  'Każdy produkt posiada swoją podstronę ze szczegółowym opisem, ceną, SKU, możliwością dostawy itp.',
+  'Integracja z aplikacjami umożliwiającymi płatności online oraz formy dostawy.',
 ];
 
 const priceIncludes = [
   'Konsultacje odnośnie projektu graficznego i zakodowanej strony w wersji developerskiej. Spotkania na google meets.',
+  'Stworzenie strony głównej sklepu oraz podstron produktów.',
   'Podstawowe ustawienie SEO pod wyszukiwarkę google. Dodanie domeny do Google Search Console i Google Analytics.',
   'Pomoc w wyborze i zakupie hostingu i domeny.',
+  'Wdrożenie integracji płatności online i wyboru sposobu dostawy.',
   'Projekt graficzny',
   'Formularz kontaktowy',
 ];
@@ -25,15 +29,12 @@ const priceIncludes = [
 const priceNotIncludes = [
   'Pisanie tekstów na stronę - uważamy że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Nasza praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
   'Nie kupujemy domen i hostingów.',
+  'Wszelkie rejestracje i opłaty związane z aktywacją usług płatności online i sposobów dostawy leżą po stronie klienta. W przypadku występowania problemów służymy pomocą.',
 ];
 
-const technologies = [
-  'Wordpress',
-  'HTML - CSS - JavaScript',
-  'NextJs - Sass - TypeScript',
-];
+const technologies = ['WooCommerce'];
 
-interface SINGLE_PAGE_CONTENT_TYPE {
+interface WOOCOMMERCE_SHOP_CONTENT_TYPE {
   hero: OffertHeroPropsType;
   assumptions: IconListRowPropsType;
   priceIncludes: IconListRowPropsType;
@@ -41,7 +42,7 @@ interface SINGLE_PAGE_CONTENT_TYPE {
   technologies: IconListRowPropsType;
 }
 
-export const SINGLE_PAGE_CONTENT: SINGLE_PAGE_CONTENT_TYPE = {
+export const WOOCOMMERCE_SHOP_CONTENT: WOOCOMMERCE_SHOP_CONTENT_TYPE = {
   hero: hero,
   assumptions: {
     title: 'Założenia',
