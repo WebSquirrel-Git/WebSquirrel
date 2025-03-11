@@ -2,19 +2,124 @@
 import styles from './popup.module.scss';
 import CloseCircleOrangeIcon from '@/public/assets/icons/close-circle-orange-icon.svg';
 import CloseCircleBlueIcon from '@/public/assets/icons/close-circle-blue-icon.svg';
+import ForwardCircleOrangeIcon from '@/public/assets/icons/chevron-forward-circle-orange-icon.svg';
+import ForwardCircleBlueIcon from '@/public/assets/icons/chevron-forward-circle-blue-icon.svg';
+import BackCircleOrangeIcon from '@/public/assets/icons/chevron-back-circle-orange-icon.svg';
+import BackCircleBlueIcon from '@/public/assets/icons/chevron-back-circle-blue-icon.svg';
+import NextJsIcon from '@/public/assets/icons/next-js-icon.svg';
+import TypeScriptIcon from '@/public/assets/icons/typescript-icon.svg';
+import SassIcon from '@/public/assets/icons/sass-icon.svg';
+import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
+import Link from 'next/link';
+import NemoCover from '@/public/portfolio/atzmdesign/cover.svg';
+import {PortfolioPopupType} from '@/utils/portfolio/projects';
+import {useState} from 'react';
+import {PortfolioProjectStyleType} from '../Filter/Filter';
 
-interface PopupPropsType {
+export interface PopupPropsType extends PortfolioPopupType {
   onClosePopup: () => void;
+  style: PortfolioProjectStyleType;
 }
 
-const Popup = ({onClosePopup}: PopupPropsType) => {
+const Popup = ({
+  onClosePopup,
+  title,
+  description,
+  technologiesIcons,
+  url,
+  frontImages,
+  reverseImages,
+  style,
+}: PopupPropsType) => {
+  const containerStyles =
+    style === 'graphic'
+      ? `${styles.container} ${styles.blue}`
+      : styles.container;
+  const closeIconBoxStyles =
+    style === 'graphic'
+      ? `${styles.closeIconBox} ${styles.closeIconBoxBlue}`
+      : styles.closeIconBox;
+  const navButtonsBoxStyles =
+    style === 'graphic'
+      ? `${styles.navButtonsBox} ${styles.navButtonsBoxBlue}`
+      : styles.navButtonsBox;
+  const titleStyles =
+    style === 'graphic' ? `${styles.title} ${styles.blue}` : styles.title;
+  const subHeaderStyles =
+    style === 'graphic'
+      ? `${styles.subHeader} ${styles.blue}`
+      : styles.subHeader;
+  const imgBorderStyles =
+    style === 'graphic' ? styles.imgBlueBorder : styles.imgOrangeBorder;
+
+  const backCircleIcon =
+    style === 'graphic' ? BackCircleBlueIcon : BackCircleOrangeIcon;
+  const forwardCircleIcon =
+    style === 'graphic' ? ForwardCircleBlueIcon : ForwardCircleOrangeIcon;
+  const closeCircleIcon =
+    style === 'graphic' ? CloseCircleBlueIcon : CloseCircleOrangeIcon;
+
+  const [showReverse, setShowReverse] = useState(false);
+
+  const showReverseHandler = () => {
+    setShowReverse(true);
+  };
+  const showFrontHandler = () => {
+    setShowReverse(false);
+  };
+
   return (
-    <div className={styles.layout} onClick={onClosePopup}>
-      <div className={styles.container}>
-        <button className={styles.closeIconBox}>
-          <img src={CloseCircleOrangeIcon.src} />
+    <div className={styles.layout}>
+      <div className={containerStyles}>
+        <button className={closeIconBoxStyles} onClick={onClosePopup}>
+          <img src={closeCircleIcon.src} />
         </button>
-        <span className={styles.title}>NEMO Sportowa Przygoda</span>
+        <div className={navButtonsBoxStyles}>
+          <div className={styles.buttonsBox}>
+            <button className={styles.button} onClick={showFrontHandler}>
+              <img src={backCircleIcon.src} />
+            </button>
+            <button className={styles.button} onClick={showReverseHandler}>
+              <img src={forwardCircleIcon.src} />
+            </button>
+          </div>
+        </div>
+        <span className={titleStyles}>{title}</span>
+        {!showReverse && (
+          <div className={styles.frontBox}>
+            <div className={styles.contentBox}>
+              <span className={subHeaderStyles}>O projekcie</span>
+              <p>{description}</p>
+              <span className={subHeaderStyles}>Użyte technologie</span>
+              <div className={styles.iconsBox}>
+                {technologiesIcons.map((icon, index) => (
+                  <img src={icon.src} key={index} />
+                ))}
+              </div>
+              <span className={subHeaderStyles}>Strona internetowa</span>
+              <Link href={url}>{url}</Link>
+            </div>
+            <div className={styles.imageBox}>
+              {frontImages.map((image, index) => (
+                <img className={imgBorderStyles} src={image.src} key={index} />
+              ))}
+            </div>
+          </div>
+        )}
+        {showReverse && (
+          <>
+            <div className={styles.reverseBox}>
+              {reverseImages.map((image, index) => (
+                <img className={imgBorderStyles} src={image.src} key={index} />
+              ))}
+            </div>
+            <div className={styles.reverseBoxSm}>
+              {frontImages.map((image, index) => (
+                <img className={imgBorderStyles} src={image.src} key={index} />
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

@@ -63,23 +63,24 @@
   @include mixin.phone800px {
     width: 90%;
   }
-}
-.listItem {
-  font-family: 'RobotoFlex';
-  font-weight: 600;
-  color: colors.$white;
-  font-size: 2rem;
-  padding: 1rem 0.7rem;
-  border-bottom: 2px solid colors.$squirrel;
-  transition: all 0.5s;
-  @include mixin.phone800px {
-    font-size: 1.2rem;
+  .listItem {
+    font-family: 'RobotoFlex';
+    font-weight: 600;
+    color: colors.$white;
+    font-size: 2rem;
+    padding: 1rem 0.7rem;
+    border-bottom: 2px solid colors.$squirrel;
+    transition: all 0.5s;
+    @include mixin.phone800px {
+      font-size: 1.2rem;
+    }
+    &:hover {
+      cursor: pointer;
+      color: colors.$squirrel;
+    }
   }
-  &:hover {
-    cursor: pointer;
-    color: colors.$squirrel;
-  }
 }
+
 .contactBox {
   display: flex;
   box-sizing: border-box;
