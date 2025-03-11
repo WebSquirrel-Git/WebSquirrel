@@ -70,7 +70,12 @@ const ProjectLandscapeCard = ({
         </span>
       </button>
       {popupActive && (
-        <Popup style={style} {...popup} onClosePopup={closePopupHandler} />
+        <Popup
+          style={style}
+          type={type}
+          {...popup}
+          onClosePopup={closePopupHandler}
+        />
       )}
     </>
   );
