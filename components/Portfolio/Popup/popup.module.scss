@@ -17,13 +17,19 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 65%;
-  height: 75%;
+  width: 75%;
+  height: 85%;
   border: 3px solid colors.$squirrel;
   border-radius: 20px;
   z-index: 4;
   background-color: colors.$dark;
-  padding: 0 3rem 88px 3rem;
+  padding: 0 3rem 70px 3rem;
+  @include mixin.phone500px {
+    width: 90%;
+    height: 90%;
+    padding: 0 1rem 60px 1rem;
+    border-width: 2px;
+  }
 }
 .title {
   display: flex;
@@ -31,9 +37,20 @@
   font-family: 'poppins-600';
   color: colors.$squirrel;
   font-size: 1.5rem;
-  height: 88px;
+  height: 12%;
   width: 80%;
   border-bottom: 2px solid colors.$squirrel;
+  @include mixin.phone700px {
+    height: 9%;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  @include mixin.phone500px {
+    height: 13%;
+    width: 80%;
+    font-size: 1rem;
+    border-width: 1px;
+  }
 }
 .closeIconBox {
   position: absolute;
@@ -41,7 +58,6 @@
   height: 88px;
   top: -3px;
   right: -3px;
-  border: none;
   background-color: colors.$dark;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 18px;
@@ -50,9 +66,217 @@
   border-right: 3px solid colors.$dark;
   border-top: 3px solid colors.$dark;
   transition: all 0.5s;
+  @include mixin.phone700px {
+    width: 60px;
+    height: 60px;
+  }
+  @include mixin.phone500px {
+    top: -2px;
+    right: -2px;
+    border-width: 2px;
+  }
+  img {
+    @include mixin.phone700px {
+      width: 30px;
+      height: 30px;
+    }
+  }
   &:hover {
     cursor: pointer;
     border-right: 3px solid colors.$squirrel;
     border-top: 3px solid colors.$squirrel;
+    @include mixin.phone500px {
+      border-width: 2px;
+    }
   }
+}
+.navButtonsBox {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 70px;
+  width: 150px;
+  bottom: -3px;
+  left: -3px;
+  background-color: colors.$dark;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 15px;
+  border-top: 3px solid colors.$squirrel;
+  border-right: 3px solid colors.$squirrel;
+  border-left: 3px solid colors.$dark;
+  border-bottom: 3px solid colors.$dark;
+  @include mixin.phone700px {
+    width: 120px;
+    height: 55px;
+  }
+  @include mixin.phone500px {
+    border-width: 2px;
+  }
+  .buttonsBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    border: 3px solid colors.$squirrel;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    @include mixin.phone500px {
+      border-width: 2px;
+    }
+    .button {
+      background-color: transparent;
+      border: none;
+      width: 50%;
+
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 28px;
+        height: 28px;
+        @include mixin.phone700px {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.frontBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  height: 88%;
+  justify-content: space-between;
+  align-items: center;
+  @include mixin.phone700px {
+    height: 91%;
+  }
+}
+.reverseBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  height: 88%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.5s;
+  @include mixin.pc1250px {
+    display: none;
+  }
+  img {
+    border: 1px solid colors.$squirrel;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.reverseBoxSm {
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  padding: 1rem 0;
+  height: 88%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.5s;
+  @include mixin.pc1250px {
+    display: flex;
+  }
+  img {
+    border: 1px solid colors.$squirrel;
+    height: auto;
+    max-height: 48%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  gap: 0.7rem;
+  @include mixin.pc1250px {
+    width: 100%;
+  }
+  p,
+  a {
+    font-size: 1rem;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
+  }
+}
+.subHeader {
+  font-family: 'poppins-600';
+  font-size: 1.2rem;
+  color: colors.$squirrel;
+  @include mixin.phone500px {
+    font-size: 1rem;
+  }
+}
+.iconsBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  img {
+    width: 24px;
+    @include mixin.phone500px {
+      width: 16px;
+    }
+  }
+}
+.imageBox {
+  box-sizing: border-box;
+  display: flex;
+  width: 45%;
+  height: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  @include mixin.pc1250px {
+    display: none;
+  }
+  img {
+    width: 100%;
+    height: 47%;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid colors.$squirrel;
+  }
+}
+.blue {
+  color: colors.$blue !important;
+  border-color: colors.$blue !important;
+}
+.closeIconBoxBlue {
+  border-bottom: 3px solid colors.$blue !important;
+  border-left: 3px solid colors.$blue !important;
+  &:hover {
+    border-right: 3px solid colors.$blue !important;
+    border-top: 3px solid colors.$blue !important;
+  }
+}
+.navButtonsBoxBlue {
+  border-top: 3px solid colors.$blue !important;
+  border-right: 3px solid colors.$blue !important;
+  .buttonsBox {
+    border-color: colors.$blue !important;
+  }
+}
+.imgOrangeBorder {
+  border-color: colors.$squirrel;
+}
+.imgBlueBorder {
+  border-color: colors.$blue !important;
 }

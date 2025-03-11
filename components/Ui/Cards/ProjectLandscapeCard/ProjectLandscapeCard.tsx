@@ -8,6 +8,7 @@ import OpenOrangeIcon from '@/public/assets/icons/open-orange-icon.svg';
 import OpenBlueIcon from '@/public/assets/icons/open-blue-icon.svg';
 import Popup from '@/components/Portfolio/Popup/Popup';
 import {useState} from 'react';
+import {PortfolioPopupType} from '@/utils/portfolio/projects';
 
 export interface ProjectLandscapeCardPropsType {
   title: string;
@@ -17,6 +18,7 @@ export interface ProjectLandscapeCardPropsType {
   coverImage: any;
   active: boolean;
   style: PortfolioProjectStyleType;
+  popup: PortfolioPopupType;
 }
 
 const ProjectLandscapeCard = ({
@@ -27,10 +29,12 @@ const ProjectLandscapeCard = ({
   coverImage,
   active,
   style,
+  popup,
 }: ProjectLandscapeCardPropsType) => {
   const [popupActive, setPopupActive] = useState(false);
 
   const openIcon = style === 'graphic' ? OpenBlueIcon.src : OpenOrangeIcon.src;
+  const titleStyles = style === 'graphic' ? styles.blue : '';
   const containerStyles =
     style === 'graphic'
       ? `${styles.container} ${styles.blue}`
@@ -53,7 +57,7 @@ const ProjectLandscapeCard = ({
         className={containerStyles}
         style={{backgroundImage: `url(${coverImage})`}}
       >
-        <h3>{title}</h3>
+        <h3 className={titleStyles}>{title}</h3>
         <div className={styles.categoryBox}>
           <p>
             <b>{typeTitle}</b>
@@ -65,7 +69,9 @@ const ProjectLandscapeCard = ({
           <img src={openIcon} />
         </span>
       </button>
-      {popupActive && <Popup onClosePopup={closePopupHandler} />}
+      {popupActive && (
+        <Popup style={style} {...popup} onClosePopup={closePopupHandler} />
+      )}
     </>
   );
 };

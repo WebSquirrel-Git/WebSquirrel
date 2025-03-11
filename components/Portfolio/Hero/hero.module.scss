@@ -4,9 +4,13 @@
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
-  min-height: 300vh;
+  min-height: auto;
   padding: 10vh 3rem 3rem 3rem;
   position: relative;
+  width: 100%;
+  @include mixin.phone500px {
+    padding: 10vh 1rem 1rem 1rem;
+  }
 }
 .filtersContainer {
   position: fixed;
@@ -74,7 +78,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
   width: 60%;
+  gap: 1rem;
   @include mixin.pc1000px {
     width: 100%;
   }
