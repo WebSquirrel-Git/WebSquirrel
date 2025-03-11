@@ -14,11 +14,12 @@ import Link from 'next/link';
 import NemoCover from '@/public/portfolio/atzmdesign/cover.svg';
 import {PortfolioPopupType} from '@/utils/portfolio/projects';
 import {useState} from 'react';
-import {PortfolioProjectStyleType} from '../Filter/Filter';
+import {FilterPortfolioType, PortfolioProjectStyleType} from '../Filter/Filter';
 
 export interface PopupPropsType extends PortfolioPopupType {
   onClosePopup: () => void;
   style: PortfolioProjectStyleType;
+  type: FilterPortfolioType;
 }
 
 const Popup = ({
@@ -30,6 +31,7 @@ const Popup = ({
   frontImages,
   reverseImages,
   style,
+  type,
 }: PopupPropsType) => {
   const containerStyles =
     style === 'graphic'
@@ -97,26 +99,83 @@ const Popup = ({
                 ))}
               </div>
               <span className={subHeaderStyles}>Strona internetowa</span>
-              <Link href={url}>{url}</Link>
+              {url && <Link href={url}>{url}</Link>}
             </div>
             <div className={styles.imageBox}>
-              {frontImages.map((image, index) => (
-                <img className={imgBorderStyles} src={image.src} key={index} />
-              ))}
+              {type !== 'reel' &&
+                type !== 'animation' &&
+                frontImages.map((image, index) => (
+                  <img
+                    className={imgBorderStyles}
+                    src={image.src}
+                    key={index}
+                  />
+                ))}
+              {(type == 'reel' || type == 'animation') &&
+                frontImages.map((video, index) => (
+                  <video
+                    className={imgBorderStyles}
+                    key={index}
+                    src={video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                  ></video>
+                ))}
             </div>
           </div>
         )}
         {showReverse && (
           <>
             <div className={styles.reverseBox}>
-              {reverseImages.map((image, index) => (
-                <img className={imgBorderStyles} src={image.src} key={index} />
-              ))}
+              {type !== 'reel' &&
+                type !== 'animation' &&
+                reverseImages.map((image, index) => (
+                  <img
+                    className={imgBorderStyles}
+                    src={image.src}
+                    key={index}
+                  />
+                ))}
+              {(type == 'reel' || type == 'animation') &&
+                reverseImages.map((video, index) => (
+                  <video
+                    className={imgBorderStyles}
+                    key={index}
+                    src={video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                  ></video>
+                ))}
             </div>
             <div className={styles.reverseBoxSm}>
-              {frontImages.map((image, index) => (
-                <img className={imgBorderStyles} src={image.src} key={index} />
-              ))}
+              {type !== 'reel' &&
+                type !== 'animation' &&
+                frontImages.map((image, index) => (
+                  <img
+                    className={imgBorderStyles}
+                    src={image.src}
+                    key={index}
+                  />
+                ))}
+              {(type == 'reel' || type == 'animation') &&
+                reverseImages.map((video, index) => (
+                  <video
+                    className={imgBorderStyles}
+                    key={index}
+                    src={video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                  ></video>
+                ))}
             </div>
           </>
         )}

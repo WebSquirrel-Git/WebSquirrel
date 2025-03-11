@@ -29,6 +29,7 @@ import NemoLogoImg2 from '@/public/portfolio/nemologo/nemo-logo-2.webp';
 import NemoLogoImg3 from '@/public/portfolio/nemologo/nemo-logo-3.webp';
 import NemoLogoImg4 from '@/public/portfolio/nemologo/nemo-logo-4.webp';
 import NemoLogoImg5 from '@/public/portfolio/nemologo/nemo-logo-5.webp';
+import ClientAnimationsCoverImage from '@/public/portfolio/clientanimations/cover.svg';
 interface ProjectType extends ProjectLandscapeCardPropsType {
   orientation: 'landscape' | 'portrait';
   popup: PortfolioPopupType;
@@ -37,7 +38,7 @@ export interface PortfolioPopupType {
   title: string;
   description: string;
   technologiesIcons: any[];
-  url: string;
+  url?: string;
   frontImages: any[];
   reverseImages: any[];
 }
@@ -122,6 +123,46 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       url: 'www.nemosportowaprzygoda.pl',
       frontImages: [NemoLogoImg1, NemoLogoImg2],
       reverseImages: [NemoLogoImg3, NemoLogoImg4, NemoLogoImg5],
+    },
+  },
+  {
+    title: 'Rolki promocyjne ATZM',
+    type: 'reel',
+    orientation: 'landscape',
+    typeTitle: 'Rolka promocyjna',
+    mainTechnology: 'Figma, Jitter',
+    coverImage: AtzmCoverImage.src,
+    active: false,
+    style: 'graphic',
+    popup: {
+      title: 'Rolki promocyjne ATZM',
+      description:
+        'Po stworzeniu sklepu internetowego dla ATZM Design nadszedł czas na jego prezentację na ich socjal mediach. Mieliśmy gotowy projekt graficzny strony w figmie więc zaproponowaliśmy stworzenie kilku rolek promocyjnych w Jitterze. Efekty naszej pracy możecie sprawdzić na wideo obok oraz na SM ATZM Design.',
+      technologiesIcons: [FigmaBlueIcon],
+      url: 'www.nemosportowaprzygoda.pl',
+      frontImages: ['/portfolio/atzmreel/atzm-reel-1.mp4'],
+      reverseImages: ['/portfolio/atzmreel/atzm-reel-2.mp4'],
+    },
+  },
+  {
+    title: 'Animacje dla klienta',
+    type: 'animation',
+    orientation: 'landscape',
+    typeTitle: 'Animacje',
+    mainTechnology: 'HTML, CSS',
+    coverImage: ClientAnimationsCoverImage.src,
+    active: false,
+    style: 'graphic',
+    popup: {
+      title: 'Animacje dla klienta',
+      description:
+        'Specjalnie dla jednego z klientów przerobiliśmy kilka wideo w formacie GIF na animacje HTML + CSS. Głównym problemem było to, że skalowanie wideo w formacie GIF powoduje znaczną utratę jakości. Idealnym rozwiązaniem było zastosowanie animacji CSS na zdjęciach w formacie SVG zaprojektowanych przez nas. Animacje można bez problemów skalować i zajmują znacznie mniej przestrzeni dyskowej.',
+      technologiesIcons: [FigmaBlueIcon],
+      frontImages: ['/portfolio/clientanimations/animation-2.mp4'],
+      reverseImages: [
+        '/portfolio/clientanimations/animation-3.mp4',
+        '/portfolio/clientanimations/animation-1.mp4',
+      ],
     },
   },
   // {

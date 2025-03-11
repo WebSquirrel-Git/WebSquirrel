@@ -176,6 +176,11 @@
     object-fit: cover;
     object-position: top;
   }
+  video {
+    border: 2px solid colors.$squirrel;
+    height: 100%;
+    width: auto;
+  }
 }
 .reverseBoxSm {
   box-sizing: border-box;
@@ -197,6 +202,15 @@
     width: 100%;
     object-fit: cover;
     object-position: top;
+  }
+  video {
+    display: none;
+    &:nth-of-type(1) {
+      display: flex;
+      border: 2px solid colors.$squirrel;
+      height: 100%;
+      width: auto;
+    }
   }
 }
 .contentBox {
@@ -253,6 +267,11 @@
     object-fit: cover;
     object-position: top;
     border: 1px solid colors.$squirrel;
+  }
+  video {
+    border: 2px solid colors.$squirrel;
+    height: 100%;
+    width: auto;
   }
 }
 .blue {
