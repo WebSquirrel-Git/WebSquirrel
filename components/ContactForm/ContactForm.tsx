@@ -3,8 +3,136 @@ import styles from './contactForm.module.scss';
 import Logo from '@/public/assets/logo/WebSquirrel-postman-logo.svg';
 import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
 import SendIcon from '@/public/assets/icons/send-icon.svg';
+import CheckmarkGreenIcon from '@/public/assets/icons/checkmark-green-icon.svg';
+import {useState} from 'react';
 
-const ContactForm = () => {
+interface ContactFormPropsType {
+  contactFormType:
+    | 'All'
+    | 'Strona internetowa'
+    | 'Sklep internetowy'
+    | 'Grafika';
+}
+
+const ContactForm = ({contactFormType}: ContactFormPropsType) => {
+  const initialFormDataState = {
+    name: {
+      value: '',
+      error: false,
+      errorMessage: 'Za krótkie imię',
+    },
+    email: {
+      value: '',
+      error: false,
+      errorMessage: 'Popraw adres e-mail',
+    },
+    contact_topic: {
+      value: contactFormType === 'All' ? '' : contactFormType,
+      error: false,
+      errorMessage: '',
+    },
+    message: {
+      value: '',
+      error: false,
+      errorMessage: 'Za krótka wiadomość',
+    },
+  };
+  const [formData, setFormData] = useState(initialFormDataState);
+
+  const [status, setStatus] = useState<'waiting' | 'sending' | 'ok' | 'fail'>(
+    'waiting'
+  );
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const {name, value} = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: {
+        ...prevData[name as keyof typeof prevData],
+        value,
+        error: false, // Resetowanie błędu po wpisaniu nowej wartości
+        errorMessage: prevData[name as keyof typeof prevData].errorMessage,
+      },
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    let dataCorrect = true;
+    if (formData.email.value.trim().replace(/ /g, '').length <= 3) {
+      setFormData((prevData) => ({
+        ...prevData,
+        email: {...prevData.email, error: true},
+      }));
+      dataCorrect = false;
+    }
+    if (formData.contact_topic.value === '') {
+      setFormData((prevData) => ({
+        ...prevData,
+        contact_topic: {...prevData.contact_topic, error: true},
+      }));
+      dataCorrect = false;
+    }
+    if (formData.name.value.trim().replace(/ /g, '').length < 3) {
+      setFormData((prevData) => ({
+        ...prevData,
+        name: {...prevData.name, error: true},
+      }));
+      dataCorrect = false;
+    }
+    if (formData.message.value.trim().replace(/ /g, '').length < 10) {
+      setFormData((prevData) => ({
+        ...prevData,
+        message: {...prevData.message, error: true},
+      }));
+      dataCorrect = false;
+    }
+
+    if (
+      !formData.name.error &&
+      !formData.email.error &&
+      !formData.message.error &&
+      !formData.contact_topic.error &&
+      dataCorrect
+    ) {
+      try {
+        setStatus('sending');
+
+        const dataToSend = {
+          name: formData.name.value,
+          email: formData.email.value,
+          contact_topic: formData.contact_topic.value,
+          message: formData.message.value,
+        };
+
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(dataToSend),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          setStatus('ok');
+          console.log('Wiadomość wysłana!');
+        } else {
+          setStatus('fail');
+          console.log(result.error || 'Błąd wysyłania wiadomości.');
+        }
+      } catch (error) {
+        setStatus('fail');
+        console.log('Błąd wysyłania wiadomości.');
+      }
+
+      setTimeout(() => {
+        setFormData(initialFormDataState);
+        setStatus('waiting');
+      }, 3000);
+    }
+  };
+
   return (
     <section id="contact" className={styles.container}>
       <div className={styles.formContainer}>
@@ -18,48 +146,97 @@ const ContactForm = () => {
           <img src={PhoneIcon.src} />
           <p>+48 728 327 596</p>
         </span>
-        <form className={styles.form}>
-          <input className={styles.input} placeholder="Twoje imię" />
-          <input className={styles.input} placeholder="E-mail" />
-          <div className={styles.radioButtonsBox}>
-            <span className={styles.radioButton}>
-              <input
-                type="radio"
-                id="website"
-                name="contact_topic"
-                value="Strona internetowa"
-              />
-              <label htmlFor="website">Strona internetowa</label>
-            </span>
-            <span className={styles.radioButton}>
-              <input
-                type="radio"
-                id="shop"
-                name="contact_topic"
-                value="Sklep internetowy"
-              />
-              <label htmlFor="shop">Sklep internetowy</label>
-            </span>
-            <span className={styles.radioButton}>
-              <input
-                type="radio"
-                id="graphic"
-                name="contact_topic"
-                value="Grafika"
-              />
-              <label htmlFor="graphic">Grafika</label>
-            </span>
-          </div>
-          <textarea
-            className={styles.textArea}
-            placeholder="Treść Twojego pytania."
+        <form className={styles.form} onSubmit={handleSubmit}>
+          <input
+            className={
+              formData.name.error
+                ? `${styles.input} ${styles.error}`
+                : styles.input
+            }
+            placeholder="Twoje imię"
+            name="name"
+            value={formData.name.value}
+            required
+            onChange={handleChange}
           />
-          <button type="submit" className={styles.submitButton}>
-            Wyślij pytanie <img src={SendIcon.src} />
-          </button>
+          {formData.name.error && (
+            <span className={styles.errorMessage}>
+              {formData.name.errorMessage}
+            </span>
+          )}
+          <input
+            className={
+              formData.email.error
+                ? `${styles.input} ${styles.error}`
+                : styles.input
+            }
+            placeholder="E-mail"
+            name="email"
+            type="email"
+            value={formData.email.value}
+            required
+            onChange={handleChange}
+          />
+          {formData.email.error && (
+            <span className={styles.errorMessage}>
+              {formData.email.errorMessage}
+            </span>
+          )}
+          {contactFormType === 'All' && (
+            <div className={styles.radioButtonsBox}>
+              {['Strona internetowa', 'Sklep internetowy', 'Grafika'].map(
+                (topic) => (
+                  <span key={topic} className={styles.radioButton}>
+                    <input
+                      type="radio"
+                      id={topic}
+                      name="contact_topic"
+                      value={topic}
+                      checked={formData.contact_topic.value === topic}
+                      onChange={handleChange}
+                      required
+                    />
+                    <label htmlFor={topic}>{topic}</label>
+                  </span>
+                )
+              )}
+            </div>
+          )}
+
+          <textarea
+            className={
+              formData.message.error
+                ? `${styles.textArea} ${styles.error}`
+                : styles.textArea
+            }
+            placeholder="Treść Twojego pytania."
+            name="message"
+            value={formData.message.value}
+            required
+            onChange={handleChange}
+          />
+          {formData.message.error && (
+            <span className={styles.errorMessage}>
+              {formData.message.errorMessage}
+            </span>
+          )}
+          {status === 'waiting' && (
+            <button type="submit" className={styles.submitButton}>
+              Wyślij pytanie <img src={SendIcon.src} />
+            </button>
+          )}
+          {status === 'sending' && (
+            <button type="submit" className={styles.submitButton}>
+              Wysyłanie... <span className={styles.loader}></span>
+            </button>
+          )}
+          {status === 'ok' && (
+            <button type="submit" className={styles.submitButton}>
+              Sukces <img src={CheckmarkGreenIcon.src} />
+            </button>
+          )}
         </form>
       </div>
-      <img src={Logo.src} className={styles.logo} />
     </section>
   );
 };

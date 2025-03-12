@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Filter, {FilterPortfolioType, FilterTypes} from '../Filter/Filter';
 import styles from './hero.module.scss';
 import ProjectLandscapeCard from '@/components/Ui/Cards/ProjectLandscapeCard/ProjectLandscapeCard';
-import {PORTFOLIO_PROJECTS} from '@/utils/portfolio/projects';
+import {PORTFOLIO_PROJECTS, ProjectType} from '@/utils/portfolio/projects';
 
 const FILTERS: FilterTypes[] = [
   {
@@ -42,8 +42,11 @@ const FILTERS: FilterTypes[] = [
     index: 5,
   },
 ];
+
 const Hero = () => {
   const [filters, setFilters] = useState(FILTERS);
+  const [projectsToDisplay, setProjectsToDisplay] =
+    useState<ProjectType[]>(PORTFOLIO_PROJECTS);
 
   const setActiveFilterHandler = (type: FilterPortfolioType) => {
     setFilters((prevFilters) =>
@@ -53,7 +56,18 @@ const Hero = () => {
           : {...filter, active: false}
       )
     );
+    const newProjectToDisplay = PORTFOLIO_PROJECTS.filter(
+      (project) => project.type === type
+    );
+    if (!newProjectToDisplay) return;
+    setProjectsToDisplay(newProjectToDisplay);
   };
+
+  const removeActiveFilterHandler = () => {
+    setFilters(FILTERS);
+    setProjectsToDisplay(PORTFOLIO_PROJECTS);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.filtersContainer}>
@@ -68,7 +82,8 @@ const Hero = () => {
         <div className={styles.filtersBox}>
           {filters.map((filter, index) => (
             <Filter
-              onClick={() => setActiveFilterHandler(filter.type)}
+              onSetActiveFilter={() => setActiveFilterHandler(filter.type)}
+              onRemoveActiveFilter={removeActiveFilterHandler}
               key={index}
               {...filter}
             />
@@ -76,7 +91,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.projectsBox}>
-        {PORTFOLIO_PROJECTS.map((project, index) => (
+        {projectsToDisplay.map((project, index) => (
           <ProjectLandscapeCard {...project} key={index} />
         ))}
       </div>

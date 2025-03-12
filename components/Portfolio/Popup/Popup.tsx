@@ -6,12 +6,7 @@ import ForwardCircleOrangeIcon from '@/public/assets/icons/chevron-forward-circl
 import ForwardCircleBlueIcon from '@/public/assets/icons/chevron-forward-circle-blue-icon.svg';
 import BackCircleOrangeIcon from '@/public/assets/icons/chevron-back-circle-orange-icon.svg';
 import BackCircleBlueIcon from '@/public/assets/icons/chevron-back-circle-blue-icon.svg';
-import NextJsIcon from '@/public/assets/icons/next-js-icon.svg';
-import TypeScriptIcon from '@/public/assets/icons/typescript-icon.svg';
-import SassIcon from '@/public/assets/icons/sass-icon.svg';
-import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
 import Link from 'next/link';
-import NemoCover from '@/public/portfolio/atzmdesign/cover.svg';
 import {PortfolioPopupType} from '@/utils/portfolio/projects';
 import {useState} from 'react';
 import {FilterPortfolioType, PortfolioProjectStyleType} from '../Filter/Filter';
@@ -98,8 +93,13 @@ const Popup = ({
                   <img src={icon.src} key={index} />
                 ))}
               </div>
-              <span className={subHeaderStyles}>Strona internetowa</span>
-              {url && <Link href={url}>{url}</Link>}
+
+              {url && (
+                <>
+                  <span className={subHeaderStyles}>Strona internetowa</span>{' '}
+                  <a href={'https://' + url}>{'www.' + url}</a>
+                </>
+              )}
             </div>
             <div className={styles.imageBox}>
               {type !== 'reel' &&
@@ -183,4 +183,5 @@ const Popup = ({
     </div>
   );
 };
+
 export default Popup;
