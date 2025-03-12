@@ -17,7 +17,15 @@ const Hero = ({subheader, title, price, description}: OffertHeroPropsType) => {
       <span className={styles.subHeader}>Cena:</span>
       <span className={`${styles.subHeader} ${styles.orange}`}>{price}</span>
       <p>{description}</p>
-      <img className={styles.logoShield} src={ShieldLogo.src} />
+      <img
+        className={styles.logoShield}
+        src={ShieldLogo.src}
+        alt="logoShield"
+        title="logoShield"
+        width={144}
+        height={171}
+        loading="eager"
+      />
     </div>
   );
 };

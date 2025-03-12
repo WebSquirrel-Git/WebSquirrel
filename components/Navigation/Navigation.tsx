@@ -1,7 +1,6 @@
 'use client';
 import {useState} from 'react';
 import NavBar from './NavBar/NavBar';
-import styles from './navigation.module.scss';
 import NavMenu from './NavMenu/NavMenu';
 
 const Navigation = () => {

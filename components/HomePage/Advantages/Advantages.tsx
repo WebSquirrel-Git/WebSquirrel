@@ -40,7 +40,14 @@ const Advantages = () => {
         {ADVANTAGES_DATA.map((advantage, index) => (
           <div className={styles.advantageBox} key={index}>
             <div className={styles.advantageHeader}>
-              <img src={advantage.icon.src} />
+              <img
+                src={advantage.icon.src}
+                alt={`${advantage.header.toLowerCase()}Icon`}
+                title={`${advantage.header.toLowerCase()}Icon`}
+                width={101}
+                height={101}
+                loading="eager"
+              />
               <h3>{advantage.header}</h3>
             </div>
             <p>{advantage.description}</p>

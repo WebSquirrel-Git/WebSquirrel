@@ -9,7 +9,15 @@ interface CloseButtonPropsType {
 const CloseButton = ({onClick}: CloseButtonPropsType) => {
   return (
     <button onClick={onClick} className={styles.button}>
-      <img className={styles.icon} src={CloseIcon.src} />
+      <img
+        className={styles.icon}
+        src={CloseIcon.src}
+        alt="closeIcon"
+        title="closeIcon"
+        loading="eager"
+        width={60}
+        height={60}
+      />
     </button>
   );
 };

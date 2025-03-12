@@ -17,7 +17,15 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
       className={`${styles.container} ${showMenu && styles.containerActive}`}
     >
       <div className={`${styles.header} ${showMenu && styles.active}`}>
-        <img src={Logo.src} className={styles.logo} />
+        <img
+          src={Logo.src}
+          className={styles.logo}
+          alt="websquirrelLogo"
+          title="websquirrelLogo"
+          width={221}
+          height={48}
+          loading="eager"
+        />
         <CloseButton onClick={hideMenuHandler} />
       </div>
       <div className={`${styles.listBox} ${showMenu && styles.active}`}>
@@ -49,11 +57,25 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
       <div className={`${styles.contactBox} ${showMenu && styles.active}`}>
         <span className={styles.contactHeader}>Skontaktuj sie z nami</span>
         <span className={styles.contactItem}>
-          <img src={EmailIcon.src} />
+          <img
+            src={EmailIcon.src}
+            alt="emailIcon"
+            title="emailIcon"
+            width={24}
+            height={24}
+            loading="eager"
+          />
           websquirrelcontact@gmail.com
         </span>
         <span className={styles.contactItem}>
-          <img src={PhoneIcon.src} />
+          <img
+            src={PhoneIcon.src}
+            alt="phoneIcon"
+            title="emailIcon"
+            width={24}
+            height={24}
+            loading="eager"
+          />
           +48 728 327 596
         </span>
       </div>

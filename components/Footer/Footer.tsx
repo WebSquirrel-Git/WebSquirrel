@@ -10,7 +10,15 @@ const Footer = () => {
   if (pathName.includes('portfolio')) return null;
   return (
     <div className={styles.container}>
-      <img src={CompanyName.src} className={styles.logoName} />
+      <img
+        src={CompanyName.src}
+        className={styles.logoName}
+        alt="websquirrel"
+        title="websquirrel"
+        width={444}
+        height={76}
+        loading="lazy"
+      />
       <div className={styles.listColumn}>
         <span className={styles.listTitle}>Mapa</span>
         <Link href="/" className={styles.link}>
@@ -36,7 +44,15 @@ const Footer = () => {
         <span className={styles.link}>REGON: 541013883</span>
       </div>
       {/* </div> */}
-      <img src={Logo.src} className={styles.logo} />
+      <img
+        src={Logo.src}
+        className={styles.logo}
+        alt="websquirrelLogo"
+        title="websquirrelLogo"
+        width={54}
+        height={59}
+        loading="lazy"
+      />
     </div>
   );
 };

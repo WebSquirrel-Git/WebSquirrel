@@ -59,7 +59,15 @@ const OfferCard = ({
       </div>
       {link && (
         <Link className={linkStyle} href={url}>
-          DOWIEDZ SIĘ WIĘCEJ <img src={icon.src} />
+          DOWIEDZ SIĘ WIĘCEJ{' '}
+          <img
+            src={icon.src}
+            alt="forwardIcon"
+            title="forwardIcon"
+            width={19}
+            height={19}
+            loading="eager"
+          />
         </Link>
       )}
     </div>

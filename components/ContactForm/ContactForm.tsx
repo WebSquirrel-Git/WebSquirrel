@@ -1,6 +1,5 @@
 'use client';
 import styles from './contactForm.module.scss';
-import Logo from '@/public/assets/logo/WebSquirrel-postman-logo.svg';
 import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
 import SendIcon from '@/public/assets/icons/send-icon.svg';
 import CheckmarkGreenIcon from '@/public/assets/icons/checkmark-green-icon.svg';
@@ -39,9 +38,7 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
   };
   const [formData, setFormData] = useState(initialFormDataState);
 
-  const [status, setStatus] = useState<'waiting' | 'sending' | 'ok' | 'fail'>(
-    'waiting'
-  );
+  const [status, setStatus] = useState<'waiting' | 'sending' | 'ok'>('waiting');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -118,12 +115,10 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
           setStatus('ok');
           console.log('Wiadomość wysłana!');
         } else {
-          setStatus('fail');
           console.log(result.error || 'Błąd wysyłania wiadomości.');
         }
       } catch (error) {
-        setStatus('fail');
-        console.log('Błąd wysyłania wiadomości.');
+        console.log('Błąd wysyłania wiadomości.', error);
       }
 
       setTimeout(() => {
@@ -143,7 +138,14 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
           zapraszamy do kontaktu telefonicznego zawsze chętnie pogadamy.
         </p>
         <span className={styles.phoneBox}>
-          <img src={PhoneIcon.src} />
+          <img
+            src={PhoneIcon.src}
+            alt="phoneIcon"
+            title="phoneIcon"
+            width={25}
+            height={24}
+            loading="eager"
+          />
           <p>+48 728 327 596</p>
         </span>
         <form className={styles.form} onSubmit={handleSubmit}>
@@ -222,7 +224,15 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
           )}
           {status === 'waiting' && (
             <button type="submit" className={styles.submitButton}>
-              Wyślij pytanie <img src={SendIcon.src} />
+              Wyślij pytanie{' '}
+              <img
+                src={SendIcon.src}
+                alt="sendIcon"
+                title="sendIcon"
+                width={25}
+                height={25}
+                loading="eager"
+              />
             </button>
           )}
           {status === 'sending' && (
@@ -232,7 +242,15 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
           )}
           {status === 'ok' && (
             <button type="submit" className={styles.submitButton}>
-              Sukces <img src={CheckmarkGreenIcon.src} />
+              Sukces{' '}
+              <img
+                src={CheckmarkGreenIcon.src}
+                alt="checkmarkIcon"
+                title="checkmarkIcon"
+                width={25}
+                height={25}
+                loading="eager"
+              />
             </button>
           )}
         </form>
