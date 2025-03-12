@@ -6,7 +6,6 @@ import ForwardCircleOrangeIcon from '@/public/assets/icons/chevron-forward-circl
 import ForwardCircleBlueIcon from '@/public/assets/icons/chevron-forward-circle-blue-icon.svg';
 import BackCircleOrangeIcon from '@/public/assets/icons/chevron-back-circle-orange-icon.svg';
 import BackCircleBlueIcon from '@/public/assets/icons/chevron-back-circle-blue-icon.svg';
-import Link from 'next/link';
 import {PortfolioPopupType} from '@/utils/portfolio/projects';
 import {useState} from 'react';
 import {FilterPortfolioType, PortfolioProjectStyleType} from '../Filter/Filter';
@@ -69,15 +68,15 @@ const Popup = ({
     <div className={styles.layout}>
       <div className={containerStyles}>
         <button className={closeIconBoxStyles} onClick={onClosePopup}>
-          <img src={closeCircleIcon.src} />
+          <img src={closeCircleIcon.src} alt="closeCircleIcon" />
         </button>
         <div className={navButtonsBoxStyles}>
           <div className={styles.buttonsBox}>
             <button className={styles.button} onClick={showFrontHandler}>
-              <img src={backCircleIcon.src} />
+              <img src={backCircleIcon.src} alt="backCircleIcon" />
             </button>
             <button className={styles.button} onClick={showReverseHandler}>
-              <img src={forwardCircleIcon.src} />
+              <img src={forwardCircleIcon.src} alt="forwardCircleIcon" />
             </button>
           </div>
         </div>
@@ -90,7 +89,7 @@ const Popup = ({
               <span className={subHeaderStyles}>Użyte technologie</span>
               <div className={styles.iconsBox}>
                 {technologiesIcons.map((icon, index) => (
-                  <img src={icon.src} key={index} />
+                  <img src={icon.src} key={index} alt="technologyIcon" />
                 ))}
               </div>
 
@@ -109,6 +108,7 @@ const Popup = ({
                     className={imgBorderStyles}
                     src={image.src}
                     key={index}
+                    alt="projectCover"
                   />
                 ))}
               {(type == 'reel' || type == 'animation') &&
@@ -137,6 +137,7 @@ const Popup = ({
                     className={imgBorderStyles}
                     src={image.src}
                     key={index}
+                    alt="projectDemo"
                   />
                 ))}
               {(type == 'reel' || type == 'animation') &&
@@ -161,6 +162,7 @@ const Popup = ({
                     className={imgBorderStyles}
                     src={image.src}
                     key={index}
+                    alt="projectDemo"
                   />
                 ))}
               {(type == 'reel' || type == 'animation') &&

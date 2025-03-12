@@ -9,7 +9,15 @@ interface NavButtonPropsType {
 const NavButton = ({onClick}: NavButtonPropsType) => {
   return (
     <button onClick={onClick} className={styles.button}>
-      <img className={styles.icon} src={HamburgerIcon.src} />
+      <img
+        className={styles.icon}
+        src={HamburgerIcon.src}
+        alt="hamburgerIcon"
+        title="hamburgerIcon"
+        loading="eager"
+        width={41}
+        height={41}
+      />
     </button>
   );
 };

@@ -12,7 +12,15 @@ const NavBar = ({showMenuHandler}: NavBarPropsType) => {
   return (
     <div className={styles.container}>
       <Link href="/">
-        <img src={Logo.src} className={styles.logo} />
+        <img
+          src={Logo.src}
+          className={styles.logo}
+          alt="websquirrelLogo"
+          title="websquirrelLogo"
+          loading="eager"
+          width={221}
+          height={48}
+        />
       </Link>
       <div className={styles.buttonsBox}>
         <NavButton onClick={showMenuHandler} />

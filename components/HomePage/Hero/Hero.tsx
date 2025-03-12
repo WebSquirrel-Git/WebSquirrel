@@ -22,7 +22,15 @@ const Hero = () => {
         </p>
         <DefaultLink name="Sprawdź naszą ofertę" url="/#offerWebsites" />
       </div>
-      <img className={styles.logo} src={Logo.src} />
+      <img
+        className={styles.logo}
+        src={Logo.src}
+        alt="websquirrelLogo"
+        title="websquirrelLogo"
+        width={837}
+        height={845}
+        loading="eager"
+      />
     </div>
   );
 };

@@ -52,7 +52,15 @@ const ProcessSteps = () => {
               <p>{step.description}</p>
             </div>
             {index !== WEBSITE_PROCESS_STEPS.length - 1 && (
-              <img className={styles.icon} src={ChevronIcon.src} />
+              <img
+                className={styles.icon}
+                src={ChevronIcon.src}
+                alt="chevronIcon"
+                title="chevronIcon"
+                width={105}
+                height={106}
+                loading="lazy"
+              />
             )}
           </React.Fragment>
         ))}

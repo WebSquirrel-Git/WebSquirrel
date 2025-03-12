@@ -15,7 +15,7 @@ export interface ProjectLandscapeCardPropsType {
   type: FilterPortfolioType;
   typeTitle: string;
   mainTechnology: string;
-  coverImage: any;
+  coverImage: string;
   active: boolean;
   style: PortfolioProjectStyleType;
   popup: PortfolioPopupType;
@@ -27,7 +27,6 @@ const ProjectLandscapeCard = ({
   typeTitle,
   mainTechnology,
   coverImage,
-  active,
   style,
   popup,
 }: ProjectLandscapeCardPropsType) => {
@@ -66,7 +65,14 @@ const ProjectLandscapeCard = ({
         </div>
 
         <span className={iconBoxStyles}>
-          <img src={openIcon} />
+          <img
+            src={openIcon}
+            alt="openIcon"
+            title="openIcon"
+            loading="eager"
+            width={24}
+            height={24}
+          />
         </span>
       </button>
       {popupActive && (
