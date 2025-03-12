@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm/ContactForm';
 import Hero from '@/components/OfferPage/Hero/Hero';
 import IconListRow from '@/components/OfferPage/IconListRow/IconListRow';
 import ProcessSteps from '@/components/OfferPage/ProcessSteps/ProcessSteps';
@@ -28,6 +29,7 @@ export default function WoocommercePage() {
         list={WOOCOMMERCE_SHOP_CONTENT.technologies.list}
       />
       <ProcessSteps />
+      <ContactForm contactFormType="Sklep internetowy" />
     </>
   );
 }

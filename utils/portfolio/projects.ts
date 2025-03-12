@@ -30,7 +30,7 @@ import NemoLogoImg3 from '@/public/portfolio/nemologo/nemo-logo-3.webp';
 import NemoLogoImg4 from '@/public/portfolio/nemologo/nemo-logo-4.webp';
 import NemoLogoImg5 from '@/public/portfolio/nemologo/nemo-logo-5.webp';
 import ClientAnimationsCoverImage from '@/public/portfolio/clientanimations/cover.svg';
-interface ProjectType extends ProjectLandscapeCardPropsType {
+export interface ProjectType extends ProjectLandscapeCardPropsType {
   orientation: 'landscape' | 'portrait';
   popup: PortfolioPopupType;
 }
@@ -57,7 +57,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       description:
         'Naszym zadaniem było stworzenie strony internetowej dla firmy Nemo Sportowa Przygoda od zera. Głównym wyzwaniem projektu było przedstawienie wielu usług firmy w sposób uporządkowany i dobrze widoczny dla klientów. Zadanie powiodło się. Firma w pełni nam zaufała decydując się na rozwiązanie bez panelu admiracyjnego i powierzając nam bezpośrednie wprowadzanie zmian, co pozwoliło na zastosowanie nowszych technologii w postaci NextJS. Firma dalej się rozwija i poszerza portfolio swoich usług, a my ciągle dbamy o projektowanie i wdrażanie nowych opcji na stronie.',
       technologiesIcons: [NextJsIcon, TypeScriptIcon, SassIcon, FigmaIcon],
-      url: 'www.nemosportowaprzygoda.pl',
+      url: 'nemosportowaprzygoda.pl',
       frontImages: [NemoImg1, NemoImg2],
       reverseImages: [NemoImg3, NemoImg4, NemoImg5],
     },
@@ -76,7 +76,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       description:
         'Celem projektu było stworzenie sklepu internetowego dla małej firmy specjalizującej się w sprzedaży ręcznie robionych swetrów damskich. Po konsultacji z klientką i akceptacji projektu graficznego przystąpiliśmy do tworzenia sklepu na platformie WooCommerce. Zrealizowany projekt posiada integrację z płatnościami online, możliwość wyboru dostawy, formularz kontaktowy oraz powiadomienia e-mail o statusie zamówienia. Nasz klientka ciągle rozwija swój asortyment o nowe produkty pozostając z nami w kontakcie.',
       technologiesIcons: [WooCommerceIcon, FigmaIcon],
-      url: 'www.atzmdesign.pl',
+      url: 'atzmdesign.pl',
       frontImages: [AtzmImg1, AtzmImg2],
       reverseImages: [AtzmImg3, AtzmImg4, AtzmImg5],
     },
@@ -101,7 +101,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
         SassIcon,
         FigmaIcon,
       ],
-      url: 'www.filmnawieczor.pl',
+      url: 'filmnawieczor.pl',
       frontImages: [FilmnawieczorImg1, FilmnawieczorImg2],
       reverseImages: [FilmnawieczorImg3, FilmnawieczorImg4, FilmnawieczorImg5],
     },
@@ -120,7 +120,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       description:
         'Podczas tworzenia projektu graficznego dla NEMO Sportowa Przygoda dostaliśmy bardzo ładną rybkę w logo w formacie SVG. Od razu stwierdziliśmy, że to logo ma bardzo duży potencjał do wprowadzania tematycznych przeróbek. Efekty na zdjęciach obok oraz stronie internetowej i SM Nemo.',
       technologiesIcons: [FigmaBlueIcon],
-      url: 'www.nemosportowaprzygoda.pl',
+      url: 'nemosportowaprzygoda.pl',
       frontImages: [NemoLogoImg1, NemoLogoImg2],
       reverseImages: [NemoLogoImg3, NemoLogoImg4, NemoLogoImg5],
     },
@@ -139,7 +139,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       description:
         'Po stworzeniu sklepu internetowego dla ATZM Design nadszedł czas na jego prezentację na ich socjal mediach. Mieliśmy gotowy projekt graficzny strony w figmie więc zaproponowaliśmy stworzenie kilku rolek promocyjnych w Jitterze. Efekty naszej pracy możecie sprawdzić na wideo obok oraz na SM ATZM Design.',
       technologiesIcons: [FigmaBlueIcon],
-      url: 'www.nemosportowaprzygoda.pl',
+      url: 'atzmdesign.pl',
       frontImages: ['/portfolio/atzmreel/atzm-reel-1.mp4'],
       reverseImages: ['/portfolio/atzmreel/atzm-reel-2.mp4'],
     },
@@ -178,7 +178,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
   //     title: 'ATZM Design',
   //     description:'Naszym zadaniem było stworzenie strony internetowej dla firmy Nemo Sportowa Przygoda od zera. Głównym wyzwaniem projektu było przedstawienie wielu usług firmy w sposób uporządkowany i dobrze widoczny dla klientów. Zadanie powiodło się. Firma w pełni nam zaufała decydując się na rozwiązanie bez panelu admiracyjnego i powierzając nam bezpośrednie wprowadzanie zmian, co pozwoliło na zastosowanie nowszych technologii w postaci NextJS. Firma dalej się rozwija i poszerza portfolio swoich usług, a my ciągle dbamy o projektowanie i wdrażanie nowych opcji na stronie.',
   //     technologiesIcons:[NextJsIcon,TypeScriptIcon,SassIcon,FigmaIcon],
-  //     url:"www.nemosportowaprzygoda.pl",
+  //     url:"nemosportowaprzygoda.pl",
   //     frontImages:[NemoImg1,NemoImg2],
   //     reverseImages:[NemoImg3,NemoImg4,NemoImg5]
   //   }
@@ -196,7 +196,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
   //     title: 'ATZM Design',
   //     description:'Naszym zadaniem było stworzenie strony internetowej dla firmy Nemo Sportowa Przygoda od zera. Głównym wyzwaniem projektu było przedstawienie wielu usług firmy w sposób uporządkowany i dobrze widoczny dla klientów. Zadanie powiodło się. Firma w pełni nam zaufała decydując się na rozwiązanie bez panelu admiracyjnego i powierzając nam bezpośrednie wprowadzanie zmian, co pozwoliło na zastosowanie nowszych technologii w postaci NextJS. Firma dalej się rozwija i poszerza portfolio swoich usług, a my ciągle dbamy o projektowanie i wdrażanie nowych opcji na stronie.',
   //     technologiesIcons:[NextJsIcon,TypeScriptIcon,SassIcon,FigmaIcon],
-  //     url:"www.nemosportowaprzygoda.pl",
+  //     url:"nemosportowaprzygoda.pl",
   //     frontImages:[NemoImg1,NemoImg2],
   //     reverseImages:[NemoImg3,NemoImg4,NemoImg5]
   //   }

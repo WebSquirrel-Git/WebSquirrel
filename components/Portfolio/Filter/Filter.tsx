@@ -10,7 +10,8 @@ export interface FilterTypes {
   type: FilterPortfolioType;
 }
 interface FilterPropsType extends FilterTypes {
-  onClick: () => void;
+  onSetActiveFilter: () => void;
+  onRemoveActiveFilter: () => void;
 }
 export type FilterPortfolioType =
   | 'website'
@@ -18,7 +19,19 @@ export type FilterPortfolioType =
   | 'svg'
   | 'animation'
   | 'reel';
-const Filter = ({title, style, active, index, onClick}: FilterPropsType) => {
+const Filter = ({
+  title,
+  style,
+  active,
+  index,
+  onSetActiveFilter,
+  onRemoveActiveFilter,
+}: FilterPropsType) => {
+  const onClick = () => {
+    if (!active) onSetActiveFilter();
+    if (active) onRemoveActiveFilter();
+  };
+
   if (style === 'website') {
     const filterStyle = active
       ? styles.filterWebsiteActive
