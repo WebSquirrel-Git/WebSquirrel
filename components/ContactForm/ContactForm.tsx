@@ -4,6 +4,7 @@ import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
 import SendIcon from '@/public/assets/icons/send-icon.svg';
 import CheckmarkGreenIcon from '@/public/assets/icons/checkmark-green-icon.svg';
 import {useState} from 'react';
+import Logo from '@/public/assets/logo/WebSquirrel-postman-logo.svg'
 
 interface ContactFormPropsType {
   contactFormType:
@@ -255,6 +256,7 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
           )}
         </form>
       </div>
+      <img src={Logo.src} className={styles.logo} alt='logo' title='logo' width={466} height={527} loading='eager'/>
     </section>
   );
 };

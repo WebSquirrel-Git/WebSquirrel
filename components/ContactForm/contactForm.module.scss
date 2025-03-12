@@ -15,10 +15,12 @@
   }
   @include mixin.phone500px {
     padding: 2rem;
+    gap: 2rem;
   }
 }
 .logo {
   width: 350px;
+  height: auto;
   @include mixin.phone900px {
     width: 250px;
   }
