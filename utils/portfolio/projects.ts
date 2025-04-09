@@ -5,6 +5,7 @@ import SassIcon from '@/public/assets/icons/sass-icon.svg';
 import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
 import FigmaBlueIcon from '@/public/assets/icons/figma-blue-icon.svg';
 import ExpressjsIcon from '@/public/assets/icons/express-icon.svg';
+import WordpressIcon from '@/public/assets/icons/wordpress-orange-icon.svg';
 import WooCommerceIcon from '@/public/assets/icons/woocommerce-orange-icon.svg';
 import NemoCoverImage from '@/public/portfolio/nemosportowaprzygoda/cover.svg';
 import NemoImg1 from '@/public/portfolio/nemosportowaprzygoda/nemo-1.webp';
@@ -18,6 +19,12 @@ import AtzmImg2 from '@/public/portfolio/atzmdesign/atzm-2.webp';
 import AtzmImg3 from '@/public/portfolio/atzmdesign/atzm-3.webp';
 import AtzmImg4 from '@/public/portfolio/atzmdesign/atzm-4.webp';
 import AtzmImg5 from '@/public/portfolio/atzmdesign/atzm-5.webp';
+import TrigetCoverImage from '@/public/portfolio/triget/cover.svg';
+import TrigetImg1 from '@/public/portfolio/triget/triget-1.webp';
+import TrigetImg2 from '@/public/portfolio/triget/triget-2.webp';
+import TrigetImg3 from '@/public/portfolio/triget/triget-3.webp';
+import TrigetImg4 from '@/public/portfolio/triget/triget-4.webp';
+import TrigetImg5 from '@/public/portfolio/triget/triget-5.webp';
 import FilmnawieczorCoverImage from '@/public/portfolio/filmnawieczor/cover.svg';
 import FilmnawieczorImg1 from '@/public/portfolio/filmnawieczor/filmnawieczor-1.webp';
 import FilmnawieczorImg2 from '@/public/portfolio/filmnawieczor/filmnawieczor-2.webp';
@@ -44,6 +51,25 @@ export interface PortfolioPopupType {
 }
 export const PORTFOLIO_PROJECTS: ProjectType[] = [
   {
+    title: 'ATZM Design',
+    type: 'shop',
+    orientation: 'landscape',
+    typeTitle: 'Strona internetowa',
+    mainTechnology: 'WooCommerce',
+    coverImage: AtzmCoverImage.src,
+    active: false,
+    style: 'website',
+    popup: {
+      title: 'ATZM Design',
+      description:
+        'Celem projektu było stworzenie sklepu internetowego dla małej firmy specjalizującej się w sprzedaży ręcznie robionych swetrów damskich. Po konsultacji z klientką i akceptacji projektu graficznego przystąpiliśmy do tworzenia sklepu na platformie WooCommerce. Zrealizowany projekt posiada integrację z płatnościami online, możliwość wyboru dostawy, formularz kontaktowy oraz powiadomienia e-mail o statusie zamówienia. Nasz klientka ciągle rozwija swój asortyment o nowe produkty pozostając z nami w kontakcie.',
+      technologiesIcons: [WooCommerceIcon, FigmaIcon],
+      url: 'atzmdesign.com',
+      frontImages: [AtzmImg1, AtzmImg2],
+      reverseImages: [AtzmImg3, AtzmImg4, AtzmImg5],
+    },
+  },
+  {
     title: 'NEMO Sportowa Przygoda',
     type: 'website',
     orientation: 'landscape',
@@ -63,22 +89,22 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
-    title: 'ATZM Design',
-    type: 'shop',
+    title: 'Triget',
+    type: 'website',
     orientation: 'landscape',
     typeTitle: 'Strona internetowa',
-    mainTechnology: 'WooCommerce',
-    coverImage: AtzmCoverImage.src,
+    mainTechnology: 'Wordpress',
+    coverImage: TrigetCoverImage.src,
     active: false,
     style: 'website',
     popup: {
-      title: 'ATZM Design',
+      title: 'Triget',
       description:
-        'Celem projektu było stworzenie sklepu internetowego dla małej firmy specjalizującej się w sprzedaży ręcznie robionych swetrów damskich. Po konsultacji z klientką i akceptacji projektu graficznego przystąpiliśmy do tworzenia sklepu na platformie WooCommerce. Zrealizowany projekt posiada integrację z płatnościami online, możliwość wyboru dostawy, formularz kontaktowy oraz powiadomienia e-mail o statusie zamówienia. Nasz klientka ciągle rozwija swój asortyment o nowe produkty pozostając z nami w kontakcie.',
-      technologiesIcons: [WooCommerceIcon, FigmaIcon],
-      url: 'atzmdesign.pl',
-      frontImages: [AtzmImg1, AtzmImg2],
-      reverseImages: [AtzmImg3, AtzmImg4, AtzmImg5],
+        'Naszym zadaniem było odnowienie starej strony internetowej firmy specjalizującej się w montażu instalacji elektrycznych. Firma bardzo rozwinęła portfolio swoich usług więc konieczne było ustalenie podziałów stron i kategoryzacja usług. Po akceptacji projektu graficznego przystąpiliśmy do działania. W efekcie stworzyliśmy stronę, która posiada jasny podział wykonywanych usług oraz posiada swoją paletę barw opartą o logo. Projekt został zrealizowany na CMS Wordpress dający możliwość łatwej edycji treści właścicielowi.',
+      technologiesIcons: [WordpressIcon, FigmaIcon],
+      url: 'triget.pl',
+      frontImages: [TrigetImg1, TrigetImg2],
+      reverseImages: [TrigetImg3, TrigetImg4, TrigetImg5],
     },
   },
   {
@@ -139,7 +165,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       description:
         'Po stworzeniu sklepu internetowego dla ATZM Design nadszedł czas na jego prezentację na ich socjal mediach. Mieliśmy gotowy projekt graficzny strony w figmie więc zaproponowaliśmy stworzenie kilku rolek promocyjnych w Jitterze. Efekty naszej pracy możecie sprawdzić na wideo obok oraz na SM ATZM Design.',
       technologiesIcons: [FigmaBlueIcon],
-      url: 'atzmdesign.pl',
+      url: 'atzmdesign.com',
       frontImages: ['/portfolio/atzmreel/atzm-reel-1.mp4'],
       reverseImages: ['/portfolio/atzmreel/atzm-reel-2.mp4'],
     },
