@@ -33,6 +33,9 @@ const Footer = () => {
         <Link href="/" className={styles.link}>
           Portfolio
         </Link>
+        <Link href="/artykuly" className={styles.link}>
+          Artykuły
+        </Link>
       </div>
       <div className={styles.listColumn}>
         <span className={styles.listTitle}>Kontakt</span>
@@ -43,7 +46,6 @@ const Footer = () => {
         <span className={styles.link}>NIP: 9452306825</span>
         <span className={styles.link}>REGON: 541013883</span>
       </div>
-      {/* </div> */}
       <img
         src={Logo.src}
         className={styles.logo}
