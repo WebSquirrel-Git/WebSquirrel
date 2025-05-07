@@ -23,5 +23,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: 'https://websquirrel.pl/portfolio',
     },
+    {
+      url: 'https://websquirrel.pl/artykuly',
+    },
+    {
+      url: 'https://websquirrel.pl/optymalizacjaobrazow',
+    },
   ];
 }
