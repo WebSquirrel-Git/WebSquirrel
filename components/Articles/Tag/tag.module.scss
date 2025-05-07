@@ -1,0 +1,16 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: colors.$white;
+  padding: 5px 15px;
+  border: 2px solid colors.$squirrel;
+  border-radius: 20px;
+  font-family: 'Poppins-400';
+  font-size: 0.7rem;
+}

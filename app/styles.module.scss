@@ -1,0 +1,114 @@
+@use '../styles/mixin.scss' as mixin;
+@use '../styles/colors.scss' as colors;
+.articlesContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 3rem 15%;
+  @include mixin.phone500px {
+    padding: 3rem 2rem;
+  }
+}
+.articleContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 3rem 20%;
+  @include mixin.pc1000px {
+    padding: 3rem 10%;
+  }
+  @include mixin.phone500px {
+    padding: 3rem 1rem;
+  }
+  h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: colors.$squirrel;
+    @include mixin.pc1000px {
+      font-size: 2.2rem;
+    }
+    @include mixin.phone500px {
+      font-size: 1.5rem;
+    }
+  }
+}
+.articleSectionBorderLeftBottom {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.articleBoxBorderLeftBottom {
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid colors.$squirrel;
+  border-bottom: 2px solid colors.$squirrel;
+  gap: 2rem;
+  @include mixin.pc1000px {
+    gap: 1rem;
+  }
+  @include mixin.phone500px {
+    border: none;
+    padding: 2rem 0;
+  }
+  p {
+    @include mixin.pc1000px {
+      font-size: 1rem;
+    }
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
+  }
+  a {
+    font-size: 1.2rem;
+    @include mixin.pc1000px {
+      font-size: 1rem;
+    }
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
+  }
+  img {
+    margin: 1rem 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.orange {
+  color: colors.$squirrel;
+}
+.authorsBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-family: 'Poppins-500';
+  align-items: center;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  @include mixin.phone500px {
+    font-size: 0.7rem;
+  }
+}
