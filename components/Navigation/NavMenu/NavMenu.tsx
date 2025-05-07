@@ -53,6 +53,13 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
         >
           PORTFOLIO
         </Link>
+        <Link
+          onClick={hideMenuHandler}
+          href="/artykuly"
+          className={styles.listItem}
+        >
+          ARTYKUŁY
+        </Link>
       </div>
       <div className={`${styles.contactBox} ${showMenu && styles.active}`}>
         <span className={styles.contactHeader}>Skontaktuj sie z nami</span>
