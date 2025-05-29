@@ -75,6 +75,10 @@
     @include mixin.phone800px {
       font-size: 1.2rem;
     }
+    @include mixin.phone500px {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
     &:hover {
       cursor: pointer;
       color: colors.$squirrel;
@@ -115,6 +119,9 @@
   font-size: 1rem;
   font-weight: 500;
   width: 250px;
+  &:hover {
+    color: colors.$squirrel;
+  }
   @include mixin.phone800px {
     font-size: 0.7rem;
     width: auto;
