@@ -4,7 +4,9 @@ import CompanyName from '@/public/assets/logo/WebSquirrel-name.svg';
 import Logo from '@/public/assets/logo/WebSquirrel-logo-sm.svg';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
-
+import InstagramIcon from '@/public/assets/icons/instagram-orange-icon.svg';
+import FacebookIcon from '@/public/assets/icons/facebook-orange-icon.svg';
+import BehanceIcon from '@/public/assets/icons/behance-orange-icon.svg';
 const Footer = () => {
   const pathName = usePathname();
   if (pathName.includes('portfolio')) return null;
@@ -45,6 +47,38 @@ const Footer = () => {
         <span className={styles.link}>Telefon: +48 728 327 596</span>
         <span className={styles.link}>NIP: 9452306825</span>
         <span className={styles.link}>REGON: 541013883</span>
+        <span className={styles.link}>
+          <a href="https://www.facebook.com/profile.php?id=61575250722548">
+            <img
+              src={FacebookIcon.src}
+              alt="facebookIcon"
+              title="facebookIcon"
+              width={24}
+              height={24}
+              loading="eager"
+            />
+          </a>
+          <a href="https://www.instagram.com/websquirrel_ig/">
+            <img
+              src={InstagramIcon.src}
+              alt="instagramIcon"
+              title="instagramIcon"
+              width={24}
+              height={24}
+              loading="eager"
+            />
+          </a>
+          <a href="https://www.behance.net/websquirrel">
+            <img
+              src={BehanceIcon.src}
+              alt="behanceIcon"
+              title="behanceIcon"
+              width={24}
+              height={24}
+              loading="eager"
+            />
+          </a>
+        </span>
       </div>
       <img
         src={Logo.src}

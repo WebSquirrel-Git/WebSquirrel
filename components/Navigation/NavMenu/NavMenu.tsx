@@ -4,6 +4,9 @@ import styles from './navMenu.module.scss';
 import Logo from '@/public/assets/logo/WebSquirrel-logo-and-name.svg';
 import EmailIcon from '@/public/assets/icons/mail-icon.svg';
 import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
+import InstagramIcon from '@/public/assets/icons/instagram-orange-icon.svg';
+import FacebookIcon from '@/public/assets/icons/facebook-orange-icon.svg';
+import BehanceIcon from '@/public/assets/icons/behance-orange-icon.svg';
 import Link from 'next/link';
 
 interface NavMenuPropsType {
@@ -78,13 +81,55 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
           <img
             src={PhoneIcon.src}
             alt="phoneIcon"
-            title="emailIcon"
+            title="phoneIcon"
             width={24}
             height={24}
             loading="eager"
           />
           +48 728 327 596
         </span>
+        <a
+          href="https://www.instagram.com/websquirrel_ig/"
+          className={styles.contactItem}
+        >
+          <img
+            src={InstagramIcon.src}
+            alt="instagramIcon"
+            title="instagramIcon"
+            width={24}
+            height={24}
+            loading="eager"
+          />
+          websquirrel_ig
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61575250722548"
+          className={styles.contactItem}
+        >
+          <img
+            src={FacebookIcon.src}
+            alt="facebookIcon"
+            title="facebookIcon"
+            width={24}
+            height={24}
+            loading="eager"
+          />
+          WebSquirrel
+        </a>
+        <a
+          href="https://www.behance.net/websquirrel"
+          className={styles.contactItem}
+        >
+          <img
+            src={BehanceIcon.src}
+            alt="behanceIcon"
+            title="behanceIcon"
+            width={24}
+            height={24}
+            loading="eager"
+          />
+          websquirrel
+        </a>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import Footer from '@/components/Footer/Footer';
 import '../styles/globals.scss';
 import Navigation from '@/components/Navigation/Navigation';
 import {Metadata} from 'next';
-
+import {GoogleAnalytics} from '@next/third-parties/google';
 export const metadata: Metadata = {
   title: {
     default: 'Strony i sklepy internetowe | Grafiki SVG - WebSquirrel',
@@ -37,6 +37,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-QPJ4FYG6VE" />
       </body>
     </html>
   );
