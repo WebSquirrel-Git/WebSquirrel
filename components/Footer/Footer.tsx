@@ -38,6 +38,12 @@ const Footer = () => {
         <Link href="/artykuly" className={styles.link}>
           Artykuły
         </Link>
+        <Link
+          href="/assets/statues/WebSquirrel_Polityka_prywatności.pdf"
+          className={styles.link}
+        >
+          Polityka prywatności
+        </Link>
       </div>
       <div className={styles.listColumn}>
         <span className={styles.listTitle}>Kontakt</span>

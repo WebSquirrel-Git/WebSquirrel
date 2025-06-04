@@ -1,0 +1,37 @@
+@use '../../../../styles/mixin.scss' as mixin;
+@use '../../../../styles/colors.scss' as colors;
+.popup {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: fit-content;
+  width: 100%;
+  background-color: colors.$dark;
+  border-top: 2px solid colors.$squirrel;
+  z-index: 12;
+  bottom: 0;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.cookiesAbout {
+  width: fit-content;
+  text-align: center;
+  a {
+    color: colors.$squirrel;
+  }
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  @include mixin.phone500px {
+    flex-direction: column;
+  }
+}

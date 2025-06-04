@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: [''],
+        disallow: ['/assets/statues/WebSquirrel_Polityka_prywatności.pdf'],
       },
     ],
     sitemap: 'https://websquirrel.pl/sitemap.xml',
