@@ -6,4 +6,10 @@
   color: colors.$white;
   background-color: transparent;
   width: fit-content;
+  transition: all 0.5s;
+  &:hover {
+    cursor: pointer;
+    background-color: colors.$squirrel;
+    color: colors.$dark;
+  }
 }

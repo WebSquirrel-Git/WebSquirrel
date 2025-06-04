@@ -8,6 +8,9 @@
   background-color: transparent;
   width: fit-content;
   transition: all 0.5s;
+
+  text-align: center;
+
   @include mixin.pc1450px {
     font-size: 1rem;
   }

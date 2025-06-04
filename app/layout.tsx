@@ -3,6 +3,7 @@ import '../styles/globals.scss';
 import Navigation from '@/components/Navigation/Navigation';
 import {Metadata} from 'next';
 import {GoogleAnalytics} from '@next/third-parties/google';
+import CookiesPopup from '@/components/Ui/Popups/CookiesPopup/CookiesPopup';
 export const metadata: Metadata = {
   title: {
     default: 'Strony i sklepy internetowe | Grafiki SVG - WebSquirrel',
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <CookiesPopup />
         <Navigation />
         {children}
         <Footer />
