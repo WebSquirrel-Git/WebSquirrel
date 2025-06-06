@@ -2,8 +2,9 @@
 import styles from './tag.module.scss';
 import GraphicIcon from '@/public/assets/icons/image-orange-icon.svg';
 import SettingsIcon from '@/public/assets/icons/settings-orange-icon.svg';
+import CartIcon from '@/public/assets/icons/cart-orange-icon.svg';
 
-export type TagsTypes = 'grafiki' | 'seo';
+export type TagsTypes = 'grafiki' | 'seo' | 'sklepyInternetowe';
 
 const TAGS = {
   grafiki: {
@@ -13,6 +14,10 @@ const TAGS = {
   seo: {
     title: 'SEO',
     img: SettingsIcon,
+  },
+  sklepyInternetowe: {
+    title: 'SKLEPY INTERNETOWE',
+    img: CartIcon,
   },
 };
 interface TagPropsType {
