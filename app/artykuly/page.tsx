@@ -30,6 +30,14 @@ export default function CreativePage() {
       />
       <div className={styles.articlesContainer}>
         <ArticleCardLink
+          url="/artykuly/korzysci-plynace-z-posiadania-sklepu-internetowego"
+          tags={['sklepyInternetowe']}
+          title="KORZYŚCI PŁYNĄCE Z POSIADANIA SKLEPU INTERNETOWEGO"
+          about="W tym artykule dowiesz się jakie korzyści dla sprzedawcy i kupującego może przynieść sklep internetowy oraz jaką pełni on rolę w budowaniu marki."
+          author="BARTOSZ"
+          date="06.06.2025"
+        />
+        <ArticleCardLink
           url="/artykuly/optymalizacjaobrazow"
           tags={['grafiki', 'seo']}
           title="OPTYMALIZACJA OBRAZÓW NA STRONIE INTERNETOWEJ"
