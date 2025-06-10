@@ -36,6 +36,12 @@ import NemoLogoImg2 from '@/public/portfolio/nemologo/nemo-logo-2.webp';
 import NemoLogoImg3 from '@/public/portfolio/nemologo/nemo-logo-3.webp';
 import NemoLogoImg4 from '@/public/portfolio/nemologo/nemo-logo-4.webp';
 import NemoLogoImg5 from '@/public/portfolio/nemologo/nemo-logo-5.webp';
+import PerliaCoverImage from '@/public/portfolio/perlia/cover.svg';
+import PerliaImg1 from '@/public/portfolio/perlia/perlia-1.webp';
+import PerliaImg2 from '@/public/portfolio/perlia/perlia-2.webp';
+import PerliaImg3 from '@/public/portfolio/perlia/perlia-3.webp';
+import PerliaImg4 from '@/public/portfolio/perlia/perlia-4.webp';
+import PerliaImg5 from '@/public/portfolio/perlia/perlia-5.webp';
 import ClientAnimationsCoverImage from '@/public/portfolio/clientanimations/cover.svg';
 export interface ProjectType extends ProjectLandscapeCardPropsType {
   orientation: 'landscape' | 'portrait';
@@ -50,6 +56,25 @@ export interface PortfolioPopupType {
   reverseImages: any[];
 }
 export const PORTFOLIO_PROJECTS: ProjectType[] = [
+  {
+    title: 'Perlia',
+    type: 'shop',
+    orientation: 'landscape',
+    typeTitle: 'Strona internetowa',
+    mainTechnology: 'WooCommerce',
+    coverImage: PerliaCoverImage.src,
+    active: false,
+    style: 'website',
+    popup: {
+      title: 'Perlia',
+      description:
+        'Projekt miał na celu stworzenie od zera sklepu internetowego na platformie WooCommerce. Dużym plusem podczas realizacji było to, że Weronika właścicielka Perlia z bardzo dużym zaangażowaniem prowadzi swoje konto na instagramie, dzięki czemu nie było większych problemów z ogarnięciem zdjęć produktów i odpowiednich opisów. Weronika jest perfekcjonistką, która bardzo przykłada się do pracy nad wizerunkiem swojej marki i dba o najmniejsze detale. Po kilku spotkaniach i wprowadzonych poprawkach udało nam się stworzyć sklep online, który w pełni oddaje to co prezentuje marka Perlia. Usługa obejmowała: pomoc w zakupie hostingu, domeny, serwisu e-mail, projekt graficzny strony, stworzenie strony, wdrożenie płatności online, wdrożenie dostaw InPost paczkomaty, integracja z systemami Google (analytics, merchant), SEO, konsultacje na google meet (ok. 8 spotkań), szkolenie z obsługi sklepu, instrukcja do zarządzania sklepem.',
+      technologiesIcons: [WooCommerceIcon, FigmaIcon],
+      url: 'perlia.pl',
+      frontImages: [PerliaImg1, PerliaImg2],
+      reverseImages: [PerliaImg3, PerliaImg4, PerliaImg5],
+    },
+  },
   {
     title: 'ATZM Design',
     type: 'shop',
