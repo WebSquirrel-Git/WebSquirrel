@@ -27,9 +27,9 @@ const priceIncludes = [
 ];
 
 const priceNotIncludes = [
-  'Pisanie tekstów na stronę - uważamy że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Nasza praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
-  'Nie kupujemy domen i hostingów.',
-  'Wszelkie rejestracje i opłaty związane z aktywacją usług płatności online i sposobów dostawy leżą po stronie klienta. W przypadku występowania problemów służymy pomocą.',
+  'Pisanie tekstów na stronę - uważam że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Moja praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
+  'Nie kupuje domen i hostingów.',
+  'Wszelkie rejestracje i opłaty związane z aktywacją usług płatności online i sposobów dostawy leżą po stronie klienta. W przypadku występowania problemów służę pomocą.',
 ];
 
 const technologies = ['WooCommerce'];

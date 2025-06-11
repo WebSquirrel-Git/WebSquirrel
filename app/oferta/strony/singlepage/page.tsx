@@ -6,15 +6,14 @@ import {SINGLE_PAGE_CONTENT} from '@/utils/offer/singlePage';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Stworzymy dla Ciebie stronę wizytówkę',
+  title: 'Strona internetowa WIZYTÓWKA / ONE PAGE',
   description:
-    'Strona wizytówka to dobry wybór dla firm, które zaczynają swoją działalność i chcą przedstawić klientom profil firmy. Nie wahaj się i dzwoń zawsze chętnie pogadamy.',
+    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Napisz i dowiedz się jak ważną rolę pełni strona internetowa w budowaniu marki.',
   metadataBase: new URL('https://websquirrel.pl/oferta/strony/singlepage'),
   alternates: {
     canonical: 'https://websquirrel.pl/oferta/strony/singlepage',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},

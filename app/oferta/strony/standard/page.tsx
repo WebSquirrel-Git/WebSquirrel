@@ -6,15 +6,14 @@ import {STANDARD_PAGE_CONTENT} from '@/utils/offer/standardPage';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Stworzymy dla Ciebie nowoczesną stronę internetową',
+  title: 'Strona internetowa STANDARD',
   description:
-    'Standardowa strona z kilkoma podstronami. Idealna dla firm, które świadczą więcej niż jedną usługę. Nie wahaj się i dzwoń zawsze chętnie pogadamy.',
+    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Napisz i dowiedz się jak ważną rolę pełni strona internetowa w budowaniu marki.',
   metadataBase: new URL('https://websquirrel.pl/oferta/strony/standard'),
   alternates: {
     canonical: 'https://websquirrel.pl/oferta/strony/standard',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},

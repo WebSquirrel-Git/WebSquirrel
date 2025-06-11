@@ -3,15 +3,14 @@ import {Metadata} from 'next';
 import styles from '../styles.module.scss';
 import Hero from '@/components/Articles/Hero/Hero';
 export const metadata: Metadata = {
-  title: 'Artykuly',
+  title: 'ARTYKUŁY | Obsługa i zarządzanie stronami www',
   description:
-    'Porady i rozwiązania dla osób aktualizujących treści na swoich stronach internetowych.',
+    'Porady i rozwiązania do zarządzania stronami www i sklepami online | Korzyści z posiadania e sklepu | Budowanie marki w internecie | Grafiki | SEO | Google',
   metadataBase: new URL('https://websquirrel.pl/artykuly'),
   alternates: {
     canonical: 'https://websquirrel.pl/artykuly',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},

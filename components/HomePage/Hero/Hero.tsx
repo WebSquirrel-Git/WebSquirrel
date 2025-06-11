@@ -9,8 +9,8 @@ const Hero = () => {
         <span className={styles.subHeader}>Hej! Fajnie Cię widzieć.</span>
         <h1>WebSquirrel</h1>
         <p>
-          Jesteśmy firmą zajmującą się tworzeniem aplikacji internetowych, od
-          prostych stron i sklepów do wymagających projektów dostosowanych do
+          Mam na imię Bartosz i zajmuję się tworzeniem aplikacji internetowych,
+          od prostych stron i sklepów do wymagających projektów dostosowanych do
           Waszych potrzeb.
         </p>
         <p>
@@ -18,7 +18,7 @@ const Hero = () => {
           dzwoń.
         </p>
         <p className={styles.textOrange}>
-          PS nie zapomnij sprawdzić naszej oferty poniżej.
+          PS nie zapomnij sprawdzić oferty poniżej.
         </p>
         <DefaultLink name="Sprawdź naszą ofertę" url="/#offerWebsites" />
       </div>

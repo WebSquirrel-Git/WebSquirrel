@@ -5,9 +5,9 @@ import Hero from '@/components/HomePage/Hero/Hero';
 import Pages from '@/components/HomePage/Pages/Pages';
 import {Metadata} from 'next';
 export const metadata: Metadata = {
-  title: 'Strony i sklepy internetowe | Grafiki SVG - WebSquirrel',
+  title: 'Strony i sklepy internetowe | Projektowanie graficzne | WebSquirrel',
   description:
-    'Zajmujemy się tworzeniem stron internetowych, sklepów internetowych oraz grafik/animacji SVG. Dzień bez pogawędki z klientem to dzień stracony więc nie wahaj się i dzwoń.',
+    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Napisz i dowiedz się jak ważną rolę pełni strona internetowa w budowaniu marki.',
   metadataBase: new URL('https://websquirrel.pl'),
   alternates: {
     canonical: 'https://websquirrel.pl',

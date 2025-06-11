@@ -16,7 +16,6 @@ export const metadata: Metadata = {
       'https://websquirrel.pl/artykuly/korzysci-plynace-z-posiadania-sklepu-internetowego',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},
