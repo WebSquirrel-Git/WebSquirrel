@@ -25,8 +25,8 @@ const priceIncludes = [
 ];
 
 const priceNotIncludes = [
-  'Pisanie tekstów na stronę - uważamy że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Nasza praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
-  'Nie kupujemy domen i hostingów.',
+  'Pisanie tekstów na stronę - uważam że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Moja praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
+  'Nie kupuje domen i hostingów.',
 ];
 
 const technologies = [

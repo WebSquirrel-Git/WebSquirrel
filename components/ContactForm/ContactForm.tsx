@@ -135,8 +135,8 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
         <h3>Zapytaj się o projekt</h3>
         <p>
           W formularzu poniżej podaj podstawowy opis projektu do zrealizowania
-          oraz wybierz kategorię zlecenia. Oczywiście jeżeli masz czas
-          zapraszamy do kontaktu telefonicznego zawsze chętnie pogadamy.
+          oraz wybierz kategorię zlecenia. Oczywiście jeżeli masz czas zapraszam
+          do kontaktu telefonicznego zawsze chętnie pogadam.
         </p>
         <span className={styles.phoneBox}>
           <img

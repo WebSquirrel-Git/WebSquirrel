@@ -2,15 +2,14 @@ import Hero from '@/components/Portfolio/Hero/Hero';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nasze realizacje',
+  title: 'PORTFOLIO - strony, sklepy internetowe, grafiki',
   description:
-    'Sprawdź co ciekawego udało nam się stworzyć. Może coś przykuje Twoją uwagę i zrobimy coś podobnego, a może Cię zainspirujemy i stworzymy coś nowego.',
+    'Strony internetowe | Sklepy online | Animacje | Projekty graficzne | Brandbooki | NextJs | Wordpress | Woocommerce | Figma',
   metadataBase: new URL('https://websquirrel.pl/portfolio'),
   alternates: {
     canonical: 'https://websquirrel.pl/portfolio',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},

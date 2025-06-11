@@ -11,7 +11,7 @@ const hero = {
 const assumptions = [
   'Wszystkie informacje o firmie umieszczone na jednej stronie.',
   'Kategoryzacja informacji i umieszczenie ich w sekcjach. Każda sekcja powinna zawierać nagłówek. Poprawia to czytelności strony, SEO i powoduje zachowanie porządku i jasnego przekazu na stronie.',
-  'Grafiki - uważamy że to co wyróżnia dobrą stronę to jej autentyczność i historia więc zachęcamy do robienia zdjęć pokazujących waszą pracę, żeby jak najlepiej przedstawić Was klientowi. W przypadku braku własnych zdjęć stworzymy dostosowane ikony, które pomogą w zachowaniu estetyki na stronie. Jak zapewne wiecie czytanie ściany tekstu na stronie jest męczące dlatego wspominamy Wam o grafikach i ich alternatywach, które można użyć jako kreatywne przerywniki. ',
+  'Grafiki - uważam że to co wyróżnia dobrą stronę to jej autentyczność i historia więc zachęcam do robienia zdjęć pokazujących waszą pracę, żeby jak najlepiej przedstawić Was klientowi. W przypadku braku własnych zdjęć stworzymy dostosowane ikony, które pomogą w zachowaniu estetyki na stronie. Jak zapewne wiecie czytanie ściany tekstu na stronie jest męczące dlatego wspominam Wam o grafikach i ich alternatywach, które można użyć jako kreatywne przerywniki. ',
 ];
 
 const priceIncludes = [
@@ -23,8 +23,8 @@ const priceIncludes = [
 ];
 
 const priceNotIncludes = [
-  'Pisanie tekstów na stronę - uważamy że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Nasza praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
-  'Nie kupujemy domen i hostingów.',
+  'Pisanie tekstów na stronę - uważam że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Moja praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
+  'Nie kupuje domen i hostingów.',
 ];
 
 const technologies = [

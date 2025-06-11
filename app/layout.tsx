@@ -6,8 +6,8 @@ import {GoogleAnalytics} from '@next/third-parties/google';
 import CookiesPopup from '@/components/Ui/Popups/CookiesPopup/CookiesPopup';
 export const metadata: Metadata = {
   title: {
-    default: 'Strony i sklepy internetowe | Grafiki SVG - WebSquirrel',
-    template: '%s - WebSquirrel',
+    default: 'Strony i sklepy internetowe | WebSquirrel',
+    template: '%s | WebSquirrel',
   },
   description:
     'Zajmujemy się tworzeniem stron internetowych, sklepów internetowych oraz grafik/animacji SVG. Dzień bez pogawędki z klientem to dzień stracony więc nie wahaj się i dzwoń.',

@@ -16,7 +16,7 @@ const WEBSITE_PROCESS_STEPS = [
   {
     title: 'Tworzenie projektu graficznego',
     description:
-      'Tworzymy szkic strony i po otrzymaniu materiałów takich jak grafiki przystępujemy do prac nad projektem graficznym w Figmie. Po zakończeniu prac dostaną Państwo link do projektu. Po zapoznaniu się z nim umawiamy sie na konsultację.',
+      'Tworzę szkic strony i po otrzymaniu materiałów takich jak grafiki przystępuje do prac nad projektem graficznym w Figmie. Po zakończeniu prac dostaną Państwo link do projektu. Po zapoznaniu się z nim umawiamy sie na konsultację.',
   },
   {
     title: 'Akceptacja/poprawki',
@@ -26,7 +26,7 @@ const WEBSITE_PROCESS_STEPS = [
   {
     title: 'Tworzenie strony',
     description:
-      'Na tym etapie praca jest głównie po naszej stronie ale jest to dobry moment żeby dosłać do nas teksty na stronę i inne informacje ustalone na etapie planowania.',
+      'Na tym etapie praca jest głównie po mojej stronie ale jest to dobry moment żeby dosłać do mnie teksty na stronę i inne informacje ustalone na etapie planowania.',
   },
   {
     title: 'Akceptacja/poprawki',

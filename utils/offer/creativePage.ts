@@ -9,9 +9,9 @@ const hero = {
 };
 
 const assumptions = [
-  'Jeżeli nasze pozostałe oferty nie spełniają Twoich oczekiwań to dobrze, że tu jesteś.',
+  'Jeżeli pozostałe oferty nie spełniają Twoich oczekiwań to dobrze, że tu jesteś.',
   'Założenia ustalimy na początku współpracy.',
-  'W przypadku bardziej rozbudowanego projektu dodamy Cię do naszej tablicy na Jirze w celu lepszego monitorowania postępów prac.',
+  'W przypadku bardziej rozbudowanego projektu dodam Cię do tablicy na Jirze w celu lepszego monitorowania postępów prac.',
 ];
 
 const priceIncludes = [
@@ -25,8 +25,8 @@ const priceIncludes = [
 ];
 
 const priceNotIncludes = [
-  'Pisanie tekstów na stronę - uważamy że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Nasza praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
-  'Nie kupujemy domen i hostingów.',
+  'Pisanie tekstów na stronę - uważam że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Moja praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
+  'Nie kupuje domen i hostingów.',
 ];
 
 const technologies = [

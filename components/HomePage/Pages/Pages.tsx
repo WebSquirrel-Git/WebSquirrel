@@ -26,7 +26,7 @@ const PAGES_OFFERT = [
     title: 'Premium',
     price: '3000 - ∞ PLN',
     description:
-      'Rozbudowana strona internetowa z kilkoma podstronami i niestandardowymi funkcjonalnościami. Wymyśliłeś coś nietypowego czego nie ma na innych stronach i chcesz to mieć u siebie? Nie ma problemu. Skontaktuj się z nami to ustalimy czy jesteśmy w stanie to zrobić.',
+      'Rozbudowana strona internetowa z kilkoma podstronami i niestandardowymi funkcjonalnościami. Wymyśliłeś coś nietypowego czego nie ma na innych stronach i chcesz to mieć u siebie? Nie ma problemu. Skontaktuj się to ustalimy czy jesteśmy w stanie to zrobić.',
     url: '/oferta/strony/premium',
     link: true,
   },
@@ -35,7 +35,7 @@ const PAGES_OFFERT = [
     title: 'Creative',
     price: '∞ PLN',
     description:
-      'Jak to mówią sky is the limit. Ta oferta jest dla osób które chcą czegoś więcej niż standardowa strona i oczekują zastosowania złożonej logiki i mocno nietypowego designu. Nowe innowacyjne pomysły to jest to co lubimy najbardziej.',
+      'Jak to mówią sky is the limit. Ta oferta jest dla osób które chcą czegoś więcej niż standardowa strona i oczekują zastosowania złożonej logiki i mocno nietypowego designu.',
     url: '/oferta/strony/creative',
     link: true,
   },
@@ -59,8 +59,8 @@ const Pages = () => {
           Projekty obejmują darmową konsultację, projekt graficzny strony,
           podstawowe ustawienia SEO, oraz stały kontakt. Wszystkie strony są
           projektowane tak żeby były w pełni responsywne RWD. Możesz też liczyć
-          na nasze wsparcie po zakończeniu projektu oraz szkolenie lub
-          instrukcję obsługi strony.
+          na wsparcie po zakończeniu projektu oraz szkolenie lub instrukcję
+          obsługi strony.
         </p>
       </div>
       <div className={styles.rowBox}>

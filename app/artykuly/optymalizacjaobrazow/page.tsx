@@ -12,13 +12,12 @@ import LinksBox from '@/components/Articles/LinksBox/LinksBox';
 export const metadata: Metadata = {
   title: 'Optymalizacja obrazów na stronie internetowej',
   description:
-    'W tym artykule dowiesz się jak zoptymalizować grafiki na stronie internetowej, oraz poznasz podstawowe narzędzia do ich edycji.',
+    'W artykule poruszono następujące zagadnienia: zmniejszenie rozmiaru zdjęcia, rozmiar zdjęć, kompresja zdjęć, zmiana rozdzielczości zdjęcia, jpeg webp, page speed.',
   metadataBase: new URL('https://websquirrel.pl/artykuly/optymalizacjaobrazow'),
   alternates: {
     canonical: 'https://websquirrel.pl/artykuly/optymalizacjaobrazow',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},
