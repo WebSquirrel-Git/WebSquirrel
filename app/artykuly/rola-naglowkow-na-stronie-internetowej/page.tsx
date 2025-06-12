@@ -170,7 +170,7 @@ export default function ArticlePage3() {
             </p>
           </div>
         </section>
-        <h2>Zasady stosowania nagłówków na stronie internetowej</h2>
+        <h2>Przydatne narzędzia</h2>
         <section className={styles.articleSectionBorderLeftBottom}>
           <div className={styles.articleBoxBorderLeftBottom}>
             <H3Number number={1} title="META SEO inspector" />
