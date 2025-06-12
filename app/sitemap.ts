@@ -32,5 +32,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: 'https://websquirrel.pl/artykuly/korzysci-plynace-z-posiadania-sklepu-internetowego/',
     },
+    {
+      url: 'https://websquirrel.pl/artykuly/rola-naglowkow-na-stronie-internetowej/',
+    },
   ];
 }

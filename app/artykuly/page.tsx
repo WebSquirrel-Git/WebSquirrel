@@ -29,6 +29,14 @@ export default function CreativePage() {
       />
       <div className={styles.articlesContainer}>
         <ArticleCardLink
+          url="/artykuly/rola-naglowkow-na-stronie-internetowej"
+          tags={['typografia', 'stronyInternetowe', 'sklepyInternetowe']}
+          title="ROLA  NAGŁÓWKÓW NA STRONIE INTERNETOWEJ"
+          about="Dowiesz się jak poprawnie ustawić nagłówki na stronie internetowej. Jakie jest ich znaczenie, jak ważna jest hierarchia, estetyka i ich funkcje związane z SEO."
+          author="BARTOSZ"
+          date="12.06.2025"
+        />
+        <ArticleCardLink
           url="/artykuly/korzysci-plynace-z-posiadania-sklepu-internetowego"
           tags={['sklepyInternetowe']}
           title="KORZYŚCI PŁYNĄCE Z POSIADANIA SKLEPU INTERNETOWEGO"
