@@ -11,8 +11,8 @@
   border-radius: 10px;
   justify-content: space-between;
   @include mixin.phone500px {
-    width: 280px;
-    height: 390px;
+    width: 100%;
+    height: auto;
   }
   h3 {
     font-size: 1.5rem;

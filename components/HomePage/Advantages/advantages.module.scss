@@ -10,7 +10,8 @@
   width: 100%;
   gap: 6rem;
   @include mixin.phone500px {
-    padding: 2rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
   }
   h2 {
     color: colors.$squirrel;

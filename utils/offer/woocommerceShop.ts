@@ -5,7 +5,7 @@ const hero = {
   title: 'WooCommerce',
   price: '2000 - ∞ PLN',
   description:
-    'Prosty sklep internetowy zbudowany na WooCommerce. Idealne rozwiązanie dla startujących firm oferujących sprzedaż produktów lub usług.',
+    'Rozwiązanie dla firm, które chcą sprzedawać produkty online i mieć możliwość samodzielnej edycji treści na nim. Aplikacje wykonywane są na platformie Wordpress z WooCommerce. Sklep mogą założyć także osoby prowadzące działalność nierejestrowaną.',
 };
 
 const assumptions = [

@@ -5,7 +5,7 @@ const hero = {
   title: 'Standard',
   price: '2000 - ∞ PLN',
   description:
-    'Standardowa strona z kilkoma podstronami i podstawowymi funkcjonalnościami. Idealna dla firm, które świadczą więcej niż jedną usługę.',
+    'Strona internetowa posiadająca do 5 zakładek. Dobra opcja jeżeli Twoja firma posiada rozbudowane usługi, a Ty nie potrzebujesz rozbudowanego serwisu za większe pieniądze. Większa ilość stron przekłada się na większe możliwości SEO.',
 };
 
 const assumptions = [

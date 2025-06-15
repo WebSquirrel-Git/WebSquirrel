@@ -4,12 +4,21 @@ import styles from './graphics.module.scss';
 
 const GRAPHICS_OFFERT = [
   {
-    type: 'Grafiki',
-    title: 'SVG',
+    type: 'Projekt',
+    title: 'Brandbooka',
+    price: '500 - ∞ PLN',
+    description:
+      'Oferta dotyczy stworzenia Brandbooka w formacie PDF. Księga znaku zawiera informacje o marce, identyfikacje wizualną (logo, kolory, typografia, itp.) oraz reguły jej stosowania co pozwala zachować spójność i przekaz marki.',
+    url: '/oferta/grafiki/brandbook',
+    link: false,
+  },
+  {
+    type: 'Modyfikacje',
+    title: 'Logo',
     price: '100 - ∞ PLN',
     description:
-      'Grafiki takie jak np. logo firmy nie muszą być sztywnym obrazkiem, który zawsze wygląda tak samo. Pomogę Ci je ożywić wprowadzając kilka modyfikacji, które poprawią ich skalowanie i dadzą możliwość wprowadzania modyfikacji. Obrazy SVG nie tracą na jakości przy zmianie ich rozmiaru. ',
-    url: '/oferta/grafiki/svg',
+      'Oferta polega na odwzorowaniu aktualnego logo do formatu SVG, który poprawi jego jakość i skalowanie. Usługa obejmuje także wprowadzenie modyfikacji do obecnego logo lub stworzenie alternatywnych wariantów.',
+    url: '/oferta/grafiki/modyfikacje-logo',
     link: false,
   },
   {
@@ -17,7 +26,7 @@ const GRAPHICS_OFFERT = [
     title: 'HTML+CSS',
     price: '100 - ∞ PLN',
     description:
-      'Potrzebujesz nietypowej animacji na swoją stronę internetową? Tworzę animacje dla elementów na stronie internetowej jak i odwzorowania GIF.',
+      'Usługa polega na stworzeniu animacji internetowej składającej się z kodu HTML i stylów CSS. Taki kod jest łatwy do umiejscowienia na stronie i w pełni skalowalny. Jest to lepsza alternatywa dla plików GIF, które więcej ważą i wydłużają ładowanie strony.',
     url: '/oferta/grafiki/animacje',
     link: false,
   },
@@ -26,16 +35,16 @@ const GRAPHICS_OFFERT = [
     title: 'Figma',
     price: '100 - ∞ PLN',
     description:
-      'Podoba Ci się mój style i potrzebujesz projektu graficznego. Napisz, zadzwoń omówimy szczegóły i postaram Ci się pomóc.',
+      'Oferta obejmuje projektowanie banerów, ulotek, postów reklamowych i innych.',
     url: '/oferta/grafiki/projektygraficzne',
     link: false,
   },
   {
-    type: 'Rolki promocyjne',
-    title: 'Figma+Jiter',
+    type: 'Rolki',
+    title: 'Social Media',
     price: '100 - ∞ PLN',
     description:
-      'Rolki wideo do 20 sekund tworzone na podstawie projektu graficznego klienta. Jest to dobra opcja żeby poinformować klientów o ważnych wydarzeniach na Waszych socjal mediach.',
+      'Oferta dotyczy tworzenia rolek na IG i FB z wykorzystaniem elementów montażu. Dopiero zaczynam się rozwijać w tym temacie więc pierwsza rolka ZA DARMO. Stworzone rolki można sprawdzić na moim Instagramie.',
     url: '/oferta/grafiki/rolki',
     link: false,
   },
@@ -47,8 +56,10 @@ const Graphics = () => {
       <div className={styles.headerBox}>
         <h2>Elementy graficzne i wideo</h2>
         <p>
-          Wszystkie projekty graficzne , animacje i wideo obejmują darmową
-          konsultację i stały kontakt w trakcie wykonywania zlecenia.
+          Wszystkie podane ceny są orientacyjne. Proces projektowania
+          graficznego jest indywidualny i zależy od Twoich potrzeb - dlatego
+          ostateczna wycena może się różnić. W celu poznania dokładnego kosztu
+          realizacji projektu skontaktuj się.
         </p>
       </div>
       <div className={styles.rowBox}>

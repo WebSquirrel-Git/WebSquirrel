@@ -16,15 +16,41 @@
     justify-content: center;
   }
   @include mixin.phone800px {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 15vh 2rem 2rem 2rem;
+    gap: 2rem;
+  }
+  @include mixin.phone500px {
+    gap: 1rem;
+    padding: 15vh 1rem 2rem 1rem;
+    b {
+      font-size: 0.7rem;
+    }
+    br {
+      display: none;
+    }
   }
   h1 {
     color: colors.$squirrel;
   }
+  b {
+    font-size: 1.5rem;
+    @include mixin.phone500px{
+      font-size: .8rem;
+    }
+  }
+  a {
+    color: colors.$squirrel;
+  }
 }
+
 .logo {
-  width: 400px;
+  display: none;
+
+  @include mixin.pc1250px {
+    width: 400px;
+    display: flex;
+  }
   @include mixin.pc1000px {
     width: 300px;
   }
@@ -32,7 +58,7 @@
     width: 200px;
   }
   @include mixin.phone500px {
-    width: 150px;
+    width: 60%;
   }
 }
 .textBox {
@@ -58,6 +84,7 @@
   }
   @include mixin.phone500px {
     font-size: 1.3rem;
+    display: none;
   }
 }
 
