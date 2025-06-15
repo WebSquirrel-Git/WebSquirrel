@@ -5,7 +5,7 @@ const hero = {
   title: 'Creative',
   price: '∞ PLN',
   description:
-    'Jak to mówią sky is the limit. Ta oferta jest dla osób które chcą czegoś więcej niż standardowa strona i oczekują zastosowania złożonej logiki i mocno nietypowego designu.',
+    'Oferta dla firm, które oczekują bardzo wysokiej wydajności strony oraz potrzebują konkretnych rozwiązań — nietypowe funkcje, integracje i layouty. Aplikacje są robione w frameworku NextJs, którego używają takie platformy jak Netflix czy Nike.',
 };
 
 const assumptions = [

@@ -5,7 +5,7 @@ const hero = {
   title: 'Premium',
   price: '3000 - ∞ PLN',
   description:
-    'Rozbudowana strona internetowa z kilkoma podstronami i niestandardowymi funkcjonalnościami. Wymyśliłeś coś nietypowego czego nie ma na innych stronach i chcesz to mieć u siebie? Nie ma problemu. Skontaktuj się to ustalimy czy jestem w stanie to zrobić.',
+    'Oferta dla firm, które chcą profesjonalnie zaprezentować wiele usług, produktów lub treści. Sprawdzi się również, jeżeli prowadzisz mały biznes, ale regularnie tworzysz content i chcesz zadbać o silniejszą widoczność w Google.',
 };
 
 const assumptions = [

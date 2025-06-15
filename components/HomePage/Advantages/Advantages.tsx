@@ -5,37 +5,62 @@ import MegaphoneIcon from '@/public/assets/icons/megaphone-icon.svg';
 import TrustIcon from '@/public/assets/icons/accessibility-icon.svg';
 import ClockIcon from '@/public/assets/icons/stopwatch-icon.svg';
 
+import AnalyzeIcon from '@/public/assets/icons/analyze-icon.svg';
+import PersonIcon from '@/public/assets/icons/person-icon.svg';
+import LoopIcon from '@/public/assets/icons/loop-icon.svg';
+import PeopleIcon from '@/public/assets/icons/people-icon.svg';
 const ADVANTAGES_DATA = [
   {
-    header: 'WIDOCZNOŚĆ',
+    header: 'DOSTĘPNOŚĆ 24/7',
     icon: VisibilityIcon,
     description:
-      'Strona internetowa zapewnia Twojej marce stałą obecność online. Klienci mogą znaleźć Cię w dowolnym momencie. W dobie internetu, posiadanie strony jest podstawą do budowania obecności w sieci.',
+      'Opis Twoich usług jest dostępny cały czas - nie tracisz klientów.',
   },
   {
-    header: 'MARKETING',
+    header: 'ROZPOZNAWALNOŚĆ',
     icon: MegaphoneIcon,
-    description:
-      'Strona internetowa stanowi potężne narzędzie marketingowe, które umożliwia dotarcie do szerszego grona odbiorców. SEO i treści online mogą przyciągnąć klientów szukających produktów lub usług, które oferujesz.',
+    description: 'Zwiększenie zasięgu i rozpoznawalności firmy.',
+  },
+  {
+    header: 'NOWI KLIENCI',
+    icon: PersonIcon,
+    description: 'Większy zasięg to nowi klienci.',
   },
   {
     header: 'WIARYGODNOŚĆ',
     icon: TrustIcon,
     description:
-      'Profesjonalnie zaprojektowana strona internetowa może znacząco podnieść postrzeganie Twojej marki oraz jej wiarygodność.',
+      'Firmy ze stroną są częściej postrzegane jako bardziej wiarygodne.',
   },
   {
     header: 'CZAS',
     icon: ClockIcon,
     description:
-      'Dobrze napisana podstrona przedstawiająca opis czynności jaką będzie miał do wykonania klient może oszczędzić Twój czas, który będziesz musiał poświęcić na rozwiązanie jego problemu. ',
+      'Dobrze opisana oferta oszczędzi Ci czas na odbieranie telefonów i odpisywanie na wiadomości.',
+  },
+  {
+    header: 'INWESTYCJA',
+    icon: AnalyzeIcon,
+    description:
+      'Budowanie rozpoznawalności strony to długi proces - lepiej zacząć wcześniej.',
+  },
+  {
+    header: 'ANALIZA',
+    icon: LoopIcon,
+    description:
+      'Zyskujesz dostęp do analizy zachowań klientów, które mogą pomoc Ci w rozwoju.',
+  },
+  {
+    header: 'INTEGRACJA',
+    icon: PeopleIcon,
+    description: 'Miejsce gdzie możesz przekierować ruch z różnych portali.',
   },
 ];
 
 const Advantages = () => {
   return (
     <section id="advantages" className={styles.container}>
-      <h2>Plusy strony internetowej</h2>
+      <h2>Dlaczego potrzebujesz strony internetowej?</h2>
       <div className={styles.rowBox}>
         {ADVANTAGES_DATA.map((advantage, index) => (
           <div className={styles.advantageBox} key={index}>

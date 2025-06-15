@@ -10,7 +10,7 @@
   width: 100%;
   padding: 3rem 15%;
   @include mixin.phone500px {
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
   }
 }
 .articleContainer {

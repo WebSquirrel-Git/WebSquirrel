@@ -25,7 +25,7 @@ export default function CreativePage() {
       <Hero
         subheader=""
         title="Artykuły"
-        description="Tipy i rozwiązania dla osób aktualizujących treści na swoich stronach internetowych."
+        description="Porady i rozwiązania do zarządzania stronami www i sklepami online"
       />
       <div className={styles.articlesContainer}>
         <ArticleCardLink

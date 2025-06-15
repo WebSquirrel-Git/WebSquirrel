@@ -68,7 +68,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     popup: {
       title: 'Perlia',
       description:
-        'Projekt miał na celu stworzenie od zera sklepu internetowego na platformie WooCommerce. Dużym plusem podczas realizacji było to, że Weronika właścicielka Perlia z bardzo dużym zaangażowaniem prowadzi swoje konto na instagramie, dzięki czemu nie było większych problemów z ogarnięciem zdjęć produktów i odpowiednich opisów. Weronika jest perfekcjonistką, która bardzo przykłada się do pracy nad wizerunkiem swojej marki i dba o najmniejsze detale. Po kilku spotkaniach i wprowadzonych poprawkach udało nam się stworzyć sklep online, który w pełni oddaje to co prezentuje marka Perlia. Usługa obejmowała: pomoc w zakupie hostingu, domeny, serwisu e-mail, projekt graficzny strony, stworzenie strony, wdrożenie płatności online, wdrożenie dostaw InPost paczkomaty, integracja z systemami Google (analytics, merchant), SEO, konsultacje na google meet (ok. 8 spotkań), szkolenie z obsługi sklepu, instrukcja do zarządzania sklepem.',
+        'Projekt miał na celu stworzenie od zera sklepu internetowego na platformie WooCommerce. Dużym plusem podczas realizacji było to, że Weronika właścicielka Perlia z bardzo dużym zaangażowaniem prowadzi swoje konto na instagramie, dzięki czemu nie było większych problemów z ogarnięciem zdjęć produktów i odpowiednich opisów. Usługa obejmowała: pomoc w zakupie hostingu, domeny, serwisu e-mail, projekt graficzny strony, stworzenie strony, wdrożenie płatności online, wdrożenie dostaw InPost paczkomaty, integracja z systemami Google (analytics, merchant), SEO, konsultacje na google meet (ok. 8 spotkań), szkolenie z obsługi sklepu, instrukcja do zarządzania sklepem.',
       technologiesIcons: [WooCommerceIcon, FigmaIcon],
       url: 'perlia.pl',
       frontImages: [PerliaImg1, PerliaImg2],
@@ -177,7 +177,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
-    title: 'Rolki promocyjne ATZM',
+    title: 'Rolki Social Media',
     type: 'reel',
     orientation: 'landscape',
     typeTitle: 'Rolka promocyjna',
@@ -186,7 +186,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     active: false,
     style: 'graphic',
     popup: {
-      title: 'Rolki promocyjne ATZM',
+      title: 'Rolki Social Media',
       description:
         'Po stworzeniu sklepu internetowego dla ATZM Design nadszedł czas na jego prezentację na ich socjal mediach. Mieliśmy gotowy projekt graficzny strony w figmie więc zaproponowaliśmy stworzenie kilku rolek promocyjnych w Jitterze. Efekty naszej pracy możecie sprawdzić na wideo obok oraz na SM ATZM Design.',
       technologiesIcons: [FigmaBlueIcon],
@@ -196,7 +196,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
-    title: 'Animacje dla klienta',
+    title: 'Animacje HTML+CSS',
     type: 'animation',
     orientation: 'landscape',
     typeTitle: 'Animacje',
@@ -205,7 +205,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     active: false,
     style: 'graphic',
     popup: {
-      title: 'Animacje dla klienta',
+      title: 'Animacje HTML+CSS',
       description:
         'Specjalnie dla jednego z klientów przerobiliśmy kilka wideo w formacie GIF na animacje HTML + CSS. Głównym problemem było to, że skalowanie wideo w formacie GIF powoduje znaczną utratę jakości. Idealnym rozwiązaniem było zastosowanie animacji CSS na zdjęciach w formacie SVG zaprojektowanych przez nas. Animacje można bez problemów skalować i zajmują znacznie mniej przestrzeni dyskowej.',
       technologiesIcons: [FigmaBlueIcon],

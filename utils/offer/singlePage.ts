@@ -5,7 +5,7 @@ const hero = {
   title: 'Single Page',
   price: '1300 - ∞ PLN',
   description:
-    'Strona wizytówka to dobry wybór dla małych firm, które dopiero zaczynają swoją działalność i chcą przedstawić klientom profil swojej firmy.',
+    'Chcesz być widoczny w internecie, ale nie potrzebujesz rozbudowanego serwisu i nie chcesz wkładać w to dużo czasu? Strona wizytówka w sposób krótki i treściwy przedstawi klientom Twoją ofertę oraz sposoby kontaktu. Idealne rozwiązanie dla małych firm jak hydraulicy, elektrycy czy mechanicy.',
 };
 
 const assumptions = [
