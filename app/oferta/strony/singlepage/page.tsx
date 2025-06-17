@@ -1,7 +1,9 @@
 import ContactForm from '@/components/ContactForm/ContactForm';
+import Advantages from '@/components/OfferPage/Advantages/Advantages';
 import Hero from '@/components/OfferPage/Hero/Hero';
-import IconListRow from '@/components/OfferPage/IconListRow/IconListRow';
-import ProcessSteps from '@/components/OfferPage/ProcessSteps/ProcessSteps';
+import Incosts from '@/components/OfferPage/Incosts/Incosts';
+import Stages from '@/components/OfferPage/Stages/Stages';
+import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {SINGLE_PAGE_CONTENT} from '@/utils/offer/singlePage';
 import {Metadata} from 'next';
 
@@ -26,27 +28,10 @@ export default function SinglePage() {
   return (
     <>
       <Hero {...SINGLE_PAGE_CONTENT.hero} />
-      <IconListRow
-        title={SINGLE_PAGE_CONTENT.assumptions.title}
-        icon={SINGLE_PAGE_CONTENT.assumptions.icon}
-        list={SINGLE_PAGE_CONTENT.assumptions.list}
-      />
-      <IconListRow
-        title={SINGLE_PAGE_CONTENT.priceIncludes.title}
-        icon={SINGLE_PAGE_CONTENT.priceIncludes.icon}
-        list={SINGLE_PAGE_CONTENT.priceIncludes.list}
-      />
-      <IconListRow
-        title={SINGLE_PAGE_CONTENT.priceNotIncludes.title}
-        icon={SINGLE_PAGE_CONTENT.priceNotIncludes.icon}
-        list={SINGLE_PAGE_CONTENT.priceNotIncludes.list}
-      />
-      <IconListRow
-        title={SINGLE_PAGE_CONTENT.technologies.title}
-        icon={SINGLE_PAGE_CONTENT.technologies.icon}
-        list={SINGLE_PAGE_CONTENT.technologies.list}
-      />
-      <ProcessSteps />
+      <Advantages {...SINGLE_PAGE_CONTENT.advantages} />
+      <Incosts {...SINGLE_PAGE_CONTENT.incosts} />
+      <Technologies {...SINGLE_PAGE_CONTENT.technologies} />
+      <Stages {...SINGLE_PAGE_CONTENT.stages} />
       <ContactForm contactFormType="Strona internetowa" />
     </>
   );

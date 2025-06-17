@@ -1,7 +1,9 @@
 import ContactForm from '@/components/ContactForm/ContactForm';
+import Advantages from '@/components/OfferPage/Advantages/Advantages';
 import Hero from '@/components/OfferPage/Hero/Hero';
-import IconListRow from '@/components/OfferPage/IconListRow/IconListRow';
-import ProcessSteps from '@/components/OfferPage/ProcessSteps/ProcessSteps';
+import Incosts from '@/components/OfferPage/Incosts/Incosts';
+import Stages from '@/components/OfferPage/Stages/Stages';
+import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {WOOCOMMERCE_SHOP_CONTENT} from '@/utils/offer/woocommerceShop';
 import {Metadata} from 'next';
 
@@ -26,27 +28,10 @@ export default function WoocommercePage() {
   return (
     <>
       <Hero {...WOOCOMMERCE_SHOP_CONTENT.hero} />
-      <IconListRow
-        title={WOOCOMMERCE_SHOP_CONTENT.assumptions.title}
-        icon={WOOCOMMERCE_SHOP_CONTENT.assumptions.icon}
-        list={WOOCOMMERCE_SHOP_CONTENT.assumptions.list}
-      />
-      <IconListRow
-        title={WOOCOMMERCE_SHOP_CONTENT.priceIncludes.title}
-        icon={WOOCOMMERCE_SHOP_CONTENT.priceIncludes.icon}
-        list={WOOCOMMERCE_SHOP_CONTENT.priceIncludes.list}
-      />
-      <IconListRow
-        title={WOOCOMMERCE_SHOP_CONTENT.priceNotIncludes.title}
-        icon={WOOCOMMERCE_SHOP_CONTENT.priceNotIncludes.icon}
-        list={WOOCOMMERCE_SHOP_CONTENT.priceNotIncludes.list}
-      />
-      <IconListRow
-        title={WOOCOMMERCE_SHOP_CONTENT.technologies.title}
-        icon={WOOCOMMERCE_SHOP_CONTENT.technologies.icon}
-        list={WOOCOMMERCE_SHOP_CONTENT.technologies.list}
-      />
-      <ProcessSteps />
+      <Advantages {...WOOCOMMERCE_SHOP_CONTENT.advantages} />
+      <Incosts {...WOOCOMMERCE_SHOP_CONTENT.incosts} />
+      <Technologies {...WOOCOMMERCE_SHOP_CONTENT.technologies} />
+      <Stages {...WOOCOMMERCE_SHOP_CONTENT.stages} />
       <ContactForm contactFormType="Sklep internetowy" />
     </>
   );

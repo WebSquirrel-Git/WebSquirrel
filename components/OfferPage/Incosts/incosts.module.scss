@@ -1,0 +1,84 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-end;
+  padding: 3rem 0rem;
+}
+.contentContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 1.5rem 0rem;
+  width: 60%;
+  gap: 2rem;
+  align-items: flex-start;
+  @include mixin.pc1020px {
+    width: 85%;
+  }
+  @include mixin.phone700px {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+  h2 {
+    width: 100%;
+    color: colors.$squirrel;
+    padding: 10px 0px;
+    text-align: left;
+    border-bottom: 3px solid colors.$squirrel;
+    @include mixin.phone700px {
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+  }
+}
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  @include mixin.phone700px {
+    flex-direction: column;
+  }
+}
+.serviceBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 15px;
+  gap: 0.5rem;
+  border: 1px solid colors.$squirrel;
+  border-radius: 5px;
+  @include mixin.phone500px {
+    width: 100%;
+  }
+  p {
+    font-size: 16px;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  @include mixin.pc1020px {
+    display: none;
+  }
+  img {
+    width: 50%;
+  }
+}

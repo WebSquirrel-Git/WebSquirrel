@@ -74,9 +74,9 @@ const Hero = () => {
         <div className={styles.headerBox}>
           <h1>REALIZACJE</h1>
           <p>
-            Sprawdź co ciekawego udało nam się stworzyć. Może coś przykuje Twoją
-            uwagę i zrobimy coś podobnego, a może Cię zainspirujemy i stworzymy
-            coś nowego.
+            Sprawdź co udało nam się stworzyć. Może coś przykuje Twoją uwagę i
+            zrobimy coś podobnego, a może Cię zainspirujemy i stworzymy coś
+            nowego.
           </p>
         </div>
         <div className={styles.filtersBox}>

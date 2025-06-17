@@ -1,6 +1,29 @@
+import {AdvantagesPropsType} from '@/components/OfferPage/Advantages/Advantages';
 import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
-import {IconListRowPropsType} from '@/components/OfferPage/IconListRow/IconListRow';
-const hero = {
+import {IncostsPropsType} from '@/components/OfferPage/Incosts/Incosts';
+import {StagesPropsType} from '@/components/OfferPage/Stages/Stages';
+import {TechnologiesPropsType} from '@/components/OfferPage/Technologies/Technologies';
+import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
+import WebsiteIcon from '@/public/assets/icons/website-orange-icon.svg';
+import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
+import LoopIcon from '@/public/assets/icons/loop-icon.svg';
+import CalendarIcon from '@/public/assets/icons/calendar-icon.svg';
+import GoogleIcon from '@/public/assets/icons/google-icon.svg';
+import ToolIcon from '@/public/assets/icons/tool-icon.svg';
+import ChatIcon from '@/public/assets/icons/chat-icon.svg';
+import HtmlIcon from '@/public/assets/icons/html-icon.svg';
+import WordpressIcon from '@/public/assets/icons/wordpress-icon.svg';
+import VisibilityIcon from '@/public/assets/icons/eye-icon.svg';
+import MegaphoneIcon from '@/public/assets/icons/megaphone-icon.svg';
+import TrustIcon from '@/public/assets/icons/accessibility-icon.svg';
+import ClockIcon from '@/public/assets/icons/stopwatch-icon.svg';
+import AnalyzeIcon from '@/public/assets/icons/analyze-icon.svg';
+import PersonIcon from '@/public/assets/icons/person-icon.svg';
+import PeopleIcon from '@/public/assets/icons/people-icon.svg';
+import NexjJSIcon from '@/public/assets/icons/next-js-icon.svg';
+
+const hero: OffertHeroPropsType = {
+  videoTitle: 'Timeline4.mp4',
   subheader: 'Strona internetowa',
   title: 'Premium',
   price: '3000 - ∞ PLN',
@@ -8,63 +31,177 @@ const hero = {
     'Oferta dla firm, które chcą profesjonalnie zaprezentować wiele usług, produktów lub treści. Sprawdzi się również, jeżeli prowadzisz mały biznes, ale regularnie tworzysz content i chcesz zadbać o silniejszą widoczność w Google.',
 };
 
-const assumptions = [
-  'Strona internetowa składająca się ze strony głównej oraz kilku podstron.',
-  'Strona główna podzielona na sekcję z krótkimi opisami podstron zachęcających do ich sprawdzenia. Główne zadanie to przedstawienie profilu firmy i tego co oferuje bez wdawania się w szczegółowe opisy - do tego użyjemy podstron.',
-  'Kategoryzacja i uporządkowanie treści z wykorzystaniem strony głównej i podstron.',
-  'Zaprojektowanie i wdrożenie animacji dla elementów strony internetowej. Menu wyskakujące z prawej strony ekranu, kafelki które po najechaniu zmieniają treść czy nietypowy pasek ładowania strony. Wymieniłem tylko przykładowe animację, które mogą zwiększyć atrakcyjność strony i zapadną odwiedzającemu w pamięci, a właśnie to jest głównym celem żeby strona była polecana i odwiedzana ponownie.',
-  'Nie będę się rozpisywać odnośnie nietypowych funkcjonalności - po prostu postaram się zrealizować to co wymyśliliście. Przykładami mogą być interaktywny poradnik, integracja z API czy zaimplementowanie zewnętrznych danych i ich dostosowanie do strony. Opcji jest wiele dlatego zapraszam do konsultacji i omówienia jak coś takiego ma wyglądać i działać.',
+const ADVANTAGES_DATA = [
+  {
+    header: 'DOSTĘPNOŚĆ 24/7',
+    icon: VisibilityIcon,
+    description:
+      'Opis Twoich usług jest dostępny cały czas - nie tracisz klientów.',
+  },
+  {
+    header: 'ROZPOZNAWALNOŚĆ',
+    icon: MegaphoneIcon,
+    description: 'Zwiększenie zasięgu i rozpoznawalności firmy.',
+  },
+  {
+    header: 'NOWI KLIENCI',
+    icon: PersonIcon,
+    description: 'Większy zasięg to nowi klienci.',
+  },
+  {
+    header: 'WIARYGODNOŚĆ',
+    icon: TrustIcon,
+    description:
+      'Firmy ze stroną są częściej postrzegane jako bardziej wiarygodne.',
+  },
+  {
+    header: 'CZAS',
+    icon: ClockIcon,
+    description:
+      'Dobrze opisana oferta oszczędzi Ci czas na odbieranie telefonów i odpisywanie na wiadomości.',
+  },
+  {
+    header: 'INWESTYCJA',
+    icon: AnalyzeIcon,
+    description:
+      'Budowanie rozpoznawalności strony to długi proces - lepiej zacząć wcześniej.',
+  },
+  {
+    header: 'ANALIZA',
+    icon: LoopIcon,
+    description:
+      'Zyskujesz dostęp do analizy zachowań klientów, które mogą pomoc Ci w rozwoju.',
+  },
+  {
+    header: 'INTEGRACJA',
+    icon: PeopleIcon,
+    description: 'Miejsce gdzie możesz przekierować ruch z różnych portali.',
+  },
 ];
-
-const priceIncludes = [
-  'Konsultacje odnośnie projektu graficznego i zakodowanej strony w wersji developerskiej. Spotkania na google meets.',
-  'Stworzenie strony głównej oraz kilku podstron.',
-  'Stworzenie nietypowych funkcjonalności strony oraz animacji',
-  'Podstawowe ustawienie SEO pod wyszukiwarkę google. Dodanie domeny do Google Search Console i Google Analytics.',
-  'Pomoc w wyborze i zakupie hostingu i domeny.',
-  'Projekt graficzny',
-  'Formularz kontaktowy',
+const TECHNOLOGIES_DATA = [
+  {
+    header: 'HTML + CSS + JS',
+    icon: HtmlIcon,
+    description:
+      'Najbardziej klasyczne wykonanie bez zbędnych plików. Czysty kod bez panelu zarządzania treścią. Do edycji wymagana jest znajomości wyżej wymienionych technologii. Oferuję możliwość długoterminowej współpracy polegającej na wprowadzaniu zmian na stronę.',
+  },
+  {
+    header: 'Wordpress',
+    icon: WordpressIcon,
+    description:
+      'Wykonanie strony na platformie CMS Wordpress, która  posiada intuicyjny panel do zarządzania treścią. Ułatwione wprowadzanie zmian przez klienta.',
+  },
+  {
+    header: 'NextJs',
+    icon: NexjJSIcon,
+    description:
+      'Innowacyjne rozwiązanie, w którym do stworzenia strony używam frameworka NextJs z TS i Scss. Ta opcja wyróżnia się bardzo dużą wydajnością i możliwościami personalizacji pod klienta - nietypowe funkcje, integracje i layouty. Minusem jest brak panelu zarządzania treścią. Do samodzielnej obsługi wymagana jest znajomość programowania w wyżej wymienionych technologiach. Oferuję współpracę na zasadzie aktualizacji treści na stronie podanych przez klienta. Rozliczenie za godziny mojej pracy.',
+  },
 ];
-
-const priceNotIncludes = [
-  'Pisanie tekstów na stronę - uważam że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Moja praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
-  'Nie kupuje domen i hostingów.',
+const INCOST_SERVICES = [
+  {
+    img: PhoneIcon,
+    title: 'Darmowa konsultacja',
+    alt: 'phone',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Pomoc w zakupie i konfiguracji hostingu oraz domeny',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Więcej niż 5 zakładek',
+    alt: 'website',
+  },
+  {
+    img: FigmaIcon,
+    title: 'Personalizowany projekt graficzny',
+    alt: 'figma',
+  },
+  {
+    img: LoopIcon,
+    title: 'Lepsza optymalizacja SEO (więcej zakładek)',
+    alt: 'loop',
+  },
+  {
+    img: CalendarIcon,
+    title: 'Spotkania na Google Meet',
+    alt: 'calendar',
+  },
+  {
+    img: GoogleIcon,
+    title: 'Integracja strony z systemami Google',
+    alt: 'google',
+  },
+  {
+    img: ToolIcon,
+    title: 'Szkolenie online z obsługi strony i poradnik w formie PDF',
+    alt: 'tool',
+  },
+  {
+    img: ChatIcon,
+    title: 'Stały kontakt po zakończeniu projektu',
+    alt: 'chat',
+  },
 ];
-
-const technologies = [
-  'Wordpress',
-  'HTML - CSS - JavaScript',
-  'NextJs - Sass - TypeScript',
+const STAGES_DATA = [
+  {
+    header: 'Konsultacja',
+    number: '01',
+    description: 'Omówienie założeń projektu.',
+  },
+  {
+    header: 'Projekt graficzny',
+    number: '02',
+    description:
+      'Wykonuję projekt graficzny strony w Figmie. Po skończeniu umawiamy się na spotkanie i omawiamy efekty.',
+  },
+  {
+    header: 'Akceptacja/Poprawki',
+    number: '03',
+    description:
+      'Jeżeli projekt graficzny jest ok to lecimy dalej. Jeżeli trzeba coś poprawić to poprawiamy.',
+  },
+  {
+    header: 'Tworzenie strony',
+    number: '04',
+    description:
+      'Na tym etapie praca jest głównie po mojej stronie ale jest to dobry moment żeby dosłać do mnie informacje ustalone na etapie planowania.',
+  },
+  {
+    header: 'Akceptacja/Poprawki',
+    number: '05',
+    description:
+      'Jeżeli strona jest ok to wrzucamy ją na hosting i zajmujemy się SEO. Jeżeli trzeba coś poprawić to poprawiamy.',
+  },
+  {
+    header: 'Monitoring',
+    number: '06',
+    description:
+      'Obserwujemy jak działa strona. Spotykamy się na szkolenie online z obsługi strony i pozostajemy w stałym kontakcie.',
+  },
 ];
-
 interface PREMIUM_PAGE_CONTENT_TYPE {
   hero: OffertHeroPropsType;
-  assumptions: IconListRowPropsType;
-  priceIncludes: IconListRowPropsType;
-  priceNotIncludes: IconListRowPropsType;
-  technologies: IconListRowPropsType;
+  advantages: AdvantagesPropsType;
+  technologies: TechnologiesPropsType;
+  incosts: IncostsPropsType;
+  stages: StagesPropsType;
 }
 
 export const PREMIUM_PAGE_CONTENT: PREMIUM_PAGE_CONTENT_TYPE = {
   hero: hero,
-  assumptions: {
-    title: 'Założenia',
-    list: assumptions,
-    icon: 'reader',
+  advantages: {
+    ADVANTAGES_DATA: ADVANTAGES_DATA,
   },
-  priceIncludes: {
-    title: 'Co zawiera usługa',
-    list: priceIncludes,
-    icon: 'checkmarkDone',
-  },
-  priceNotIncludes: {
-    title: 'Czego NIE zawiera usługa',
-    list: priceNotIncludes,
-    icon: 'closeCircle',
+  incosts: {
+    INCOST_SERVICES: INCOST_SERVICES,
   },
   technologies: {
-    title: 'Możliwości wykonania',
-    list: technologies,
-    icon: 'codeSlash',
+    TECHNOLOGIES_DATA: TECHNOLOGIES_DATA,
+  },
+  stages: {
+    STAGES_DATA: STAGES_DATA,
   },
 };
