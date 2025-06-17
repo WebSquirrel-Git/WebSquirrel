@@ -1,6 +1,30 @@
+import {AdvantagesPropsType} from '@/components/OfferPage/Advantages/Advantages';
 import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
-import {IconListRowPropsType} from '@/components/OfferPage/IconListRow/IconListRow';
-const hero = {
+import {IncostsPropsType} from '@/components/OfferPage/Incosts/Incosts';
+import {StagesPropsType} from '@/components/OfferPage/Stages/Stages';
+import {TechnologiesPropsType} from '@/components/OfferPage/Technologies/Technologies';
+import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
+import WebsiteIcon from '@/public/assets/icons/website-orange-icon.svg';
+import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
+import LoopIcon from '@/public/assets/icons/loop-icon.svg';
+import CalendarIcon from '@/public/assets/icons/calendar-icon.svg';
+import DolarIcon from '@/public/assets/icons/dolar-icon.svg';
+import DeliveryIcon from '@/public/assets/icons/delivery-icon.svg';
+import GoogleIcon from '@/public/assets/icons/google-icon.svg';
+import ToolIcon from '@/public/assets/icons/tool-icon.svg';
+import ChatIcon from '@/public/assets/icons/chat-icon.svg';
+import HtmlIcon from '@/public/assets/icons/html-icon.svg';
+import WooCommerceIcon from '@/public/assets/icons/woocommerce-orange-icon.svg';
+import VisibilityIcon from '@/public/assets/icons/eye-icon.svg';
+import MegaphoneIcon from '@/public/assets/icons/megaphone-icon.svg';
+import TrustIcon from '@/public/assets/icons/accessibility-icon.svg';
+import ClockIcon from '@/public/assets/icons/stopwatch-icon.svg';
+import AnalyzeIcon from '@/public/assets/icons/analyze-icon.svg';
+import PersonIcon from '@/public/assets/icons/person-icon.svg';
+import PeopleIcon from '@/public/assets/icons/people-icon.svg';
+
+const hero: OffertHeroPropsType = {
+  videoTitle: 'Timeline4.mp4',
   subheader: 'Sklep internetowy',
   title: 'WooCommerce',
   price: '2000 - ∞ PLN',
@@ -8,60 +32,189 @@ const hero = {
     'Rozwiązanie dla firm, które chcą sprzedawać produkty online i mieć możliwość samodzielnej edycji treści na nim. Aplikacje wykonywane są na platformie Wordpress z WooCommerce. Sklep mogą założyć także osoby prowadzące działalność nierejestrowaną.',
 };
 
-const assumptions = [
-  'Strona sklepu składająca się ze strony głównej, podstrony sklepu zawierającej informacje o produktach oraz podstronach produktów.',
-  'Strona główna podzielona na sekcję z opisami działalności firmy, oraz kategorii produktów zachęcających do sprawdzenia oferty.',
-  'Podstrona z produktami zawiera listę produktów z możliwością ich filtrowania.',
-  'Każdy produkt posiada swoją podstronę ze szczegółowym opisem, ceną, SKU, możliwością dostawy itp.',
-  'Integracja z aplikacjami umożliwiającymi płatności online oraz formy dostawy.',
+const ADVANTAGES_DATA = [
+  {
+    header: 'DOSTĘPNOŚĆ 24/7',
+    icon: VisibilityIcon,
+    description: 'Twoje produkty są dostępne cały czas - nie tracisz klientów.',
+  },
+  {
+    header: 'ROZPOZNAWALNOŚĆ',
+    icon: MegaphoneIcon,
+    description: 'Zwiększenie zasięgu i rozpoznawalności firmy.',
+  },
+  {
+    header: 'NOWI KLIENCI',
+    icon: PersonIcon,
+    description: 'Większy zasięg to nowi klienci.',
+  },
+  {
+    header: 'WIARYGODNOŚĆ',
+    icon: TrustIcon,
+    description:
+      'Firmy ze stroną są częściej postrzegane jako bardziej wiarygodne.',
+  },
+  {
+    header: 'CZAS',
+    icon: ClockIcon,
+    description:
+      'Dobrze opisana oferta oszczędzi Ci czas na odbieranie telefonów i odpisywanie na wiadomości.',
+  },
+  {
+    header: 'INWESTYCJA',
+    icon: AnalyzeIcon,
+    description:
+      'Budowanie rozpoznawalności strony to długi proces - lepiej zacząć wcześniej.',
+  },
+  {
+    header: 'ANALIZA',
+    icon: LoopIcon,
+    description:
+      'Zyskujesz dostęp do analizy zachowań klientów, które mogą pomoc Ci w rozwoju.',
+  },
+  {
+    header: 'INTEGRACJA',
+    icon: PeopleIcon,
+    description: 'Miejsce gdzie możesz przekierować ruch z różnych portali.',
+  },
 ];
-
-const priceIncludes = [
-  'Konsultacje odnośnie projektu graficznego i zakodowanej strony w wersji developerskiej. Spotkania na google meets.',
-  'Stworzenie strony głównej sklepu oraz podstron produktów.',
-  'Podstawowe ustawienie SEO pod wyszukiwarkę google. Dodanie domeny do Google Search Console i Google Analytics.',
-  'Pomoc w wyborze i zakupie hostingu i domeny.',
-  'Wdrożenie integracji płatności online i wyboru sposobu dostawy.',
-  'Projekt graficzny',
-  'Formularz kontaktowy',
+const TECHNOLOGIES_DATA = [
+  {
+    header: 'WooCommerce',
+    icon: WooCommerceIcon,
+    description:
+      'Wykonanie sklepu na platformie Woocommerce, która oferuje panel zarządzania sklepem. Zarządzanie treściami - Wordpress, więc będziesz w stanie wszystko samemu edytować.',
+  },
 ];
-
-const priceNotIncludes = [
-  'Pisanie tekstów na stronę - uważam że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Moja praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
-  'Nie kupuje domen i hostingów.',
-  'Wszelkie rejestracje i opłaty związane z aktywacją usług płatności online i sposobów dostawy leżą po stronie klienta. W przypadku występowania problemów służę pomocą.',
+const INCOST_SERVICES = [
+  {
+    img: PhoneIcon,
+    title: 'Darmowa konsultacja',
+    alt: 'phone',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Pomoc w zakupie i konfiguracji hostingu oraz domeny',
+    alt: 'website',
+  },
+  {
+    img: FigmaIcon,
+    title: 'Personalizowany projekt graficzny',
+    alt: 'figma',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Strona sklepu',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Personalizowane zakładki opisujące kategorie produktów',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Zakładka poświęcona marce',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Dodanie kilku produktów szablonowych',
+    alt: 'website',
+  },
+  {
+    img: LoopIcon,
+    title: 'Optymalizacja SEO',
+    alt: 'loop',
+  },
+  {
+    img: CalendarIcon,
+    title: 'Spotkania na Google Meet',
+    alt: 'calendar',
+  },
+  {
+    img: DolarIcon,
+    title: 'Wdrożenie płatności online',
+    alt: 'cash',
+  },
+  {
+    img: DeliveryIcon,
+    title: 'Wdrożenie wyboru dostawy online',
+    alt: 'delivery',
+  },
+  {
+    img: GoogleIcon,
+    title: 'Integracja strony z systemami Google',
+    alt: 'google',
+  },
+  {
+    img: ToolIcon,
+    title: 'Szkolenie online z obsługi sklepu i poradnik w formie PDF',
+    alt: 'tool',
+  },
+  {
+    img: ChatIcon,
+    title: 'Stały kontakt po zakończeniu projektu',
+    alt: 'chat',
+  },
 ];
-
-const technologies = ['WooCommerce'];
-
+const STAGES_DATA = [
+  {
+    header: 'Konsultacja',
+    number: '01',
+    description: 'Omówienie założeń projektu.',
+  },
+  {
+    header: 'Projekt graficzny',
+    number: '02',
+    description:
+      'Wykonuję projekt graficzny sklepu w Figmie. Po skończeniu umawiamy się na spotkanie i omawiamy efekty.',
+  },
+  {
+    header: 'Akceptacja/Poprawki',
+    number: '03',
+    description:
+      'Jeżeli projekt graficzny jest ok to lecimy dalej. Jeżeli trzeba coś poprawić to poprawiamy.',
+  },
+  {
+    header: 'Tworzenie sklepu',
+    number: '04',
+    description:
+      'Na tym etapie praca jest głównie po mojej stronie ale jest to dobry moment żeby dosłać do mnie informacje ustalone na etapie planowania.',
+  },
+  {
+    header: 'Akceptacja/Poprawki',
+    number: '05',
+    description:
+      'Jeżeli sklep jest ok to wrzucamy go na hosting i zajmujemy się SEO. Jeżeli trzeba coś poprawić to poprawiamy.',
+  },
+  {
+    header: 'Monitoring',
+    number: '06',
+    description:
+      'Obserwujemy jak działa sklep. Spotykamy się na szkolenie online z obsługi sklepu i pozostajemy w stałym kontakcie.',
+  },
+];
 interface WOOCOMMERCE_SHOP_CONTENT_TYPE {
   hero: OffertHeroPropsType;
-  assumptions: IconListRowPropsType;
-  priceIncludes: IconListRowPropsType;
-  priceNotIncludes: IconListRowPropsType;
-  technologies: IconListRowPropsType;
+  advantages: AdvantagesPropsType;
+  technologies: TechnologiesPropsType;
+  incosts: IncostsPropsType;
+  stages: StagesPropsType;
 }
 
 export const WOOCOMMERCE_SHOP_CONTENT: WOOCOMMERCE_SHOP_CONTENT_TYPE = {
   hero: hero,
-  assumptions: {
-    title: 'Założenia',
-    list: assumptions,
-    icon: 'reader',
+  advantages: {
+    ADVANTAGES_DATA: ADVANTAGES_DATA,
   },
-  priceIncludes: {
-    title: 'Co zawiera usługa',
-    list: priceIncludes,
-    icon: 'checkmarkDone',
-  },
-  priceNotIncludes: {
-    title: 'Czego NIE zawiera usługa',
-    list: priceNotIncludes,
-    icon: 'closeCircle',
+  incosts: {
+    INCOST_SERVICES: INCOST_SERVICES,
   },
   technologies: {
-    title: 'Możliwości wykonania',
-    list: technologies,
-    icon: 'codeSlash',
+    TECHNOLOGIES_DATA: TECHNOLOGIES_DATA,
+  },
+  stages: {
+    STAGES_DATA: STAGES_DATA,
   },
 };

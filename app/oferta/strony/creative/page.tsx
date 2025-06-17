@@ -1,7 +1,9 @@
 import ContactForm from '@/components/ContactForm/ContactForm';
+import Advantages from '@/components/OfferPage/Advantages/Advantages';
 import Hero from '@/components/OfferPage/Hero/Hero';
-import IconListRow from '@/components/OfferPage/IconListRow/IconListRow';
-import ProcessSteps from '@/components/OfferPage/ProcessSteps/ProcessSteps';
+import Incosts from '@/components/OfferPage/Incosts/Incosts';
+import Stages from '@/components/OfferPage/Stages/Stages';
+import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {CREATIVE_PAGE_CONTENT} from '@/utils/offer/creativePage';
 import {Metadata} from 'next';
 
@@ -26,27 +28,10 @@ export default function CreativePage() {
   return (
     <>
       <Hero {...CREATIVE_PAGE_CONTENT.hero} />
-      <IconListRow
-        title={CREATIVE_PAGE_CONTENT.assumptions.title}
-        icon={CREATIVE_PAGE_CONTENT.assumptions.icon}
-        list={CREATIVE_PAGE_CONTENT.assumptions.list}
-      />
-      <IconListRow
-        title={CREATIVE_PAGE_CONTENT.priceIncludes.title}
-        icon={CREATIVE_PAGE_CONTENT.priceIncludes.icon}
-        list={CREATIVE_PAGE_CONTENT.priceIncludes.list}
-      />
-      <IconListRow
-        title={CREATIVE_PAGE_CONTENT.priceNotIncludes.title}
-        icon={CREATIVE_PAGE_CONTENT.priceNotIncludes.icon}
-        list={CREATIVE_PAGE_CONTENT.priceNotIncludes.list}
-      />
-      <IconListRow
-        title={CREATIVE_PAGE_CONTENT.technologies.title}
-        icon={CREATIVE_PAGE_CONTENT.technologies.icon}
-        list={CREATIVE_PAGE_CONTENT.technologies.list}
-      />
-      <ProcessSteps />
+      <Advantages {...CREATIVE_PAGE_CONTENT.advantages} />
+      <Incosts {...CREATIVE_PAGE_CONTENT.incosts} />
+      <Technologies {...CREATIVE_PAGE_CONTENT.technologies} />
+      <Stages {...CREATIVE_PAGE_CONTENT.stages} />
       <ContactForm contactFormType="Strona internetowa" />
     </>
   );

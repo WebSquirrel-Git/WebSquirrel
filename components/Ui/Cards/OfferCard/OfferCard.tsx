@@ -52,7 +52,7 @@ const OfferCard = ({
           <span className={headerStyle}>{title}</span>
         </h3>
         <div className={styles.priceBox}>
-          <span className={styles.priceLabel}>Cena:</span>
+          <span className={styles.priceLabel}>Cena orientacyjna:</span>
           <span className={priceStyle}>{price}</span>
         </div>
         <span className={styles.description}>{description}</span>

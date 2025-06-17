@@ -1,0 +1,94 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 3rem 0rem;
+}
+.contentContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
+  width: 60%;
+  gap: 2rem;
+  @include mixin.pc1020px {
+    width: 85%;
+  }
+  @include mixin.phone700px {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+  h2 {
+    color: colors.$squirrel;
+    padding: 10px 0px;
+    text-align: right;
+    border-bottom: 3px solid colors.$squirrel;
+    @include mixin.phone700px {
+      width: fit-content;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  @include mixin.phone700px {
+    flex-direction: column;
+  }
+}
+.advantageBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  height: 257px;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid colors.$squirrel;
+  @include mixin.phone700px {
+    height: fit-content;
+    gap: 0.5rem;
+  }
+  h3 {
+    color: colors.$squirrel;
+  }
+  p {
+    font-size: 16px;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+      line-height: 1.2rem;
+    }
+  }
+  .topBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  @include mixin.pc1020px {
+    display: none;
+  }
+  img {
+    width: 50%;
+  }
+}

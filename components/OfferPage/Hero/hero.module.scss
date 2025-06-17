@@ -1,32 +1,80 @@
 @use '../../../styles/colors.scss' as colors;
 @use '../../../styles/mixin.scss' as mixin;
-
 .container {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  padding: 10vh 3rem 3rem 3rem;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  min-height: 100vh;
-  h1 {
-    color: colors.$squirrel;
-    padding-bottom: 2rem;
-    @include mixin.phone500px {
-      font-size: 2.3rem;
+  justify-content: space-between;
+  padding: 10vh 9rem 1rem 9rem;
+  background-color: colors.$dark;
+  width: 100%;
+  height: 100vh;
+  gap: 5rem;
+  @include mixin.pc1450px {
+    padding: 10vh 3rem 1rem 3rem;
+    justify-content: center;
+  }
+  @include mixin.phone800px {
+    flex-direction: column-reverse;
+    padding: 15vh 2rem 2rem 2rem;
+    gap: 2rem;
+  }
+  @include mixin.phone500px {
+    gap: 1rem;
+    padding: 15vh 1rem 2rem 1rem;
+    b {
+      font-size: 0.7rem;
+    }
+    br {
+      display: none;
     }
   }
-  p {
+  h1 {
+    color: colors.$squirrel;
+    width: max-content;
+  }
+  b {
+    font-size: 1.5rem;
+    @include mixin.phone500px {
+      font-size: 0.8rem;
+    }
+  }
+  a {
+    color: colors.$squirrel;
+  }
+}
+
+.logo {
+  display: none;
+
+  @include mixin.pc1250px {
+    width: 400px;
+    display: flex;
+  }
+  @include mixin.pc1000px {
+    width: 300px;
+  }
+  @include mixin.phone800px {
+    width: 200px;
+  }
+  @include mixin.phone500px {
+    width: 60%;
+  }
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  gap: 1rem;
+  @include mixin.pc1450px {
+    width: 50%;
+  }
+  @include mixin.phone800px {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 30%;
-    font-weight: 600;
-    @include mixin.pc1450px {
-      width: 60%;
-    }
-    @include mixin.phone800px {
-      width: 80%;
-    }
   }
 }
 .subHeader {
@@ -39,13 +87,8 @@
     font-size: 1.3rem;
   }
 }
-.orange {
+
+.textOrange {
   color: colors.$squirrel;
-}
-.logoShield {
-  padding-top: 3rem;
-  width: 140px;
-  @include mixin.phone800px {
-    width: 100px;
-  }
+  font-weight: 600;
 }

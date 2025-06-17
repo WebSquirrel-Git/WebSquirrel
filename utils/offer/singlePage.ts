@@ -1,6 +1,27 @@
 import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
-import {IconListRowPropsType} from '@/components/OfferPage/IconListRow/IconListRow';
-const hero = {
+import {StagesPropsType} from '@/components/OfferPage/Stages/Stages';
+import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
+import WebsiteIcon from '@/public/assets/icons/website-orange-icon.svg';
+import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
+import LoopIcon from '@/public/assets/icons/loop-icon.svg';
+import CalendarIcon from '@/public/assets/icons/calendar-icon.svg';
+import GoogleIcon from '@/public/assets/icons/google-icon.svg';
+import ToolIcon from '@/public/assets/icons/tool-icon.svg';
+import ChatIcon from '@/public/assets/icons/chat-icon.svg';
+import HtmlIcon from '@/public/assets/icons/html-icon.svg';
+import WordpressIcon from '@/public/assets/icons/wordpress-icon.svg';
+import VisibilityIcon from '@/public/assets/icons/eye-icon.svg';
+import MegaphoneIcon from '@/public/assets/icons/megaphone-icon.svg';
+import TrustIcon from '@/public/assets/icons/accessibility-icon.svg';
+import ClockIcon from '@/public/assets/icons/stopwatch-icon.svg';
+import AnalyzeIcon from '@/public/assets/icons/analyze-icon.svg';
+import PersonIcon from '@/public/assets/icons/person-icon.svg';
+import PeopleIcon from '@/public/assets/icons/people-icon.svg';
+import {IncostsPropsType} from '@/components/OfferPage/Incosts/Incosts';
+import {TechnologiesPropsType} from '@/components/OfferPage/Technologies/Technologies';
+import {AdvantagesPropsType} from '@/components/OfferPage/Advantages/Advantages';
+const hero: OffertHeroPropsType = {
+  videoTitle: 'Single-page.mp4',
   subheader: 'Strona internetowa',
   title: 'Single Page',
   price: '1300 - ∞ PLN',
@@ -8,59 +29,166 @@ const hero = {
     'Chcesz być widoczny w internecie, ale nie potrzebujesz rozbudowanego serwisu i nie chcesz wkładać w to dużo czasu? Strona wizytówka w sposób krótki i treściwy przedstawi klientom Twoją ofertę oraz sposoby kontaktu. Idealne rozwiązanie dla małych firm jak hydraulicy, elektrycy czy mechanicy.',
 };
 
-const assumptions = [
-  'Wszystkie informacje o firmie umieszczone na jednej stronie.',
-  'Kategoryzacja informacji i umieszczenie ich w sekcjach. Każda sekcja powinna zawierać nagłówek. Poprawia to czytelności strony, SEO i powoduje zachowanie porządku i jasnego przekazu na stronie.',
-  'Grafiki - uważam że to co wyróżnia dobrą stronę to jej autentyczność i historia więc zachęcam do robienia zdjęć pokazujących waszą pracę, żeby jak najlepiej przedstawić Was klientowi. W przypadku braku własnych zdjęć stworzymy dostosowane ikony, które pomogą w zachowaniu estetyki na stronie. Jak zapewne wiecie czytanie ściany tekstu na stronie jest męczące dlatego wspominam Wam o grafikach i ich alternatywach, które można użyć jako kreatywne przerywniki. ',
+const ADVANTAGES_DATA = [
+  {
+    header: 'DOSTĘPNOŚĆ 24/7',
+    icon: VisibilityIcon,
+    description:
+      'Opis Twoich usług jest dostępny cały czas - nie tracisz klientów.',
+  },
+  {
+    header: 'ROZPOZNAWALNOŚĆ',
+    icon: MegaphoneIcon,
+    description: 'Zwiększenie zasięgu i rozpoznawalności firmy.',
+  },
+  {
+    header: 'NOWI KLIENCI',
+    icon: PersonIcon,
+    description: 'Większy zasięg to nowi klienci.',
+  },
+  {
+    header: 'WIARYGODNOŚĆ',
+    icon: TrustIcon,
+    description:
+      'Firmy ze stroną są częściej postrzegane jako bardziej wiarygodne.',
+  },
+  {
+    header: 'CZAS',
+    icon: ClockIcon,
+    description:
+      'Dobrze opisana oferta oszczędzi Ci czas na odbieranie telefonów i odpisywanie na wiadomości.',
+  },
+  {
+    header: 'INWESTYCJA',
+    icon: AnalyzeIcon,
+    description:
+      'Budowanie rozpoznawalności strony to długi proces - lepiej zacząć wcześniej.',
+  },
+  {
+    header: 'ANALIZA',
+    icon: LoopIcon,
+    description:
+      'Zyskujesz dostęp do analizy zachowań klientów, które mogą pomoc Ci w rozwoju.',
+  },
+  {
+    header: 'INTEGRACJA',
+    icon: PeopleIcon,
+    description: 'Miejsce gdzie możesz przekierować ruch z różnych portali.',
+  },
 ];
-
-const priceIncludes = [
-  'Konsultacje odnośnie projektu graficznego i zakodowanej strony w wersji developerskiej. Spotkania na google meets.',
-  'Podstawowe ustawienie SEO pod wyszukiwarkę google. Dodanie domeny do Google Search Console i Google Analytics.',
-  'Pomoc w wyborze i zakupie hostingu i domeny.',
-  'Projekt graficzny',
-  'Formularz kontaktowy',
+const TECHNOLOGIES_DATA = [
+  {
+    header: 'HTML + CSS + JS',
+    icon: HtmlIcon,
+    description:
+      'Najbardziej klasyczne wykonanie bez zbędnych plików. Czysty kod bez panelu zarządzania treścią. Do edycji wymagana jest znajomości wyżej wymienionych technologii. Oferuję możliwość długoterminowej współpracy polegającej na wprowadzaniu zmian na stronę.',
+  },
+  {
+    header: 'Wordpress',
+    icon: WordpressIcon,
+    description:
+      'Wykonanie strony na platformie CMS Wordpress, która  posiada intuicyjny panel do zarządzania treścią. Ułatwione wprowadzanie zmian przez klienta.',
+  },
 ];
-
-const priceNotIncludes = [
-  'Pisanie tekstów na stronę - uważam że to Wy najlepiej znacie swoją firmę i wasz opis będzie najbardziej rzetelny. Moja praca w tym zakresie to podpowiedzenie Wam czego teksty mają dotyczyć i ich zredagowanie pod kątem SEO.',
-  'Nie kupuje domen i hostingów.',
+const INCOST_SERVICES = [
+  {
+    img: PhoneIcon,
+    title: 'Darmowa konsultacja',
+    alt: 'phone',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Pomoc w zakupie i konfiguracji hostingu oraz domeny',
+    alt: 'website',
+  },
+  {
+    img: FigmaIcon,
+    title: 'Personalizowany projekt graficzny',
+    alt: 'figma',
+  },
+  {
+    img: LoopIcon,
+    title: 'Optymalizacja SEO',
+    alt: 'loop',
+  },
+  {
+    img: CalendarIcon,
+    title: 'Spotkania na Google Meet',
+    alt: 'calendar',
+  },
+  {
+    img: GoogleIcon,
+    title: 'Integracja strony z systemami Google',
+    alt: 'google',
+  },
+  {
+    img: ToolIcon,
+    title: 'Szkolenie online z obsługi strony',
+    alt: 'tool',
+  },
+  {
+    img: ChatIcon,
+    title: 'Stały kontakt po zakończeniu projektu',
+    alt: 'chat',
+  },
 ];
-
-const technologies = [
-  'Wordpress',
-  'HTML - CSS - JavaScript',
-  'NextJs - Sass - TypeScript',
+const STAGES_DATA = [
+  {
+    header: 'Konsultacja',
+    number: '01',
+    description: 'Omówienie założeń projektu.',
+  },
+  {
+    header: 'Projekt graficzny',
+    number: '02',
+    description:
+      'Wykonuję projekt graficzny strony w Figmie. Po skończeniu umawiamy się na spotkanie i omawiamy efekty.',
+  },
+  {
+    header: 'Akceptacja/Poprawki',
+    number: '03',
+    description:
+      'Jeżeli projekt graficzny jest ok to lecimy dalej. Jeżeli trzeba coś poprawić to poprawiamy.',
+  },
+  {
+    header: 'Tworzenie strony',
+    number: '04',
+    description:
+      'Na tym etapie praca jest głównie po mojej stronie ale jest to dobry moment żeby dosłać do mnie informacje ustalone na etapie planowania.',
+  },
+  {
+    header: 'Akceptacja/Poprawki',
+    number: '05',
+    description:
+      'Jeżeli strona jest ok to wrzucamy ją na hosting i zajmujemy się SEO. Jeżeli trzeba coś poprawić to poprawiamy.',
+  },
+  {
+    header: 'Monitoring',
+    number: '06',
+    description:
+      'Obserwujemy jak działa strona. Spotykamy się na szkolenie online z obsługi strony i pozostajemy w stałym kontakcie.',
+  },
 ];
-
 interface SINGLE_PAGE_CONTENT_TYPE {
   hero: OffertHeroPropsType;
-  assumptions: IconListRowPropsType;
-  priceIncludes: IconListRowPropsType;
-  priceNotIncludes: IconListRowPropsType;
-  technologies: IconListRowPropsType;
+  advantages: AdvantagesPropsType;
+  technologies: TechnologiesPropsType;
+  incosts: IncostsPropsType;
+  stages: StagesPropsType;
 }
 
 export const SINGLE_PAGE_CONTENT: SINGLE_PAGE_CONTENT_TYPE = {
   hero: hero,
-  assumptions: {
-    title: 'Założenia',
-    list: assumptions,
-    icon: 'reader',
+  advantages: {
+    ADVANTAGES_DATA: ADVANTAGES_DATA,
   },
-  priceIncludes: {
-    title: 'Co zawiera usługa',
-    list: priceIncludes,
-    icon: 'checkmarkDone',
-  },
-  priceNotIncludes: {
-    title: 'Czego NIE zawiera usługa',
-    list: priceNotIncludes,
-    icon: 'closeCircle',
+  incosts: {
+    INCOST_SERVICES: INCOST_SERVICES,
   },
   technologies: {
-    title: 'Możliwości wykonania',
-    list: technologies,
-    icon: 'codeSlash',
+    TECHNOLOGIES_DATA: TECHNOLOGIES_DATA,
+  },
+  stages: {
+    STAGES_DATA: STAGES_DATA,
   },
 };

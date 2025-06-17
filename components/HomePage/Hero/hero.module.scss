@@ -35,8 +35,8 @@
   }
   b {
     font-size: 1.5rem;
-    @include mixin.phone500px{
-      font-size: .8rem;
+    @include mixin.phone500px {
+      font-size: 0.8rem;
     }
   }
   a {
