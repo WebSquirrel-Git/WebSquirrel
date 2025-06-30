@@ -27,11 +27,11 @@ export const metadata: Metadata = {
 export default function PremiumPage() {
   return (
     <>
-     <Hero {...PREMIUM_PAGE_CONTENT.hero} />
-      <Advantages {...PREMIUM_PAGE_CONTENT.advantages}/>
-      <Incosts {...PREMIUM_PAGE_CONTENT.incosts}/>
-      <Technologies {...PREMIUM_PAGE_CONTENT.technologies}/>
-      <Stages {...PREMIUM_PAGE_CONTENT.stages}/>
+      <Hero {...PREMIUM_PAGE_CONTENT.hero} />
+      <Advantages {...PREMIUM_PAGE_CONTENT.advantages} />
+      <Incosts {...PREMIUM_PAGE_CONTENT.incosts} />
+      <Technologies {...PREMIUM_PAGE_CONTENT.technologies} />
+      <Stages {...PREMIUM_PAGE_CONTENT.stages} />
       <ContactForm contactFormType="Strona internetowa" />
     </>
   );

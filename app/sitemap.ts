@@ -35,5 +35,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: 'https://websquirrel.pl/artykuly/rola-naglowkow-na-stronie-internetowej/',
     },
+    {
+      url: 'https://websquirrel.pl/artykuly/dlaczego-warto-miec-strone-www/',
+    },
   ];
 }
