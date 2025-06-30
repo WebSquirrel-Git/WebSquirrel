@@ -23,7 +23,7 @@ import PeopleIcon from '@/public/assets/icons/people-icon.svg';
 import NexjJSIcon from '@/public/assets/icons/next-js-icon.svg';
 
 const hero: OffertHeroPropsType = {
-  videoTitle: 'Timeline4.mp4',
+  videoTitle: 'Standard-page.mp4',
   subheader: 'Strona internetowa',
   title: 'Premium',
   price: '3000 - ∞ PLN',

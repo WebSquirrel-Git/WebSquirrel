@@ -5,7 +5,7 @@ import Hero from '@/components/HomePage/Hero/Hero';
 import Pages from '@/components/HomePage/Pages/Pages';
 import {Metadata} from 'next';
 export const metadata: Metadata = {
-  title: 'Strony i sklepy internetowe | Projektowanie graficzne | WebSquirrel',
+  title: 'Strony i sklepy internetowe, projekty graficzne | WebSquirrel',
   description:
     'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Napisz i dowiedz się jak ważną rolę pełni strona internetowa w budowaniu marki.',
   metadataBase: new URL('https://websquirrel.pl'),
