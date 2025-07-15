@@ -9,7 +9,7 @@
   align-items: center;
   width: 100%;
   gap: 5rem;
-  
+
   @include mixin.phone500px {
     padding: 2rem 1rem;
     gap: 2rem;
@@ -26,10 +26,10 @@
   justify-content: center;
   gap: 2rem;
   width: 70%;
-   @include mixin.pc1020px {
+  @include mixin.pc1020px {
     width: 85%;
   }
-   @include mixin.phone500px {
+  @include mixin.phone500px {
     width: 100%;
   }
 }
@@ -71,4 +71,3 @@
     align-items: center;
   }
 }
-

@@ -5,9 +5,9 @@ import Reviews from '@/components/Globals/Sections/Reviews/Reviews';
 import Hero from '@/components/Globals/Sections/Hero/Hero';
 import {Metadata} from 'next';
 export const metadata: Metadata = {
-  title: 'Strony i sklepy internetowe, projekty graficzne | WebSquirrel',
+  title: 'Tworzenie stron internetowych, E-sklepy, Grafiki',
   description:
-    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Napisz i dowiedz się jak ważną rolę pełni strona internetowa w budowaniu marki.',
+    'W mojej ofercie znajdziesz usługi projektowania oraz tworzenia stron i sklepów internetowych, projektowania elementów graficznych oraz montażu rolek wideo.',
   metadataBase: new URL('https://websquirrel.pl/oferta'),
   alternates: {
     canonical: 'https://websquirrel.pl/oferta',
@@ -23,11 +23,16 @@ export const metadata: Metadata = {
 export default function Offert() {
   return (
     <>
-      <Hero subheader='WebSquirrel' title='OFERTA USŁUG' description='Podczas tworzenia stron internetowycch i prowadzenia swojej marki ' videoTitle='Creative-page.mp4'/>
-      <GlobalOffer/>
-      <Reviews/>
-      <CooperationBenefits/>
-     
+      <Hero
+        subheader="WebSquirrel"
+        title="OFERTA USŁUG"
+        description="W mojej ofercie znajdziesz usługi projektowania oraz tworzenia stron i sklepów internetowych, projektowania elementów graficznych oraz montażu rolek wideo. Wszystkie sklepy i strony są projektowane indywidualnie w celu lepszego przedstawienia Twojej marki."
+        videoTitle="Creative-page.mp4"
+      />
+      <GlobalOffer />
+      <Reviews />
+      <CooperationBenefits />
+
       <ContactForm contactFormType="All" />
     </>
   );

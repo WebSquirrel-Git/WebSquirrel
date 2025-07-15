@@ -129,19 +129,20 @@ const INCOST_SERVICES = [
     title: 'Dopasowane ikony',
     alt: 'website',
   },
-   {
+  {
     img: WebsiteIcon,
     title: 'Animacje',
     alt: 'website',
   },
-   {
+  {
     img: WebsiteIcon,
     title: 'Rozbudowana stopka',
     alt: 'website',
   },
   {
     img: WordpressIcon,
-    title: 'Łatwy w obsłudze panel do zarządzania treścią strony (Projekt w Wordpress)',
+    title:
+      'Łatwy w obsłudze panel do zarządzania treścią strony (Projekt w Wordpress)',
     alt: 'website',
   },
   {
@@ -191,7 +192,8 @@ const INCOST_SERVICES = [
   },
   {
     img: NexjJSIcon,
-    title: 'Kod strony napisany od 0 w nowoczesnym frameworku (Projekt w NextJS)',
+    title:
+      'Kod strony napisany od 0 w nowoczesnym frameworku (Projekt w NextJS)',
     alt: 'nextjs',
   },
   {

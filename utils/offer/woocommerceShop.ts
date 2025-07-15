@@ -164,12 +164,14 @@ const INCOST_SERVICES = [
   },
   {
     img: WooCommerceIcon,
-    title: 'Panel do obsługi stanów magazynowych i statusów zamówień, płatności i metod dostawy',
+    title:
+      'Panel do obsługi stanów magazynowych i statusów zamówień, płatności i metod dostawy',
     alt: 'woocommerce',
   },
   {
     img: WooCommerceIcon,
-    title: 'BRAK opłat abonamentowych - płacisz raz i sklep jest Twój. Opłacasz tylko hosting, domenę, skrzynkę e-mail i prowizje od płatności online.',
+    title:
+      'BRAK opłat abonamentowych - płacisz raz i sklep jest Twój. Opłacasz tylko hosting, domenę, skrzynkę e-mail i prowizje od płatności online.',
     alt: 'woocommerce',
   },
   {
@@ -187,7 +189,7 @@ const INCOST_SERVICES = [
     title: 'Personalizowany projekt graficzny',
     alt: 'figma',
   },
-  
+
   {
     img: LoopIcon,
     title: 'Optymalizacja SEO',
@@ -198,7 +200,7 @@ const INCOST_SERVICES = [
     title: 'Spotkania na Google Meet',
     alt: 'calendar',
   },
-  
+
   {
     img: GoogleIcon,
     title: 'Integracja strony z systemami Google',

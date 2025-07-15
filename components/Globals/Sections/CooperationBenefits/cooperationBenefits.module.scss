@@ -9,7 +9,7 @@
   align-items: center;
   width: 100%;
   gap: 5rem;
-  
+
   @include mixin.phone500px {
     padding: 2rem 1rem;
     gap: 2rem;
@@ -26,10 +26,10 @@
   justify-content: center;
   gap: 2rem;
   width: 70%;
-   @include mixin.pc1020px {
+  @include mixin.pc1020px {
     width: 85%;
   }
-   @include mixin.phone500px {
+  @include mixin.phone500px {
     width: 100%;
   }
 }
@@ -42,10 +42,10 @@
   align-items: center;
   text-align: left;
   @include mixin.phone500px {
-      width: 100%;
-      justify-content: center;
-      text-align: center;
-    }
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
   img {
     width: auto;
     height: 40px;
@@ -61,11 +61,11 @@
   align-items: flex-start;
   width: 100%;
   color: colors.$squirrel;
-  gap: .5rem;
+  gap: 0.5rem;
   @include mixin.phone500px {
-      width: 100%;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }

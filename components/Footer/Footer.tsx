@@ -59,7 +59,6 @@ const Footer = () => {
         <Link href="/oferta#offert" className={styles.link}>
           Montaż Rolek
         </Link>
-        
       </div>
       <div className={styles.listColumn}>
         <span className={styles.listTitle}>Kontakt</span>

@@ -8,10 +8,12 @@ import {WOOCOMMERCE_SHOP_CONTENT} from '@/utils/offer/woocommerceShop';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sklep internetowy WOOCOMMERCE',
+  title: 'Budowanie sklepów internetowych, Oferta WooCommerce',
   description:
-    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. "E sklep" - rozwiązanie dla firm, które chcą zautomatyzować sprzedaż internetową i formy płatności.',
-  metadataBase: new URL('https://websquirrel.pl/oferta/sklepy-internetowe/woocommerce'),
+    'Profesjonalny sklep internetowy z personalizowanym projektem graficznym i prostym w obsłudze systemie CMS Wordpress z WooCommerce. Integracje dostaw i płatności online.',
+  metadataBase: new URL(
+    'https://websquirrel.pl/oferta/sklepy-internetowe/woocommerce'
+  ),
   alternates: {
     canonical: 'https://websquirrel.pl/oferta/sklepy-internetowe/woocommerce',
     languages: {

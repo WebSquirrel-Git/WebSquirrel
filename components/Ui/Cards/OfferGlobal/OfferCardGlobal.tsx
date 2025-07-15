@@ -12,18 +12,22 @@ export interface OfferCardPropsType {
   description: string;
   url: string;
   color: 'orange' | 'blue';
-  list:string[]
+  list: string[];
   link: boolean;
-  type:'strona_internetowa'|'sklep_internetowy'|'projekt_graficzny'|'montaz_rolek'
+  type:
+    | 'strona_internetowa'
+    | 'sklep_internetowy'
+    | 'projekt_graficzny'
+    | 'montaz_rolek';
 }
 
 const ICONS = {
   orange: ArrowIconOrange,
   blue: ArrowIconBlue,
-  strona_internetowa:WebsiteIconOrange,
-sklep_internetowy:ShopIconOrange,
-projekt_graficzny:GraphicsIconBlue,
-montaz_rolek:VideoIconBlue
+  strona_internetowa: WebsiteIconOrange,
+  sklep_internetowy: ShopIconOrange,
+  projekt_graficzny: GraphicsIconBlue,
+  montaz_rolek: VideoIconBlue,
 };
 
 const OfferCardGlobal = ({
@@ -33,54 +37,50 @@ const OfferCardGlobal = ({
   color,
   link,
   type,
-  list
+  list,
 }: OfferCardPropsType) => {
   const containerStyle =
     color === 'orange'
       ? styles.container
       : `${styles.container} ${styles[`container${color}`]}`;
-  
+
   const linkStyle =
     color === 'orange'
       ? styles.link
       : `${styles.link} ${styles[`link${color}`]}`;
-       const accentStyle =
-    color === 'orange'
-      ? styles.orange
-      : styles.blue;
+  const accentStyle = color === 'orange' ? styles.orange : styles.blue;
   const icon = ICONS[color];
-const topIcon = ICONS[type]
+  const topIcon = ICONS[type];
   return (
     <div className={containerStyle}>
-     
       <div className={styles.headerBox}>
-         <img src={topIcon.src} alt={type} className={styles.topIcon}/>
-        <h3>
-          {header} 
-        </h3>
-      
-       
+        <img src={topIcon.src} alt={type} className={styles.topIcon} />
+        <h3>{header}</h3>
       </div>
-       <div className={styles.list}>
-        {list.map((item,index)=><p key={index}>
-          <span className={accentStyle}>0{index+=1}{' '}</span>{item}
-        </p>)}
-       </div>
-       <div className={styles.bottomBox}>
-       <span className={styles.description}>{description}</span>
-      {link && (
-        <Link className={linkStyle} href={url}>
-          DOWIEDZ SIĘ WIĘCEJ{' '}
-          <img
-            src={icon.src}
-            alt="forwardIcon"
-            title="forwardIcon"
-            width={19}
-            height={19}
-            loading="eager"
-          />
-        </Link>
-      )}</div>
+      <div className={styles.list}>
+        {list.map((item, index) => (
+          <h3 key={index}>
+            <span className={accentStyle}>0{(index += 1)} </span>
+            {item}
+          </h3>
+        ))}
+      </div>
+      <div className={styles.bottomBox}>
+        <span className={styles.description}>{description}</span>
+        {link && (
+          <Link className={linkStyle} href={url}>
+            DOWIEDZ SIĘ WIĘCEJ{' '}
+            <img
+              src={icon.src}
+              alt="forwardIcon"
+              title="forwardIcon"
+              width={19}
+              height={19}
+              loading="eager"
+            />
+          </Link>
+        )}
+      </div>
     </div>
   );
 };

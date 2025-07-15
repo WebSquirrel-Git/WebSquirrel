@@ -32,13 +32,13 @@
   }
   h1 {
     font-size: 2rem;
-  font-weight: 600;
-  @include mixin.pc1450px {
-    font-size: 1.5rem;
-  }
-  @include mixin.phone500px {
-    font-size: 1.3rem;
-  }
+    font-weight: 600;
+    @include mixin.pc1450px {
+      font-size: 1.5rem;
+    }
+    @include mixin.phone500px {
+      font-size: 1.3rem;
+    }
   }
   b {
     font-size: 1.5rem;
@@ -102,9 +102,9 @@
   color: colors.$squirrel;
   font-weight: 600;
 }
-.rowBox{
+.rowBox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
 }

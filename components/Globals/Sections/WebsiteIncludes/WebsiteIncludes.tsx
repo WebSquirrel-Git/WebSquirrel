@@ -1,6 +1,6 @@
-'use client'
-import H2About from '@/components/Ui/Headers/H2About/H2About'
-import styles from './websiteIncludes.module.scss'
+'use client';
+import H2About from '@/components/Ui/Headers/H2About/H2About';
+import styles from './websiteIncludes.module.scss';
 import PhoneIcon from '@/public/assets/icons/phone-orange-icon.svg';
 import WebsiteIcon from '@/public/assets/icons/website-orange-icon.svg';
 import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
@@ -11,12 +11,6 @@ import ToolIcon from '@/public/assets/icons/tool-icon.svg';
 import ChatIcon from '@/public/assets/icons/chat-icon.svg';
 import ImageIcon from '@/public/assets/icons/image-orange-icon.svg';
 import CookiesIcon from '@/public/assets/icons/notifications-orange-icon.svg';
-import MegaphoneIcon from '@/public/assets/icons/megaphone-icon.svg';
-import TrustIcon from '@/public/assets/icons/accessibility-icon.svg';
-import ClockIcon from '@/public/assets/icons/stopwatch-icon.svg';
-import AnalyzeIcon from '@/public/assets/icons/analyze-icon.svg';
-import PersonIcon from '@/public/assets/icons/person-icon.svg';
-import PeopleIcon from '@/public/assets/icons/people-icon.svg';
 
 const INCOST_SERVICES = [
   {
@@ -81,26 +75,34 @@ const INCOST_SERVICES = [
   },
 ];
 
-const WebsiteIncludes = () =>{
-
-    return <div className={styles.container}>
-        <H2About h2='Co zawiera każda strona?' about='Jest kilka oczywistych lub mniej oczywistych rzeczy/usług, które zawiera każda strona.'/>
-   <div className={styles.rowBox}>
-    {INCOST_SERVICES.map((service, index) => (
-            <div className={styles.serviceBox} key={index}>
-              <img
-                src={service.img.src}
-                alt={service.alt}
-                title={service.alt}
-                width={24}
-                height={24}
-                loading="lazy"
-              />
-              <p>{service.title}</p>
-            </div>
-          ))}
-   </div>
-    </div>
+interface WebsiteIncludesPropsType {
+  h2: string;
 }
 
-export default WebsiteIncludes
+const WebsiteIncludes = ({h2}: WebsiteIncludesPropsType) => {
+  return (
+    <div className={styles.container}>
+      <H2About
+        h2={h2}
+        about="Jest kilka oczywistych lub mniej oczywistych rzeczy/usług, które zawiera każda strona."
+      />
+      <div className={styles.rowBox}>
+        {INCOST_SERVICES.map((service, index) => (
+          <div className={styles.serviceBox} key={index}>
+            <img
+              src={service.img.src}
+              alt={service.alt}
+              title={service.alt}
+              width={24}
+              height={24}
+              loading="lazy"
+            />
+            <p>{service.title}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default WebsiteIncludes;

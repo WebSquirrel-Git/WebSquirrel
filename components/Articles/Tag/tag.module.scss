@@ -13,13 +13,13 @@
   border-radius: 20px;
   font-family: 'Poppins-400';
   font-size: 0.7rem;
-   @include mixin.pc1450px {
-    font-size: .5rem;
-   }
-   img{
-     @include mixin.pc1450px {
+  @include mixin.pc1450px {
+    font-size: 0.5rem;
+  }
+  img {
+    @include mixin.pc1450px {
       width: 16px;
       height: 16px;
-     }
-   }
+    }
+  }
 }

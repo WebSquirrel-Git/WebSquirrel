@@ -84,7 +84,7 @@ const TECHNOLOGIES_DATA = [
   },
 ];
 const INCOST_SERVICES = [
-   {
+  {
     img: NexjJSIcon,
     title: 'Strona główna',
     alt: 'nextjs',
@@ -151,7 +151,8 @@ const INCOST_SERVICES = [
   },
   {
     img: NexjJSIcon,
-    title: 'Możliwość stworzenia własnych systemów opartych na kodzie TS niezależnych od firm trzecich',
+    title:
+      'Możliwość stworzenia własnych systemów opartych na kodzie TS niezależnych od firm trzecich',
     alt: 'nextjs',
   },
   {

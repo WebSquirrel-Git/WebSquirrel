@@ -27,12 +27,11 @@ const Hero = ({
       <div className={styles.textBox}>
         <h1>{title}</h1>
         <span className={styles.subHeader}>{subheader}</span>
-        
+
         <p>{description}</p>
-<div className={styles.rowBox}>
-<DefaultLink name="Skontaktuj się" url="#contact" />
-</div>
-        
+        <div className={styles.rowBox}>
+          <DefaultLink name="Skontaktuj się" url="#contact" />
+        </div>
       </div>
       {isMobile && (
         <img

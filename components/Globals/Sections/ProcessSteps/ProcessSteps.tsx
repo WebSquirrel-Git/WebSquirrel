@@ -1,6 +1,5 @@
 'use client';
-import StatsIcon from '@/public/assets/icons/stats-chart-orange-opacity25.svg';
-import styles from './processSteps.module.scss'
+import styles from './processSteps.module.scss';
 import H2About from '@/components/Ui/Headers/H2About/H2About';
 export interface StagesPropsType {
   STAGES_DATA: {
@@ -13,19 +12,22 @@ export interface StagesPropsType {
 const ProcessSteps = ({STAGES_DATA}: StagesPropsType) => {
   return (
     <div className={styles.container}>
-     <H2About h2='Jak wygląda współpraca?' about='Kilka etapów pokazujących jak będziemy ze sobą współpracować.'/>
-        <div className={styles.rowBox}>
-          {STAGES_DATA.map((stage, index) => (
-            <div className={styles.stageBox} key={index}>
-              <div className={styles.topBox}>
-                <span className={styles.number}>{stage.number}</span>
-                <h3>{stage.header}</h3>
-              </div>
-              <p>{stage.description}</p>
+      <H2About
+        h2="Jak wygląda współpraca?"
+        about="Kilka etapów pokazujących jak będziemy ze sobą współpracować."
+      />
+      <div className={styles.rowBox}>
+        {STAGES_DATA.map((stage, index) => (
+          <div className={styles.stageBox} key={index}>
+            <div className={styles.topBox}>
+              <span className={styles.number}>{stage.number}</span>
+              <h3>{stage.header}</h3>
             </div>
-          ))}
-        </div>
+            <p>{stage.description}</p>
+          </div>
+        ))}
       </div>
+    </div>
   );
 };
 

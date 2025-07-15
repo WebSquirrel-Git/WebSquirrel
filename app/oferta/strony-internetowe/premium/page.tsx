@@ -8,10 +8,12 @@ import {PREMIUM_PAGE_CONTENT} from '@/utils/offer/premiumPage';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Strona internetowa PREMIUM',
+  title: 'Strona internetowa dla firm, Oferta Premium',
   description:
-    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Premium - strona internetowa dla firmy, która posiada rozbudowane usługi.',
-  metadataBase: new URL('https://websquirrel.pl/oferta/strony-internetowe/premium'),
+    'Strona internetowa dla firm zawierająca do 10 zakładek, dzięki którym profesjonalnie zaprezentujesz swoją ofertę. Personalizowany projekt strony.',
+  metadataBase: new URL(
+    'https://websquirrel.pl/oferta/strony-internetowe/premium'
+  ),
   alternates: {
     canonical: 'https://websquirrel.pl/oferta/strony-internetowe/premium',
     languages: {

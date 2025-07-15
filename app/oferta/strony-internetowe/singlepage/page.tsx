@@ -8,10 +8,12 @@ import {SINGLE_PAGE_CONTENT} from '@/utils/offer/singlePage';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Strona internetowa WIZYTÓWKA / ONE PAGE',
+  title: 'Strony internetowe Wordpress, Oferta One Page',
   description:
-    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Napisz i dowiedz się jak ważną rolę pełni strona internetowa w budowaniu marki.',
-  metadataBase: new URL('https://websquirrel.pl/oferta/strony-internetowe/singlepage'),
+    'Profesjonalna strona internetowa typu one page wykonana w systemie CMS Wordpress z panelem do edycji treści. Oferta z indywidualnym projektem strony www.',
+  metadataBase: new URL(
+    'https://websquirrel.pl/oferta/strony-internetowe/singlepage'
+  ),
   alternates: {
     canonical: 'https://websquirrel.pl/oferta/strony-internetowe/singlepage',
     languages: {

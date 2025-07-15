@@ -124,7 +124,8 @@ const INCOST_SERVICES = [
   },
   {
     img: WordpressIcon,
-    title: 'Łatwy w obsłudze panel do zarządzania treścią strony (Projekt w Wordpress)',
+    title:
+      'Łatwy w obsłudze panel do zarządzania treścią strony (Projekt w Wordpress)',
     alt: 'website',
   },
   {

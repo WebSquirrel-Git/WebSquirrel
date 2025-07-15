@@ -16,27 +16,38 @@ const Hero = () => {
       <div className={styles.textBox}>
         <span className={styles.subHeader}>Cześć! Mam na imię Bartosz.</span>
         <h1>WebSquirrel</h1>
-      
+
         <p>
           Tworzę{' '}
-          <Link href="/#offerWebsites" title="oferta-strony-internetowe">
-            strony
+          <Link
+            href="/oferta/strony-internetowe"
+            title="oferta-strony-internetowe"
+          >
+            profesjonalne strony internetowe
           </Link>{' '}
           i{' '}
-          <Link href="/#offerWebsites" title="oferta-sklepy-internetowe">
-            sklepy internetowe
+          <Link
+            href="/oferta/sklepy-internetowe"
+            title="oferta-sklepy-internetowe"
+          >
+            sklepy online
           </Link>
-          , które zwiększą Twoją widoczność w internecie oraz polepszą wizerunek firmy. Oferuję także usługi {' '}
-          <Link href="/#offerGraphics" title="oferta-elementy-graficzne">
+          , które zwiększą Twoją widoczność w internecie oraz polepszą wizerunek
+          firmy. Świadczę także usługi{' '}
+          <Link href="#offert" title="oferta-elementy-graficzne">
             projektowania graficznego
-          </Link> i <Link href="/#offerGraphics" title="oferta-elementy-graficzne">
-            obróbki wideo. 
-          </Link>
-           {' '}Na mojej stronie znajdziesz sekcję <Link href="/artykuly" title="oferta-elementy-graficzne">
+          </Link>{' '}
+          i{' '}
+          <Link href="#offert" title="oferta-elementy-graficzne">
+            montażu rolek.
+          </Link>{' '}
+          Na mojej stronie internetowej znajdziesz także sekcję{' '}
+          <Link href="/artykuly" title="oferta-elementy-graficzne">
             artykułów,
-          </Link> gdzie dzielę się swoją wiedzą, która pomaga moim klientom.
+          </Link>{' '}
+          gdzie dzielę się swoją wiedzą, która pomaga moim klientom.
         </p>
-       
+
         <DefaultLink name="Skontaktuj się" url="/#contact" />
       </div>
       {isMobile && (

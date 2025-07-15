@@ -8,10 +8,12 @@ import {CREATIVE_PAGE_CONTENT} from '@/utils/offer/creativePage';
 import {Metadata} from 'next';
 
 export const metadata: Metadata = {
-  title: 'Strona internetowa CREATIVE',
+  title: 'Profesjonalna Strona Internetowa, Oferta Creative',
   description:
-    'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Creative - to profesjonalna strona internetowa dla firmy zbudowana w oparciu o framework NextJs.',
-  metadataBase: new URL('https://websquirrel.pl/oferta/strony-internetowe/creative'),
+    'Projekt strony www tworzony od podstaw i realizowany w frameworku NextJs. Możliwość łatwej implementacji autorskich skryptów. Wysoka wydajność.',
+  metadataBase: new URL(
+    'https://websquirrel.pl/oferta/strony-internetowe/creative'
+  ),
   alternates: {
     canonical: 'https://websquirrel.pl/oferta/strony-internetowe/creative',
     languages: {

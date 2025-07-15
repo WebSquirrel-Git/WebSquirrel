@@ -43,49 +43,49 @@
     font-size: 1rem;
   }
 }
-.timeBox{
+.timeBox {
   display: flex;
   flex-direction: row;
-  gap: .3rem;
+  gap: 0.3rem;
   align-items: center;
-  img{
+  img {
     width: 30px;
     height: 30px;
   }
-  p{
-color: colors.$squirrel;
-font-weight: 500;
+  p {
+    color: colors.$squirrel;
+    font-weight: 500;
   }
 }
-.listBox{
+.listBox {
   display: flex;
   flex-direction: column;
-gap: .3rem;
+  gap: 0.3rem;
 }
-.listHeader{
+.listHeader {
   display: flex;
   flex-direction: row;
-  gap: .5rem;
+  gap: 0.5rem;
   align-items: center;
-  margin: .5rem 0;
-  img{
+  margin: 0.5rem 0;
+  img {
     width: 30px;
     height: 30px;
   }
-  p{
-color: colors.$squirrel;
-font-weight: 500;
+  p {
+    color: colors.$squirrel;
+    font-weight: 500;
   }
 }
-.listItem{
+.listItem {
   display: flex;
   flex-direction: row;
-  gap: .3rem;
-  img{
+  gap: 0.3rem;
+  img {
     width: 24px;
     height: 24px;
   }
-  p{
+  p {
     font-size: 16px;
   }
 }

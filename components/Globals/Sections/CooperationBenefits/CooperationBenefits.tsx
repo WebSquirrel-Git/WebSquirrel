@@ -18,12 +18,14 @@ const ADVANTAGES_DATA = [
   {
     header: 'Szczerość',
     icon: PersonIcon,
-    description: 'Moja współpraca opiera się na transparentności. Zawsze Cie poinformuję czy jestem w stanie wykonać zleconą przez Ciebie usługę i jak wyceniłem projekt.',
+    description:
+      'Moja współpraca opiera się na transparentności. Zawsze Cie poinformuję czy jestem w stanie wykonać zleconą przez Ciebie usługę i jak wyceniłem projekt.',
   },
   {
     header: 'Dostępność',
     icon: ClockIcon,
-    description: 'Jestem zawsze dostępny dla moich klientów. Jeżeli powstaną jakieś problemy podczas edycji strony możesz liczyć na moją szybką pomoc.',
+    description:
+      'Jestem zawsze dostępny dla moich klientów. Jeżeli powstaną jakieś problemy podczas edycji strony możesz liczyć na moją szybką pomoc.',
   },
   {
     header: 'Ciągły rozwój',
@@ -42,13 +44,16 @@ const ADVANTAGES_DATA = [
     icon: ToolIcon,
     description:
       'Działam na kilku płaszczyznach, które znacznie przyspieszają tempo prac i nie wymuszają na Tobie konieczności zatrudnienia montażysty, grafika, webdevelopera i specjalisty SEO. Zajmę się tym wszystkim we współpracy z Tobą.',
-  }
+  },
 ];
 
 const CooperationBenefits = () => {
   return (
     <section id="cooperation" className={styles.container}>
-      <H2About h2='Zastanawiasz się nad współpracą ze mną?' about='Podam Ci kilka rzeczy, które doceniają moi klienci we współpracy ze mną.'/>
+      <H2About
+        h2="Zastanawiasz się nad współpracą ze mną?"
+        about="Podam Ci kilka rzeczy, które doceniają moi klienci we współpracy ze mną."
+      />
       <div className={styles.rowBox}>
         {ADVANTAGES_DATA.map((advantage, index) => (
           <div className={styles.advantageBox} key={index}>
