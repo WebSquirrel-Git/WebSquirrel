@@ -16,7 +16,7 @@ import DefaultLink from '@/components/Ui/Links/DefaultLink/DefaultLink';
 const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
   {
     header: 'Sklep internetowy',
-    website_url: 'www.perlia.pl',
+    website_url: 'https://perlia.pl/', 
     website_name: 'www.perlia.pl',
     about: 'Sprzedaż ręcznie robionej biżuterii',
     img: PerliaIphone,
@@ -35,7 +35,7 @@ const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
   },
   {
     header: 'Strona internetowa',
-    website_url: 'www.nemosportowaprzygoda.pl',
+    website_url: 'https://nemosportowaprzygoda.pl/',
     website_name: 'www.nemosportowaprzygoda.pl',
     about: 'Szkoła nauki pływania',
     img: NemoIphone,
@@ -44,7 +44,7 @@ const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
   },
   {
     header: 'Strona internetowa',
-    website_url: 'www.triget.pl',
+    website_url: 'https://triget.pl/',
     website_name: 'www.triget.pl',
     about: 'Usługi elektroinstalacyjne',
     img: TrigetIphone,
