@@ -19,3 +19,14 @@
   gap: 1rem;
   justify-content: center;
 }
+.info{
+    
+    width: 60%;
+    text-align: center;
+     @include mixin.pc1020px {
+    width: 85%;
+  }
+   @include mixin.phone500px {
+    width: 100%;
+  }
+}

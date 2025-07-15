@@ -30,7 +30,7 @@ export default function Offert() {
     <>
       <Hero subheader='WebSquirrel' title='Tworzenie stron internetowych' description='W mojej ofercie znajdziesz różne pakiety usług projektowania i tworzenia stron internetowych. Jeżeli uważasz, że żaden z pakietów nie odpowiada Twoim oczekiwaniom skontaktuj się ze mną. Wycenie Twój projekt indywidualnie oraz dam Ci znać czy mam wystarczające kompetencje do podjęcia się zadania.' videoTitle='Creative-page.mp4'/>
       <div className={styles.containerAlignCenter}>
-      <H2About h2='Nowoczesne i personalizowane strony internetowe' about='Tworzę nowoczesne sklepy internetowe, które zautomatyzują Twoją sprzedaż produktów. Wszystkie usługi zawierają personalizowany projekt graficzny, który będzie spełniał Twoje oczekiwania, prezentował styl i przesłanie marki oraz realizował założenia biznesowe. Podczas tworzenia stron przykładam uwagę do najmniejszych detali jak alty, loading, rozmiar czy format zdjęć. Nie obieram drogi na skróty i nie pracuję na 90% tylko 100%, ponieważ każdy detal ma znaczenie.'/>
+      <H2About h2='Nowoczesne i personalizowane strony internetowe' about='Tworzę nowoczesne strony internetowe, które są szybkie i skuteczne. Wszystkie usługi zawierają personalizowany projekt graficzny strony, który będzie spełniał Twoje oczekiwania, prezentował styl i przesłanie marki oraz realizował założenia biznesowe. Podczas tworzenia stron przykładam uwagę do najmniejszych detali jak alty, loading, rozmiar czy format zdjęć. Nie obieram drogi na skróty i nie pracuję na 90% tylko 100% i wolę poświęcić parę godzin więcej na żmudną i nudną prace ale uzyskać efekty, których nie będę się wstydzić. '/>
       </div>
       <WebsiteIncludes/>
       <WebsitesOffer/>

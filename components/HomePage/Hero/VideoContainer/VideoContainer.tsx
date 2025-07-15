@@ -8,7 +8,7 @@ const VideoContainer = () => {
       <div className={styles.box}>
         <div id="video-container" className={styles.videoBox}>
           <video
-            src="/assets/videos/Timeline4.mp4"
+            src="/assets/videos/Woocommerce_shop.mp4"
             autoPlay
             loop
             muted

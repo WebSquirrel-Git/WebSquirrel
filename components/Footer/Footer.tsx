@@ -22,18 +22,18 @@ const Footer = () => {
         loading="lazy"
       />
       <div className={styles.listColumn}>
-        <span className={styles.listTitle}>Mapa</span>
+        <span className={styles.listTitle}>Informacje</span>
         <Link href="/" className={styles.link}>
           Strona główna
         </Link>
-        <Link href="/#offerWebsites" className={styles.link}>
-          Strony i sklepy internetowe
+        <Link href="/oferta" className={styles.link}>
+          Oferta
         </Link>
-        <Link href="/#offerGraphics" className={styles.link}>
-          Elementy graficzne i wideo
-        </Link>
-        <Link href="/" className={styles.link}>
+        <Link href="/portfolio" className={styles.link}>
           Portfolio
+        </Link>
+        <Link href="https://g.co/kgs/wdrv5jZ" className={styles.link}>
+          Opinie
         </Link>
         <Link href="/artykuly" className={styles.link}>
           Artykuły
@@ -44,6 +44,22 @@ const Footer = () => {
         >
           Polityka prywatności
         </Link>
+      </div>
+      <div className={styles.listColumn}>
+        <span className={styles.listTitle}>Oferta</span>
+        <Link href="/oferta/strony-internetowe" className={styles.link}>
+          Tworzenie Stron Internetowych
+        </Link>
+        <Link href="/oferta/sklepy-internetowe" className={styles.link}>
+          Tworzenie Sklepów Internetowych
+        </Link>
+        <Link href="/oferta#offert" className={styles.link}>
+          Projekty Graficzne
+        </Link>
+        <Link href="/oferta#offert" className={styles.link}>
+          Montaż Rolek
+        </Link>
+        
       </div>
       <div className={styles.listColumn}>
         <span className={styles.listTitle}>Kontakt</span>

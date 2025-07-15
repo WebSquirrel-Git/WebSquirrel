@@ -144,7 +144,7 @@ const WebsitesOffer =()=>{
             <OfferWebsiteCard {...OFFER_PREMIUM_PAGE}/>
             <OfferWebsiteCard {...OFFER_CREATIVE_PAGE}/>
         </div>
-        <p>Dla pasjonatów klasycznych rozwiązań bez zbędnych dodatków istnieje możliwość wykonania stron w HTML+CSS+JS/TS. Więcej informacji o wycenie podczas kontaktu.</p>
+        <p className={styles.info}>Dla pasjonatów klasycznych rozwiązań bez zbędnych dodatków istnieje możliwość wykonania stron w HTML+CSS+JS/TS. Więcej informacji o wycenie podczas kontaktu.</p>
     </div>
 }
 

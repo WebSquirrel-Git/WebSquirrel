@@ -51,7 +51,7 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
         </Link>
         <Link
           onClick={hideMenuHandler}
-          href="/#offerGraphics"
+          href="/oferta#offert"
           className={styles.listItem}
         >
           ELEMENTY GRAFICZNE I WIDEO

@@ -30,7 +30,7 @@ const Hero = ({
         
         <p>{description}</p>
 <div className={styles.rowBox}>
-<DefaultLink name="Skontaktuj się" url="/#contact" />
+<DefaultLink name="Skontaktuj się" url="#contact" />
 </div>
         
       </div>

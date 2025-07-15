@@ -30,7 +30,7 @@ const GLOBAL_OFFERT:OfferCardPropsType[] = [
     description:
       'Moim głównym narzędziem używanym do projektowania graficznego jest figma. Wykonam dla Ciebie zarówno Brandbooka marki jak i zmodyfikuję logo do formatu SVG z uwzględnieniem poprawek. Zajmuję się także tworzeniem animacji, które są lżejszą alternatywą dla typowych gifów na stronach.',
     url: '/oferta/strony/singlepage',
-    link: true,
+    link: false,
     color:'blue',
     list:['Brandbooki','Modyfikacje logo','Animacje HTML + CSS','Ulotki, banery, wizytówki itp.']
   },
@@ -40,7 +40,7 @@ const GLOBAL_OFFERT:OfferCardPropsType[] = [
     description:
       'Montażem zajmuję się od niedawna, lecz jest to czynność, która sprawia mi przyjemność i chciałbym się trochę w niej rozwinąć. Narzędzie którego używam to DaVinci Resolve. Ze względu na moje małe doświadczenie chętnie wykonam dla Ciebie montaż pierwszej rolki za darmo jako demo moich umiejętności.',
     url: '/oferta/strony/singlepage',
-    link: true,
+    link: false,
     color:'blue',
     list:['Montaż rolek na instagrama','Montaż wideo na strony internetowe']
   },
@@ -48,7 +48,7 @@ const GLOBAL_OFFERT:OfferCardPropsType[] = [
 
 const GlobalOffer =()=>{
 
-    return <div className={styles.container}>
+    return <div className={styles.container} id='offert'>
         <H2About h2='Czym się zajmuję i jak mogę Ci pomóc?' about='Współpraca ze mną opiera się na bezpośredniej komunikacji i szczerości. Tworzę treści, które są praktyczne i efektywne oraz odpowiadają Twoim oczekiwaniom. Moja praca nie opiera się wyłącznie na wykonywaniu projektów. Moi klienci zawsze mogą liczyć na pomoc i edukację w zakresach, w których mogę się nią podzielić. Fundamentem mojej marki jest szczerość, dlatego jeżeli nie będę czuć się kompetentny do wykonania Twojego zlecenia na pewno Cię o tym poinformuję.'/>
     <div className={styles.rowBox}>
 {GLOBAL_OFFERT.map((offer,index)=><OfferCardGlobal {...offer} key={index}/>)}

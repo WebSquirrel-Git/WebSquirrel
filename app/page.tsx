@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     canonical: 'https://websquirrel.pl',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},
@@ -33,14 +32,11 @@ export default function Home() {
     <>
       <Hero />
       <GlobalOffer/>
+      <Reviews/>
+      <PortfolioShort/>
       <CooperationBenefits/>
+      <Articles/>
      <ProcessSteps {...STANDARD_PAGE_CONTENT.stages}/>
-     <PortfolioShort/>
-     <Articles/>
-     <Reviews/>
-      <Advantages />
-      <Pages />
-      <Graphics />
       <ContactForm contactFormType="All" />
     </>
   );

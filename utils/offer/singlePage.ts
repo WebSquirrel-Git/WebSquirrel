@@ -91,6 +91,31 @@ const TECHNOLOGIES_DATA = [
   },
 ];
 const INCOST_SERVICES = [
+   {
+    img: WebsiteIcon,
+    title: 'Cała treść na jednej stronie',
+    alt: 'website',
+  },
+   {
+    img: WebsiteIcon,
+    title: 'Przedstawienie informacji o firmie w widocznych sekcjach z nagłówkami',
+    alt: 'website',
+  },
+   {
+    img: WebsiteIcon,
+    title: 'Poprawki tekstów podanych przez zlecającego pod SEO',
+    alt: 'website',
+  },
+   {
+    img: WebsiteIcon,
+    title: 'Dopasowane ikony',
+    alt: 'website',
+  },
+   {
+    img: WebsiteIcon,
+    title: 'Łatwy w obsłudze panel do zarządzania treścią strony ',
+    alt: 'website',
+  },
   {
     img: PhoneIcon,
     title: 'Darmowa konsultacja',
