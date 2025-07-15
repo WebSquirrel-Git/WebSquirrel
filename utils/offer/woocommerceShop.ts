@@ -24,7 +24,7 @@ import PersonIcon from '@/public/assets/icons/person-icon.svg';
 import PeopleIcon from '@/public/assets/icons/people-icon.svg';
 
 const hero: OffertHeroPropsType = {
-  videoTitle: 'Timeline4.mp4',
+  videoTitle: 'Woocommerce_shop.mp4',
   subheader: 'Sklep internetowy',
   title: 'WooCommerce',
   price: '2000 - ∞ PLN',
@@ -88,6 +88,93 @@ const TECHNOLOGIES_DATA = [
 ];
 const INCOST_SERVICES = [
   {
+    img: WebsiteIcon,
+    title: 'Strona główna z opisem firmy i produktów',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Do 5 podstron z produktami',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Indywidualny projekt graficzny dla każdej podstrony',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Dopasowane ikony',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Rozbudowana stopka',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Propozycje tekstów',
+    alt: 'website',
+  },
+  {
+    img: WooCommerceIcon,
+    title: 'Utworzenie kategorii produktów',
+    alt: 'woocommerce',
+  },
+  {
+    img: WooCommerceIcon,
+    title: 'Dodanie 5 produktów, które posłużą jako szablony dla kolejnych',
+    alt: 'woocommerce',
+  },
+  {
+    img: DolarIcon,
+    title: 'Integracja z płatnościami online',
+    alt: 'cash',
+  },
+  {
+    img: DeliveryIcon,
+    title: 'Integracja sposobów dostawy',
+    alt: 'delivery',
+  },
+  {
+    img: WooCommerceIcon,
+    title: 'Modyfikacje kuponów i promocji',
+    alt: 'woocommerce',
+  },
+  {
+    img: WooCommerceIcon,
+    title: 'Modyfikacja wiadomości informujących o statusie zamówienia',
+    alt: 'woocommerce',
+  },
+  {
+    img: GoogleIcon,
+    title: 'Integracja z Google Merchant',
+    alt: 'google',
+  },
+  {
+    img: WooCommerceIcon,
+    title: 'Optymalizacja SEO dla 3 produktów',
+    alt: 'woocommerce',
+  },
+  {
+    img: WooCommerceIcon,
+    title: 'Łatwy w obsłudze panel do zarządzania treścią strony',
+    alt: 'woocommerce',
+  },
+  {
+    img: WooCommerceIcon,
+    title:
+      'Panel do obsługi stanów magazynowych i statusów zamówień, płatności i metod dostawy',
+    alt: 'woocommerce',
+  },
+  {
+    img: WooCommerceIcon,
+    title:
+      'BRAK opłat abonamentowych - płacisz raz i sklep jest Twój. Opłacasz tylko hosting, domenę, skrzynkę e-mail i prowizje od płatności online.',
+    alt: 'woocommerce',
+  },
+  {
     img: PhoneIcon,
     title: 'Darmowa konsultacja',
     alt: 'phone',
@@ -102,26 +189,7 @@ const INCOST_SERVICES = [
     title: 'Personalizowany projekt graficzny',
     alt: 'figma',
   },
-  {
-    img: WebsiteIcon,
-    title: 'Strona sklepu',
-    alt: 'website',
-  },
-  {
-    img: WebsiteIcon,
-    title: 'Personalizowane zakładki opisujące kategorie produktów',
-    alt: 'website',
-  },
-  {
-    img: WebsiteIcon,
-    title: 'Zakładka poświęcona marce',
-    alt: 'website',
-  },
-  {
-    img: WebsiteIcon,
-    title: 'Dodanie kilku produktów szablonowych',
-    alt: 'website',
-  },
+
   {
     img: LoopIcon,
     title: 'Optymalizacja SEO',
@@ -132,16 +200,7 @@ const INCOST_SERVICES = [
     title: 'Spotkania na Google Meet',
     alt: 'calendar',
   },
-  {
-    img: DolarIcon,
-    title: 'Wdrożenie płatności online',
-    alt: 'cash',
-  },
-  {
-    img: DeliveryIcon,
-    title: 'Wdrożenie wyboru dostawy online',
-    alt: 'delivery',
-  },
+
   {
     img: GoogleIcon,
     title: 'Integracja strony z systemami Google',

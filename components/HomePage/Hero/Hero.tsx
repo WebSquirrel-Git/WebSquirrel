@@ -14,47 +14,40 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textBox}>
-        <span className={styles.subHeader}>Hej! Mam na imię Bartosz.</span>
+        <span className={styles.subHeader}>Cześć! Mam na imię Bartosz.</span>
         <h1>WebSquirrel</h1>
-        <p>
-          <b>Projektowanie stron i sklepów internetowych</b>
-        </p>
+
         <p>
           Tworzę{' '}
-          <Link href="/#offerWebsites" title="oferta-strony-internetowe">
-            strony
+          <Link
+            href="/oferta/strony-internetowe"
+            title="oferta-strony-internetowe"
+          >
+            profesjonalne strony internetowe
           </Link>{' '}
           i{' '}
-          <Link href="/#offerWebsites" title="oferta-sklepy-internetowe">
-            sklepy internetowe
-          </Link>{' '}
-          od tych prostych do bardziej wymagających - wszystkie dostosowane do
-          Twoich potrzeb.
-          <br /> Zajmuje się także{' '}
-          <Link href="/#offerGraphics" title="oferta-elementy-graficzne">
-            tworzeniem grafik
-          </Link>{' '}
-          - Brandbooki, banery, wizytówki, animacje i inne.
-        </p>
-        <p>
-          Moje realizacje możesz sprawdzić w zakładce{' '}
-          <Link href="/portfolio" title="portfolio">
-            portfolio.
+          <Link
+            href="/oferta/sklepy-internetowe"
+            title="oferta-sklepy-internetowe"
+          >
+            sklepy online
           </Link>
-          <br />
-          Jeżeli jesteś tutaj żeby się dowiedzieć czegoś nowego to zapraszam do
-          zakładki{' '}
-          <Link href="/artykuly" title="artykuly">
-            artykuły
-          </Link>
-          .<br />
-          Szczegółowa{' '}
-          <Link href="/#offerWebsites" title="oferta-strony-internetowe">
-            oferta usług
+          , które zwiększą Twoją widoczność w internecie oraz polepszą wizerunek
+          firmy. Świadczę także usługi{' '}
+          <Link href="#offert" title="oferta-elementy-graficzne">
+            projektowania graficznego
           </Link>{' '}
-          znajduje się poniżej.
+          i{' '}
+          <Link href="#offert" title="oferta-elementy-graficzne">
+            montażu rolek.
+          </Link>{' '}
+          Na mojej stronie internetowej znajdziesz także sekcję{' '}
+          <Link href="/artykuly" title="oferta-elementy-graficzne">
+            artykułów,
+          </Link>{' '}
+          gdzie dzielę się swoją wiedzą, która pomaga moim klientom.
         </p>
-        <p className={styles.textOrange}>Konsultacje są darmowe więc ...</p>
+
         <DefaultLink name="Skontaktuj się" url="/#contact" />
       </div>
       {isMobile && (

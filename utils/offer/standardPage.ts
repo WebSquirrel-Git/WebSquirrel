@@ -90,14 +90,44 @@ const TECHNOLOGIES_DATA = [
     description:
       'Wykonanie strony na platformie CMS Wordpress, która  posiada intuicyjny panel do zarządzania treścią. Ułatwione wprowadzanie zmian przez klienta.',
   },
-  {
-    header: 'NextJs',
-    icon: NexjJSIcon,
-    description:
-      'Innowacyjne rozwiązanie, w którym do stworzenia strony używam frameworka NextJs z TS i Scss. Ta opcja wyróżnia się bardzo dużą wydajnością i możliwościami personalizacji pod klienta - nietypowe funkcje, integracje i layouty. Minusem jest brak panelu zarządzania treścią. Do samodzielnej obsługi wymagana jest znajomość programowania w wyżej wymienionych technologiach. Oferuję współpracę na zasadzie aktualizacji treści na stronie podanych przez klienta. Rozliczenie za godziny mojej pracy.',
-  },
 ];
 const INCOST_SERVICES = [
+  {
+    img: WebsiteIcon,
+    title: 'Strona główna',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Do 5 podstron',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Indywidualny projekt graficzny dla każdej podstrony',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Propozycje tekstów',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Pływające menu nawigacyjne',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Dopasowane ikony',
+    alt: 'website',
+  },
+  {
+    img: WordpressIcon,
+    title:
+      'Łatwy w obsłudze panel do zarządzania treścią strony (Projekt w Wordpress)',
+    alt: 'website',
+  },
   {
     img: PhoneIcon,
     title: 'Darmowa konsultacja',

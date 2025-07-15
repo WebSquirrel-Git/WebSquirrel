@@ -85,6 +85,87 @@ const TECHNOLOGIES_DATA = [
 ];
 const INCOST_SERVICES = [
   {
+    img: NexjJSIcon,
+    title: 'Strona główna',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Do 10 podstron',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Indywidualny projekt graficzny dla każdej podstrony',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Propozycje tekstów',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Pływające menu nawigacyjne',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Dopasowane ikony',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Animacje',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Rozbudowana stopka',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Kod strony napisany od 0 w nowoczesnym frameworku',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Elementy interaktywne',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Integracja z zewnętrznymi API',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Dokumentacja techniczna strony',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Rozbudowane skrypty zwiększające funkcjonalności',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title:
+      'Możliwość stworzenia własnych systemów opartych na kodzie TS niezależnych od firm trzecich',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Wysoka wydajność',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Współpraca w aktualizowaniu treści 50pln/h',
+    alt: 'nextjs',
+  },
+  {
     img: PhoneIcon,
     title: 'Darmowa konsultacja',
     alt: 'phone',

@@ -23,7 +23,7 @@ import {AdvantagesPropsType} from '@/components/OfferPage/Advantages/Advantages'
 const hero: OffertHeroPropsType = {
   videoTitle: 'Single-page.mp4',
   subheader: 'Strona internetowa',
-  title: 'Single Page',
+  title: 'One Page',
   price: '1300 - ∞ PLN',
   description:
     'Chcesz być widoczny w internecie, ale nie potrzebujesz rozbudowanego serwisu i nie chcesz wkładać w to dużo czasu? Strona wizytówka w sposób krótki i treściwy przedstawi klientom Twoją ofertę oraz sposoby kontaktu. Idealne rozwiązanie dla małych firm jak hydraulicy, elektrycy czy mechanicy.',
@@ -91,6 +91,32 @@ const TECHNOLOGIES_DATA = [
   },
 ];
 const INCOST_SERVICES = [
+  {
+    img: WebsiteIcon,
+    title: 'Cała treść na jednej stronie',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title:
+      'Przedstawienie informacji o firmie w widocznych sekcjach z nagłówkami',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Poprawki tekstów podanych przez zlecającego pod SEO',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Dopasowane ikony',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Łatwy w obsłudze panel do zarządzania treścią strony ',
+    alt: 'website',
+  },
   {
     img: PhoneIcon,
     title: 'Darmowa konsultacja',

@@ -100,6 +100,52 @@ const TECHNOLOGIES_DATA = [
 ];
 const INCOST_SERVICES = [
   {
+    img: WebsiteIcon,
+    title: 'Strona główna',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Do 10 podstron',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Indywidualny projekt graficzny dla każdej podstrony',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Propozycje tekstów',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Pływające menu nawigacyjne',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Dopasowane ikony',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Animacje',
+    alt: 'website',
+  },
+  {
+    img: WebsiteIcon,
+    title: 'Rozbudowana stopka',
+    alt: 'website',
+  },
+  {
+    img: WordpressIcon,
+    title:
+      'Łatwy w obsłudze panel do zarządzania treścią strony (Projekt w Wordpress)',
+    alt: 'website',
+  },
+  {
     img: PhoneIcon,
     title: 'Darmowa konsultacja',
     alt: 'phone',
@@ -143,6 +189,22 @@ const INCOST_SERVICES = [
     img: ChatIcon,
     title: 'Stały kontakt po zakończeniu projektu',
     alt: 'chat',
+  },
+  {
+    img: NexjJSIcon,
+    title:
+      'Kod strony napisany od 0 w nowoczesnym frameworku (Projekt w NextJS)',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Elementy interaktywne (Projekt w NextJS)',
+    alt: 'nextjs',
+  },
+  {
+    img: NexjJSIcon,
+    title: 'Współpraca w aktualizowaniu treści 50pln/h (Projekt w NextJS)',
+    alt: 'nextjs',
   },
 ];
 const STAGES_DATA = [

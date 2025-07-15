@@ -31,7 +31,7 @@ const Hero = ({
         <p>{description}</p>
 
         <p className={styles.textOrange}>Konsultacje są darmowe więc ...</p>
-        <DefaultLink name="Skontaktuj się" url="/#contact" />
+        <DefaultLink name="Skontaktuj się" url="#contact" />
       </div>
       {isMobile && (
         <img
