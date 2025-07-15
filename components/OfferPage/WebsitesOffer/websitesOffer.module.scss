@@ -1,0 +1,21 @@
+@use '../../../styles/mixin.scss' as mixin;
+@use '../../../styles/colors.scss' as colors;
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    @include mixin.phone700px {
+    padding: 1.5rem 1rem;
+  }
+}
+.rowBox{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}

@@ -1,0 +1,103 @@
+'use client';
+import Link from 'next/link';
+import styles from './offerWebsiteCard.module.scss';
+import ArrowIconOrange from '@/public/assets/icons/chevron-forward-circle-orange-icon.svg';
+import ClockIconOrange from '@/public/assets/icons/clock-orange-icon.svg';
+import CheckmarkIcon from '@/public/assets/icons/checkmark-green-icon.svg';
+import CloseRedIcon from '@/public/assets/icons/close-red-icon.svg';
+import WordpressIcon from '@/public/assets/icons/wordpress-orange-icon.svg';
+import NextJsIcon from '@/public/assets/icons/next-js-icon.svg';
+export interface OfferWebsiteCardPropsType {
+  type: string;
+  title: string;
+  price: string;
+  time:string;
+  url: string;
+  mainList:string[];
+  wordpressList:string[];
+  nextJsList:{type:"check"|"false",value:string}[]
+}
+
+
+const OfferWebsiteCard = ({
+  type,
+  title,
+  price,
+  time,
+  url,mainList,wordpressList,nextJsList
+}: OfferWebsiteCardPropsType) => {
+
+  const mainListMap = nextJsList.length<6?<div className={styles.listBox}>
+    {mainList.map((item,index)=><div key={index} className={styles.listItem}>
+      <img src={CheckmarkIcon.src} alt='checkmark' width={24} height={24}/>
+          <p>{item}</p>
+    </div>)}
+    
+  </div>:<div className={styles.listBox}>
+    <div className={styles.listHeader}>
+      <img src={NextJsIcon.src} alt='nextJs' width={30} height={30}/>
+          <p>Wykonanie w NextJS:</p>
+    </div>
+    {nextJsList.map((item,index)=><div key={index} className={styles.listItem}>
+      
+      <img src={item.type==='check'?CheckmarkIcon.src:CloseRedIcon.src} alt='checkmark' width={24} height={24}/>
+          <p>{item.value}</p>
+    </div>)}
+  </div>
+
+  const wordpressListMap = wordpressList.length>0?<div className={styles.listBox}>
+    <div className={styles.listHeader}>
+      <img src={WordpressIcon.src} alt='wordpress' width={30} height={30}/>
+          <p>Wykonanie w Wordpress:</p>
+    </div>
+    {wordpressList.map((item,index)=><div key={index} className={styles.listItem}>
+      
+      <img src={CheckmarkIcon.src} alt='checkmark' width={24} height={24}/>
+          <p>{item}</p>
+    </div>)}
+  </div>:null;
+
+ const nextJsListMap = nextJsList.length<10&&nextJsList.length>0?<div className={styles.listBox}>
+    <div className={styles.listHeader}>
+      <img src={NextJsIcon.src} alt='nextJs' width={30} height={30}/>
+          <p>Wykonanie w NextJS:</p>
+    </div>
+    {nextJsList.map((item,index)=><div key={index} className={styles.listItem}>
+      
+      <img src={item.type==='check'?CheckmarkIcon.src:CloseRedIcon.src} alt='checkmark' width={24} height={24}/>
+          <p>{item.value}</p>
+    </div>)}
+  </div>:null
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.contentBox}>
+        <h3>
+          {type} <br />
+          <span className={styles.header}>{title}</span>
+        </h3>
+          <span className={styles.price}>{price}</span>
+        <div className={styles.timeBox}>
+          <img src={ClockIconOrange.src} alt='clock' width={30} height={30}/>
+          <p>{time}</p>
+        </div>
+{mainListMap}
+{wordpressListMap}
+{nextJsListMap}
+      </div>
+        <Link className={styles.link} href={url}>
+          DOWIEDZ SIĘ WIĘCEJ{' '}
+          <img
+            src={ArrowIconOrange.src}
+            alt="forwardIcon"
+            title="forwardIcon"
+            width={19}
+            height={19}
+            loading="eager"
+          />
+        </Link>
+    </div>
+  );
+};
+
+export default OfferWebsiteCard;

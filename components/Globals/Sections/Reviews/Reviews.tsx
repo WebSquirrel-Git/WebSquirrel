@@ -7,7 +7,10 @@ import Review3 from '@/public/assets/reviews/nemo-review.webp'
 import Review4 from '@/public/assets/reviews/atzm-review.webp'
 import ForwardIcon from '@/public/assets/icons/chevron-forward-icon.svg'
 import BackIcon from '@/public/assets/icons/chevron-back-icon.svg'
+import GoogleIcon from '@/public/assets/reviews/google-icon.webp'
+import StarIcon from '@/public/assets/icons/star-gold-icon.svg'
 import { useState } from 'react'
+import Link from 'next/link'
 
 
 const Reviews = () =>{
@@ -46,7 +49,19 @@ return (<span className={styles.orangeDot} key={index}></span>)
                     }return (<button className={styles.whiteDot} onClick={()=>selectedReviewHandler(index)} key={index}></button>)
                     })}
             </div>
+           <div className={styles.starsBox}>
+                <img src={StarIcon.src} alt='star icon' width={32} height={32}/>
+                <img src={StarIcon.src} alt='star icon' width={32} height={32}/>
+                <img src={StarIcon.src} alt='star icon' width={32} height={32}/>
+                <img src={StarIcon.src} alt='star icon' width={32} height={32}/>
+                <img src={StarIcon.src} alt='star icon' width={32} height={32}/>
+            </div>
+            <span className={styles.review}>5/5</span>
+            <p>Sprawdź na Google</p>
+            <Link href="https://g.co/kgs/wdrv5jZ">
+            <img className={styles.googleIcon} src={GoogleIcon.src} alt="google icon"/></Link>
         </div>
+         
     </div>
 }
 

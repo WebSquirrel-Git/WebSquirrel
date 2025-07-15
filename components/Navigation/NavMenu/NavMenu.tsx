@@ -37,10 +37,17 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
         </Link>
         <Link
           onClick={hideMenuHandler}
-          href="/#offerWebsites"
+          href="/oferta/strony-internetowe"
           className={styles.listItem}
         >
-          STRONY I SKLEPY INTERNETOWE
+          STRONY INTERNETOWE
+        </Link>
+        <Link
+          onClick={hideMenuHandler}
+          href="/oferta/sklepy-internetowe"
+          className={styles.listItem}
+        >
+          SKLEPY INTERNETOWE
         </Link>
         <Link
           onClick={hideMenuHandler}

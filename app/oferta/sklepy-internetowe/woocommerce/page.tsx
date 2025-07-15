@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: 'Sklep internetowy WOOCOMMERCE',
   description:
     'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. "E sklep" - rozwiązanie dla firm, które chcą zautomatyzować sprzedaż internetową i formy płatności.',
-  metadataBase: new URL('https://websquirrel.pl/oferta/sklepy/woocommerce'),
+  metadataBase: new URL('https://websquirrel.pl/oferta/sklepy-internetowe/woocommerce'),
   alternates: {
-    canonical: 'https://websquirrel.pl/oferta/sklepy/woocommerce',
+    canonical: 'https://websquirrel.pl/oferta/sklepy-internetowe/woocommerce',
     languages: {
       'pl-PL': '/pl-PL',
     },

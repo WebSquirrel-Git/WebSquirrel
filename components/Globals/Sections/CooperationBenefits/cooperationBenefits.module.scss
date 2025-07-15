@@ -43,6 +43,8 @@
   text-align: left;
   @include mixin.phone500px {
       width: 100%;
+      justify-content: center;
+      text-align: center;
     }
   img {
     width: auto;
@@ -60,4 +62,10 @@
   width: 100%;
   color: colors.$squirrel;
   gap: .5rem;
+  @include mixin.phone500px {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
 }

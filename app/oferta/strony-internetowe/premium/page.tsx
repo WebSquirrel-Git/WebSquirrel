@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: 'Strona internetowa PREMIUM',
   description:
     'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Premium - strona internetowa dla firmy, która posiada rozbudowane usługi.',
-  metadataBase: new URL('https://websquirrel.pl/oferta/strony/premium'),
+  metadataBase: new URL('https://websquirrel.pl/oferta/strony-internetowe/premium'),
   alternates: {
-    canonical: 'https://websquirrel.pl/oferta/strony/premium',
+    canonical: 'https://websquirrel.pl/oferta/strony-internetowe/premium',
     languages: {
       'pl-PL': '/pl-PL',
     },

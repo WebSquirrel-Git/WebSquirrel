@@ -9,7 +9,7 @@ const GLOBAL_OFFERT:OfferCardPropsType[] = [
     header: 'Strony internetowe',
     description:
       'Wszystkie strony internetowe są tworzone na podstawie indywidualnie dopasowanego projektu graficznego. Strony są szybkie, estetyczne, responsywne i spełniają wymagania SEO. Standardowo zapewniam wdrożenie integracji z systemami Google jak Search Console czy Analytics.',
-    url: '/oferta/strony/singlepage',
+    url: '/oferta/strony-internetowe',
     link: true,
     color:'orange',
     list:['Strony wizytówki','Rozbudowane strony internetowe','Strony dla firm','Strony oparte na systemach CMS','Strony zrobione w NextJs']
@@ -19,7 +19,7 @@ const GLOBAL_OFFERT:OfferCardPropsType[] = [
     header: 'Sklepy internetowe',
     description:
       'Wszystkie sklepy internetowe są tworzone na podstawie indywidualnie dopasowanego projektu graficznego. Sklepy są szybkie, estetyczne, responsywne, posiadają integracje płatności online i dostaw, obsługę powiadomień e-mail i wiele więcej. W celu szczegółowego zapoznania się z ofertą kliknij przycisk poniżej.',
-    url: '/oferta/strony/singlepage',
+    url: '/oferta/sklepy-internetowe',
     link: true,
     color:'orange',
     list:['Sklepy internetowe dla firm','Sklepy internetowe dla działalności nierejestrowanych','Integracja płatności online i dostaw','Strony oparte na systemach CMS']

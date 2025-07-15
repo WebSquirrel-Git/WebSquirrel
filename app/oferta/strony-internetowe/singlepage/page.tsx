@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: 'Strona internetowa WIZYTÓWKA / ONE PAGE',
   description:
     'Zajmuję się projektowaniem i tworzeniem stron www oraz sklepów online. Napisz i dowiedz się jak ważną rolę pełni strona internetowa w budowaniu marki.',
-  metadataBase: new URL('https://websquirrel.pl/oferta/strony/singlepage'),
+  metadataBase: new URL('https://websquirrel.pl/oferta/strony-internetowe/singlepage'),
   alternates: {
-    canonical: 'https://websquirrel.pl/oferta/strony/singlepage',
+    canonical: 'https://websquirrel.pl/oferta/strony-internetowe/singlepage',
     languages: {
       'pl-PL': '/pl-PL',
     },
