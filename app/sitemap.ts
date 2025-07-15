@@ -15,7 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://websquirrel.pl/oferta/sklepy-internetowe/',
     },
     {
-      url: 'https://websquirrel.pl/oferta/strony-internetowe/woocommerce/',
+      url: 'https://websquirrel.pl/oferta/sklepy-internetowe/woocommerce/',
     },
     {
       url: 'https://websquirrel.pl/oferta/strony-internetowe/creative/',
