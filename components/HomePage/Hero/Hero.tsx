@@ -63,7 +63,7 @@ const Hero = ({isMobile}: HeroPropsType) => {
           title="Telefon z ofertą websquirrel"
           width={400}
           height={420}
-          loading="eager"
+          loading="eager" fetchPriority='high'
         />
       </div>
     );

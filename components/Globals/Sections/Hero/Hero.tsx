@@ -47,7 +47,7 @@ const Hero = ({
           title={title}
           width={837}
           height={845}
-          loading="eager"
+          loading="eager" fetchPriority='high'
         />
       </div>
     );
