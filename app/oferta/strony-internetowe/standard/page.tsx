@@ -6,6 +6,8 @@ import Stages from '@/components/OfferPage/Stages/Stages';
 import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {STANDARD_PAGE_CONTENT} from '@/utils/offer/standardPage';
 import {Metadata} from 'next';
+import {headers} from 'next/headers';
+import ImageMobile from '@/public/assets/hero/standard-hero-mobile.webp';
 
 export const metadata: Metadata = {
   title: 'Projektowanie stron internetowych, Oferta Standard',
@@ -26,10 +28,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function StandardPage() {
+export default async function StandardPage() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
+  const data = {
+    imageMobile: ImageMobile,
+    isMobile: isMobile,
+    ...STANDARD_PAGE_CONTENT.hero,
+  };
   return (
     <>
-      <Hero {...STANDARD_PAGE_CONTENT.hero} />
+      <Hero {...data} />
       <Advantages {...STANDARD_PAGE_CONTENT.advantages} />
       <Incosts {...STANDARD_PAGE_CONTENT.incosts} />
       <Technologies {...STANDARD_PAGE_CONTENT.technologies} />

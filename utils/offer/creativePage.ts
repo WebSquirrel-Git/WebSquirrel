@@ -1,5 +1,4 @@
 import {AdvantagesPropsType} from '@/components/OfferPage/Advantages/Advantages';
-import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
 import {IncostsPropsType} from '@/components/OfferPage/Incosts/Incosts';
 import {StagesPropsType} from '@/components/OfferPage/Stages/Stages';
 import {TechnologiesPropsType} from '@/components/OfferPage/Technologies/Technologies';
@@ -19,7 +18,15 @@ import PersonIcon from '@/public/assets/icons/person-icon.svg';
 import PeopleIcon from '@/public/assets/icons/people-icon.svg';
 import NexjJSIcon from '@/public/assets/icons/next-js-icon.svg';
 
-const hero: OffertHeroPropsType = {
+interface OffertHeroType {
+  subheader: string;
+  title: string;
+  price: string;
+  description: string;
+  videoTitle: string;
+}
+
+const hero: OffertHeroType = {
   videoTitle: 'Creative-page.mp4',
   subheader: 'Strona internetowa',
   title: 'Creative',
@@ -254,7 +261,7 @@ const STAGES_DATA = [
   },
 ];
 interface CREATIVE_PAGE_CONTENT_TYPE {
-  hero: OffertHeroPropsType;
+  hero: OffertHeroType;
   advantages: AdvantagesPropsType;
   technologies: TechnologiesPropsType;
   incosts: IncostsPropsType;

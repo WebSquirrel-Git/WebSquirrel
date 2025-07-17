@@ -46,6 +46,8 @@ const Tag = ({tag}: TagPropsType) => {
         src={TAGS[tag].img.src}
         alt={TAGS[tag].title}
         title={TAGS[tag].title}
+        width={24}
+        height={24}
       />
       <span>{TAGS[tag].title}</span>
     </div>

@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
         destination: '/oferta/strony-internetowe/standard',
         permanent: true,
       },
-    ]
+    ];
   },
 };
 

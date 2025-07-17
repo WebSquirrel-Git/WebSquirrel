@@ -7,7 +7,7 @@ import OfferWebsiteCard, {
 
 const OFFER_SINGLE_PAGE: OfferWebsiteCardPropsType = {
   type: 'Strona internetowa',
-  title: 'Single Page',
+  title: 'One Page',
   price: '1300 PLN',
   time: 'ok. 1-2 tygodnie',
   url: '/oferta/strony-internetowe/singlepage',

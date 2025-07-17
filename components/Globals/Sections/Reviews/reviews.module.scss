@@ -63,7 +63,8 @@
   }
 }
 .reviewImg {
-  width: 700px;
+  width: 800px;
+  height: auto;
   border: 2px solid colors.$squirrel;
   @include mixin.pc1000px {
     width: 500px;

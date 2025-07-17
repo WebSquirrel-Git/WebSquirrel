@@ -1,5 +1,4 @@
 import {AdvantagesPropsType} from '@/components/OfferPage/Advantages/Advantages';
-import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
 import {IncostsPropsType} from '@/components/OfferPage/Incosts/Incosts';
 import {StagesPropsType} from '@/components/OfferPage/Stages/Stages';
 import {TechnologiesPropsType} from '@/components/OfferPage/Technologies/Technologies';
@@ -13,7 +12,6 @@ import DeliveryIcon from '@/public/assets/icons/delivery-icon.svg';
 import GoogleIcon from '@/public/assets/icons/google-icon.svg';
 import ToolIcon from '@/public/assets/icons/tool-icon.svg';
 import ChatIcon from '@/public/assets/icons/chat-icon.svg';
-import HtmlIcon from '@/public/assets/icons/html-icon.svg';
 import WooCommerceIcon from '@/public/assets/icons/woocommerce-orange-icon.svg';
 import VisibilityIcon from '@/public/assets/icons/eye-icon.svg';
 import MegaphoneIcon from '@/public/assets/icons/megaphone-icon.svg';
@@ -23,7 +21,15 @@ import AnalyzeIcon from '@/public/assets/icons/analyze-icon.svg';
 import PersonIcon from '@/public/assets/icons/person-icon.svg';
 import PeopleIcon from '@/public/assets/icons/people-icon.svg';
 
-const hero: OffertHeroPropsType = {
+interface OffertHeroType {
+  subheader: string;
+  title: string;
+  price: string;
+  description: string;
+  videoTitle: string;
+}
+
+const hero: OffertHeroType = {
   videoTitle: 'Woocommerce_shop.mp4',
   subheader: 'Sklep internetowy',
   title: 'WooCommerce',
@@ -255,7 +261,7 @@ const STAGES_DATA = [
   },
 ];
 interface WOOCOMMERCE_SHOP_CONTENT_TYPE {
-  hero: OffertHeroPropsType;
+  hero: OffertHeroType;
   advantages: AdvantagesPropsType;
   technologies: TechnologiesPropsType;
   incosts: IncostsPropsType;

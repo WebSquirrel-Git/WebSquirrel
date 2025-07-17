@@ -46,7 +46,7 @@
 
 .logo {
   display: none;
-
+  height: auto;
   @include mixin.pc1250px {
     width: 400px;
     display: flex;
@@ -55,10 +55,10 @@
     width: 300px;
   }
   @include mixin.phone800px {
-    width: 200px;
+    width: 400px;
   }
   @include mixin.phone500px {
-    width: 60%;
+    width: 80%;
   }
 }
 .textBox {
@@ -81,6 +81,9 @@
   font-weight: 600;
   @include mixin.pc1450px {
     font-size: 1.5rem;
+  }
+  @include mixin.phone800px {
+    display: none;
   }
   @include mixin.phone500px {
     font-size: 1.3rem;

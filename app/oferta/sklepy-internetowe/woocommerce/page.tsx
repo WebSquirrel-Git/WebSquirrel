@@ -6,6 +6,8 @@ import Stages from '@/components/OfferPage/Stages/Stages';
 import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {WOOCOMMERCE_SHOP_CONTENT} from '@/utils/offer/woocommerceShop';
 import {Metadata} from 'next';
+import {headers} from 'next/headers';
+import ImageMobile from '@/public/assets/hero/stores-hero-mobile.webp';
 
 export const metadata: Metadata = {
   title: 'Budowanie sklepów internetowych, Oferta WooCommerce',
@@ -26,10 +28,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function WoocommercePage() {
+export default async function WoocommercePage() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
+  const data = {
+    imageMobile: ImageMobile,
+    isMobile: isMobile,
+    ...WOOCOMMERCE_SHOP_CONTENT.hero,
+  };
   return (
     <>
-      <Hero {...WOOCOMMERCE_SHOP_CONTENT.hero} />
+      <Hero {...data} />
       <Advantages {...WOOCOMMERCE_SHOP_CONTENT.advantages} />
       <Incosts {...WOOCOMMERCE_SHOP_CONTENT.incosts} />
       <Technologies {...WOOCOMMERCE_SHOP_CONTENT.technologies} />

@@ -16,7 +16,7 @@ import DefaultLink from '@/components/Ui/Links/DefaultLink/DefaultLink';
 const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
   {
     header: 'Sklep internetowy',
-    website_url: 'https://perlia.pl/', 
+    website_url: 'https://perlia.pl/',
     website_name: 'www.perlia.pl',
     about: 'Sprzedaż ręcznie robionej biżuterii',
     img: PerliaIphone,

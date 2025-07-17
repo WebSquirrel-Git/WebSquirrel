@@ -9,6 +9,9 @@ import WebsiteIncludes from '@/components/Globals/Sections/WebsiteIncludes/Websi
 import ProcessSteps from '@/components/Globals/Sections/ProcessSteps/ProcessSteps';
 import {STANDARD_PAGE_CONTENT} from '@/utils/offer/standardPage';
 import StoresOffer from '@/components/OfferPage/StoresOffer/StoresOffer';
+import {headers} from 'next/headers';
+import ImageMobile from '@/public/assets/hero/stores-hero-mobile.webp';
+
 export const metadata: Metadata = {
   title: 'Tworzenie sklepów internetowych, Oferta E-sklepy',
   description:
@@ -25,10 +28,17 @@ export const metadata: Metadata = {
     images: '/og-image.png',
   },
 };
-export default function Offert() {
+export default async function Offert() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
   return (
     <>
       <Hero
+        imageMobile={ImageMobile}
+        isMobile={isMobile}
         subheader="WebSquirrel"
         title="Tworzenie sklepów internetowych"
         description="Tworzę sklepy internetowe, które ułatwią Twoją sprzedaż produktów i profesjonalnie zaprezentują profil firmy. W mojej ofercie znajdziesz szereg usług, które ułatwią integracje Twojego e-sklepu z innymi usługami oraz zapewnią wysoki standard realizacji."

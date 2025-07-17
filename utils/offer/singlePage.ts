@@ -1,4 +1,3 @@
-import {OffertHeroPropsType} from '@/components/OfferPage/Hero/Hero';
 import {StagesPropsType} from '@/components/OfferPage/Stages/Stages';
 import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
 import WebsiteIcon from '@/public/assets/icons/website-orange-icon.svg';
@@ -20,7 +19,16 @@ import PeopleIcon from '@/public/assets/icons/people-icon.svg';
 import {IncostsPropsType} from '@/components/OfferPage/Incosts/Incosts';
 import {TechnologiesPropsType} from '@/components/OfferPage/Technologies/Technologies';
 import {AdvantagesPropsType} from '@/components/OfferPage/Advantages/Advantages';
-const hero: OffertHeroPropsType = {
+
+interface OffertHeroType {
+  subheader: string;
+  title: string;
+  price: string;
+  description: string;
+  videoTitle: string;
+}
+
+const hero: OffertHeroType = {
   videoTitle: 'Single-page.mp4',
   subheader: 'Strona internetowa',
   title: 'One Page',
@@ -196,7 +204,7 @@ const STAGES_DATA = [
   },
 ];
 interface SINGLE_PAGE_CONTENT_TYPE {
-  hero: OffertHeroPropsType;
+  hero: OffertHeroType;
   advantages: AdvantagesPropsType;
   technologies: TechnologiesPropsType;
   incosts: IncostsPropsType;

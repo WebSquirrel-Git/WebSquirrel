@@ -6,6 +6,8 @@ import Stages from '@/components/OfferPage/Stages/Stages';
 import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {PREMIUM_PAGE_CONTENT} from '@/utils/offer/premiumPage';
 import {Metadata} from 'next';
+import {headers} from 'next/headers';
+import ImageMobile from '@/public/assets/hero/premium-hero-mobile.webp';
 
 export const metadata: Metadata = {
   title: 'Strona internetowa dla firm, Oferta Premium',
@@ -26,10 +28,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PremiumPage() {
+export default async function PremiumPage() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
+  const data = {
+    imageMobile: ImageMobile,
+    isMobile: isMobile,
+    ...PREMIUM_PAGE_CONTENT.hero,
+  };
   return (
     <>
-      <Hero {...PREMIUM_PAGE_CONTENT.hero} />
+      <Hero {...data} />
       <Advantages {...PREMIUM_PAGE_CONTENT.advantages} />
       <Incosts {...PREMIUM_PAGE_CONTENT.incosts} />
       <Technologies {...PREMIUM_PAGE_CONTENT.technologies} />

@@ -8,6 +8,7 @@ import Reviews from '@/components/Globals/Sections/Reviews/Reviews';
 import Hero from '@/components/HomePage/Hero/Hero';
 import {STANDARD_PAGE_CONTENT} from '@/utils/offer/standardPage';
 import {Metadata} from 'next';
+import {headers} from 'next/headers';
 export const metadata: Metadata = {
   title: 'Projektowanie stron www oraz sklepów online | WebSquirrel',
   description:
@@ -24,10 +25,15 @@ export const metadata: Metadata = {
     images: '/og-image.png',
   },
 };
-export default function Home() {
+export default async function Home() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
   return (
     <>
-      <Hero />
+      <Hero isMobile={isMobile} />
       <GlobalOffer />
       <Reviews />
       <PortfolioShort />
