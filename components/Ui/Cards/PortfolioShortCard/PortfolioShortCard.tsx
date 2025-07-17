@@ -29,10 +29,24 @@ const PortfolioShortCard = ({
         <h3>{header}</h3>
         <Link href={website_url}>{website_name}</Link>
       </div>
-      <img src={img.src} alt={header} className={styles.image} />
+      <img
+        src={img.src}
+        alt={header}
+        className={styles.image}
+        width={400}
+        height={275}
+        loading="lazy"
+      />
       <div className={styles.bottomBox}>
         <p>{about}</p>
-        <img src={logo.src} alt={about} className={styles.logo} />
+        <img
+          src={logo.src}
+          alt={about}
+          className={styles.logo}
+          width={325}
+          height={70}
+          loading="lazy"
+        />
         <DefaultLink name="Dowiedz się więcej" url={portfolio_url} />
       </div>
     </div>

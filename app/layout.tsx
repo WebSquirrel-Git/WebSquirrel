@@ -3,7 +3,7 @@ import '../styles/globals.scss';
 import Navigation from '@/components/Navigation/Navigation';
 import {Metadata} from 'next';
 import {GoogleAnalytics} from '@next/third-parties/google';
-import CookiesPopup from '@/components/Ui/Popups/CookiesPopup/CookiesPopup';
+import dynamic from 'next/dynamic';
 export const metadata: Metadata = {
   title: {
     default: 'Strony i sklepy internetowe | WebSquirrel',
@@ -32,6 +32,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const CookiesPopup = dynamic(
+    () => import('@/components/Ui/Popups/CookiesPopup/CookiesPopup')
+  );
   return (
     <html lang="en">
       <body>

@@ -54,7 +54,13 @@ const OfferCardGlobal = ({
   return (
     <div className={containerStyle}>
       <div className={styles.headerBox}>
-        <img src={topIcon.src} alt={type} className={styles.topIcon} />
+        <img
+          src={topIcon.src}
+          alt={type}
+          className={styles.topIcon}
+          width={48}
+          height={48}
+        />
         <h3>{header}</h3>
       </div>
       <div className={styles.list}>

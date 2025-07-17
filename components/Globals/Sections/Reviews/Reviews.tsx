@@ -41,15 +41,31 @@ const Reviews = () => {
       />
       <div className={styles.reviewsContainer}>
         <div className={styles.reviewsBox}>
-          <button onClick={prevReviewHandler} className={styles.chevronButton}>
-            <img src={BackIcon.src} alt="back icon" />
+          <button
+            title="Previous review"
+            onClick={prevReviewHandler}
+            className={styles.chevronButton}
+          >
+            <img src={BackIcon.src} alt="back icon" width={64} height={64} />
           </button>
           <img
             className={styles.reviewImg}
             src={REVIEWS_ARRAY[reviewNumber].src}
+            width={800}
+            height={396}
+            alt="Opinia o WebSquirrel"
           />
-          <button onClick={nextReviewHandler} className={styles.chevronButton}>
-            <img src={ForwardIcon.src} alt="forward icon" />
+          <button
+            title="Next review"
+            onClick={nextReviewHandler}
+            className={styles.chevronButton}
+          >
+            <img
+              src={ForwardIcon.src}
+              alt="forward icon"
+              width={64}
+              height={64}
+            />
           </button>
         </div>
         <div className={styles.dotsBox}>
@@ -59,6 +75,7 @@ const Reviews = () => {
             }
             return (
               <button
+                title="Select review"
                 className={styles.whiteDot}
                 onClick={() => selectedReviewHandler(index)}
                 key={index}

@@ -6,6 +6,8 @@ import Stages from '@/components/OfferPage/Stages/Stages';
 import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {SINGLE_PAGE_CONTENT} from '@/utils/offer/singlePage';
 import {Metadata} from 'next';
+import {headers} from 'next/headers';
+import ImageMobile from '@/public/assets/hero/one_page-hero-mobile.webp';
 
 export const metadata: Metadata = {
   title: 'Strony internetowe Wordpress, Oferta One Page',
@@ -26,10 +28,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function SinglePage() {
+export default async function SinglePage() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
+  const data = {
+    imageMobile: ImageMobile,
+    isMobile: isMobile,
+    ...SINGLE_PAGE_CONTENT.hero,
+  };
   return (
     <>
-      <Hero {...SINGLE_PAGE_CONTENT.hero} />
+      <Hero {...data} />
       <Advantages {...SINGLE_PAGE_CONTENT.advantages} />
       <Incosts {...SINGLE_PAGE_CONTENT.incosts} />
       <Technologies {...SINGLE_PAGE_CONTENT.technologies} />

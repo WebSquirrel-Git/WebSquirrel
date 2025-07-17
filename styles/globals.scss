@@ -4,6 +4,7 @@
 
 html {
   font-family: 'RobotoFlex Inter-VariableFont_opsz', sans-serif;
+  font-display: swap;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,6 +36,7 @@ h5 {
 h1 {
   font-size: 6rem;
   font-family: 'Poppins-700';
+  font-display: swap;
   margin: 0;
   @include mixin.pc1450px {
     font-size: 4rem;
@@ -46,6 +48,7 @@ h1 {
 h2 {
   font-size: 3rem;
   font-family: 'Poppins-700';
+  font-display: swap;
   @include mixin.pc1450px {
     font-size: 2.7rem;
   }
@@ -56,6 +59,7 @@ h2 {
 h3 {
   font-size: 2rem;
   font-family: 'Poppins-600';
+  font-display: swap;
   @include mixin.pc1450px {
     font-size: 1.4rem;
   }
@@ -64,10 +68,12 @@ h3 {
   }
 }
 h4 {
+  font-display: swap;
   font-size: 20px;
   margin: 0;
 }
 p {
+  font-display: swap;
   font-size: 20px;
   line-height: 1.6rem;
   color: colors.$white;

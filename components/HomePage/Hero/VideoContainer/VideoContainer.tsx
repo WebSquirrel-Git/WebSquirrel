@@ -14,10 +14,19 @@ const VideoContainer = () => {
             muted
             playsInline
             preload="metadata"
+            title="Woocommerce_shop.mp4"
           ></video>
         </div>
 
-        <img src={WebSquirrelVideoImg.src} className={styles.image} />
+        <img
+          loading="eager"
+          src={WebSquirrelVideoImg.src}
+          className={styles.image}
+          title="Wiewiórka trzymająca tablet"
+          alt="Wiewiórka trzymająca tablet"
+          width={580}
+          height={650}
+        />
       </div>
     </div>
   );

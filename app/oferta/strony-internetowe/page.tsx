@@ -9,6 +9,9 @@ import WebsiteIncludes from '@/components/Globals/Sections/WebsiteIncludes/Websi
 import WebsitesOffer from '@/components/OfferPage/WebsitesOffer/WebsitesOffer';
 import ProcessSteps from '@/components/Globals/Sections/ProcessSteps/ProcessSteps';
 import {STANDARD_PAGE_CONTENT} from '@/utils/offer/standardPage';
+import {headers} from 'next/headers';
+import ImageMobile from '@/public/assets/hero/websites-hero-mobile.webp';
+
 export const metadata: Metadata = {
   title: 'Tworzenie stron internetowych, Projekt strony www',
   description:
@@ -25,10 +28,17 @@ export const metadata: Metadata = {
     images: '/og-image.png',
   },
 };
-export default function Offert() {
+export default async function Offert() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
   return (
     <>
       <Hero
+        imageMobile={ImageMobile}
+        isMobile={isMobile}
         subheader="WebSquirrel"
         title="Tworzenie stron internetowych"
         description="W mojej ofercie znajdziesz różne pakiety usług projektowania i tworzenia stron internetowych. Jest coś dla każdego od one page w CMS Wordpress po profesjonalne strony internetowe dla firm w NextJs. Jeżeli uważasz, że żaden z nich nie odpowiada Twoim oczekiwaniom skontaktuj się ze mną. Wycenie Twój projekt indywidualnie."

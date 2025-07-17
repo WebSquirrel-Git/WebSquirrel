@@ -6,6 +6,8 @@ import Stages from '@/components/OfferPage/Stages/Stages';
 import Technologies from '@/components/OfferPage/Technologies/Technologies';
 import {CREATIVE_PAGE_CONTENT} from '@/utils/offer/creativePage';
 import {Metadata} from 'next';
+import {headers} from 'next/headers';
+import ImageMobile from '@/public/assets/hero/creative-hero-mobile.webp';
 
 export const metadata: Metadata = {
   title: 'Profesjonalna Strona Internetowa, Oferta Creative',
@@ -26,10 +28,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function CreativePage() {
+export default async function CreativePage() {
+  const headersList = await headers();
+  const userAgent = headersList.get('user-agent') || '';
+  const isMobile = /Mobile|Tablet|Mobile Safari|Mobile|Windows Phone/i.test(
+    userAgent
+  );
+  const data = {
+    imageMobile: ImageMobile,
+    isMobile: isMobile,
+    ...CREATIVE_PAGE_CONTENT.hero,
+  };
+
   return (
     <>
-      <Hero {...CREATIVE_PAGE_CONTENT.hero} />
+      <Hero {...data} />
       <Advantages {...CREATIVE_PAGE_CONTENT.advantages} />
       <Incosts {...CREATIVE_PAGE_CONTENT.incosts} />
       <Technologies {...CREATIVE_PAGE_CONTENT.technologies} />

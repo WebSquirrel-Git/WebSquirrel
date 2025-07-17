@@ -47,7 +47,7 @@
 
 .logo {
   display: none;
-
+  height: auto;
   @include mixin.pc1250px {
     width: 400px;
     display: flex;
@@ -56,7 +56,7 @@
     width: 300px;
   }
   @include mixin.phone800px {
-    width: 200px;
+    width: 400px;
   }
   @include mixin.phone500px {
     width: 60%;
