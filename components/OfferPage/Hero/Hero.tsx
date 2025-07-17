@@ -48,6 +48,7 @@ const Hero = ({
           width={837}
           height={845}
           loading="eager"
+          fetchPriority='high'
         />
         {!isMobile && <VideoContainer videoTitle={videoTitle} />}
       </div>
