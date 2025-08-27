@@ -7,6 +7,8 @@ import CheckmarkIcon from '@/public/assets/icons/checkmark-green-icon.svg';
 import CloseRedIcon from '@/public/assets/icons/close-red-icon.svg';
 import WordpressIcon from '@/public/assets/icons/wordpress-orange-icon.svg';
 import NextJsIcon from '@/public/assets/icons/next-js-icon.svg';
+import PayloadCMSIcon from '@/public/assets/icons/payloadcms-orange-icon.svg';
+
 export interface OfferWebsiteCardPropsType {
   type: string;
   title: string;
@@ -16,6 +18,7 @@ export interface OfferWebsiteCardPropsType {
   mainList: string[];
   wordpressList: string[];
   nextJsList: {type: 'check' | 'false'; value: string}[];
+  payloadCMSList: {type: 'check' | 'false'; value: string}[];
 }
 
 const OfferWebsiteCard = ({
@@ -27,6 +30,7 @@ const OfferWebsiteCard = ({
   mainList,
   wordpressList,
   nextJsList,
+  payloadCMSList,
 }: OfferWebsiteCardPropsType) => {
   const mainListMap =
     nextJsList.length < 6 ? (
@@ -104,7 +108,31 @@ const OfferWebsiteCard = ({
         ))}
       </div>
     ) : null;
-
+  const payloadCMSListMap =
+    payloadCMSList.length < 10 && payloadCMSList.length > 0 ? (
+      <div className={styles.listBox}>
+        <div className={styles.listHeader}>
+          <img
+            src={PayloadCMSIcon.src}
+            alt="payloadCMS"
+            width={30}
+            height={30}
+          />
+          <p>Wykonanie w PayloadCMS:</p>
+        </div>
+        {payloadCMSList.map((item, index) => (
+          <div key={index} className={styles.listItem}>
+            <img
+              src={item.type === 'check' ? CheckmarkIcon.src : CloseRedIcon.src}
+              alt="checkmark"
+              width={24}
+              height={24}
+            />
+            <p>{item.value}</p>
+          </div>
+        ))}
+      </div>
+    ) : null;
   return (
     <div className={styles.container}>
       <div className={styles.contentBox}>
@@ -120,6 +148,7 @@ const OfferWebsiteCard = ({
         {mainListMap}
         {wordpressListMap}
         {nextJsListMap}
+        {payloadCMSListMap}
       </div>
       <Link className={styles.link} href={url}>
         DOWIEDZ SIĘ WIĘCEJ{' '}

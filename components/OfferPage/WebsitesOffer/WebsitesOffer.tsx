@@ -19,6 +19,7 @@ const OFFER_SINGLE_PAGE: OfferWebsiteCardPropsType = {
   ],
   wordpressList: ['Łatwy w obsłudze panel do zarządzania treścią strony'],
   nextJsList: [],
+  payloadCMSList: [],
 };
 const OFFER_STANDARD_PAGE: OfferWebsiteCardPropsType = {
   type: 'Strona internetowa',
@@ -36,6 +37,21 @@ const OFFER_STANDARD_PAGE: OfferWebsiteCardPropsType = {
   ],
   wordpressList: ['Łatwy w obsłudze panel do zarządzania treścią strony'],
   nextJsList: [],
+  payloadCMSList: [
+    {
+      type: 'check',
+      value: 'Strona wykonana na podstawie jednego z szablonów',
+    },
+    {
+      type: 'check',
+      value:
+        'Dostosowany panel administracyjny ułatwiający zarządzanie treścią na stronie',
+    },
+    {
+      type: 'check',
+      value: 'Framework oparty na NextJs zapewniający dużą wydajność',
+    },
+  ],
 };
 const OFFER_PREMIUM_PAGE: OfferWebsiteCardPropsType = {
   type: 'Strona internetowa',
@@ -76,6 +92,7 @@ const OFFER_PREMIUM_PAGE: OfferWebsiteCardPropsType = {
       value: 'Brak panelu do zarządzania treścią',
     },
   ],
+  payloadCMSList: [],
 };
 const OFFER_CREATIVE_PAGE: OfferWebsiteCardPropsType = {
   type: 'Strona internetowa',
@@ -152,6 +169,7 @@ const OFFER_CREATIVE_PAGE: OfferWebsiteCardPropsType = {
       value: 'Brak panelu do zarządzania treścią',
     },
   ],
+  payloadCMSList: [],
 };
 
 const WebsitesOffer = () => {

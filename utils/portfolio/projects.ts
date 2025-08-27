@@ -1,5 +1,6 @@
 import {ProjectLandscapeCardPropsType} from '@/components/Ui/Cards/ProjectLandscapeCard/ProjectLandscapeCard';
 import NextJsIcon from '@/public/assets/icons/next-js-icon.svg';
+import PayloadcmsIcon from '@/public/assets/icons/payloadcms-orange-icon.svg';
 import TypeScriptIcon from '@/public/assets/icons/typescript-icon.svg';
 import SassIcon from '@/public/assets/icons/sass-icon.svg';
 import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
@@ -42,6 +43,12 @@ import PerliaImg2 from '@/public/portfolio/perlia/perlia-2.webp';
 import PerliaImg3 from '@/public/portfolio/perlia/perlia-3.webp';
 import PerliaImg4 from '@/public/portfolio/perlia/perlia-4.webp';
 import PerliaImg5 from '@/public/portfolio/perlia/perlia-5.webp';
+import InteriordesignerCoverImage from '@/public/portfolio/interiordesigner/cover.svg';
+import InteriordesignerImg1 from '@/public/portfolio/interiordesigner/interiordesigner-1.webp';
+import InteriordesignerImg2 from '@/public/portfolio/interiordesigner/interiordesigner-2.webp';
+import InteriordesignerImg3 from '@/public/portfolio/interiordesigner/interiordesigner-3.webp';
+import InteriordesignerImg4 from '@/public/portfolio/interiordesigner/interiordesigner-4.webp';
+import InteriordesignerImg5 from '@/public/portfolio/interiordesigner/interiordesigner-5.webp';
 import ClientAnimationsCoverImage from '@/public/portfolio/clientanimations/cover.svg';
 export interface ProjectType extends ProjectLandscapeCardPropsType {
   orientation: 'landscape' | 'portrait';
@@ -56,6 +63,29 @@ export interface PortfolioPopupType {
   reverseImages: any[];
 }
 export const PORTFOLIO_PROJECTS: ProjectType[] = [
+  {
+    title: 'Projektanci Wnętrz - Szablon',
+    type: 'website',
+    orientation: 'landscape',
+    typeTitle: 'Strona internetowa',
+    mainTechnology: 'PayloadCMS',
+    coverImage: InteriordesignerCoverImage.src,
+    active: false,
+    style: 'website',
+    popup: {
+      title: 'Projektanci Wnętrz - Szablon',
+      description:
+        'Szablon dla projektantów wnętrz - gotowy do użycia i dostosowania pod Twoje potrzeby. Aplikacja została stworzona w nowoczesnym frameworku PayloadCMS, który cechuje się wysoką wydajnością oraz panelem administracyjnym umożliwiającym zarządzanie treścią na stronie. Panel jest dostosowany dla projektantów wnętrz i posiada unikalne funkcjonalności jak kolekcja ofert, realizacji czy bloki do wstawiania na stronę (opinie, realizacja, oferta zbiorcza, oferta pojedyńcza i inne). Szablon ma możliwość modyfikacji treści i panelu administratora pod Twoje oczekiwania. W celu uzyskania dostępu do panelu administratora napisz do mnie wiadomość lub zadzwoń.',
+      technologiesIcons: [PayloadcmsIcon, NextJsIcon, FigmaIcon],
+      url: 'interior-designer-template-omega.vercel.app',
+      frontImages: [InteriordesignerImg1, InteriordesignerImg2],
+      reverseImages: [
+        InteriordesignerImg3,
+        InteriordesignerImg4,
+        InteriordesignerImg5,
+      ],
+    },
+  },
   {
     title: 'Perlia',
     type: 'shop',

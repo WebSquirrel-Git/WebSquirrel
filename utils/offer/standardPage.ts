@@ -12,6 +12,7 @@ import ToolIcon from '@/public/assets/icons/tool-icon.svg';
 import ChatIcon from '@/public/assets/icons/chat-icon.svg';
 import HtmlIcon from '@/public/assets/icons/html-icon.svg';
 import WordpressIcon from '@/public/assets/icons/wordpress-icon.svg';
+import PayloadcmsIcon from '@/public/assets/icons/payloadcms-orange-icon.svg';
 import VisibilityIcon from '@/public/assets/icons/eye-icon.svg';
 import MegaphoneIcon from '@/public/assets/icons/megaphone-icon.svg';
 import TrustIcon from '@/public/assets/icons/accessibility-icon.svg';
@@ -96,6 +97,12 @@ const TECHNOLOGIES_DATA = [
     icon: WordpressIcon,
     description:
       'Wykonanie strony na platformie CMS Wordpress, która  posiada intuicyjny panel do zarządzania treścią. Ułatwione wprowadzanie zmian przez klienta.',
+  },
+  {
+    header: 'PayloadCMS',
+    icon: PayloadcmsIcon,
+    description:
+      'Nowoczesny framework oparty na NextJs. Oferta zawiera wykonanie stronie internetowej na jednym z dostępnych szablonów. PayloadCMS charakteryzuje się wysoką wydajnością oraz w pełni konfigurowalnym panelem administratora, z którego można w łatwy sposób aktualizować treści na stronie.',
   },
 ];
 const INCOST_SERVICES = [
