@@ -20,6 +20,7 @@ const GLOBAL_OFFERT: OfferCardPropsType[] = [
       'Strona dla firmy',
       'Strona w CMS Wordpress',
       'Strona w NextJs',
+      'Strona w PayloadCMS',
     ],
   },
   {
