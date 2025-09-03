@@ -7,9 +7,12 @@ import {StaticImageData} from 'next/image';
 export interface PortfolioShortCardProps {
   header: string;
   about: string;
+  subheader:string;
   website_url: string;
   website_name: string;
-  img: StaticImageData;
+  imgPhone: StaticImageData;
+  imgPc:StaticImageData;
+  imgBg:StaticImageData;
   logo: StaticImageData;
   portfolio_url: string;
 }
@@ -17,38 +20,41 @@ export interface PortfolioShortCardProps {
 const PortfolioShortCard = ({
   header,
   about,
-  website_name,
-  website_url,
-  img,
-  logo,
+  subheader,
+  imgBg,
   portfolio_url,
 }: PortfolioShortCardProps) => {
   return (
     <div className={styles.container}>
-      <div className={styles.headerBox}>
+      <div className={styles.contentBox}>
+        <div className={styles.topBox}>
+    
         <h3>{header}</h3>
-        <Link href={website_url}>{website_name}</Link>
+        <h4>{subheader}</h4>
+        
+        </div>
+        <div className={`${styles.bottomBox} ${styles.pc}`}>
+<p>{about}</p>
+<DefaultLink name="Dowiedz się więcej" url={portfolio_url} />
+        </div>
+         
+        {/* <Link href={website_url}>{website_name}</Link> */}
       </div>
-      <img
-        src={img.src}
+      
+        <img
+        src={imgBg.src}
         alt={header}
-        className={styles.image}
-        width={400}
-        height={275}
+        className={styles.imageBg}
+        width={720}
+        height={400}
         loading="lazy"
       />
-      <div className={styles.bottomBox}>
-        <p>{about}</p>
-        <img
-          src={logo.src}
-          alt={about}
-          className={styles.logo}
-          width={325}
-          height={70}
-          loading="lazy"
-        />
-        <DefaultLink name="Dowiedz się więcej" url={portfolio_url} />
-      </div>
+      <div className={`${styles.bottomBox} ${styles.mobile}`}>
+<p>{about}</p>
+
+<DefaultLink name="Dowiedz się więcej" url={portfolio_url} />
+        </div>
+      
     </div>
   );
 };

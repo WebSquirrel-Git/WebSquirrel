@@ -37,7 +37,7 @@ const Reviews = () => {
     <div className={styles.container}>
       <H2About
         h2="Opinie klientów"
-        about="Sprawdź co o moich usługach mówią klienci."
+        about="Sprawdź co o mojej współpracy mówią klienci."
       />
       <div className={styles.reviewsContainer}>
         <div className={styles.reviewsBox}>

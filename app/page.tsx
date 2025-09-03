@@ -35,11 +35,14 @@ export default async function Home() {
     <>
       <Hero isMobile={isMobile} />
       <GlobalOffer />
-      <Reviews />
-      <PortfolioShort />
       <CooperationBenefits />
-      <Articles />
-      <ProcessSteps {...STANDARD_PAGE_CONTENT.stages} />
+      <PortfolioShort />
+      {/* <ProcessSteps {...STANDARD_PAGE_CONTENT.stages} /> */}
+      <Reviews />
+      
+      
+      {/* <Articles /> */}
+      
       <ContactForm contactFormType="All" />
     </>
   );

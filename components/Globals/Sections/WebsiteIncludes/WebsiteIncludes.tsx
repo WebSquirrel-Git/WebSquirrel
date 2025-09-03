@@ -84,7 +84,7 @@ const WebsiteIncludes = ({h2}: WebsiteIncludesPropsType) => {
     <div className={styles.container}>
       <H2About
         h2={h2}
-        about="Jest kilka oczywistych lub mniej oczywistych rzeczy/usług, które zawiera każda strona."
+        about="Poniżej znajdziesz listę elementów i usług, która jest wdrażana do każdego projektu, który tworzę."
       />
       <div className={styles.rowBox}>
         {INCOST_SERVICES.map((service, index) => (

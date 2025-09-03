@@ -30,6 +30,26 @@ const nextConfig: NextConfig = {
         destination: '/oferta/strony-internetowe/standard',
         permanent: true,
       },
+      // {
+      //   source: '/oferta/strony-internetowe/creative',
+      //   destination: '/oferta/strony-internetowe/',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/oferta/strony-internetowe/premium',
+      //   destination: '/oferta/strony-internetowe/',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/oferta/strony-internetowe/singlepage',
+      //   destination: '/oferta/strony-internetowe/',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/oferta/strony-internetowe/standard',
+      //   destination: '/oferta/strony-internetowe/',
+      //   permanent: true,
+      // },
     ];
   },
 };

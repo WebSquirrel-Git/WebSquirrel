@@ -1,0 +1,52 @@
+@use '../../../styles/colors.scss' as colors;
+@use '../../../styles/mixin.scss' as mixin;
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+   padding: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+  
+}
+
+.technologyBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid colors.$squirrel;
+  width: 80%;
+  gap: 2rem;
+  padding: 1rem;
+
+  @include mixin.pc1450px {
+    width: 100%;
+  }
+  h3 {
+    color: colors.$squirrel;
+  }
+  p {
+    font-size: 16px;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+      line-height: 1.2rem;
+    }
+  }
+  .topBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+

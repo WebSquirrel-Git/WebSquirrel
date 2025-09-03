@@ -132,11 +132,9 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
   return (
     <section id="contact" className={styles.container}>
       <div className={styles.formContainer}>
-        <h3>Zapytaj się o projekt</h3>
+        <h3>Skontaktuj się ze mną</h3>
         <p>
-          W formularzu poniżej podaj podstawowy opis projektu do zrealizowania
-          oraz wybierz kategorię zlecenia. Oczywiście jeżeli masz czas zapraszam
-          do kontaktu telefonicznego zawsze chętnie pogadam.
+          Formularz poniżej ułatwi Ci szybki kontakt ze mną. Wystarczy tylko, że zaznaczysz temat projektu, Twoje imię, e-mail na który mogę się odezwać i treść zapytania. Jeżeli wolisz rozmowę przez telefon zadzwoń pod numer podany poniżej.
         </p>
         <span className={styles.phoneBox}>
           <img

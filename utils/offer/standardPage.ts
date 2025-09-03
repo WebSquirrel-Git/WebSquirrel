@@ -192,37 +192,49 @@ const STAGES_DATA = [
   {
     header: 'Konsultacja',
     number: '01',
-    description: 'Omówienie założeń projektu.',
+    description: 'Po skontaktowaniu się ze mną zaproszę Cię na rozmowę online, gdzie przeanalizujemy obecność Twojej firmy w internecie oraz ustalimy podstawowe cele jakie ma realizować strona.',
+  },
+  {
+    header: 'Ustalenie strategii',
+    number: '02',
+    description:
+      'Na podstawie ustalonych celów, oraz analizy konkurecji i obecności Twojej firmy w sieci zaplanuję dla Ciebie strategię na wykonanie strony i przedstawię Ci ją na spotkaniu lub w formie krótkiego raportu.',
   },
   {
     header: 'Projekt graficzny',
-    number: '02',
-    description:
-      'Wykonuję projekt graficzny strony w Figmie. Po skończeniu umawiamy się na spotkanie i omawiamy efekty.',
-  },
-  {
-    header: 'Akceptacja/Poprawki',
     number: '03',
     description:
-      'Jeżeli projekt graficzny jest ok to lecimy dalej. Jeżeli trzeba coś poprawić to poprawiamy.',
+      'Na tym etapie mam wszystkie niezbędne informacje potrzebne do stworzenia projektu graficznego strony, który będzie spełniał założenia projektu oraz współgrał z brandingiem Twojej firmy.',
   },
   {
-    header: 'Tworzenie strony',
+    header: 'Raportowanie',
     number: '04',
     description:
-      'Na tym etapie praca jest głównie po mojej stronie ale jest to dobry moment żeby dosłać do mnie informacje ustalone na etapie planowania.',
+      'W trakcie tworzenia projektu graficznego będę przedstawiał Ci postępy prac, do których będziesz mógł/mogła zgłaszać obiekcje i które poprawie. Kontaktujemy się przez wiadomości lub spotkania online.',
   },
   {
-    header: 'Akceptacja/Poprawki',
+    header: 'Wdrożenie',
     number: '05',
     description:
-      'Jeżeli strona jest ok to wrzucamy ją na hosting i zajmujemy się SEO. Jeżeli trzeba coś poprawić to poprawiamy.',
+      'Po ukończeniu projektu graficznego zajmuję się konfiguracją hostingu, domeny oraz wdrożeniu strony na serwer. Zadbam o to żeby strona była zoptymalizowana technicznie, wydajna oraz działała poprawnie na różnych urządzeniach i przeglądarkach.',
   },
   {
-    header: 'Monitoring',
-    number: '06',
+    header: 'Konfiguracja',
+    number: '07',
     description:
-      'Obserwujemy jak działa strona. Spotykamy się na szkolenie online z obsługi strony i pozostajemy w stałym kontakcie.',
+      'Po skutecznymm wdrożeniu strony zajmuję się implementacją pozostałych narzędzi potrzebnych do skutecznego funkcjonowania strony jak: kopie zapasowe, dodanie strony do Google, implementacja Google Analytics, pliki cookies itp.',
+  },
+   {
+    header: 'Szkolenie',
+    number: '08',
+    description:
+      'W tym etapie umawiamy się na spotkanie online lub na żywo, gdzie pokazuję Ci jak działa strona, panel administratora oraz jak o nią dbać. Dostaniesz ode mnie, krótki poradnik o zarządzaniu stroną rozszerzony o odpowiedzi na pytania, które mi zadasz na spotkaniu.',
+  },
+    {
+    header: 'Opieka',
+    number: '09',
+    description:
+      'Przez 2 kolejne miesiące oferuję opiekę nad Twoją stroną, żeby pomóc Ci się na spokojnie wdrożyć w jej edycję bez zbędnego stresu. Po zakończonym procesie zawsze odezwę się do Ciebie żeby sprawdzić czy wszystko jest ok i Ty możesz zrobić to samo.',
   },
 ];
 interface STANDARD_PAGE_CONTENT_TYPE {
