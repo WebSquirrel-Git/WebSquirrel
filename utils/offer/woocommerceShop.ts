@@ -227,37 +227,55 @@ const STAGES_DATA = [
   {
     header: 'Konsultacja',
     number: '01',
-    description: 'Omówienie założeń projektu.',
+    description: 'Po skontaktowaniu się ze mną zaproszę Cię na rozmowę online, gdzie przeanalizujemy obecność Twojej firmy w internecie, grupę klientów oraz ustalimy cele jakie ma realizować sklep online.',
+  },
+  {
+    header: 'Ustalenie strategii',
+    number: '02',
+    description:
+      'Na podstawie ustalonych celów, analizy konkurecji, grupy docelowej klientów i obecności Twojej firmy w sieci zaplanuję dla Ciebie strategię na wykonanie sklepu i przedstawię Ci ją na spotkaniu lub w formie krótkiego raportu.',
   },
   {
     header: 'Projekt graficzny',
-    number: '02',
-    description:
-      'Wykonuję projekt graficzny sklepu w Figmie. Po skończeniu umawiamy się na spotkanie i omawiamy efekty.',
-  },
-  {
-    header: 'Akceptacja/Poprawki',
     number: '03',
     description:
-      'Jeżeli projekt graficzny jest ok to lecimy dalej. Jeżeli trzeba coś poprawić to poprawiamy.',
+      'Na tym etapie mam wszystkie niezbędne informacje potrzebne do stworzenia projektu graficznego sklepu, który będzie spełniał założenia projektu oraz współgrał z brandingiem Twojej firmy.',
   },
   {
-    header: 'Tworzenie sklepu',
+    header: 'Raportowanie',
     number: '04',
     description:
-      'Na tym etapie praca jest głównie po mojej stronie ale jest to dobry moment żeby dosłać do mnie informacje ustalone na etapie planowania.',
+      'W trakcie tworzenia projektu graficznego będę przedstawiał Ci postępy prac, do których będziesz mógł/mogła zgłaszać obiekcje i które poprawie. Kontaktujemy się przez wiadomości lub spotkania online.',
   },
   {
-    header: 'Akceptacja/Poprawki',
+    header: 'Wdrożenie',
     number: '05',
     description:
-      'Jeżeli sklep jest ok to wrzucamy go na hosting i zajmujemy się SEO. Jeżeli trzeba coś poprawić to poprawiamy.',
+      'Po ukończeniu projektu graficznego zajmuję się konfiguracją hostingu, domeny oraz wdrożeniem sklepu na serwer. Zadbam o to żeby sklep był zoptymalizowany technicznie, wydajny oraz działał poprawnie na różnych urządzeniach i przeglądarkach.',
   },
   {
-    header: 'Monitoring',
-    number: '06',
+    header: 'Konfiguracja',
+    number: '07',
     description:
-      'Obserwujemy jak działa sklep. Spotykamy się na szkolenie online z obsługi sklepu i pozostajemy w stałym kontakcie.',
+      'Po skutecznym wdrożeniu sklepu zajmuję się implementacją pozostałych narzędzi potrzebnych do skutecznego funkcjonowania sklepu jak: kopie zapasowe, dodanie strony do Google i Merchant Center, implementacja Google Analytics, pliki cookies, płatności online, kurierzy itp.',
+  },
+  {
+    header: 'Przygotowanie produktów',
+    number: '08',
+    description:
+      'Stworzę dla Ciebie szablony produktów, które będziesz mógł łatwo dodawać na swój sklep oraz ustawię podstawowy schemat opisów SEO.',
+  },
+   {
+    header: 'Szkolenie',
+    number: '09',
+    description:
+      'Na tym etapie umawiamy się na spotkanie online lub na żywo, gdzie pokazuję Ci jak działa sklep, panel administratora oraz jak nim zarządzać. Dostaniesz ode mnie, krótki poradnik o zarządzaniu sklepem rozszerzony o odpowiedzi na pytania, które mi zadasz na spotkaniu.',
+  },
+    {
+    header: 'Opieka',
+    number: '10',
+    description:
+      'Przez 2 kolejne miesiące oferuję opiekę nad Twoim sklepem, żeby pomóc Ci się na spokojnie wdrożyć w jego edycję, dodawanie produktów oraz obsługę zamówień bez zbędnego stresu. Po zakończonym procesie zawsze odezwę się do Ciebie żeby sprawdzić czy wszystko jest ok i Ty możesz zrobić to samo.',
   },
 ];
 interface WOOCOMMERCE_SHOP_CONTENT_TYPE {

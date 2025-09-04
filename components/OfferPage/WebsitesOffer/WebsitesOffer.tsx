@@ -4,6 +4,7 @@ import styles from './websitesOffer.module.scss';
 import OfferWebsiteCard, {
   OfferWebsiteCardPropsType,
 } from '@/components/Ui/Cards/OfferWebsiteCard/OfferWebsiteCard';
+import Link from 'next/link';
 
 const OFFER_SINGLE_PAGE: OfferWebsiteCardPropsType = {
   type: 'Strona internetowa',
@@ -169,6 +170,7 @@ const WebsitesOffer = () => {
         Istnieje możliwość wykonania stron w HTML+CSS+JS/TS. Więcej informacji o wycenie
         podczas kontaktu.
       </p>
+      <p>Jeżeli zastanawiasz się czy potrzebujesz strony internetowej sprawdź mój artykuł <Link href='/artykuly/dlaczego-warto-miec-strone-www' className={styles.accent}>tutaj</Link>, w którym opisuję jaką rolę pełni strona internetowa w dzisiejszym rozwoju firmy.</p>
     </div>
   );
 };

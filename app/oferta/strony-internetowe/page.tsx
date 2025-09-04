@@ -81,7 +81,7 @@ export default async function Offert() {
         subheader="WebSquirrel"
         title="Profesjonalne strony internetowe"
         description="Projektuje nowoczesne strony internetowe, które są dostosowane do Twojego profilu firmy i realizują konkretne cele. Każdy projekt powstaje na podstawie ustalonej strategii i dopasowanego projektu graficznego, który współgra z wizerunkiem Twojej firmy."
-        videoTitle="Creative-page.mp4"
+        videoTitle="Interior_designer.mp4"
       />
       <div className={styles.containerAlignCenter}>
         <H2About
