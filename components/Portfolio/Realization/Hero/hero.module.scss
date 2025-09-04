@@ -112,8 +112,13 @@ height: 100vh;
 }
 .answer{
   width:314px ;
+  font-size: 20px;
    @include mixin.pc1000px {
     width: auto;
+  }
+  @include mixin.phone500px {
+    font-size: .7rem;
+    line-height: 1.2rem;
   }
 }
 .image{
