@@ -26,10 +26,7 @@
   justify-content: center;
   gap: 2rem;
   width: 70%;
-  @include mixin.pc1020px {
-    width: 85%;
-  }
-  @include mixin.phone500px {
+  @include mixin.pc1450px {
     width: 100%;
   }
 }
@@ -38,10 +35,14 @@
   flex-direction: column;
   gap: 1rem;
   width: 350px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: left;
-  @include mixin.phone500px {
+  text-align: center;
+  @include mixin.pc1000px {
+    width: 320px;
+  }
+  @include mixin.phone800px {
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -57,12 +58,25 @@
 .advantageHeader {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   color: colors.$squirrel;
   gap: 0.5rem;
-  @include mixin.phone500px {
+
+  h3 {
+    font-size: 24px;
+    @include mixin.phone500px {
+      font-size: 1rem;
+    }
+  }
+  img {
+    height: 32px;
+    @include mixin.phone500px {
+      height: 24px;
+    }
+  }
+  @include mixin.phone800px {
     width: 100%;
     justify-content: center;
     text-align: center;

@@ -1,6 +1,6 @@
 'use client';
 import styles from './cooperationBenefits.module.scss';
-import VisibilityIcon from '@/public/assets/icons/eye-icon.svg';
+import PhoneIcon from '@/public/assets/icons/phone-icon.svg';
 import ToolIcon from '@/public/assets/icons/tool-icon.svg';
 import BulbIcon from '@/public/assets/icons/bulb-orange-icon.svg';
 import ClockIcon from '@/public/assets/icons/stopwatch-icon.svg';
@@ -11,39 +11,39 @@ import H2About from '@/components/Ui/Headers/H2About/H2About';
 const ADVANTAGES_DATA = [
   {
     header: 'Bezpośredniość',
-    icon: VisibilityIcon,
+    icon: PhoneIcon,
     description:
-      'Możesz do mnie napisać, zadzwonić lub umówić się na spotkanie online f2f.',
+      'Prowadzę jednoosobową firmę dlatego zawsze będziesz się kontaktować i rozmawiać ze mną.',
   },
   {
-    header: 'Szczerość',
+    header: 'Dopasowanie do klienta',
     icon: PersonIcon,
     description:
-      'Moja współpraca opiera się na transparentności. Zawsze Cie poinformuję czy jestem w stanie wykonać zleconą przez Ciebie usługę i jak wyceniłem projekt.',
+      'Jestem elastyczny i dopasuje się do Twojego czasu, oraz wysłucham i wdroże zaproponowane przez Ciebie pomysły.',
   },
   {
-    header: 'Dostępność',
+    header: 'Opieka nad projektem',
     icon: ClockIcon,
     description:
-      'Jestem zawsze dostępny dla moich klientów. Jeżeli powstaną jakieś problemy podczas edycji strony możesz liczyć na moją szybką pomoc.',
+      'Po zakończonej realizacji możesz liczyć na moją pomoc, gwarancję i opiekę nad stroną.',
   },
   {
-    header: 'Ciągły rozwój',
+    header: 'Proste interfejsy',
     icon: AnalyzeIcon,
     description:
-      'Branża w której świadczę usługi jest bardzo dynamiczna co wymaga ciągłej nauki i podnoszenia umiejętności. Stawiam na rozwój dlatego zawsze będziesz na czasie z nowymi rozwiązaniami i trendami.',
+      'Narzędzia, które wykorzystuje bazują na prostych interfejsach do zarządzania treścią, z których Cię przeszkolę i będziesz mógł samodzielnie działać ze swoją stroną, sklepem czy szablonem graficznym.',
   },
   {
-    header: 'Nauka',
+    header: 'Nowoczesne rozwiązania',
     icon: BulbIcon,
     description:
-      'Współpraca ze mną opiera się także na edukowaniu Ciebie w kwestiach obsługi strony czy podsuwaniu pomysłów na rzeczy, które pomogą rozwinąć Twoją firmę. Prowadzę także sekcje artykułów gdzie dzielę się swoją wiedzą.',
+      'Pomogę Ci dobrać technologię, która będzie skalowalna i posiadała wsparcie w najbliższych latach.',
   },
   {
     header: 'Kompleksowość',
     icon: ToolIcon,
     description:
-      'Działam na kilku płaszczyznach, które znacznie przyspieszają tempo prac i nie wymuszają na Tobie konieczności zatrudnienia montażysty, grafika, webdevelopera i specjalisty SEO. Zajmę się tym wszystkim we współpracy z Tobą.',
+      'Przeprowadzam wdrożenia stron/sklepów od A do Z, wykonuje branding marki oraz w razie potrzeby montuje video na stronę. ',
   },
 ];
 
@@ -51,8 +51,8 @@ const CooperationBenefits = () => {
   return (
     <section id="cooperation" className={styles.container}>
       <H2About
-        h2="Zastanawiasz się nad współpracą ze mną?"
-        about="Podam Ci kilka rzeczy, które doceniają moi klienci we współpracy ze mną."
+        h2="Dlaczego WebSquirrel?"
+        about="Współpraca z klientami pokazała mi jak wiele czasu zajmuje znalezienie specjalistów z różnych branż, którzy stworzą dla nich treści spójne z marką, rzetelnie i na czas. W celu zapewnienia jak najbardziej kompleksowej pomocy i rozwiązania tego problemu rozwijam swoje umiejętności i mogę Ci pomóc z stworzeniem brandingu marki, strony internetowej i szablonów do postów na SM w jednym spójnym stylu, dzięki czemu rozpoznawalność i postrzegalność Twojej marki będzie rosła, a Ty oszczędzisz czas na szukanie wykonawców."
       />
       <div className={styles.rowBox}>
         {ADVANTAGES_DATA.map((advantage, index) => (

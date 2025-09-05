@@ -20,38 +20,28 @@ const Hero = ({isMobile}: HeroPropsType) => {
     return (
       <div className={styles.container}>
         <div className={styles.textBox}>
-          <span className={styles.subHeader}>Cześć! Mam na imię Bartosz.</span>
+          <span className={styles.subHeader}>Strony i sklepy internetowe</span>
           <h1>WebSquirrel</h1>
 
           <p>
-            Tworzę{' '}
+            <br /> Zajmuję się projektowaniem i tworzeniem{' '}
             <Link
               href="/oferta/strony-internetowe"
               title="oferta-strony-internetowe"
             >
-              profesjonalne strony internetowe
+              stron
             </Link>{' '}
-            i{' '}
+            oraz{' '}
             <Link
               href="/oferta/sklepy-internetowe"
               title="oferta-sklepy-internetowe"
             >
-              sklepy online
+              sklepów internetowych
             </Link>
-            , które zwiększą Twoją widoczność w internecie oraz polepszą
-            wizerunek firmy. Świadczę także usługi{' '}
-            <Link href="#offert" title="oferta-elementy-graficzne">
-              projektowania graficznego
-            </Link>{' '}
-            i{' '}
-            <Link href="#offert" title="oferta-elementy-graficzne">
-              montażu rolek.
-            </Link>{' '}
-            Na mojej stronie internetowej znajdziesz także sekcję{' '}
-            <Link href="/artykuly" title="oferta-elementy-graficzne">
-              artykułów,
-            </Link>{' '}
-            gdzie dzielę się swoją wiedzą, która pomaga moim klientom.
+            , które mają konkretne cele i są dostosowane do profilu Twojej
+            działalności. Każdy projekt zaczyna się od analizy profilu firmy,
+            konkurencji i ustaleniu konkretnej strategii w jakim celu tworzymy
+            stronę lub sklep.
           </p>
 
           <DefaultLink name="Skontaktuj się" url="/#contact" />
@@ -72,38 +62,28 @@ const Hero = ({isMobile}: HeroPropsType) => {
     return (
       <div className={styles.container}>
         <div className={styles.textBox}>
-          <span className={styles.subHeader}>Cześć! Mam na imię Bartosz.</span>
+          <span className={styles.subHeader}>Strony i sklepy internetowe</span>
           <h1>WebSquirrel</h1>
 
           <p>
-            Tworzę{' '}
+            <br /> Zajmuję się projektowaniem i tworzeniem{' '}
             <Link
               href="/oferta/strony-internetowe"
               title="oferta-strony-internetowe"
             >
-              profesjonalne strony internetowe
+              stron
             </Link>{' '}
-            i{' '}
+            oraz{' '}
             <Link
               href="/oferta/sklepy-internetowe"
               title="oferta-sklepy-internetowe"
             >
-              sklepy online
+              sklepów internetowych
             </Link>
-            , które zwiększą Twoją widoczność w internecie oraz polepszą
-            wizerunek firmy. Świadczę także usługi{' '}
-            <Link href="#offert" title="oferta-elementy-graficzne">
-              projektowania graficznego
-            </Link>{' '}
-            i{' '}
-            <Link href="#offert" title="oferta-elementy-graficzne">
-              montażu rolek.
-            </Link>{' '}
-            Na mojej stronie internetowej znajdziesz także sekcję{' '}
-            <Link href="/artykuly" title="oferta-elementy-graficzne">
-              artykułów,
-            </Link>{' '}
-            gdzie dzielę się swoją wiedzą, która pomaga moim klientom.
+            , które mają konkretne cele i są dostosowane do profilu Twojej
+            działalności. Każdy projekt zaczyna się od analizy profilu firmy,
+            konkurencji i ustaleniu konkretnej strategii w jakim celu tworzymy
+            stronę lub sklep.
           </p>
 
           <DefaultLink name="Skontaktuj się" url="/#contact" />

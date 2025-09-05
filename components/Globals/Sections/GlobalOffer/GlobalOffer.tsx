@@ -10,55 +10,59 @@ const GLOBAL_OFFERT: OfferCardPropsType[] = [
     type: 'strona_internetowa',
     header: 'Strony internetowe',
     description:
-      'Wszystkie strony internetowe są tworzone na podstawie indywidualnie dopasowanego projektu graficznego. Strony są szybkie, estetyczne, responsywne i spełniają wymagania SEO. Standardowo zapewniam wdrożenie integracji z systemami Google jak Search Console czy Analytics.',
+      'Tworzę strony internetowe dopasowane do potrzeb Twojej firmy, które mają konkretne cele i je realizują. Strony są tworzone na podstawie ustalonych celów z dostosowanym projektem graficznym i implementacją funkcji oraz narzędzi potrzebnych do ich zrealizowania.',
     url: '/oferta/strony-internetowe',
     link: true,
     color: 'orange',
     list: [
-      'Strona one page',
-      'Rozbudowana strona internetowa',
-      'Strona dla firmy',
-      'Strona w CMS Wordpress',
-      'Strona w NextJs',
-      'Strona w PayloadCMS',
+      'Wysoka wydajność',
+      'Spójny i dopasowany projekt graficzny',
+      'Łatwa edycja',
+      'Optymalizacja pod wyszukiwarki',
+      'Konfiguracja hostingu, SSL i e-mail',
+      'Różnorodność wykonania',
+      'Opieka po zakończonej realizacji',
     ],
   },
   {
     type: 'sklep_internetowy',
     header: 'Sklepy internetowe',
     description:
-      'Wszystkie sklepy internetowe są tworzone na podstawie indywidualnie dopasowanego projektu graficznego. Sklepy są szybkie, estetyczne, responsywne, posiadają integracje płatności online i dostaw, obsługę powiadomień e-mail i wiele więcej. W celu szczegółowego zapoznania się z ofertą kliknij przycisk poniżej.',
+      'Wszystkie sklepy, które tworzę powstają na podstawie analizy Twojej marki, konkurencji oraz zachowań klientów. Sklepy są proste w obsłudze i pomagają zautomatyzować proces sprzedaży oraz obsługi klienta, co zwiększy efektywność pracy Twojej marki.',
     url: '/oferta/sklepy-internetowe',
     link: true,
     color: 'orange',
     list: [
-      'Profesjonalne sklepy internetowe',
-      'Sklepy internetowe dla firm',
-      'Sklepy internetowe dla działalności nierejestrowanych',
-      'E-sklepy zbudowane na systemach CMS',
-      'Integracja e-sklepu z płatnościami online i dostawami',
+      'Integracja z systemami płatności',
+      'Integracja z kurierami',
+      'Spójny i dopasowany projekt graficzny',
+      'Łatwa edycja treści i produktów',
+      'Optymalizacja pod wyszukiwarki',
+      'Konfiguracja hostingu, SSL i e-mail',
+      'Opieka po zakończonej realizacji',
     ],
   },
   {
     type: 'projekt_graficzny',
     header: 'Projekty graficzne',
     description:
-      'Moim głównym narzędziem używanym do projektowania graficznego jest figma. Wykonam dla Ciebie zarówno Brandbooka marki jak i zmodyfikuję logo do formatu SVG z uwzględnieniem poprawek. Zajmuję się także tworzeniem animacji, które są lżejszą alternatywą dla typowych gifów na stronach.',
+      'Zajmuję się tworzeniem projektów graficznych związanych z prezentacją wizualną firmy, które zapewniają spójność stylu Twojej marki i zwiększają jej atrakcyjność z rozpoznawalnością.',
     url: '/oferta/strony/singlepage',
     link: false,
     color: 'blue',
     list: [
       'Brandbooki',
       'Modyfikacje logo',
-      'Animacje HTML + CSS',
-      'Ulotki, banery, wizytówki itp.',
+      'Animacje internetowe',
+      'Ulotki, banery, wizytówki',
+      'Szablony postów na Instagram, Facebook, Linkedin',
     ],
   },
   {
     type: 'montaz_rolek',
     header: 'Montaż rolek',
     description:
-      'Montażem zajmuję się od niedawna, lecz jest to czynność, która sprawia mi przyjemność i chciałbym się trochę w niej rozwinąć. Narzędzie którego używam to DaVinci Resolve. Ze względu na moje małe doświadczenie chętnie wykonam dla Ciebie montaż pierwszej rolki za darmo jako demo moich umiejętności.',
+      'Zmontuje dla Ciebie filmy instruktażowe, pokazowe na stronę lub proste rolki na Social Media, które będą nawiązywać do brandingu marki.',
     url: '/oferta/strony/singlepage',
     link: false,
     color: 'blue',
@@ -70,9 +74,10 @@ const GlobalOffer = () => {
   return (
     <div className={styles.container} id="offert">
       <H2About
-        h2="Czym się zajmuję i jak mogę Ci pomóc?"
-        about="W mojej ofercie znajdziesz usługi projektowania oraz tworzenia stron i sklepów internetowych, projektowania elementów graficznych oraz montażu rolek wideo.
-Współpraca ze mną opiera się na bezpośredniej komunikacji i szczerości. Tworzę treści, które są praktyczne i efektywne oraz odpowiadają Twoim oczekiwaniom. Moja praca nie opiera się wyłącznie na wykonywaniu projektów. Moi klienci zawsze mogą liczyć na pomoc i edukację w zakresach, w których mogę się nią podzielić. Fundamentem mojej marki jest szczerość, dlatego jeżeli nie będę czuć się kompetentny do wykonania Twojego zlecenia na pewno Cię o tym poinformuję."
+        h2="Co mogę dla Ciebie zrobić?"
+        about="Każdy projekt zaczyna się od opracowania strategii działania i ustalenia celów jakie strona lub sklep mają spełniać. Na tej podstawie stworzę dla Ciebie stronę lub sklep z funkcjonalnościami oraz projektem graficznym, który będzie współgrał z profilem Twojej marki oraz realizował cele projektowe ustalone na początku współpracy. W celu zapewnienia spójności wizualnej strony/sklepu z innymi formami prezentacji wizualnej firmy oferuję także tworzenie szablonów do postów na Social Media, ulotek, wizytówek, montażu rolek i innych usług wideo-graficznych."
+        //         "W mojej ofercie znajdziesz usługi projektowania oraz tworzenia stron i sklepów internetowych, projektowania elementów graficznych oraz montażu rolek wideo.
+        // Współpraca ze mną opiera się na bezpośredniej komunikacji i szczerości. Tworzę treści, które są praktyczne i efektywne oraz odpowiadają Twoim oczekiwaniom. Moja praca nie opiera się wyłącznie na wykonywaniu projektów. Moi klienci zawsze mogą liczyć na pomoc i edukację w zakresach, w których mogę się nią podzielić. Fundamentem mojej marki jest szczerość, dlatego jeżeli nie będę czuć się kompetentny do wykonania Twojego zlecenia na pewno Cię o tym poinformuję."
       />
       <div className={styles.rowBox}>
         {GLOBAL_OFFERT.map((offer, index) => (

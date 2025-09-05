@@ -26,7 +26,6 @@ const OfferWebsiteCard = ({
   title,
   price,
   time,
-  url,
   mainList,
   wordpressList,
   nextJsList,
@@ -49,10 +48,10 @@ const OfferWebsiteCard = ({
       </div>
     ) : (
       <div className={styles.listBox}>
-        <div className={styles.listHeader}>
+        <Link href="#nextjs" className={styles.listHeader}>
           <img src={NextJsIcon.src} alt="nextJs" width={30} height={30} />
           <p>Wykonanie w NextJS:</p>
-        </div>
+        </Link>
         {nextJsList.map((item, index) => (
           <div key={index} className={styles.listItem}>
             <img
@@ -70,10 +69,10 @@ const OfferWebsiteCard = ({
   const wordpressListMap =
     wordpressList.length > 0 ? (
       <div className={styles.listBox}>
-        <div className={styles.listHeader}>
+        <Link href="#wordpress" className={styles.listHeader}>
           <img src={WordpressIcon.src} alt="wordpress" width={30} height={30} />
           <p>Wykonanie w Wordpress:</p>
-        </div>
+        </Link>
         {wordpressList.map((item, index) => (
           <div key={index} className={styles.listItem}>
             <img
@@ -91,10 +90,10 @@ const OfferWebsiteCard = ({
   const nextJsListMap =
     nextJsList.length < 10 && nextJsList.length > 0 ? (
       <div className={styles.listBox}>
-        <div className={styles.listHeader}>
+        <Link href="#nextjs" className={styles.listHeader}>
           <img src={NextJsIcon.src} alt="nextJs" width={30} height={30} />
           <p>Wykonanie w NextJS:</p>
-        </div>
+        </Link>
         {nextJsList.map((item, index) => (
           <div key={index} className={styles.listItem}>
             <img
@@ -111,7 +110,7 @@ const OfferWebsiteCard = ({
   const payloadCMSListMap =
     payloadCMSList.length < 10 && payloadCMSList.length > 0 ? (
       <div className={styles.listBox}>
-        <div className={styles.listHeader}>
+        <Link href="#payloadcms" className={styles.listHeader}>
           <img
             src={PayloadCMSIcon.src}
             alt="payloadCMS"
@@ -119,7 +118,7 @@ const OfferWebsiteCard = ({
             height={30}
           />
           <p>Wykonanie w PayloadCMS:</p>
-        </div>
+        </Link>
         {payloadCMSList.map((item, index) => (
           <div key={index} className={styles.listItem}>
             <img
@@ -150,8 +149,8 @@ const OfferWebsiteCard = ({
         {nextJsListMap}
         {payloadCMSListMap}
       </div>
-      <Link className={styles.link} href={url}>
-        DOWIEDZ SIĘ WIĘCEJ{' '}
+      <Link className={styles.link} href="#contact">
+        BEZPŁATNA KONSULTACJA{' '}
         <img
           src={ArrowIconOrange.src}
           alt="forwardIcon"

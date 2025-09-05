@@ -8,13 +8,13 @@ const VideoContainer = () => {
       <div className={styles.box}>
         <div id="video-container" className={styles.videoBox}>
           <video
-            src="/assets/videos/Woocommerce_shop.mp4"
+            src="/assets/videos/Interior_designer.mp4"
             autoPlay
             loop
             muted
             playsInline
             preload="metadata"
-            title="Woocommerce_shop.mp4"
+            title="Interior_designer.mp4"
           ></video>
         </div>
 

@@ -1,0 +1,130 @@
+@use '../../../../styles/mixin.scss' as mixin;
+@use '../../../../styles/colors.scss' as colors;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 10vh 9rem 1rem 9rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  @include mixin.pc1450px {
+    padding: 10vh 3rem 1rem 3rem;
+  }
+  @include mixin.pc1000px {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  @include mixin.phone700px {
+    padding: 1.5rem 1rem;
+  }
+  @include mixin.phone500px {
+    justify-content: flex-start;
+  }
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: colors.$squirrel;
+    @include mixin.pc1450px {
+      font-size: 5rem;
+    }
+    @include mixin.pc1000px {
+      font-size: 4rem;
+    }
+    @include mixin.phone500px {
+      font-size: 2.5rem;
+    }
+  }
+  @include mixin.pc1000px {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  @include mixin.phone500px {
+    align-items: flex-start;
+  }
+}
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  @include mixin.phone500px {
+    align-items: flex-start;
+  }
+}
+.subHeader {
+  font-size: 2rem;
+  font-weight: 600;
+  @include mixin.pc1450px {
+    font-size: 1.5rem;
+  }
+}
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  @include mixin.pc1000px {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  @include mixin.phone500px {
+    justify-content: center;
+  }
+}
+.tableItem {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0rem;
+  border-bottom: 2px solid colors.$squirrel;
+  justify-content: flex-start;
+  gap: 36px;
+  width: 500px;
+  @include mixin.pc1250px {
+    width: 400px;
+  }
+  @include mixin.pc1000px {
+    width: auto;
+    gap: 16px;
+    padding: 3px 0px;
+    padding: 8px;
+    border: 1px solid colors.$squirrel;
+  }
+  @include mixin.phone500px {
+    width: 100%;
+  }
+}
+.accent {
+  color: colors.$squirrel !important;
+  width: 150px;
+  font-weight: 500;
+  @include mixin.pc1000px {
+    width: auto;
+  }
+}
+.answer {
+  width: 314px;
+  font-size: 20px;
+  @include mixin.pc1000px {
+    width: auto;
+  }
+  @include mixin.phone500px {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+}
+.image {
+  width: 50%;
+  height: auto;
+  @include mixin.pc1000px {
+    width: 100%;
+  }
+}

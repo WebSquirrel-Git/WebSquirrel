@@ -11,13 +11,14 @@
     padding: 1.5rem 1rem;
   }
 }
-.rowBox {
+.columnBox {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
   row-gap: 3rem;
   justify-content: center;
+  align-items: center;
+  width: fit-content;
 }
 .linkBox {
   display: flex;
@@ -25,4 +26,5 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }

@@ -9,6 +9,7 @@ import OpenBlueIcon from '@/public/assets/icons/open-blue-icon.svg';
 import Popup from '@/components/Portfolio/Popup/Popup';
 import {useState} from 'react';
 import {PortfolioPopupType} from '@/utils/portfolio/projects';
+import Link from 'next/link';
 
 export interface ProjectLandscapeCardPropsType {
   title: string;
@@ -19,6 +20,8 @@ export interface ProjectLandscapeCardPropsType {
   active: boolean;
   style: PortfolioProjectStyleType;
   popup: PortfolioPopupType;
+  displayType: 'Popup' | 'Website';
+  url: string;
 }
 
 const ProjectLandscapeCard = ({
@@ -29,6 +32,8 @@ const ProjectLandscapeCard = ({
   coverImage,
   style,
   popup,
+  displayType,
+  url,
 }: ProjectLandscapeCardPropsType) => {
   const [popupActive, setPopupActive] = useState(false);
 
@@ -49,10 +54,48 @@ const ProjectLandscapeCard = ({
     setPopupActive(false);
   };
 
-  return (
-    <>
-      <button
-        onClick={openPopupHandler}
+  if (displayType === 'Popup') {
+    return (
+      <>
+        <button
+          onClick={openPopupHandler}
+          className={containerStyles}
+          style={{backgroundImage: `url(${coverImage})`}}
+        >
+          <h3 className={titleStyles}>{title}</h3>
+          <div className={styles.categoryBox}>
+            <p>
+              <b>{typeTitle}</b>
+            </p>
+            <p>{mainTechnology}</p>
+          </div>
+
+          <span className={iconBoxStyles}>
+            <img
+              src={openIcon}
+              alt="openIcon"
+              title="openIcon"
+              loading="eager"
+              width={24}
+              height={24}
+            />
+          </span>
+        </button>
+        {popupActive && (
+          <Popup
+            style={style}
+            type={type}
+            {...popup}
+            onClosePopup={closePopupHandler}
+          />
+        )}
+      </>
+    );
+  }
+  if (displayType === 'Website') {
+    return (
+      <Link
+        href={url}
         className={containerStyles}
         style={{backgroundImage: `url(${coverImage})`}}
       >
@@ -74,16 +117,8 @@ const ProjectLandscapeCard = ({
             height={24}
           />
         </span>
-      </button>
-      {popupActive && (
-        <Popup
-          style={style}
-          type={type}
-          {...popup}
-          onClosePopup={closePopupHandler}
-        />
-      )}
-    </>
-  );
+      </Link>
+    );
+  }
 };
 export default ProjectLandscapeCard;

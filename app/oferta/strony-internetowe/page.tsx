@@ -11,6 +11,12 @@ import ProcessSteps from '@/components/Globals/Sections/ProcessSteps/ProcessStep
 import {STANDARD_PAGE_CONTENT} from '@/utils/offer/standardPage';
 import {headers} from 'next/headers';
 import ImageMobile from '@/public/assets/hero/websites-hero-mobile.webp';
+import PortfolioShort from '@/components/Globals/Sections/PortfolioShort/PortfolioShort';
+import TechnologiesWebsite from '@/components/OfferPage/TechnologiesWebsite/TechnologiesWebsite';
+import HtmlIcon from '@/public/assets/icons/html-icon.svg';
+import WordpressIcon from '@/public/assets/icons/wordpress-icon.svg';
+import PayloadcmsIcon from '@/public/assets/icons/payloadcms-orange-icon.svg';
+import NextJsIcon from '@/public/assets/icons/next-js-icon.svg';
 
 export const metadata: Metadata = {
   title: 'Tworzenie stron internetowych, Projekt strony www',
@@ -28,6 +34,46 @@ export const metadata: Metadata = {
     images: '/og-image.png',
   },
 };
+
+const TECHNOLOGIES_DATA = [
+  {
+    id: 'wordpress',
+    header: 'Wordpress',
+    icon: WordpressIcon,
+    description1:
+      'Klasyczny CMS na którym zbudowana jest większość stron w internecie. Opiera się na rozwiązaniach powszechnie używanych za przestarzałe lecz ciągle podtrzymywanych ze względu na zaangażowanie użytkowników i udział w ogólnym rynku. Wordpress polega na budowaniu strony internetowej na podstawie bloczków, co znacząco ułatwia prostą edycję strony dla osób niedoświadczonych. Dużym atutem jest kompatybilność z wieloma usługami i rozwiązaniami. Minusem jest to, że często są to rozwiązania płatne oraz fakt, że budowanie strony na bloczkach spowalnia jej wydajność ze względu na przestarzały kod. ',
+    description2:
+      'Wordpress jest bardzo dobrym rozwiązaniem do budowy nieskomplikowanych stron internetowych ze względu na swoją popularność i ogólnodostępne informacje i poradniki jak się nim posługiwać.',
+  },
+  {
+    id: 'payloadcms',
+    header: 'PayloadCMS',
+    icon: PayloadcmsIcon,
+    description1:
+      'Nowoczesny framework typu CMS oparty na NextJs, który daje możliwość pełnej konfiguracji projektowanej aplikacji, zapewniając przy tym wysoką wydajność. Strona jest tworzona poprzez pisanie kodu czyli od najbardziej podstawowego poziomu, który został zmodernizowany poprzez zastosowanie różnego rodzaju modułów od zaangażowanej społeczności i organizacji Payload. Zastosowanie powyższych metodyk pozwala na tworzenie aplikacji internetowych typu CMS w stosunkowo krótkim czasie z możliwością dopasowania ich do własnych potrzeb. Te schematy pozwalają na modyfikacje paneli administratorskich do edycji danych na stronie, co znacznie ułatwia obsługę strony.',
+    description2:
+      'Finalnym efektem jest aplikacja składająca się z warstwy wyświetlanej u klientów oraz panelu administratora do którego masz dostęp.W panelu administratora masz możliwość aktualizacji aktualnych treści na stronie oraz wstawiania nowych z użyciem przygotowanych przeze mnie bloków, które znacznie uproszczą ten proces. Aplikacje możemy podzielić na 3 elementy: warstwa klienta, warstwa administratora oraz baza danych. Wszystko jest przechowywane na Twoim hostingu i jest w pełni zabezpieczone przed dostępem osób niepowołanych.',
+  },
+  {
+    id: 'nextjs',
+    header: 'NextJs',
+    icon: NextJsIcon,
+    description1:
+      'Nowoczesny framework oparty na React, który został stworzony do budowy szybkich i wydajnych stron internetowych. Treść stron pisana jest w kodzie od 0 z zastosowaniem dostępnych schematów i modułów aplikacji, które wpływają na zwiększenie wydajności i optymalizacji aplikacji. Dużą zaletą jest skalowalność - mamy możliwość rozwoju strony w dowolnym kierunku i pełną kontrolę nad edycją treści. Minusem jest brak panelu administracyjnego i konieczność wprowadzania zmian przez programistę.',
+    description2:
+      'Istnieje możliwość podpięcia zewnętrznego panelu do zarządzania stroną lecz trzeba się wtedy liczyć z dodatkowymi kosztami oraz możliwą utratą wydajności. ',
+  },
+  {
+    id: 'html',
+    header: 'HTML + CSS + JS',
+    icon: HtmlIcon,
+    description1:
+      'Ta propozycja to stworzenie strony całkowicie od 0, pisząc tylko surowy kod bez zbędnego kodu. W takiej modyfikacji mam pełną kontrolę nad każdą linijką kodu, który umieszczę. Jest to dobre rozwiązanie do nieskomplikowanych stron, które mają być szybkie i nie posiadają skomplikowanej logiki. Dlaczego? Ponieważ do budowy interfejsów lub innych użytecznych modułów lepiej jest zastosować sprawdzone metody jakie oferują frameworki np. NextJs, Vue czy Angular.',
+    description2:
+      'Podsumowując strona będzie szybka i nie przeciążona zbędnym kodem. Minusem jest brak panelu admina i potrzeba wprowadzania zmian ręcznie w kodzie. Istnieje możliwość podpięcia zewnętrznego panelu administracyjnego umożliwiającego edycję danych lecz trzeba się liczyć z tym czy się to opłaca w danej sytuacji, ponieważ będzie to proces czasochłonny i lepszym i tańszym rozwiązaniem może być Wordpress lub PayloadCMS.',
+  },
+];
+
 export default async function Offert() {
   const headersList = await headers();
   const userAgent = headersList.get('user-agent') || '';
@@ -40,21 +86,23 @@ export default async function Offert() {
         imageMobile={ImageMobile}
         isMobile={isMobile}
         subheader="WebSquirrel"
-        title="Tworzenie stron internetowych"
-        description="W mojej ofercie znajdziesz różne pakiety usług projektowania i tworzenia stron internetowych. Jest coś dla każdego od one page w CMS Wordpress po profesjonalne strony internetowe dla firm w NextJs. Jeżeli uważasz, że żaden z nich nie odpowiada Twoim oczekiwaniom skontaktuj się ze mną. Wycenie Twój projekt indywidualnie."
-        videoTitle="Creative-page.mp4"
+        title="Profesjonalne strony internetowe"
+        description="Projektuje nowoczesne strony internetowe, które są dostosowane do Twojego profilu firmy i realizują konkretne cele. Każdy projekt powstaje na podstawie ustalonej strategii i dopasowanego projektu graficznego, który współgra z wizerunkiem Twojej firmy."
+        videoTitle="Interior_designer.mp4"
       />
       <div className={styles.containerAlignCenter}>
         <H2About
-          h2="Profesjonalne i responsywne strony internetowe"
-          about="Tworzę nowoczesne strony internetowe, które są szybkie, responsywne i skuteczne. Wszystkie usługi uwzględniają projektowanie strony www na podstawie personalizowanego projektu graficznego, który będzie spełniał Twoje oczekiwania, prezentował styl i przesłanie marki oraz realizował założenia biznesowe. Podczas tworzenia stron internetowych przykładam uwagę do najmniejszych detali jak alty, loading, rozmiar czy format zdjęć. Nie obieram drogi na skróty i pracuję na 100%, ponieważ każdy detal ma znaczenie."
+          h2="Jakie rodzaje stron tworzę?"
+          about="Pomysły na stronę powstają na podstawie uzgodnienia strategii na początku współpracy, gdzie ustalimy jaki jest cel zrobienia strony internetowej dla Ciebie. W zależności od potrzeb wykonam dla Ciebie projekt graficzny strony w wersji OnePage lub bardziej rozbudowanej. Wszystkie strony są tworzone w podejściu pixel-perfect, przy zachowaniu wysokiej wydajności, optymalizacji SEO, responsywności oraz stworzenia ścieżki dla Twoich klientów, która będzie prowadziła ich do konkretnego celu."
         />
       </div>
-      <WebsiteIncludes h2="Co zawiera każda strona internetowa?" />
-      <WebsitesOffer />
-      <Reviews />
-      <ProcessSteps {...STANDARD_PAGE_CONTENT.stages} />
       <CooperationBenefits />
+      <ProcessSteps {...STANDARD_PAGE_CONTENT.stages} />
+      <WebsiteIncludes h2="Obowiązkowe elementy projektu strony internetowej" />
+      <WebsitesOffer />
+      <PortfolioShort />
+      <Reviews />
+      <TechnologiesWebsite TECHNOLOGIES_DATA={TECHNOLOGIES_DATA} />
 
       <ContactForm contactFormType="All" />
     </>
