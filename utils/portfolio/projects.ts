@@ -5,7 +5,6 @@ import TypeScriptIcon from '@/public/assets/icons/typescript-icon.svg';
 import SassIcon from '@/public/assets/icons/sass-icon.svg';
 import FigmaIcon from '@/public/assets/icons/figma-icon.svg';
 import FigmaBlueIcon from '@/public/assets/icons/figma-blue-icon.svg';
-import ExpressjsIcon from '@/public/assets/icons/express-icon.svg';
 import WordpressIcon from '@/public/assets/icons/wordpress-orange-icon.svg';
 import WooCommerceIcon from '@/public/assets/icons/woocommerce-orange-icon.svg';
 import NemoCoverImage from '@/public/portfolio/nemosportowaprzygoda/cover.svg';
@@ -26,12 +25,6 @@ import TrigetImg2 from '@/public/portfolio/triget/triget-2.webp';
 import TrigetImg3 from '@/public/portfolio/triget/triget-3.webp';
 import TrigetImg4 from '@/public/portfolio/triget/triget-4.webp';
 import TrigetImg5 from '@/public/portfolio/triget/triget-5.webp';
-import FilmnawieczorCoverImage from '@/public/portfolio/filmnawieczor/cover.svg';
-import FilmnawieczorImg1 from '@/public/portfolio/filmnawieczor/filmnawieczor-1.webp';
-import FilmnawieczorImg2 from '@/public/portfolio/filmnawieczor/filmnawieczor-2.webp';
-import FilmnawieczorImg3 from '@/public/portfolio/filmnawieczor/filmnawieczor-3.webp';
-import FilmnawieczorImg4 from '@/public/portfolio/filmnawieczor/filmnawieczor-4.webp';
-import FilmnawieczorImg5 from '@/public/portfolio/filmnawieczor/filmnawieczor-5.webp';
 import NemoLogoImg1 from '@/public/portfolio/nemologo/nemo-logo-1.webp';
 import NemoLogoImg2 from '@/public/portfolio/nemologo/nemo-logo-2.webp';
 import NemoLogoImg3 from '@/public/portfolio/nemologo/nemo-logo-3.webp';
@@ -64,6 +57,8 @@ export interface PortfolioPopupType {
 }
 export const PORTFOLIO_PROJECTS: ProjectType[] = [
   {
+    displayType: 'Popup',
+    url: '',
     title: 'Projektanci Wnętrz - Szablon',
     type: 'website',
     orientation: 'landscape',
@@ -87,6 +82,8 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
+    displayType: 'Website',
+    url: '/portfolio/perlia',
     title: 'Perlia',
     type: 'shop',
     orientation: 'landscape',
@@ -106,6 +103,8 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
+    displayType: 'Website',
+    url: '/portfolio/atzmdesign',
     title: 'ATZM Design',
     type: 'shop',
     orientation: 'landscape',
@@ -125,6 +124,8 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
+    displayType: 'Popup',
+    url: '/portfolio/nemo',
     title: 'NEMO Sportowa Przygoda',
     type: 'website',
     orientation: 'landscape',
@@ -144,6 +145,8 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
+    displayType: 'Popup',
+    url: '/portfolio/triget',
     title: 'Triget',
     type: 'website',
     orientation: 'landscape',
@@ -162,32 +165,10 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       reverseImages: [TrigetImg3, TrigetImg4, TrigetImg5],
     },
   },
+
   {
-    title: 'Film na wieczór',
-    type: 'website',
-    orientation: 'landscape',
-    typeTitle: 'Strona internetowa',
-    mainTechnology: 'NextJs, Express.js',
-    coverImage: FilmnawieczorCoverImage.src,
-    active: false,
-    style: 'website',
-    popup: {
-      title: 'Film na wieczór',
-      description:
-        'Celem było stworzenie strony internetowej z bazą filmów dającej możliwość używania nietypowych filtrów miejsca i czasu akcji. Projekt został podzielony na dwie aplikacje. Część pierwsza czyli backend została napisana w Express.js w formie Rest-API odpowiedzialnego za przesyłanie informacji o filmach z bazy danych. Druga część - frontend została napisana w NextJs, TS oraz Sass. To co wyróżnia stronę to nietypowe animacje HTML + CSS oraz interfejs dla użytkownika umożliwiający filtrowanie filmów. Prace nad stroną są ciągle prowadzone. Jedną z nowych implementacji są uniwersa filmowe.',
-      technologiesIcons: [
-        NextJsIcon,
-        ExpressjsIcon,
-        TypeScriptIcon,
-        SassIcon,
-        FigmaIcon,
-      ],
-      url: 'filmnawieczor.pl',
-      frontImages: [FilmnawieczorImg1, FilmnawieczorImg2],
-      reverseImages: [FilmnawieczorImg3, FilmnawieczorImg4, FilmnawieczorImg5],
-    },
-  },
-  {
+    displayType: 'Popup',
+    url: '',
     title: 'Modyfikacje logo',
     type: 'svg',
     orientation: 'landscape',
@@ -207,6 +188,8 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
+    displayType: 'Popup',
+    url: '',
     title: 'Rolki Social Media',
     type: 'reel',
     orientation: 'landscape',
@@ -226,6 +209,8 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
+    displayType: 'Popup',
+    url: '',
     title: 'Animacje HTML+CSS',
     type: 'animation',
     orientation: 'landscape',
@@ -246,40 +231,4 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
       ],
     },
   },
-  // {
-  //   title: 'ATZM Design',
-  //   type: 'website',
-  //   orientation: 'landscape',
-  //   typeTitle: 'Strona internetowa',
-  //   mainTechnology: 'WooCommerce',
-  //   coverImage: ATZMCoverImage.src,
-  //   active: false,
-  //   style: 'graphic',
-  //   popup:{
-  //     title: 'ATZM Design',
-  //     description:'Naszym zadaniem było stworzenie strony internetowej dla firmy Nemo Sportowa Przygoda od zera. Głównym wyzwaniem projektu było przedstawienie wielu usług firmy w sposób uporządkowany i dobrze widoczny dla klientów. Zadanie powiodło się. Firma w pełni nam zaufała decydując się na rozwiązanie bez panelu admiracyjnego i powierzając nam bezpośrednie wprowadzanie zmian, co pozwoliło na zastosowanie nowszych technologii w postaci NextJS. Firma dalej się rozwija i poszerza portfolio swoich usług, a my ciągle dbamy o projektowanie i wdrażanie nowych opcji na stronie.',
-  //     technologiesIcons:[NextJsIcon,TypeScriptIcon,SassIcon,FigmaIcon],
-  //     url:"nemosportowaprzygoda.pl",
-  //     frontImages:[NemoImg1,NemoImg2],
-  //     reverseImages:[NemoImg3,NemoImg4,NemoImg5]
-  //   }
-  // },
-  // {
-  //   title: 'ATZM Design',
-  //   type: 'website',
-  //   orientation: 'landscape',
-  //   typeTitle: 'Strona internetowa',
-  //   mainTechnology: 'WooCommerce',
-  //   coverImage: ATZMCoverImage.src,
-  //   active: false,
-  //   style: 'graphic',
-  //   popup:{
-  //     title: 'ATZM Design',
-  //     description:'Naszym zadaniem było stworzenie strony internetowej dla firmy Nemo Sportowa Przygoda od zera. Głównym wyzwaniem projektu było przedstawienie wielu usług firmy w sposób uporządkowany i dobrze widoczny dla klientów. Zadanie powiodło się. Firma w pełni nam zaufała decydując się na rozwiązanie bez panelu admiracyjnego i powierzając nam bezpośrednie wprowadzanie zmian, co pozwoliło na zastosowanie nowszych technologii w postaci NextJS. Firma dalej się rozwija i poszerza portfolio swoich usług, a my ciągle dbamy o projektowanie i wdrażanie nowych opcji na stronie.',
-  //     technologiesIcons:[NextJsIcon,TypeScriptIcon,SassIcon,FigmaIcon],
-  //     url:"nemosportowaprzygoda.pl",
-  //     frontImages:[NemoImg1,NemoImg2],
-  //     reverseImages:[NemoImg3,NemoImg4,NemoImg5]
-  //   }
-  // },
 ];

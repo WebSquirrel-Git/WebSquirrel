@@ -11,7 +11,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1.5rem;
-  font-family: 'Poppins-400';
+  font-family: 'RobotoFlex';
   font-weight: 400;
   transition: all 0.5s;
   @include mixin.pc1000px {
@@ -22,7 +22,7 @@
     cursor: pointer;
   }
   h2 {
-    font-family: 'Poppins-400';
+    font-family: 'RobotoFlex';
     font-weight: 400;
     font-size: 1.5rem;
     border-bottom: 2px solid colors.$squirrel;
@@ -35,7 +35,7 @@
     }
     @include mixin.phone500px {
       font-size: 0.7rem;
-      font-family: 'Poppins-400';
+      font-family: 'RobotoFlex';
     }
   }
 }
@@ -78,7 +78,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1.5rem;
-  font-family: 'Poppins-400';
+  font-family: 'RobotoFlex';
   font-weight: 400;
   transition: all 0.5s;
   @include mixin.pc1000px {
@@ -88,7 +88,7 @@
     cursor: pointer;
   }
   h2 {
-    font-family: 'Poppins-400';
+    font-family: 'RobotoFlex';
     font-weight: 400;
     font-size: 1.5rem;
     border-bottom: 2px solid colors.$blue;
@@ -101,7 +101,7 @@
     }
     @include mixin.phone500px {
       font-size: 0.7rem;
-      font-family: 'Poppins-400';
+      font-family: 'RobotoFlex';
     }
   }
 }

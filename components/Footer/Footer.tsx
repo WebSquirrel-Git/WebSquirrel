@@ -9,8 +9,8 @@ import FacebookIcon from '@/public/assets/icons/facebook-orange-icon.svg';
 import BehanceIcon from '@/public/assets/icons/behance-orange-icon.svg';
 const Footer = () => {
   const pathName = usePathname();
-  console.log(pathName)
-  if (pathName==='/portfolio') return null;
+  console.log(pathName);
+  if (pathName === '/portfolio') return null;
   return (
     <div className={styles.container}>
       <img

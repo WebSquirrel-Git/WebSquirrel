@@ -192,7 +192,8 @@ const STAGES_DATA = [
   {
     header: 'Konsultacja',
     number: '01',
-    description: 'Po skontaktowaniu się ze mną zaproszę Cię na rozmowę online, gdzie przeanalizujemy obecność Twojej firmy w internecie oraz ustalimy podstawowe cele jakie ma realizować strona.',
+    description:
+      'Po skontaktowaniu się ze mną zaproszę Cię na rozmowę online, gdzie przeanalizujemy obecność Twojej firmy w internecie oraz ustalimy podstawowe cele jakie ma realizować strona.',
   },
   {
     header: 'Ustalenie strategii',
@@ -224,13 +225,13 @@ const STAGES_DATA = [
     description:
       'Po skutecznymm wdrożeniu strony zajmuję się implementacją pozostałych narzędzi potrzebnych do skutecznego funkcjonowania strony jak: kopie zapasowe, dodanie strony do Google, implementacja Google Analytics, pliki cookies itp.',
   },
-   {
+  {
     header: 'Szkolenie',
     number: '08',
     description:
       'W tym etapie umawiamy się na spotkanie online lub na żywo, gdzie pokazuję Ci jak działa strona, panel administratora oraz jak o nią dbać. Dostaniesz ode mnie, krótki poradnik o zarządzaniu stroną rozszerzony o odpowiedzi na pytania, które mi zadasz na spotkaniu.',
   },
-    {
+  {
     header: 'Opieka',
     number: '09',
     description:

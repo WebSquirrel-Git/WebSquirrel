@@ -20,7 +20,6 @@ const OfferStoreCard = ({
   title,
   price,
   time,
-  url,
   mainList,
   woocommerceList,
 }: OfferStoreCardPropsType) => {
@@ -76,7 +75,7 @@ const OfferStoreCard = ({
         {mainListMap}
         {wordpressListMap}
       </div>
-      <Link className={styles.link} href='#contact'>
+      <Link className={styles.link} href="#contact">
         DARMOWA KONSULTACJA{' '}
         <img
           src={ArrowIconOrange.src}

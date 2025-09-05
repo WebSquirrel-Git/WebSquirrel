@@ -227,7 +227,8 @@ const STAGES_DATA = [
   {
     header: 'Konsultacja',
     number: '01',
-    description: 'Po skontaktowaniu się ze mną zaproszę Cię na rozmowę online, gdzie przeanalizujemy obecność Twojej firmy w internecie, grupę klientów oraz ustalimy cele jakie ma realizować sklep online.',
+    description:
+      'Po skontaktowaniu się ze mną zaproszę Cię na rozmowę online, gdzie przeanalizujemy obecność Twojej firmy w internecie, grupę klientów oraz ustalimy cele jakie ma realizować sklep online.',
   },
   {
     header: 'Ustalenie strategii',
@@ -265,13 +266,13 @@ const STAGES_DATA = [
     description:
       'Stworzę dla Ciebie szablony produktów, które będziesz mógł łatwo dodawać na swój sklep oraz ustawię podstawowy schemat opisów SEO.',
   },
-   {
+  {
     header: 'Szkolenie',
     number: '09',
     description:
       'Na tym etapie umawiamy się na spotkanie online lub na żywo, gdzie pokazuję Ci jak działa sklep, panel administratora oraz jak nim zarządzać. Dostaniesz ode mnie, krótki poradnik o zarządzaniu sklepem rozszerzony o odpowiedzi na pytania, które mi zadasz na spotkaniu.',
   },
-    {
+  {
     header: 'Opieka',
     number: '10',
     description:

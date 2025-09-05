@@ -23,16 +23,26 @@ const Hero = ({isMobile}: HeroPropsType) => {
           <span className={styles.subHeader}>Strony i sklepy internetowe</span>
           <h1>WebSquirrel</h1>
 
-           <p>
-            <br/> Zajmuję się projektowaniem i tworzeniem <Link
+          <p>
+            <br /> Zajmuję się projektowaniem i tworzeniem{' '}
+            <Link
               href="/oferta/strony-internetowe"
               title="oferta-strony-internetowe"
-            >stron</Link> oraz <Link
+            >
+              stron
+            </Link>{' '}
+            oraz{' '}
+            <Link
               href="/oferta/sklepy-internetowe"
               title="oferta-sklepy-internetowe"
-            >sklepów internetowych</Link>, które mają konkretne cele i są dostosowane do profilu Twojej działalności. Każdy projekt zaczyna się od analizy profilu firmy, konkurencji i ustaleniu konkretnej strategii w jakim celu tworzymy stronę lub sklep.
+            >
+              sklepów internetowych
+            </Link>
+            , które mają konkretne cele i są dostosowane do profilu Twojej
+            działalności. Każdy projekt zaczyna się od analizy profilu firmy,
+            konkurencji i ustaleniu konkretnej strategii w jakim celu tworzymy
+            stronę lub sklep.
           </p>
-
 
           <DefaultLink name="Skontaktuj się" url="/#contact" />
         </div>
@@ -56,13 +66,24 @@ const Hero = ({isMobile}: HeroPropsType) => {
           <h1>WebSquirrel</h1>
 
           <p>
-            <br/> Zajmuję się projektowaniem i tworzeniem <Link
+            <br /> Zajmuję się projektowaniem i tworzeniem{' '}
+            <Link
               href="/oferta/strony-internetowe"
               title="oferta-strony-internetowe"
-            >stron</Link> oraz <Link
+            >
+              stron
+            </Link>{' '}
+            oraz{' '}
+            <Link
               href="/oferta/sklepy-internetowe"
               title="oferta-sklepy-internetowe"
-            >sklepów internetowych</Link>, które mają konkretne cele i są dostosowane do profilu Twojej działalności. Każdy projekt zaczyna się od analizy profilu firmy, konkurencji i ustaleniu konkretnej strategii w jakim celu tworzymy stronę lub sklep.
+            >
+              sklepów internetowych
+            </Link>
+            , które mają konkretne cele i są dostosowane do profilu Twojej
+            działalności. Każdy projekt zaczyna się od analizy profilu firmy,
+            konkurencji i ustaleniu konkretnej strategii w jakim celu tworzymy
+            stronę lub sklep.
           </p>
 
           <DefaultLink name="Skontaktuj się" url="/#contact" />

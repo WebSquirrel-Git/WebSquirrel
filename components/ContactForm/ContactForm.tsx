@@ -134,7 +134,9 @@ const ContactForm = ({contactFormType}: ContactFormPropsType) => {
       <div className={styles.formContainer}>
         <h3>Skontaktuj się ze mną</h3>
         <p>
-          Formularz poniżej ułatwi Ci szybki kontakt ze mną. Wystarczy, że podasz tylko kilka informacji kontaktowych oraz treść zapytania. Jeżeli wolisz rozmowę przez telefon zadzwoń pod numer podany poniżej.
+          Formularz poniżej ułatwi Ci szybki kontakt ze mną. Wystarczy, że
+          podasz tylko kilka informacji kontaktowych oraz treść zapytania.
+          Jeżeli wolisz rozmowę przez telefon zadzwoń pod numer podany poniżej.
         </p>
         <span className={styles.phoneBox}>
           <img

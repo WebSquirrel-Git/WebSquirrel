@@ -1,51 +1,53 @@
 @use '../../../../styles/mixin.scss' as mixin;
 @use '../../../../styles/colors.scss' as colors;
-.container{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-     padding: 3rem 9rem;
-     justify-content: center;
-     align-items: center;
-     gap: 5px;
-     @include mixin.pc1450px {
-      padding: 3rem;
-     }
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 9rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  @include mixin.pc1450px {
+    padding: 3rem;
+  }
   @include mixin.phone700px {
     padding: 1.5rem 1rem;
   }
 }
-.landscapesBox{
+.landscapesBox {
   display: flex;
   flex-direction: column;
   width: 75%;
   gap: 5px;
-  @include mixin.phone800px{
+  @include mixin.phone800px {
     width: 100%;
   }
-  img{
+  img {
     width: 100%;
     height: auto;
     object-fit: contain;
-border-radius: 15px;
+    border-radius: 15px;
   }
 }
-.portraitsBox{
+.portraitsBox {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 75%;
   justify-content: space-between;
-  @include mixin.phone800px{
+  @include mixin.phone800px {
     width: 100%;
     flex-wrap: wrap;
     gap: 5px;
   }
-  img{
+  img {
     width: 33%;
-     height: auto;
-    object-fit: contain;border-radius: 15px;
-    @include mixin.phone800px{
-    width: 49%;
-  }
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    @include mixin.phone800px {
+      width: 49%;
+    }
   }
 }

@@ -26,7 +26,7 @@
   justify-content: center;
   gap: 2rem;
   width: 70%;
-  @include mixin.pc1450px{
+  @include mixin.pc1450px {
     width: 100%;
   }
 }
@@ -39,7 +39,7 @@
   align-items: center;
   text-align: left;
   text-align: center;
-    @include mixin.pc1000px{
+  @include mixin.pc1000px {
     width: 320px;
   }
   @include mixin.phone800px {
@@ -63,16 +63,16 @@
   width: 100%;
   color: colors.$squirrel;
   gap: 0.5rem;
- 
-  h3{
- font-size: 24px;
- @include mixin.phone500px{
-  font-size: 1rem;
- }
+
+  h3 {
+    font-size: 24px;
+    @include mixin.phone500px {
+      font-size: 1rem;
+    }
   }
-  img{
+  img {
     height: 32px;
-    @include mixin.phone500px{
+    @include mixin.phone500px {
       height: 24px;
     }
   }

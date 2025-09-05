@@ -15,22 +15,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://websquirrel.pl/oferta/sklepy-internetowe/',
     },
     {
-      url: 'https://websquirrel.pl/oferta/sklepy-internetowe/woocommerce/',
-    },
-    {
-      url: 'https://websquirrel.pl/oferta/strony-internetowe/creative/',
-    },
-    {
-      url: 'https://websquirrel.pl/oferta/strony-internetowe/premium/',
-    },
-    {
-      url: 'https://websquirrel.pl/oferta/strony-internetowe/singlepage/',
-    },
-    {
-      url: 'https://websquirrel.pl/oferta/strony-internetowe/standard/',
-    },
-    {
       url: 'https://websquirrel.pl/portfolio/',
+    },
+    {
+      url: 'https://websquirrel.pl/portfolio/perlia/',
+    },
+    {
+      url: 'https://websquirrel.pl/portfolio/atzmdesign/',
     },
     {
       url: 'https://websquirrel.pl/artykuly/',

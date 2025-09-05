@@ -30,7 +30,7 @@ const INCOST_SERVICES = [
     title: 'Personalizowany projekt graficzny',
     alt: 'figma',
   },
-   {
+  {
     img: DeliveryIcon,
     title: 'Integracja sposobów dostawy',
     alt: 'image',
@@ -77,7 +77,8 @@ const INCOST_SERVICES = [
   },
   {
     img: GoogleIcon,
-    title: 'Integracja strony z systemami Google (Analytics, Search Console, Merchant Center)',
+    title:
+      'Integracja strony z systemami Google (Analytics, Search Console, Merchant Center)',
     alt: 'google',
   },
   {

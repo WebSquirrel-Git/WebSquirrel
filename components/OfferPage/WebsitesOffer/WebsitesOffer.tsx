@@ -16,13 +16,14 @@ const OFFER_SINGLE_PAGE: OfferWebsiteCardPropsType = {
     'Oferta firmy przedstawiona na jednej stronie',
     'Przedstawienie informacji o firmie w sposób angażujący klienta do ich sprawdzenia',
     'Dostosowanie tekstów na stronę',
-    'Pomoc w doborze odpowiedniego i sprawdzonego hostingu'
+    'Pomoc w doborze odpowiedniego i sprawdzonego hostingu',
   ],
   wordpressList: ['Łatwy w obsłudze panel do zarządzania treścią strony'],
   nextJsList: [
-      {
+    {
       type: 'check',
-      value: 'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
+      value:
+        'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
     },
     {
       type: 'false',
@@ -40,13 +41,15 @@ const OFFER_STANDARD_PAGE: OfferWebsiteCardPropsType = {
   mainList: [
     'Do 6 zakładek',
     'Stworzenie treści na różnych zakładkach, które będą ze sobą współgrać i zaangażują klienta do zapoznania się z nimi',
-    'Dostosowanie tekstów na stronę','Pomoc w doborze odpowiedniego i sprawdzonego hostingu'
+    'Dostosowanie tekstów na stronę',
+    'Pomoc w doborze odpowiedniego i sprawdzonego hostingu',
   ],
   wordpressList: ['Łatwy w obsłudze panel do zarządzania treścią strony'],
   nextJsList: [
-     {
+    {
       type: 'check',
-      value: 'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
+      value:
+        'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
     },
     {
       type: 'false',
@@ -56,12 +59,12 @@ const OFFER_STANDARD_PAGE: OfferWebsiteCardPropsType = {
   payloadCMSList: [
     {
       type: 'check',
-      value: 'Strona dostosowana pod Twoje potrzeby, wykonana w oparciu o mój autorski szablon',
+      value:
+        'Strona dostosowana pod Twoje potrzeby, wykonana w oparciu o mój autorski szablon',
     },
     {
       type: 'check',
-      value:
-        'Prosty panel administracyjny zaprojektowany przeze mnie',
+      value: 'Prosty panel administracyjny zaprojektowany przeze mnie',
     },
     {
       type: 'check',
@@ -76,16 +79,18 @@ const OFFER_PREMIUM_PAGE: OfferWebsiteCardPropsType = {
   time: 'ok. 2-3 tygodnie',
   url: '/oferta/strony-internetowe/premium',
   mainList: [
-      'Powyżej 6 zakładek',
+    'Powyżej 6 zakładek',
     'Stworzenie ścieżki dla klienta, która ułatwi mu zapoznanie się z ofertą zamieszczoną na różnych stronach',
-     'Kreatywne rozmieszczenie informacji o firmie i CTA, które zachęcą klienta do kontaktu',
-    'Dostosowanie tekstów na stronę','Pomoc w doborze odpowiedniego i sprawdzonego hostingu'
+    'Kreatywne rozmieszczenie informacji o firmie i CTA, które zachęcą klienta do kontaktu',
+    'Dostosowanie tekstów na stronę',
+    'Pomoc w doborze odpowiedniego i sprawdzonego hostingu',
   ],
   wordpressList: ['Łatwy w obsłudze panel do zarządzania treścią strony'],
   nextJsList: [
-  {
+    {
       type: 'check',
-      value: 'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
+      value:
+        'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
     },
     {
       type: 'false',
@@ -93,9 +98,10 @@ const OFFER_PREMIUM_PAGE: OfferWebsiteCardPropsType = {
     },
   ],
   payloadCMSList: [
-     {
+    {
       type: 'check',
-      value: 'Strona dostosowana pod Twoje potrzeby, wykonana w oparciu o mój autorski szablon',
+      value:
+        'Strona dostosowana pod Twoje potrzeby, wykonana w oparciu o mój autorski szablon',
     },
     {
       type: 'check',
@@ -116,16 +122,18 @@ const OFFER_CREATIVE_PAGE: OfferWebsiteCardPropsType = {
   url: '/oferta/strony-internetowe/creative',
   mainList: [
     'Powyżej 6 zakładek',
-     'Stworzenie ścieżki dla klienta, która ułatwi mu zapoznanie się z ofertą zamieszczoną na różnych stronach',
-     'Kreatywne rozmieszczenie informacji o firmie i CTA, które zachęcą klienta do kontaktu',
+    'Stworzenie ścieżki dla klienta, która ułatwi mu zapoznanie się z ofertą zamieszczoną na różnych stronach',
+    'Kreatywne rozmieszczenie informacji o firmie i CTA, które zachęcą klienta do kontaktu',
     'Strona rozbudowana o dodatkowe moduły i funkcjonalności',
-    'Dodatkowe materiały graficzne na social media','Pomoc w doborze odpowiedniego i sprawdzonego hostingu'
+    'Dodatkowe materiały graficzne na social media',
+    'Pomoc w doborze odpowiedniego i sprawdzonego hostingu',
   ],
   wordpressList: ['Łatwy w obsłudze panel do zarządzania treścią strony'],
   nextJsList: [
     {
       type: 'check',
-      value: 'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
+      value:
+        'Wykonanie statycznej strony w wydajnym frameworku NextJs z możlliwością obięcia strony aktualizacją treści przeze mnie',
     },
     {
       type: 'false',
@@ -133,20 +141,19 @@ const OFFER_CREATIVE_PAGE: OfferWebsiteCardPropsType = {
     },
   ],
   payloadCMSList: [
-      {
+    {
       type: 'check',
       value: 'Strona dostosowana pod Twoje potrzeby, wykonana od 0',
     },
     {
       type: 'check',
-      value:
-        'Panel administratora zaprojektowany pod Ciebie',
+      value: 'Panel administratora zaprojektowany pod Ciebie',
     },
     {
       type: 'check',
       value: 'Framework oparty na NextJs zapewniający dużą wydajność',
     },
-     {
+    {
       type: 'check',
       value: 'Systemy automatyzacji treści dostosowane pod Ciebie',
     },
@@ -167,10 +174,21 @@ const WebsitesOffer = () => {
         <OfferWebsiteCard {...OFFER_CREATIVE_PAGE} />
       </div>
       <p className={styles.info}>
-        Istnieje możliwość wykonania stron w HTML+CSS+JS/TS. Więcej informacji o wycenie
-        podczas kontaktu.
+        Istnieje możliwość wykonania stron w HTML+CSS+JS/TS. Więcej informacji o
+        wycenie podczas kontaktu.
       </p>
-      <p>Jeżeli zastanawiasz się czy potrzebujesz strony internetowej sprawdź mój artykuł <Link href='/artykuly/dlaczego-warto-miec-strone-www' className={styles.accent}>tutaj</Link>, w którym opisuję jaką rolę pełni strona internetowa w dzisiejszym rozwoju firmy.</p>
+      <p>
+        Jeżeli zastanawiasz się czy potrzebujesz strony internetowej sprawdź mój
+        artykuł{' '}
+        <Link
+          href="/artykuly/dlaczego-warto-miec-strone-www"
+          className={styles.accent}
+        >
+          tutaj
+        </Link>
+        , w którym opisuję jaką rolę pełni strona internetowa w dzisiejszym
+        rozwoju firmy.
+      </p>
     </div>
   );
 };

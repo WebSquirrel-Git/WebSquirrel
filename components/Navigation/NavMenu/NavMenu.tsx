@@ -72,7 +72,7 @@ const NavMenu = ({hideMenuHandler, showMenu}: NavMenuPropsType) => {
         </Link>
       </div>
       <div className={`${styles.contactBox} ${showMenu && styles.active}`}>
-        <span className={styles.contactHeader}>Skontaktuj sie z nami</span>
+        <span className={styles.contactHeader}>Skontaktuj sie ze mną</span>
         <span className={styles.contactItem}>
           <img
             src={EmailIcon.src}

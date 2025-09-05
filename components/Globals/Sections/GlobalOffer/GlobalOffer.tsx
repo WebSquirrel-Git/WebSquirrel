@@ -75,10 +75,9 @@ const GlobalOffer = () => {
     <div className={styles.container} id="offert">
       <H2About
         h2="Co mogę dla Ciebie zrobić?"
-        about='Każdy projekt zaczyna się od opracowania strategii działania i ustalenia celów jakie strona lub sklep mają spełniać. Na tej podstawie stworzę dla Ciebie stronę lub sklep z funkcjonalnościami oraz projektem graficznym, który będzie współgrał z profilem Twojej marki oraz realizował cele projektowe ustalone na początku współpracy. W celu zapewnienia spójności wizualnej strony/sklepu z innymi formami prezentacji wizualnej firmy oferuję także tworzenie szablonów do postów na Social Media, ulotek, wizytówek, montażu rolek i innych usług wideo-graficznych.'
-//         "W mojej ofercie znajdziesz usługi projektowania oraz tworzenia stron i sklepów internetowych, projektowania elementów graficznych oraz montażu rolek wideo.
-// Współpraca ze mną opiera się na bezpośredniej komunikacji i szczerości. Tworzę treści, które są praktyczne i efektywne oraz odpowiadają Twoim oczekiwaniom. Moja praca nie opiera się wyłącznie na wykonywaniu projektów. Moi klienci zawsze mogą liczyć na pomoc i edukację w zakresach, w których mogę się nią podzielić. Fundamentem mojej marki jest szczerość, dlatego jeżeli nie będę czuć się kompetentny do wykonania Twojego zlecenia na pewno Cię o tym poinformuję."
-      
+        about="Każdy projekt zaczyna się od opracowania strategii działania i ustalenia celów jakie strona lub sklep mają spełniać. Na tej podstawie stworzę dla Ciebie stronę lub sklep z funkcjonalnościami oraz projektem graficznym, który będzie współgrał z profilem Twojej marki oraz realizował cele projektowe ustalone na początku współpracy. W celu zapewnienia spójności wizualnej strony/sklepu z innymi formami prezentacji wizualnej firmy oferuję także tworzenie szablonów do postów na Social Media, ulotek, wizytówek, montażu rolek i innych usług wideo-graficznych."
+        //         "W mojej ofercie znajdziesz usługi projektowania oraz tworzenia stron i sklepów internetowych, projektowania elementów graficznych oraz montażu rolek wideo.
+        // Współpraca ze mną opiera się na bezpośredniej komunikacji i szczerości. Tworzę treści, które są praktyczne i efektywne oraz odpowiadają Twoim oczekiwaniom. Moja praca nie opiera się wyłącznie na wykonywaniu projektów. Moi klienci zawsze mogą liczyć na pomoc i edukację w zakresach, w których mogę się nią podzielić. Fundamentem mojej marki jest szczerość, dlatego jeżeli nie będę czuć się kompetentny do wykonania Twojego zlecenia na pewno Cię o tym poinformuję."
       />
       <div className={styles.rowBox}>
         {GLOBAL_OFFERT.map((offer, index) => (

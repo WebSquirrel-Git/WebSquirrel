@@ -26,7 +26,6 @@ const OfferWebsiteCard = ({
   title,
   price,
   time,
-  url,
   mainList,
   wordpressList,
   nextJsList,
@@ -150,7 +149,7 @@ const OfferWebsiteCard = ({
         {nextJsListMap}
         {payloadCMSListMap}
       </div>
-      <Link className={styles.link} href='#contact'>
+      <Link className={styles.link} href="#contact">
         BEZPŁATNA KONSULTACJA{' '}
         <img
           src={ArrowIconOrange.src}

@@ -5,16 +5,16 @@ import Reviews from '@/components/Globals/Sections/Reviews/Reviews';
 import Hero from '@/components/Globals/Sections/Hero/Hero';
 import {Metadata} from 'next';
 import H2About from '@/components/Ui/Headers/H2About/H2About';
-import WebsiteIncludes from '@/components/Globals/Sections/WebsiteIncludes/WebsiteIncludes';
 import ProcessSteps from '@/components/Globals/Sections/ProcessSteps/ProcessSteps';
 import StoresOffer from '@/components/OfferPage/StoresOffer/StoresOffer';
 import {headers} from 'next/headers';
 import ImageMobile from '@/public/assets/hero/stores-hero-mobile.webp';
-import { WOOCOMMERCE_SHOP_CONTENT } from '@/utils/offer/woocommerceShop';
+import {WOOCOMMERCE_SHOP_CONTENT} from '@/utils/offer/woocommerceShop';
 import StoreIncludes from '@/components/Globals/Sections/StoreIncludes/StoreIncludes';
+import PortfolioShort from '@/components/Globals/Sections/PortfolioShort/PortfolioShort';
 
 export const metadata: Metadata = {
-  title: 'Tworzenie sklepów internetowych, Oferta E-sklepy',
+  title: 'Profesjonalne sklepy internetowe projektowane dla firm',
   description:
     'Zajmuję się projektowaniem sklepów internetowych, które ułatwią Twoją sprzedaż produktów i profesjonalnie zaprezentują profil firmy. Integracje sklepu www z usługami.',
   metadataBase: new URL('https://websquirrel.pl/oferta/sklepy-internetowe'),
@@ -53,11 +53,10 @@ export default async function Offert() {
       </div>
       <CooperationBenefits />
       <ProcessSteps {...WOOCOMMERCE_SHOP_CONTENT.stages} />
-      <StoreIncludes h2="Co zawiera każdy sklep www?"/>
+      <StoreIncludes h2="Co zawiera każdy sklep www?" />
       <StoresOffer />
+      <PortfolioShort />
       <Reviews />
-      
-      
 
       <ContactForm contactFormType="All" />
     </>
