@@ -124,8 +124,8 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     },
   },
   {
-    displayType: 'Popup',
-    url: '/portfolio/nemo',
+    displayType: 'Website',
+    url: '/portfolio/nemo-sportowa-przygoda',
     title: 'NEMO Sportowa Przygoda',
     type: 'website',
     orientation: 'landscape',

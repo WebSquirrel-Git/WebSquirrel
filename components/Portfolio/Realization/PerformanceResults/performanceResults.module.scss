@@ -1,0 +1,110 @@
+@use '../../../../styles/mixin.scss' as mixin;
+@use '../../../../styles/colors.scss' as colors;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 9rem;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  @include mixin.pc1450px {
+    padding: 3rem;
+  }
+  @include mixin.phone700px {
+    padding: 1.5rem 1rem;
+  }
+}
+.rowContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  @include mixin.pc1000px {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  @include mixin.pc1000px {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h2 {
+    color: colors.$squirrel;
+  }
+}
+.targetBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  border-bottom: 2px solid colors.$squirrel;
+  gap: 10px;
+  align-items: center;
+  @include mixin.pc1000px {
+    width: 75%;
+    text-align: left;
+  }
+  @include mixin.phone800px {
+    width: 100%;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+    @include mixin.phone800px {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.image {
+  width: 420px;
+  height: 420px;
+  @include mixin.pc1100px {
+    width: 300px;
+    height: auto;
+  }
+  @include mixin.phone800px {
+    width: 50%;
+  }
+  @include mixin.phone800px {
+    width: 30%;
+  }
+}
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 75%;
+  @include mixin.phone800px {
+    width: 100%;
+  }
+}
+.searchConsoleGraph {
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+  border-radius: 15px;
+}
+.imagesRowBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+}

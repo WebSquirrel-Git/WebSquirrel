@@ -18,7 +18,6 @@ export const metadata: Metadata = {
     canonical: '/',
     languages: {
       'pl-PL': '/pl-PL',
-      'en-US': '/en-US',
     },
   },
   robots: {index: true, follow: true},

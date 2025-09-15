@@ -23,6 +23,19 @@ import TrigetBg from '@/public/portfolio/triget/background.webp';
 import DefaultLink from '@/components/Ui/Links/DefaultLink/DefaultLink';
 const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
   {
+    header: 'Strona internetowa',
+    website_url: 'https://nemosportowaprzygoda.pl/',
+    website_name: 'www.nemosportowaprzygoda.pl',
+    subheader: 'Szkoła nauki pływania',
+    about:
+      'Jak stworzyć stronę dla firmy, która zajmuje się nauką pływania oraz organizacją obozów lato/zima? Jak w ciągu 9 miesięcy uzyskaliśmy 38 000 wyświetleń w wyszukiwarce Google?',
+    imgPhone: NemoIphone,
+    imgPc: NemoPc,
+    imgBg: NemoBg,
+    logo: NemoLogo,
+    portfolio_url: '/portfolio/nemo-sportowa-przygoda',
+  },
+  {
     header: 'Sklep internetowy',
     website_url: 'https://perlia.pl/',
     website_name: 'www.perlia.pl',
@@ -48,19 +61,7 @@ const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
     logo: ATZMLogo,
     portfolio_url: '/portfolio/atzmdesign',
   },
-  {
-    header: 'Strona internetowa',
-    website_url: 'https://nemosportowaprzygoda.pl/',
-    website_name: 'www.nemosportowaprzygoda.pl',
-    subheader: 'Szkoła nauki pływania',
-    about:
-      'Jak stworzyć stronę dla firmy, która zajmuje się nauką pływania oraz organizacją obozów lato/zima? Jak udało nam się wypozycjonować ją lokalnie i dotrzeć do nowych klientów?',
-    imgPhone: NemoIphone,
-    imgPc: NemoPc,
-    imgBg: NemoBg,
-    logo: NemoLogo,
-    portfolio_url: '/portfolio',
-  },
+
   {
     header: 'Strona internetowa',
     website_url: 'https://triget.pl/',
