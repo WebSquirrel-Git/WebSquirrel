@@ -24,6 +24,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://websquirrel.pl/portfolio/atzmdesign/',
     },
     {
+      url: 'https://websquirrel.pl/portfolio/nemo-sportowa-przygoda/',
+    },
+    {
       url: 'https://websquirrel.pl/artykuly/',
     },
     {
