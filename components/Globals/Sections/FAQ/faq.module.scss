@@ -1,0 +1,107 @@
+@use '../../../../styles/colors.scss' as colors;
+@use '../../../../styles/mixin.scss' as mixin;
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  @include mixin.phone700px {
+    padding: 1.5rem 1rem;
+  }
+  h2 {
+    color: colors.$squirrel;
+    text-align: center;
+  }
+}
+.columnBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.faqBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1200px;
+  height: fit-content;
+  gap: 1rem;
+  border: 2px solid colors.$squirrel;
+  padding: 1rem;
+  background: transparent;
+  transition: all 500ms;
+  @include mixin.pc1450px {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: left;
+    @include mixin.phone500px {
+      font-size: 0.7rem;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .faqHeader {
+      color: colors.$squirrel;
+    }
+  }
+}
+.faqHeader {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  transition: all 500ms;
+  text-align: left;
+  @include mixin.pc1000px {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.headerActive {
+  color: colors.$squirrel !important;
+}
+.chevronIcon {
+  transform: rotate(270deg);
+  width: 40px;
+  height: 40px;
+  transition: all 500ms;
+  @include mixin.pc1000px {
+    width: 32px;
+    height: 32px;
+  }
+}
+.faqAnswer {
+  opacity: 0;
+  height: 0;
+  display: none;
+  text-align: left;
+}
+.hidden {
+  opacity: 0 !important;
+  height: 0 !important;
+  transition: all 100ms;
+}
+.show {
+  height: fit-content;
+  opacity: 1;
+  transition: all 1000ms;
+  display: flex;
+}
+.rotateIcon {
+  transform: rotate(90deg);
+}

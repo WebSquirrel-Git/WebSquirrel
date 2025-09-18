@@ -56,7 +56,8 @@ export const PerformanceResults = ({
         />
         <div className={styles.imagesRowBox}>
           {imagesRow.map((image, i) => (
-            <Image key={i}
+            <Image
+              key={i}
               src={image}
               alt="analiza szybkości strony"
               width={700}

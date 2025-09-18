@@ -1,8 +1,10 @@
 import ContactForm from '@/components/ContactForm/ContactForm';
 import CooperationBenefits from '@/components/Globals/Sections/CooperationBenefits/CooperationBenefits';
+import {FAQ} from '@/components/Globals/Sections/FAQ/FAQ';
 import GlobalOffer from '@/components/Globals/Sections/GlobalOffer/GlobalOffer';
 import PortfolioShort from '@/components/Globals/Sections/PortfolioShort/PortfolioShort';
 import Reviews from '@/components/Globals/Sections/Reviews/Reviews';
+import {AboutMe} from '@/components/HomePage/AboutMe/AboutMe';
 import Hero from '@/components/HomePage/Hero/Hero';
 import {Metadata} from 'next';
 import {headers} from 'next/headers';
@@ -33,6 +35,7 @@ export default async function Home() {
       <Hero isMobile={isMobile} />
       <GlobalOffer />
       <CooperationBenefits />
+      <AboutMe />
       <PortfolioShort />
       {/* <ProcessSteps {...STANDARD_PAGE_CONTENT.stages} /> */}
       <Reviews />
@@ -40,6 +43,7 @@ export default async function Home() {
       {/* <Articles /> */}
 
       <ContactForm contactFormType="All" />
+      <FAQ />
     </>
   );
 }
