@@ -18,14 +18,16 @@ import GalleryPortrait2 from '@/public/portfolio/nemosportowaprzygoda/nemo-4.web
 import GalleryPortrait3 from '@/public/portfolio/nemosportowaprzygoda/nemo-5.webp';
 import {Gallery} from '@/components/Portfolio/Realization/Gallery/Gallery';
 import ContactForm from '@/components/ContactForm/ContactForm';
-import { ReachResults } from '@/components/Portfolio/Realization/ReachResults/ReachResults';
-import { NewClientsResults } from '@/components/Portfolio/Realization/NewClientsResults/NewClientsResults';
-import { PerformanceResults } from '@/components/Portfolio/Realization/PerformanceResults/PerformanceResults';
+import {ReachResults} from '@/components/Portfolio/Realization/ReachResults/ReachResults';
+import {NewClientsResults} from '@/components/Portfolio/Realization/NewClientsResults/NewClientsResults';
+import {PerformanceResults} from '@/components/Portfolio/Realization/PerformanceResults/PerformanceResults';
 export const metadata: Metadata = {
   title: 'Realizacja strony internetowej dla firmy Nemo Sportowa Przygoda',
   description:
     'Sprawdź jak stworzyliśmy stronę internetową, która uzyskała 38 000 wyświetleń w wyszukiwarce Google z CTR 6,6%.',
-  metadataBase: new URL('https://websquirrel.pl/portfolio/nemo-sportowa-przygoda'),
+  metadataBase: new URL(
+    'https://websquirrel.pl/portfolio/nemo-sportowa-przygoda'
+  ),
   alternates: {
     canonical: 'https://websquirrel.pl/portfolio/nemo-sportowa-przygoda',
     languages: {
@@ -64,56 +66,49 @@ const CONTENT = {
     'Prezentacja oferty pływania',
     'Prezentacja oferty zimowej',
     'Prezentacja oferty letniej',
-'Stworzenie poradników dla klientów',
-'Przedstawienie treści na stronie w sposób nieszablonowy, który będzie odróżniał firmę od lokalnej konkurencji',
-'Zwiększenie lokalnego zasięgu firmy w Google',
+    'Stworzenie poradników dla klientów',
+    'Przedstawienie treści na stronie w sposób nieszablonowy, który będzie odróżniał firmę od lokalnej konkurencji',
+    'Zwiększenie lokalnego zasięgu firmy w Google',
   ],
   results: [
     'Strona odróżniająca się na tle konkurencji',
     'Stworzenie 3 stylów motywów ofert: Pływania/obozów letnich/obozów zimowych',
     'Wysoka wydajność strony na urządzeniach klientów na podstawie próbek pobranych przez Google',
     '38 800 wyświetleń strony w wyszukiwarce google z CTR 6,6%',
-    'Stała współpraca, która ciągle trwa'
+    'Stała współpraca, która ciągle trwa',
   ],
-  reachResults:{
- results: [
-    'Na podstawie analizy wyszukiwania strony w google strona przez 9 miesięcy została w niej wyświetlona 38 800 razy',
-    '2 570 osób weszło na stronę z wyszukiwarki Google',
-    'To daje wynik 6,6% średniego CTR w przeciągu 9 miesięcy',
-  ],
-  image:NemoSearchConsole,
-  alt:'Wykres wyników wyszukiwania'
+  reachResults: {
+    results: [
+      'Na podstawie analizy wyszukiwania strony w google strona przez 9 miesięcy została w niej wyświetlona 38 800 razy',
+      '2 570 osób weszło na stronę z wyszukiwarki Google',
+      'To daje wynik 6,6% średniego CTR w przeciągu 9 miesięcy',
+    ],
+    image: NemoSearchConsole,
+    alt: 'Wykres wyników wyszukiwania',
   },
-  newClientsResults:{
-   results: [
-    'Na podstawie analizy poniższego wykresu w przeciągu ostatnich 9 miesięcy stronę odwiedziły 5982 osoby',
-    '3 048 użytkowników trafiło na stronę po wyszukaniu jednej z fraz kluczowych według Google Analytics',
-    'Stanowi to nieco ponad 50% źródła użytkowników trafiających na stronę co jest bardzo dobrym wynikiem pokazującym jak pozycjonowanie pod lokalne frazy kluczowe może napędzić ruch na stronie',
-    'W odniesieniu do poprzedniego wykresu można wysnuć pytanie dlaczego ilość kliknięć jest mniejsza od liczby użytkowników przedstawionych na poniższym wykresie? Wynika to z różnych sposobów zbierania danych. Dane na powyższym wykresie zbiera Google Search Console na etapie wyświetlenia i kliknięcia strony w wynikach wyszukiwania. Dane na poniższym wykresie zbiera Google Analytics po wejściu użytkownika na stronę, określając źródło, z którego wszedł.'
-  ],
-  image:NemoClientsSource,
-  alt:'Wykres źródła pochodzenia klientów' 
+  newClientsResults: {
+    results: [
+      'Na podstawie analizy poniższego wykresu w przeciągu ostatnich 9 miesięcy stronę odwiedziły 5982 osoby',
+      '3 048 użytkowników trafiło na stronę po wyszukaniu jednej z fraz kluczowych według Google Analytics',
+      'Stanowi to nieco ponad 50% źródła użytkowników trafiających na stronę co jest bardzo dobrym wynikiem pokazującym jak pozycjonowanie pod lokalne frazy kluczowe może napędzić ruch na stronie',
+      'W odniesieniu do poprzedniego wykresu można wysnuć pytanie dlaczego ilość kliknięć jest mniejsza od liczby użytkowników przedstawionych na poniższym wykresie? Wynika to z różnych sposobów zbierania danych. Dane na powyższym wykresie zbiera Google Search Console na etapie wyświetlenia i kliknięcia strony w wynikach wyszukiwania. Dane na poniższym wykresie zbiera Google Analytics po wejściu użytkownika na stronę, określając źródło, z którego wszedł.',
+    ],
+    image: NemoClientsSource,
+    alt: 'Wykres źródła pochodzenia klientów',
   },
-  performanceResults:{
-   results: [
-    'Na podstawie próbek pobranych przez Google od użytkowników strona zaliczyła testy wydajnościowe',
-    'W klasycznym badaniu strona na komórce uzyskała wynik 67 - jest to spowodowane kompromisem na który poszliśmy, a są nim klipy wideo z zajęć na pierwszych ekranach strony. Nie mniej jednak próbki wspomniane w poprzednim punkcie weryfikują rzeczywiste doświadczenia użytkowników i są one na plus',
-    'Wydajność w klasycznym badaniu na komputery wyniosła 91 czyli bardzo dobrze jak na klip wideo i popup na starcie ładowania strony',
-  ],
-  imageLandscape:NemoSpeedLandscape,
-  alt:'Wykres źródła pochodzenia klientów',
-  imagesRow:[NemoSpeedPhone,NemoSpeedPc]
+  performanceResults: {
+    results: [
+      'Na podstawie próbek pobranych przez Google od użytkowników strona zaliczyła testy wydajnościowe',
+      'W klasycznym badaniu strona na komórce uzyskała wynik 67 - jest to spowodowane kompromisem na który poszliśmy, a są nim klipy wideo z zajęć na pierwszych ekranach strony. Nie mniej jednak próbki wspomniane w poprzednim punkcie weryfikują rzeczywiste doświadczenia użytkowników i są one na plus',
+      'Wydajność w klasycznym badaniu na komputery wyniosła 91 czyli bardzo dobrze jak na klip wideo i popup na starcie ładowania strony',
+    ],
+    imageLandscape: NemoSpeedLandscape,
+    alt: 'Wykres źródła pochodzenia klientów',
+    imagesRow: [NemoSpeedPhone, NemoSpeedPc],
   },
-  galleryLandscapes: [
-    GalleryLandscape1,
-    GalleryLandscape2,
-  ],
-  galleryPortraits: [
-    GalleryPortrait1,
-    GalleryPortrait2,
-    GalleryPortrait3,
-  ],
-  
+  galleryLandscapes: [GalleryLandscape1, GalleryLandscape2],
+  galleryPortraits: [GalleryPortrait1, GalleryPortrait2, GalleryPortrait3],
+
   summary:
     'W przeciągu 9 miesięcy rozbudowaliśmy stronę i dopasowaliśmy jej wygląd do poszerzonej oferty firmy. W tym czasie udało się pozyskać nowe wyższe pozycje słów kluczowych w wyszukiwarkach i znacząco zwiększyć ilość nowych klientów. Obecnie trend jest rosnący, a strona pnie się do góry w rankingach słów kluczowych. W planach jest polepszenie SEO oraz dalszy rozwój oferty Nemo. Współpraca z Wiktorią trwa cały czas, jesteśmy w stałym kontakcie i rozbudowujemy stronę zwiększając zasięgi firmy oraz dodając jej nowych funkcjonalności ułatwiających nawigację i interakcje klientów.',
 };
@@ -125,9 +120,9 @@ export default function PortfolioPerlia() {
       <About {...CONTENT.about} />
       <Targets targets={CONTENT.targets} />
       <Results results={CONTENT.results} />
-      <ReachResults {...CONTENT.reachResults}/>
-      <NewClientsResults {...CONTENT.newClientsResults}/>
-      <PerformanceResults {...CONTENT.performanceResults}/>
+      <ReachResults {...CONTENT.reachResults} />
+      <NewClientsResults {...CONTENT.newClientsResults} />
+      <PerformanceResults {...CONTENT.performanceResults} />
       <Gallery
         galleryLandscapes={CONTENT.galleryLandscapes}
         galleryPortraits={CONTENT.galleryPortraits}
