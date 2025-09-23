@@ -6,16 +6,22 @@ import ResultGreen from '@/public/assets/icons/checkmark-green-icon.svg';
 
 interface ReachResultsProps {
   results: string[];
-  image: StaticImageData;
+  image?: StaticImageData;
   alt: string;
+  header: string;
 }
 
-export const ReachResults = ({results, image, alt}: ReachResultsProps) => {
+export const ReachResults = ({
+  header,
+  results,
+  image,
+  alt,
+}: ReachResultsProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.rowContainer}>
         <div className={styles.contentBox}>
-          <h2>Zasięgi firmy</h2>
+          <h2>{header}</h2>
           <>
             {results.map((result, i) => (
               <div key={i} className={styles.targetBox}>
@@ -40,13 +46,15 @@ export const ReachResults = ({results, image, alt}: ReachResultsProps) => {
           loading="eager"
         />
       </div>
-      <Image
-        src={image}
-        alt={alt}
-        width={1920}
-        height={800}
-        className={styles.searchConsoleGraph}
-      />
+      {image && (
+        <Image
+          src={image}
+          alt={alt}
+          width={1920}
+          height={800}
+          className={styles.searchConsoleGraph}
+        />
+      )}
     </div>
   );
 };
