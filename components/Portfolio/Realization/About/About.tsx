@@ -7,13 +7,14 @@ interface AboutProps {
   text2: string;
   logo: StaticImageData;
   alt: string;
+  header?: string;
 }
 
-export const About = ({text1, text2, logo, alt}: AboutProps) => {
+export const About = ({text1, text2, logo, alt, header}: AboutProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.contentBox}>
-        <h2>O firmie</h2>
+        <h2>{header ? header : 'O firmie'}</h2>
         <p>{text1}</p>
         <p>{text2}</p>
       </div>

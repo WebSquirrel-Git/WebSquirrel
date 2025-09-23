@@ -18,6 +18,7 @@ import NemoPc from '@/public/portfolio/nemosportowaprzygoda/pc.webp';
 import TrigetPc from '@/public/portfolio/triget/pc.webp';
 import PerliaBg from '@/public/portfolio/perlia/background.webp';
 import ATZMBg from '@/public/portfolio/atzmdesign/background.webp';
+import InteriorBg from '@/public/portfolio/interiordesigner/background.webp';
 import NemoBg from '@/public/portfolio/nemosportowaprzygoda/background.webp';
 import TrigetBg from '@/public/portfolio/triget/background.webp';
 import DefaultLink from '@/components/Ui/Links/DefaultLink/DefaultLink';
@@ -34,6 +35,19 @@ const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
     imgBg: NemoBg,
     logo: NemoLogo,
     portfolio_url: '/portfolio/nemo-sportowa-przygoda',
+  },
+  {
+    header: 'Strona internetowa',
+    website_url: 'https://interior-designer-template-omega.vercel.app/',
+    website_name: 'https://interior-designer-template-omega.vercel.app/',
+    subheader: 'Projektant wnętrz',
+    about:
+      'Sprawdź jak wygląda strona internetowa szyta na miarę z personalizowanym panelem administratora utworzonym w PayloadCMD | Wariant Projektant Wnętrz',
+    imgPhone: InteriorBg,
+    imgPc: InteriorBg,
+    imgBg: InteriorBg,
+    logo: InteriorBg,
+    portfolio_url: '/portfolio/strona-dla-projektanta-wnetrz',
   },
   {
     header: 'Sklep internetowy',

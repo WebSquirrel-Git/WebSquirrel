@@ -120,7 +120,7 @@ export default function PortfolioPerlia() {
       <About {...CONTENT.about} />
       <Targets targets={CONTENT.targets} />
       <Results results={CONTENT.results} />
-      <ReachResults {...CONTENT.reachResults} />
+      <ReachResults header="Zasięgi firmy" {...CONTENT.reachResults} />
       <NewClientsResults {...CONTENT.newClientsResults} />
       <PerformanceResults {...CONTENT.performanceResults} />
       <Gallery

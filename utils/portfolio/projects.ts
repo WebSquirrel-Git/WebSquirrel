@@ -57,9 +57,9 @@ export interface PortfolioPopupType {
 }
 export const PORTFOLIO_PROJECTS: ProjectType[] = [
   {
-    displayType: 'Popup',
-    url: '',
-    title: 'Projektanci Wnętrz - Szablon',
+    displayType: 'Website',
+    url: '/portfolio/strona-dla-projektanta-wnetrz',
+    title: 'Strona dla projektanta wnętrz',
     type: 'website',
     orientation: 'landscape',
     typeTitle: 'Strona internetowa',
@@ -70,7 +70,7 @@ export const PORTFOLIO_PROJECTS: ProjectType[] = [
     popup: {
       title: 'Projektanci Wnętrz - Szablon',
       description:
-        'Szablon dla projektantów wnętrz - gotowy do użycia i dostosowania pod Twoje potrzeby. Aplikacja została stworzona w nowoczesnym frameworku PayloadCMS, który cechuje się wysoką wydajnością oraz panelem administracyjnym umożliwiającym zarządzanie treścią na stronie. Panel jest dostosowany dla projektantów wnętrz i posiada unikalne funkcjonalności jak kolekcja ofert, realizacji czy bloki do wstawiania na stronę (opinie, realizacja, oferta zbiorcza, oferta pojedyńcza i inne). Szablon ma możliwość modyfikacji treści i panelu administratora pod Twoje oczekiwania. W celu uzyskania dostępu do panelu administratora napisz do mnie wiadomość lub zadzwoń.',
+        'Sprawdź jak wygląda strona internetowa szyta na miarę z personalizowanym panelem administratora utworzonym w PayloadCMD | Wariant Projektant Wnętrz',
       technologiesIcons: [PayloadcmsIcon, NextJsIcon, FigmaIcon],
       url: 'interior-designer-template-omega.vercel.app',
       frontImages: [InteriordesignerImg1, InteriordesignerImg2],
