@@ -30,6 +30,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: 'https://websquirrel.pl/portfolio/strona-dla-projektanta-wnetrz/',
     },
     {
+      url: 'https://websquirrel.pl/portfolio/szkola-plywania-szkrab/',
+    },
+    {
       url: 'https://websquirrel.pl/artykuly/',
     },
     {

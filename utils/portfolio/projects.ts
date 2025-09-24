@@ -36,6 +36,7 @@ import PerliaImg2 from '@/public/portfolio/perlia/perlia-2.webp';
 import PerliaImg3 from '@/public/portfolio/perlia/perlia-3.webp';
 import PerliaImg4 from '@/public/portfolio/perlia/perlia-4.webp';
 import PerliaImg5 from '@/public/portfolio/perlia/perlia-5.webp';
+import SzkrabCoverImage from '@/public/portfolio/szkrab/cover.svg';
 import InteriordesignerCoverImage from '@/public/portfolio/interiordesigner/cover.svg';
 import InteriordesignerImg1 from '@/public/portfolio/interiordesigner/interiordesigner-1.webp';
 import InteriordesignerImg2 from '@/public/portfolio/interiordesigner/interiordesigner-2.webp';
@@ -56,6 +57,31 @@ export interface PortfolioPopupType {
   reverseImages: any[];
 }
 export const PORTFOLIO_PROJECTS: ProjectType[] = [
+  {
+    displayType: 'Website',
+    url: '/portfolio/szkola-plywania-szkrab',
+    title: 'Szkoła Pływania Szkrab',
+    type: 'website',
+    orientation: 'landscape',
+    typeTitle: 'Strona internetowa',
+    mainTechnology: 'Next.js',
+    coverImage: SzkrabCoverImage.src,
+    active: false,
+    style: 'website',
+    popup: {
+      title: 'Projektanci Wnętrz - Szablon',
+      description:
+        'Sprawdź jak w tydzień stworzyliśmy stronę internetową dla szkoły pływania z wynikami PSI Google: 100 PC i 100 Mobile.',
+      technologiesIcons: [NextJsIcon, FigmaIcon],
+      url: 'szkolaplywaniaszkrab.pl',
+      frontImages: [InteriordesignerImg1, InteriordesignerImg2],
+      reverseImages: [
+        InteriordesignerImg3,
+        InteriordesignerImg4,
+        InteriordesignerImg5,
+      ],
+    },
+  },
   {
     displayType: 'Website',
     url: '/portfolio/strona-dla-projektanta-wnetrz',

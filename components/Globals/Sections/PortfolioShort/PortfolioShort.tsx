@@ -5,24 +5,34 @@ import PortfolioShortCard, {
   PortfolioShortCardProps,
 } from '@/components/Ui/Cards/PortfolioShortCard/PortfolioShortCard';
 import ATZMLogo from '@/public/portfolio/atzmdesign/logo-white.svg';
-import PerliaLogo from '@/public/portfolio/perlia/logo-gray.svg';
 import NemoLogo from '@/public/portfolio/nemosportowaprzygoda/nemo-logo.svg';
 import TrigetLogo from '@/public/portfolio/triget/triget-logo.svg';
-import PerliaIphone from '@/public/portfolio/perlia/iphone-flat.webp';
 import ATZMIphone from '@/public/portfolio/atzmdesign/iphone-flat.webp';
 import NemoIphone from '@/public/portfolio/nemosportowaprzygoda/iphone-flat.webp';
 import TrigetIphone from '@/public/portfolio/triget/iphone-flat.webp';
-import PerliaPc from '@/public/portfolio/perlia/pc.webp';
 import ATZMPc from '@/public/portfolio/atzmdesign/pc.webp';
 import NemoPc from '@/public/portfolio/nemosportowaprzygoda/pc.webp';
 import TrigetPc from '@/public/portfolio/triget/pc.webp';
-import PerliaBg from '@/public/portfolio/perlia/background.webp';
 import ATZMBg from '@/public/portfolio/atzmdesign/background.webp';
 import InteriorBg from '@/public/portfolio/interiordesigner/background.webp';
+import SzkrabBg from '@/public/portfolio/szkrab/background.webp';
 import NemoBg from '@/public/portfolio/nemosportowaprzygoda/background.webp';
 import TrigetBg from '@/public/portfolio/triget/background.webp';
 import DefaultLink from '@/components/Ui/Links/DefaultLink/DefaultLink';
 const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
+  {
+    header: 'Strona internetowa',
+    website_url: 'https://szkolaplywaniaszkrab.pl/',
+    website_name: 'www.szkolaplywaniaszkrab.pl',
+    subheader: 'Szkoła nauki pływania',
+    about:
+      'Sprawdź jak stworzyliśmy stronę internetową dla Szkoły Pływania Szkrab i uzyskaliśmy maksymalne wyniki wydajnościowe w PSI od Google.',
+    imgPhone: NemoIphone,
+    imgPc: NemoPc,
+    imgBg: SzkrabBg,
+    logo: NemoLogo,
+    portfolio_url: '/portfolio/szkola-plywania-szkrab',
+  },
   {
     header: 'Strona internetowa',
     website_url: 'https://nemosportowaprzygoda.pl/',
@@ -49,19 +59,19 @@ const PORTFOLIO_SHORT_ITEMS: PortfolioShortCardProps[] = [
     logo: InteriorBg,
     portfolio_url: '/portfolio/strona-dla-projektanta-wnetrz',
   },
-  {
-    header: 'Sklep internetowy',
-    website_url: 'https://perlia.pl/',
-    website_name: 'www.perlia.pl',
-    subheader: 'Sprzedaż ręcznie robionej biżuterii',
-    about:
-      'Jak sklep online zwiększył atrakcyjność oferty i poprawił komfort kupujących z instagrama?',
-    imgPhone: PerliaIphone,
-    imgPc: PerliaPc,
-    imgBg: PerliaBg,
-    logo: PerliaLogo,
-    portfolio_url: '/portfolio/perlia',
-  },
+  // {
+  //   header: 'Sklep internetowy',
+  //   website_url: 'https://perlia.pl/',
+  //   website_name: 'www.perlia.pl',
+  //   subheader: 'Sprzedaż ręcznie robionej biżuterii',
+  //   about:
+  //     'Jak sklep online zwiększył atrakcyjność oferty i poprawił komfort kupujących z instagrama?',
+  //   imgPhone: PerliaIphone,
+  //   imgPc: PerliaPc,
+  //   imgBg: PerliaBg,
+  //   logo: PerliaLogo,
+  //   portfolio_url: '/portfolio/perlia',
+  // },
   {
     header: 'Sklep internetowy',
     website_url: 'https://atzmdesign.com/',
