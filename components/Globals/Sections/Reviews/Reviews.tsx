@@ -5,6 +5,8 @@ import Review1 from '@/public/assets/reviews/triget-review.webp';
 import Review2 from '@/public/assets/reviews/perlia-review.webp';
 import Review3 from '@/public/assets/reviews/nemo-review.webp';
 import Review4 from '@/public/assets/reviews/atzm-review.webp';
+import Review5 from '@/public/assets/reviews/beeagile-review.webp';
+import Review6 from '@/public/assets/reviews/szkrab-review.webp';
 import ForwardIcon from '@/public/assets/icons/chevron-forward-icon.svg';
 import BackIcon from '@/public/assets/icons/chevron-back-icon.svg';
 import GoogleIcon from '@/public/assets/reviews/google-icon.webp';
@@ -13,7 +15,7 @@ import {useState} from 'react';
 import Link from 'next/link';
 
 const Reviews = () => {
-  const REVIEWS_ARRAY = [Review1, Review2, Review3, Review4];
+  const REVIEWS_ARRAY = [Review6,Review1, Review2, Review3, Review4,Review5,];
   const [reviewNumber, setReviewNumber] = useState(0);
   const nextReviewHandler = () => {
     if (reviewNumber === REVIEWS_ARRAY.length - 1) {
