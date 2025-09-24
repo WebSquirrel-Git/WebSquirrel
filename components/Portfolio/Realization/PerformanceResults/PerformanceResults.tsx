@@ -6,7 +6,7 @@ import ResultGreen from '@/public/assets/icons/checkmark-green-icon.svg';
 
 interface PerformanceResultsProps {
   results: string[];
-  imageLandscape: StaticImageData;
+  imageLandscape?: StaticImageData;
   imagesRow: StaticImageData[];
   alt: string;
 }
@@ -47,13 +47,15 @@ export const PerformanceResults = ({
         />
       </div>
       <div className={styles.imagesContainer}>
-        <Image
-          src={imageLandscape}
-          alt={alt}
-          width={1920}
-          height={800}
-          className={styles.searchConsoleGraph}
-        />
+        {imageLandscape && (
+          <Image
+            src={imageLandscape}
+            alt={alt}
+            width={1920}
+            height={800}
+            className={styles.searchConsoleGraph}
+          />
+        )}
         <div className={styles.imagesRowBox}>
           {imagesRow.map((image, i) => (
             <Image
